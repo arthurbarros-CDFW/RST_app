@@ -1,6 +1,6 @@
 # app.R
-# Juvenile Salmon Passage Estimation Shiny App
-# For rotary screw trap data analysis
+# CDFW RST passage estimator
+# for rotary screw trap data analysis
 
 library(shiny)
 library(shinyWidgets)

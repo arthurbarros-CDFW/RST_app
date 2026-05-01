@@ -1,0 +1,12 @@
+name: RST_app
+title: RST_app
+username: arthurbarros-cdfw
+account: arthurbarros-cdfw
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 17274734
+bundleId: 11934771
+url: https://arthurbarros-cdfw.shinyapps.io/RST_app/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
