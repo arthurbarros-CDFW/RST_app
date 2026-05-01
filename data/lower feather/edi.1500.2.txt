@@ -1,0 +1,1387 @@
+
+  
+    uid=EDI,o=EDI,dc=edirepository,dc=orgall
+      public
+      read
+    
+    
+      cvpia
+      write
+    
+  
+  
+    doi:10.6073/pasta/897645f45909d9af239f9ec3e8e7d6e9Lower Feather River RST
+    Monitoring juvenile Chinook salmon outmigration using rotary screw traps on the Lower Feather River
+    
+      Claire Bryant
+      California Department of Fish and Wildlife
+      Claire.Bryant@Wildlife.ca.gov
+    
+    
+      Anna Allison
+      California Department of Fish and Wildlife
+      anna.allison@wildlife.ca.gov
+      principal investigator
+    
+    2023-12-01
+    
+      
+    CDFW issued Incidental Take Permit No. 2081-2019-006-00 (ITP) to the
+    California Department of Water Resources (DWR) on March 31, 2020,
+    for the long-term operation of the State Water Project (SWP) in the
+    Sacramento San Joaquin Delta (Delta). Condition 7.5.2 of the ITP
+    requires the development and establishment of a spring-run Chinook
+    salmon (Oncorhynchus tshawytscha) juvenile production estimate (JPE)
+    to increase understanding of the impacts that water operations have
+    on the spring-run Chinook salmon population in the Sacramento River
+    watershed and to inform the development of minimization measures to
+    reduce take of spring-run Chinook salmon at Delta fish salvage
+    facilities.  
+  
+      
+    As a part of the JPE effort, CDFW began operating a new rotary screw
+    trap (RST) monitoring station on the lower Feather River near River
+    Mile 17, approximately 1 mile downstream of Star Bend Park and Boat
+    Ramp near Olivehurst, in January 2022. This RST location represents
+    the lowest point in the Feather River Watershed where juvenile
+    salmon are sampled with an RST prior to entering the Sacramento
+    River and includes salmon emigrating from the Yuba River. The
+    expanded juvenile monitoring effort will help resource agencies and
+    water managers identify numbers of salmon emigrating from the
+    Feather River Watershed and contributing to the spring-run Chinook
+    salmon population entering the Delta.
+  
+      
+    Monitoring is conducted annually from October through June utilizing
+    a pair of eight-foot rotary screw traps (RST). Data collected at the
+    Lower Feather River RST site provides information on the temporal
+    distribution, relative abundance, and race composition of juvenile
+    Chinook salmon; and temporal distribution and relative abundance of
+    steelhead trout (O. mykiss) emigrating from the Feather River and
+    tributaries, including the Yuba River, to the Delta. Salmonid data
+    collected from the Lower Feather River RST, among other datasets, is
+    also used by the Salmon Monitoring Team (SaMT) to understand the
+    movement of juvenile salmon in the Sacramento River Watershed to
+    estimate the number of winter-run and spring-run Chinook salmon that
+    have entered the Delta. SaMT is a real-time operations monitoring
+    team required by Condition of Approval 8.1.2 of the ITP which meets
+    weekly from October through June, to provide advice for real-time
+    management of SWP operations to DWR, CDFW, and the Water Operation
+    Management Team (WOMT) to minimize take of winter-run and spring-run
+    Chinook salmon in the Delta.
+  
+    
+    
+      spring run
+      fall run
+      trap
+      catch
+      juvenile production estimate
+      Oncorhynchus tshawytscha
+      RST
+      California
+      Central Valley
+      SRJPE
+      Chinook salmon
+    
+    
+      This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.
+    
+    
+      Creative Commons Attribution 4.0 International
+      https://spdx.org/licenses/CC-BY-4.0.html
+      CC-BY-4.0
+    
+    https://doi.org/10.6073/pasta/897645f45909d9af239f9ec3e8e7d6e9
+      
+        Lower Feather River Rotary Screw Trap
+        
+          -121.6197
+          -121.5545
+          39.0555
+          38.9658
+        
+      
+      
+        
+          
+            2022-01-19
+          
+          
+            2023-03-06
+          
+        
+      
+    
+    
+      ongoing
+      monthly
+    
+    
+      Claire Bryant
+      California Department of Fish and Wildlife
+      Claire.Bryant@Wildlife.ca.gov
+    
+    Environmental Data Initiativeinfo@edirepository.orghttps://edirepository.org0330j0z60Environmental Data Initiative
+      
+        
+          
+            Trap Equipment
+            
+      Two in-line 8-foot diameter rotary screw traps (RST).
+    
+          
+          
+            Current Trap Location
+            
+      Traps are currently located at Lower Feather River (RM 17) near
+      Star Bend Park and Boat Ramp near Olivehurst, California.
+    
+          
+          
+            Monitoring Schedule
+            
+      Traps are monitored October through June. Traps are continuously
+      trapping except under high flows and unsafe working conditions.
+      They are serviced daily within a 24-hour period, more if needed
+      due to high debris amounts or fish catch.
+    
+          
+          
+            Daily Environmental Data
+            
+      Daily environmental data collected are flow in cubic feet per
+      second, recorded from the CDEC Gauging station: Feather River at
+      Boyd’s Landing Above Star Bend (FSB); water temperature
+      (Fahrenheit/Celsius); river Depth (inches/feet); turbidity
+      (nephelometric turbidity units); dissolved Oxygen (milligrams per
+      liter); conductivity (microSiemens per centimeter); and velocity
+      (meters per second).
+    
+          
+          
+            Fish Measurements
+            
+      Fork length measurements are taken to the nearest mm for Chinook
+      salmon, Steelhead, and non-salmonid fish. For chinook salmon, fork
+      length measurements are taken for 50 randomly selected individuals
+      per category: marked (with an adipose fin clip) spring-, fall-,
+      winter- or late fall-runs; unmarked spring-, fall-, winter- or
+      late fall-runs. Run designated by Length at Date criteria (Fisher
+      1992). For steelhead, measurements are taken for 50 randomly
+      selected per marked or unmarked. For non-salmonoid fish,
+      measurements are taken for the first 10 indiviuals (total length
+      measurements to the nearest mm).
+    
+          
+          
+            Fish Counts
+            
+      All fish not measured are plus counted by hand.
+    
+          
+          
+            Trap Efficiency Trials
+            
+      Fall-run Chinook salmon captured in the RSTs or juvenile Chinook
+      salmon produced by the Feather River Fish Hatchery are the source
+      of released fish. Frequency of once per week from December to May
+      across variable flow and environmental conditions as catch totals
+      and/or hatchery availability allows. A minimum of three
+      consecutive days of fishing after the release date is required for
+      a release to be included in analyses. Mortality between the
+      release point and the trap is assumed to be negligible. Release
+      site approximately 1 mile upstream of the trapping site.
+    
+          
+          
+            Trap Efficiency Marks
+            
+      Fish are marked with Bismarck Brown Y (BBY) whole body stain. Fish
+      are alternatively marked with a Visible Implant Elastomer (VIE)
+      Tag.
+    
+          
+          
+            References
+            
+      Fisher, F.W. (1992). Chinook salmon, Oncorhynchus tshawytscha,
+      growth and occurrence in the Sacramento-San Joaquin River system.
+      Draft copy. California Department of Fish and Game, Inland
+      Fisheries Division Office Report, Sacramento, CA. June 1992.
+    
+          
+        
+      
+    
+    
+      Monitoring juvenile Chinook salmon outmigration using rotary screw traps on the Lower Feather River
+      
+        Claire Bryant
+        California Department of Fish and Wildlife
+        Claire.Bryant@Wildlife.ca.gov
+        Project Lead
+      
+      
+        California Department of Water Resources
+        Q5020440
+        California Department of Water Resources Division of Integrated Science and Engineering
+      
+    
+    
+      lower_feather_catch.csv
+      Daily catch
+      
+        lower_feather_catch.csv
+        1141123
+        cb83e0c325073e8fa639b17ef8d469a2
+        
+          
+            1
+            \n
+            column
+            
+              ,
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/1500/2/858c5187113f3a519f3ff91dbdf3abec
+          
+        
+      
+      
+        
+          ProjectDescriptionID
+          catch
+          Foreign key to the CAMP ProjectDescription table.  All data associated with this package will have a ProjectDescriptionID = 12.
+          
+            
+              
+                
+                  
+                    12
+                    Lower Feather RST
+                  
+                
+              
+            
+          
+        
+        
+          catchRawID
+          catch
+          Primary key in the CAMP CatchRaw table
+          
+            
+              
+                
+                  Primary key in the CAMP CatchRaw table
+                
+              
+            
+          
+        
+        
+          trapVisitID
+          catch
+          Foreign key to the CAMP TrapVisit table
+          
+            
+              
+                
+                  Foreign key to the CAMP TrapVisit table
+                
+              
+            
+          
+        
+        
+          commonName
+          catch
+          Common name of species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Wakasagi / Japanese smelt",  "Inland silverside", "Brown bullhead", "Pacific lamprey", "Sacramento pikeminnow",  "Riffle sculpin", "Channel catfish", "Mosquitofish", "Prickly sculpin",  "Hardhead", "Spotted bass", "Unknown lamprey (Entosphenus or Lampetra)",  "River lamprey", "Common carp", "Tule perch", "Bluegill", "Unknown Centrarchid",  "White crappie", "Black bullhead", "California roach", "Golden shiner",  "Hitch", "Unknown catfish or bullhead", "White catfish", "Smallmouth bass",  "Unknown minnow", "Sacramento sucker", "Warmouth", "Threadfin shad",  "Unknown bass (Micropterus)", "Other", "Largemouth bass", "American shad",  "Goldfish", "Striped bass", "Not yet assigned", "Redear sunfish",  "Green sunfish", "Western brook lamprey", "Red shiner", "Pumpkinseed",  "Black crappie", "Not applicable (n/a)")
+          
+            
+              
+                
+                  Common name of species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Wakasagi / Japanese smelt",  "Inland silverside", "Brown bullhead", "Pacific lamprey", "Sacramento pikeminnow",  "Riffle sculpin", "Channel catfish", "Mosquitofish", "Prickly sculpin",  "Hardhead", "Spotted bass", "Unknown lamprey (Entosphenus or Lampetra)",  "River lamprey", "Common carp", "Tule perch", "Bluegill", "Unknown Centrarchid",  "White crappie", "Black bullhead", "California roach", "Golden shiner",  "Hitch", "Unknown catfish or bullhead", "White catfish", "Smallmouth bass",  "Unknown minnow", "Sacramento sucker", "Warmouth", "Threadfin shad",  "Unknown bass (Micropterus)", "Other", "Largemouth bass", "American shad",  "Goldfish", "Striped bass", "Not yet assigned", "Redear sunfish",  "Green sunfish", "Western brook lamprey", "Red shiner", "Pumpkinseed",  "Black crappie", "Not applicable (n/a)")
+                
+              
+            
+          
+        
+        
+          releaseID
+          catch
+          Foreign Key to the CAMP Release table
+          
+            
+              
+                
+                  Foreign Key to the CAMP Release table
+                
+              
+            
+          
+        
+        
+          atCaptureRun
+          catch
+          Run designation as determined in the field or as assigned at a later date. Levels = c("Not recorded", "Spring", "Fall", "Late fall", "Winter")
+          
+            
+              
+                
+                  Run designation as determined in the field or as assigned at a later date. Levels = c("Not recorded", "Spring", "Fall", "Late fall", "Winter")
+                
+              
+            
+          
+        
+        
+          fishOrigin
+          catch
+          Origin/production type of the fish. Levels =c("Natural", "Hatchery")
+          
+            
+              
+                
+                  Origin/production type of the fish. Levels =c("Natural", "Hatchery")
+                
+              
+            
+          
+        
+        
+          lifeStage
+          catch
+          Life stage of the fish. Levels = c("Not recorded", "Parr", "Fry", "Juvenile", "Ammocoete", "Yearling",  "Silvery parr", "Adult", "YOY (young of the year)", "Yolk sac fry (alevin)" )
+          
+            
+              
+                
+                  Life stage of the fish. Levels = c("Not recorded", "Parr", "Fry", "Juvenile", "Ammocoete", "Yearling",  "Silvery parr", "Adult", "YOY (young of the year)", "Yolk sac fry (alevin)" )
+                
+              
+            
+          
+        
+        
+          forkLength
+          catch
+          Fork length of the fish measured in millimeters
+          
+            
+              
+                millimeter
+              
+              
+                real
+                
+                  0
+                  337
+                
+              
+            
+          
+        
+        
+          totalLength
+          catch
+          Total length of the fish measured in millimeters
+          
+            
+              
+                millimeter
+              
+              
+                real
+                
+                  0
+                  9069
+                
+              
+            
+          
+        
+        
+          n
+          catch
+          Number of fish actually handled/counted
+          
+            
+              
+                number of fish
+              
+              
+                whole
+                
+                  0
+                  142
+                
+              
+            
+          
+        
+        
+          visitTime
+          catch
+          Date and time of day associated with the trap visit.
+          
+            
+              YYYY-MM-DD hh:mm:ss
+              
+                
+                  44580.521
+                  44991.4173
+                
+              
+            
+          
+        
+        
+          visitType
+          catch
+          Work that was done during visit to trap. Levels = c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", 
+"End trapping", "Drive-by only")
+          
+            
+              
+                
+                  Work that was done during visit to trap. Levels = c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", 
+"End trapping", "Drive-by only")
+                
+              
+            
+          
+        
+        
+          siteName
+          catch
+          Name of the sampling site. Levels = "Lower Feather River RST"
+          
+            
+              
+                
+                  Name of the sampling site. Levels = "Lower Feather River RST"
+                
+              
+            
+          
+        
+        
+          subSiteName
+          catch
+          Name of the trap or trap location. Levels = c("RL", "RR")
+          
+            
+              
+                
+                  Name of the trap or trap location. Levels = c("RL", "RR")
+                
+              
+            
+          
+        
+        
+          finalRun
+          catch
+          Run designation revised after field visit. This is the field used in analysis. Levels = c("Not recorded", NA, "Spring", "Fall", "Late fall")
+          
+            
+              
+                
+                  Run designation revised after field visit. This is the field used in analysis. Levels = c("Not recorded", NA, "Spring", "Fall", "Late fall")
+                
+              
+            
+          
+        
+      
+      8332
+    
+    
+      lower_feather_trap.csv
+      Daily trap operations
+      
+        lower_feather_trap.csv
+        134175
+        8a8131a6e8832229de0f7285bcaad331
+        
+          
+            1
+            \n
+            column
+            
+              ,
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/1500/2/ebadf058d762d200dba48d0463c99337
+          
+        
+      
+      
+        
+          projectDescriptionID
+          trap
+          Foreign key to the CAMP ProjectDescription table.  All data associated with this package will have a ProjectDescriptionID = 12.
+          
+            
+              
+                
+                  
+                    12
+                    Lower Feather RST
+                  
+                
+              
+            
+          
+        
+        
+          trapVisitID
+          trap
+          Primary key that defines record in table.
+          
+            
+              
+                
+                  Primary key that defines record in table.
+                
+              
+            
+          
+        
+        
+          siteName
+          trap
+          Name of the sampling site. Level = "Lower Feather River RST"
+          
+            
+              
+                
+                  Name of the sampling site. Level = "Lower Feather River RST"
+                
+              
+            
+          
+        
+        
+          subSiteName
+          trap
+          Position of trap within the site. Levels =c("RL", "RR")
+          
+            
+              
+                
+                  Position of trap within the site. Levels =c("RL", "RR")
+                
+              
+            
+          
+        
+        
+          visitTime
+          trap
+          Date and time of day associated with the trap visit. Definition varies based on visitType (For visitTypeID=1, 5, or 6 this is the date and the time of day of arrival at the trap. For visitTypeID=2, 3, or 4 this is the date and the time of day the trap was emptied.)
+          
+            
+              YYYY-MM-DD hh:mm:ss
+              
+                
+                  2022-01-19 12:30:11
+                  2023-03-06 10:00:57
+                
+              
+            
+          
+        
+        
+          visitType
+          trap
+          Work that was done during visit to trap. Levels = c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", "End trapping", "Drive-by only")
+          
+            
+              
+                
+                  Work that was done during visit to trap. Levels = c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", "End trapping", "Drive-by only")
+                
+              
+            
+          
+        
+        
+          fishProcessed
+          trap
+          Describing if fish processed during trap visit. Levels = c("N/A; not a sampling visit", "Processed fish", "No fish were caught", "No catch data; fish released")
+          
+            
+              
+                
+                  Describing if fish processed during trap visit. Levels = c("N/A; not a sampling visit", "Processed fish", "No fish were caught", "No catch data; fish released")
+                
+              
+            
+          
+        
+        
+          trapFunctioning
+          trap
+          Code for description of how well trap is functioning when visit to trap began. Levels = c("Not recorded", "Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", "Trap not in service")
+          
+            
+              
+                
+                  Code for description of how well trap is functioning when visit to trap began. Levels = c("Not recorded", "Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", "Trap not in service")
+                
+              
+            
+          
+        
+        
+          counterAtEnd
+          trap
+          Reading on the rotation counter at the end of the trap visit but before resetting
+          
+            
+              
+                number of rotations
+              
+              
+                real
+                
+                  0
+                  7608
+                
+              
+            
+          
+        
+        
+          rpmRevolutionsAtStart
+          trap
+          Number of revolutions per minute before cleaning the trap
+          
+            
+              
+                revolutions per minute
+              
+              
+                real
+                
+                  0
+                  20
+                
+              
+            
+          
+        
+        
+          rpmRevolutionsAtEnd
+          trap
+          Number of revolutions per minute before cleaning the trap
+          
+            
+              
+                revolutions per minute
+              
+              
+                real
+                
+                  0
+                  3.65
+                
+              
+            
+          
+        
+        
+          includeCatch
+          trap
+          Code for whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")
+          
+            
+              
+                
+                  Code for whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")
+                
+              
+            
+          
+        
+        
+          discharge
+          trap
+          Discharge measured at trap
+          
+            
+              
+                cubicFeetPerSecond
+              
+              
+                real
+                
+                  1072
+                  28445
+                
+              
+            
+          
+        
+        
+          waterVel
+          trap
+          Water velocity measured at trap
+          
+            
+              
+                metersPerSecond
+              
+              
+                real
+                
+                  0
+                  0.9
+                
+              
+            
+          
+        
+        
+          waterTemp
+          trap
+          Water temperature measured at trap
+          
+            
+              
+                see waterTempUnit
+              
+              
+                real
+                
+                  8.4
+                  63.4
+                
+              
+            
+          
+        
+        
+          turbidity
+          trap
+          Turbidity measured at trap
+          
+            
+              
+                NTU
+              
+              
+                real
+                
+                  0.73
+                  59.6
+                
+              
+            
+          
+        
+        
+          dissolvedOxygen
+          trap
+          Level of dissolved oxygen measured
+          
+            
+              
+                milligramPerLiter
+              
+              
+                real
+                
+                  1.25
+                  830
+                
+              
+            
+          
+        
+        
+          conductivity
+          trap
+          Electrical conductivity of water measured
+          
+            
+              
+                microSiemenPerCentimeter
+              
+              
+                real
+                
+                  1.1999999999999999E-3
+                  2.52
+                
+              
+            
+          
+        
+        
+          waterTempUnit
+          trap
+          Unit of water temperature recorded. Levels = c(NA, "Celsius", "Fahrenheit").
+          
+            
+              
+                
+                  Unit of water temperature recorded. Levels = c(NA, "Celsius", "Fahrenheit").
+                
+              
+            
+          
+        
+      
+      558
+    
+    
+      lower_feather_recapture.csv
+      Recaptured fish
+      
+        lower_feather_recapture.csv
+        1259
+        a4c4f3cc9a82dd70951cb9f3cfc386f3
+        
+          
+            1
+            \n
+            column
+            
+              ,
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/1500/2/ac71fb71f591bc41d0cf3c7128341483
+          
+        
+      
+      
+        
+          ProjectDescriptionID
+          recapture
+          Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 12.
+          
+            
+              
+                
+                  
+                    12
+                    Lower Feather River RST
+                  
+                
+              
+            
+          
+        
+        
+          catchRawID
+          recapture
+          Primary key in the CAMP CatchRaw table
+          
+            
+              
+                
+                  Primary key in the CAMP CatchRaw table
+                
+              
+            
+          
+        
+        
+          trapVisitID
+          recapture
+          Foreign key to the CAMP TrapVisit table
+          
+            
+              
+                
+                  Foreign key to the CAMP TrapVisit table
+                
+              
+            
+          
+        
+        
+          commonName
+          recapture
+          Common name of species. Level = "Chinook salmon"
+          
+            
+              
+                
+                  Common name of species. Level = "Chinook salmon"
+                
+              
+            
+          
+        
+        
+          releaseID
+          recapture
+          Foreign Key to the CAMP Release table
+          
+            
+              
+                
+                  Foreign Key to the CAMP Release table
+                
+              
+            
+          
+        
+        
+          atCaptureRun
+          recapture
+          Run as assigned at the time of the capture. Levels = c("Not recorded", "Fall")
+          
+            
+              
+                
+                  Run as assigned at the time of the capture. Levels = c("Not recorded", "Fall")
+                
+              
+            
+          
+        
+        
+          finalRun
+          recapture
+          Run revised after field visit. This is the field used in analysis. Levels = c("Not recorded", "Fall")
+          
+            
+              
+                
+                  Run revised after field visit. This is the field used in analysis. Levels = c("Not recorded", "Fall")
+                
+              
+            
+          
+        
+        
+          fishOrigin
+          recapture
+          Origin/production type of the fish. Levels = c("Natural", "Hatchery")
+          
+            
+              
+                
+                  Origin/production type of the fish. Levels = c("Natural", "Hatchery")
+                
+              
+            
+          
+        
+        
+          actualCount
+          recapture
+          Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")
+          
+            
+              
+                
+                  Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")
+                
+              
+            
+          
+        
+        
+          n
+          recapture
+          Number of fish actually handled/counted
+          
+            
+              
+                number of fish
+              
+              
+                whole
+                
+                  1
+                  10
+                
+              
+            
+          
+        
+        
+          visitTime
+          recapture
+          Date and time of day associated with the trap visit.
+          
+            
+              YYYY-MM-DD hh:mm:ss
+              
+                
+                  44594.4168
+                  44679.4796
+                
+              
+            
+          
+        
+        
+          visitType
+          recapture
+          Work that was done during visit to trap. Levels =c("Continue trapping", "Unplanned restart")
+          
+            
+              
+                
+                  Work that was done during visit to trap. Levels =c("Continue trapping", "Unplanned restart")
+                
+              
+            
+          
+        
+        
+          siteName
+          recapture
+          Name of the sampling site. Level  = "Lower Feather River RST"
+          
+            
+              
+                
+                  Name of the sampling site. Level  = "Lower Feather River RST"
+                
+              
+            
+          
+        
+        
+          subSiteName
+          recapture
+          Name of the trap or trap location. Levels = c("RL", "RR")
+          
+            
+              
+                
+                  Name of the trap or trap location. Levels = c("RL", "RR")
+                
+              
+            
+          
+        
+        
+          markType
+          recapture
+          type of mark on fish. Level = "Pigment / dye"
+          
+            
+              
+                
+                  type of mark on fish. Level = "Pigment / dye"
+                
+              
+            
+          
+        
+        
+          markColor
+          recapture
+          color of mark on fish. Levels = "Brown"
+          
+            
+              
+                
+                  color of mark on fish. Levels = "Brown"
+                
+              
+            
+          
+        
+        
+          markPosition
+          recapture
+          position of mark on body of fish. Level = "Whole body"
+          
+            
+              
+                
+                  position of mark on body of fish. Level = "Whole body"
+                
+              
+            
+          
+        
+      
+      7
+    
+    
+      lower_feather_release.csv
+      Released fish
+      
+        lower_feather_release.csv
+        1498
+        413ea71101665f78caf98f38c721acfc
+        
+          
+            1
+            \n
+            column
+            
+              ,
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/1500/2/17d67e102aa915d75627a6ac4f743f81
+          
+        
+      
+      
+        
+          projectDescriptionID
+          release
+          Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 12.
+          
+            
+              
+                
+                  
+                    12
+                    Lower Feather River RST
+                  
+                
+              
+            
+          
+        
+        
+          releaseID
+          release
+          Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)
+          
+            
+              
+                
+                  Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)
+                
+              
+            
+          
+        
+        
+          commonName
+          release
+          Common name of marked species. Level = "Chinook salmon"
+          
+            
+              
+                
+                  Common name of marked species. Level = "Chinook salmon"
+                
+              
+            
+          
+        
+        
+          markedRun
+          release
+          Run of fish marked. Level = "Fall"
+          
+            
+              
+                
+                  Run of fish marked. Level = "Fall"
+                
+              
+            
+          
+        
+        
+          markedFishOrigin
+          release
+          Origin or production type of fish marked. Levels = c("Natural", "Hatchery")
+          
+            
+              
+                
+                  Origin or production type of fish marked. Levels = c("Natural", "Hatchery")
+                
+              
+            
+          
+        
+        
+          releaseSite
+          release
+          Site where fish were released. Level = "Lower Feather River Release Site"
+          
+            
+              
+                
+                  Site where fish were released. Level = "Lower Feather River Release Site"
+                
+              
+            
+          
+        
+        
+          releaseSubSite
+          release
+          Subsite (within site) where fish were released. Corresponds to a trap location. Level = "1 RM Upstream"
+          
+            
+              
+                
+                  Subsite (within site) where fish were released. Corresponds to a trap location. Level = "1 RM Upstream"
+                
+              
+            
+          
+        
+        
+          nReleased
+          release
+          Number of fish released that were alive with mark intact
+          
+            
+              
+                number of fish
+              
+              
+                whole
+                
+                  500
+                  1302
+                
+              
+            
+          
+        
+        
+          releaseTime
+          release
+          Date and time of release
+          
+            
+              YYYY-MM-DD hh:mm:ss
+              
+                
+                  44593.5001
+                  44968.4168
+                
+              
+            
+          
+        
+        
+          testDays
+          release
+          Number of days this trap test is considered valid
+          
+            
+              
+                days
+              
+              
+                whole
+                
+                  7
+                  7
+                
+              
+            
+          
+        
+        
+          appliedMarkType
+          release
+          Mark type that was applied to the release group. Level = "Pigment / dye"
+          
+            
+              
+                
+                  Mark type that was applied to the release group. Level = "Pigment / dye"
+                
+              
+            
+          
+        
+        
+          appliedMarkColor
+          release
+          Color of mark that was applied to the release group. Levels = c("Brown", "Blue")
+          
+            
+              
+                
+                  Color of mark that was applied to the release group. Levels = c("Brown", "Blue")
+                
+              
+            
+          
+        
+        
+          appliedMarkPosition
+          release
+          Position of the mark that was applied to the mark group. Level = "Whole body"
+          
+            
+              
+                
+                  Position of the mark that was applied to the mark group. Level = "Whole body"
+                
+              
+            
+          
+        
+        
+          includeAnalysis
+          release
+          Whether or not to include data in analysis. Levels = c("Yes", "No")
+          
+            
+              
+                
+                  Whether or not to include data in analysis. Levels = c("Yes", "No")
+                
+              
+            
+          
+        
+      
+      9
+    
+  
+  
+    
+      
+        
+          number of rotations
+        
+        
+          nephelometric turbidity units, common unit for measuring turbidity
+        
+        
+          number of revolutions per minute
+        
+        
+          number of fish counted
+        
+        
+          number of days
+        
+        
+          see designated column for units of water temperature collected
+        
+        
+          units for measuring conductivity
+        
+      
+    
+  

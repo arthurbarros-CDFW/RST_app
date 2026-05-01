@@ -1,0 +1,322 @@
+projectDescriptionID,trapVisitID,visitTime,siteName,subSiteName,visitType,fishProcessed,trapFunctioning,counterAtEnd,counterAtStart,rpmRevolutionsAtStart,rpmRevolutionsAtEnd,includeCatch,discharge,waterVel,waterTemp,turbidity,conductivity,dissolvedOxygen
+10,3,2022-01-21T12:45:07Z,Lower Sacramento River RST,RR,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,NA,NA,NA,0.7,Yes,NA,NA,NA,NA,NA,NA
+10,4,2022-01-21T12:45:57Z,Lower Sacramento River RST,RL,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,NA,NA,NA,0.9,Yes,NA,NA,NA,NA,NA,NA
+10,5,2022-01-22T13:00:49Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning: but not normally,0,NA,0.8,0.7,Yes,10121,0.5,9.2,10.5,172.7,97
+10,6,2022-01-22T13:15:22Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,NA,0,0.8,Yes,NA,NA,NA,NA,NA,NA
+10,7,2022-01-23T11:30:48Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,NA,0,0,Yes,9822,0.6,9.6,5.56,NA,NA
+10,8,2022-01-23T12:00:08Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,NA,0,0,Yes,NA,NA,NA,NA,NA,NA
+10,10,2022-01-24T12:15:34Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,NA,0,3.3,Yes,NA,NA,NA,NA,NA,NA
+10,9,2022-01-24T12:45:17Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,NA,0,3,Yes,9717,0.6,12.6,NA,NA,NA
+10,12,2022-01-25T10:45:25Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4567,NA,3.4,3.5,Yes,NA,NA,NA,NA,NA,NA
+10,11,2022-01-25T12:00:46Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3558,NA,2.6,2.9,Yes,9473,0.7,12.1,NA,NA,NA
+10,13,2022-01-26T10:30:41Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3598,NA,2.7,2.9,Yes,9283,0.9,9.4,7.18,NA,NA
+10,14,2022-01-26T10:45:03Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4670,NA,3.3,3.4,Yes,NA,NA,NA,NA,NA,NA
+10,15,2022-01-27T10:00:32Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3610,NA,2.5,2.6,Yes,9111,0.7,8.7,NA,NA,NA
+10,16,2022-01-27T10:15:56Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4480,NA,3.2,3.4,Yes,NA,NA,NA,NA,NA,NA
+10,17,2022-01-28T10:00:28Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3589,NA,2.5,2.6,Yes,9179,0.6,9.2,6.1,NA,NA
+10,18,2022-01-28T10:30:35Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1890,0,3.4,Yes,NA,NA,NA,NA,NA,NA
+10,19,2022-01-29T10:00:43Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3498,NA,2.6,2.6,Yes,9076,0.7,8.8,9.8,NA,NA
+10,20,2022-01-29T10:15:25Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,3672,0,3.5,Yes,NA,NA,NA,NA,NA,NA
+10,21,2022-01-30T10:00:14Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,1763,0,3.1,Yes,9386,0.3,8.9,NA,NA,NA
+10,22,2022-01-30T10:15:24Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4577,NA,3.2,3.3,Yes,NA,NA,NA,NA,NA,NA
+10,24,2022-01-31T10:45:06Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,1350,0,3.3,Yes,10477,0.9,9.2,10.38,NA,NA
+10,23,2022-01-31T11:00:33Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,690,0,3.9,Yes,NA,NA,NA,NA,NA,NA
+10,25,2022-02-01T11:00:39Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,4736,NA,3.6,3.5,Yes,10944,NA,8.3,13.3,NA,NA
+10,26,2022-02-01T11:15:24Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,247,0,3.9,Yes,NA,NA,NA,NA,NA,NA
+10,27,2022-02-02T11:00:12Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,1673,0,3.8,Yes,10980,NA,8.6,13.19,NA,NA
+10,28,2022-02-02T11:30:38Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,5563,NA,3.8,3.7,Yes,NA,NA,NA,NA,NA,NA
+10,30,2022-02-03T10:45:15Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4937,NA,3.2,3.5,Yes,NA,NA,NA,NA,NA,NA
+10,29,2022-02-03T11:00:58Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,5143,NA,3.7,3.5,Yes,10980,0.9,7.6,10.5,NA,NA
+10,31,2022-02-04T10:15:00Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,4707,NA,3.4,3.4,Yes,10908,0.9,8.2,NA,NA,NA
+10,32,2022-02-04T10:30:14Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4924,NA,3.4,3.5,Yes,NA,NA,NA,NA,NA,NA
+10,34,2022-02-05T11:00:54Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,3314,0,3.6,Yes,NA,NA,NA,NA,NA,NA
+10,33,2022-02-05T11:15:53Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,1144,0,3.5,Yes,10836,0.8,8.6,9.1,NA,NA
+10,36,2022-02-06T13:45:34Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1147,0,3.9,Yes,NA,NA,NA,NA,NA,NA
+10,35,2022-02-06T14:00:15Z,Lower Sacramento River RST,RR,End trapping,Processed fish,Trap stopped functioning,NA,566,0,0,Yes,10908,0.3,11.3,10.5,NA,NA
+10,37,2022-02-07T11:30:32Z,Lower Sacramento River RST,RR,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,NA,0,0,2.5,Yes,10512,0.9,10.1,NA,NA,NA
+10,38,2022-02-07T12:00:23Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,2916,0,3.2,Yes,NA,NA,NA,NA,NA,NA
+10,39,2022-02-08T11:00:51Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3497,NA,2.6,2.7,Yes,10477,1,9.5,6.5,NA,NA
+10,40,2022-02-08T11:30:32Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3751,NA,2.8,2.8,Yes,NA,NA,NA,NA,NA,NA
+10,42,2022-02-09T12:45:04Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,928,0,2.7,Yes,NA,NA,NA,NA,NA,NA
+10,41,2022-02-09T13:00:55Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,1150,0,2.7,Yes,10728,0.9,10.4,5.61,141.8,98.3
+10,44,2022-02-10T10:30:21Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,2637,0,3.1,Yes,NA,NA,NA,NA,NA,NA
+10,43,2022-02-10T11:00:34Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3618,NA,3,3,Yes,11253,1,10.6,18.1,NA,NA
+10,45,2022-02-11T11:45:16Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,427,0,3,Yes,11345,0.7,11.3,16.43,NA,NA
+10,46,2022-02-11T12:00:06Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,378,0,3,Yes,NA,NA,NA,NA,NA,NA
+10,47,2022-02-12T11:00:15Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,3811,0,2.8,Yes,11235,0.9,11.5,26.2,NA,NA
+10,48,2022-02-12T11:45:21Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1102,0,3.1,Yes,NA,NA,NA,NA,NA,NA
+10,50,2022-02-13T11:30:59Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4204,NA,3,3.1,Yes,NA,NA,NA,NA,NA,NA
+10,49,2022-02-13T12:15:53Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3938,NA,2.4,2.5,Yes,10944,0.9,11.8,12.6,NA,NA
+10,52,2022-02-14T10:45:33Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4013,NA,2.5,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,51,2022-02-14T11:00:20Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,1093,0,2.5,Yes,10980,0.9,11.9,10.1,NA,NA
+10,53,2022-02-15T10:15:01Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,905,0,2.7,Yes,11017,1.9,10.9,11.6,NA,NA
+10,54,2022-02-15T10:45:27Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4227,NA,3.5,3.3,Yes,NA,NA,NA,NA,NA,NA
+10,55,2022-02-16T10:30:16Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3572,NA,2.2,2.3,Yes,11017,1,10.9,7.5,NA,NA
+10,56,2022-02-16T10:45:50Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4455,NA,3.1,3.1,Yes,NA,NA,NA,NA,NA,NA
+10,57,2022-02-17T09:45:50Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3337,NA,2.4,2.4,Yes,10908,1,10.5,9.1,NA,NA
+10,58,2022-02-17T10:30:47Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4391,NA,3,3,Yes,NA,NA,NA,NA,NA,NA
+10,59,2022-02-18T11:00:03Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3369,NA,2,1.9,Yes,10566,1,11.5,8.3,NA,NA
+10,60,2022-02-18T11:15:41Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4360,NA,2.9,3,Yes,NA,NA,NA,NA,NA,NA
+10,61,2022-02-19T10:45:36Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3050,NA,2.1,2.2,Yes,10387,0.9,11.7,8.5,NA,NA
+10,62,2022-02-19T11:00:42Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4202,NA,2.9,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,64,2022-02-20T10:00:39Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3782,NA,2.7,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,63,2022-02-20T10:30:06Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2859,NA,1.9,2,Yes,10210,0.8,10.8,9.5,NA,NA
+10,66,2022-02-21T10:15:05Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1283,0,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,65,2022-02-21T10:45:42Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2818,NA,2.3,2,Yes,10050,0.6,10.2,3,NA,NA
+10,68,2022-02-22T12:00:36Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1739,0,2.8,Yes,NA,NA,NA,NA,NA,NA
+10,67,2022-02-22T12:30:59Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,1877,0,1.9,Yes,9787,0.8,11.9,1.32,NA,NA
+10,69,2022-02-23T10:30:10Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2361,NA,2.1,2.1,Yes,9647,0.9,9.5,1.4,NA,NA
+10,70,2022-02-23T11:00:34Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4002,NA,2.8,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,71,2022-02-24T11:00:27Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2859,NA,2.1,1.6,Yes,9839,0.8,9.2,5.6,NA,NA
+10,72,2022-02-24T11:15:50Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,2132,0,2.8,Yes,NA,NA,NA,NA,NA,NA
+10,74,2022-02-25T10:30:57Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,2590,0,3.1,Yes,NA,NA,NA,NA,NA,NA
+10,73,2022-02-25T10:45:10Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2873,NA,2.1,2.3,Yes,10281,1,9.3,6.6,NA,NA
+10,75,2022-02-26T10:15:24Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2946,NA,2.3,2.4,Yes,10441,0.7,9.8,7.5,NA,NA
+10,76,2022-02-26T10:30:13Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4166,NA,3,3,Yes,NA,NA,NA,NA,NA,NA
+10,77,2022-02-27T10:45:07Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,1602,NA,1.5,2.4,Yes,10872,0.9,10.2,8.5,NA,NA
+10,78,2022-02-27T11:30:41Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4529,NA,3.1,3.1,Yes,NA,NA,NA,NA,NA,NA
+10,79,2022-02-28T10:45:16Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3365,NA,2.4,2.5,Yes,10908,0.9,11.2,8.6,NA,NA
+10,80,2022-02-28T11:15:30Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4202,NA,3,3,Yes,NA,NA,NA,NA,NA,NA
+10,81,2022-03-01T10:45:40Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3342,NA,2.2,2.2,Yes,10944,0.5,17.1,1.26,NA,NA
+10,82,2022-03-01T11:00:43Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4141,NA,2.9,3,Yes,NA,NA,NA,NA,NA,NA
+10,84,2022-03-02T10:30:38Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,2437,0,2.8,Yes,NA,NA,NA,NA,NA,NA
+10,83,2022-03-02T11:15:41Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,1407,0,2.4,Yes,10854,0.9,12,NA,NA,NA
+10,85,2022-03-03T10:00:10Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3178,NA,2,2.5,Yes,10728,0.7,12.1,6.5,NA,NA
+10,86,2022-03-03T10:15:07Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,894,0,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,88,2022-03-04T10:15:51Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,2142,0,3,Yes,NA,NA,NA,NA,NA,NA
+10,87,2022-03-04T10:30:36Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3723,NA,2.1,2.1,Yes,10764,0.9,12.8,7.2,NA,NA
+10,90,2022-03-05T10:45:28Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,608,0,3,Yes,NA,NA,NA,NA,NA,NA
+10,89,2022-03-05T11:15:27Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3376,NA,2.5,2.4,Yes,10944,0.9,11.2,6.11,NA,NA
+10,92,2022-03-06T09:45:15Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,2955,0,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,91,2022-03-06T10:45:02Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3568,NA,2.6,2.7,Yes,11053,0.9,10.3,NA,NA,NA
+10,93,2022-03-07T10:30:31Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3845,NA,2.9,2.9,Yes,11089,0.9,12.3,10.4,NA,NA
+10,94,2022-03-07T10:45:58Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,3255,0,3.3,Yes,NA,NA,NA,NA,NA,NA
+10,95,2022-03-08T10:15:43Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3489,NA,2.3,2.5,Yes,10944,0.9,11.6,6.9,NA,NA
+10,96,2022-03-08T10:45:50Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4502,NA,3.1,3,Yes,NA,NA,NA,NA,NA,NA
+10,97,2022-03-09T10:15:22Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,853,0,2.5,Yes,10854,0.9,12.3,4.92,NA,NA
+10,98,2022-03-09T10:30:05Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1470,0,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,100,2022-03-10T10:15:35Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4318,NA,3.4,3.4,Yes,NA,NA,NA,NA,NA,NA
+10,99,2022-03-10T10:30:00Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3577,NA,3,3.2,Yes,10800,0.9,11.8,6.3,NA,NA
+10,101,2022-03-11T10:30:05Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,3367,0,2.4,Yes,10926,0.9,11.3,8.35,NA,NA
+10,102,2022-03-11T10:45:22Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4514,NA,3,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,104,2022-03-12T10:00:07Z,Lower Sacramento River RST,RL,Unplanned restart,No fish were caught,Trap stopped functioning,NA,490,0,2.8,Yes,NA,NA,NA,NA,NA,NA
+10,103,2022-03-12T10:15:48Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,426,0,2.1,Yes,10890,0.6,11.1,6.5,NA,NA
+10,105,2022-03-13T10:30:52Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3312,NA,2.6,2.5,Yes,10836,0.8,15.4,5.43,NA,NA
+10,106,2022-03-13T10:45:25Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1478,0,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,108,2022-03-14T12:00:44Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1808,0,3,Yes,NA,NA,NA,NA,NA,NA
+10,107,2022-03-14T12:30:24Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3312,NA,2.3,2.4,Yes,9804,0.7,12.5,4.79,126.2,97.4
+10,109,2022-03-15T10:15:18Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,1986,NA,0.9,0.9,Yes,9076,0.9,13.9,5.9,NA,NA
+10,110,2022-03-15T10:30:17Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3226,NA,1.8,1.9,Yes,NA,NA,NA,NA,NA,NA
+10,112,2022-03-16T11:00:01Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3635,NA,2.9,2.7,Yes,NA,NA,NA,NA,NA,NA
+10,111,2022-03-16T12:00:14Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,737,0,1.1,Yes,8483,0.7,14.9,6.5,NA,NA
+10,114,2022-03-17T10:00:38Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1613,0,2.5,Yes,NA,NA,NA,NA,NA,NA
+10,113,2022-03-17T10:15:59Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning: but not normally,1497,NA,0.8,0.8,Yes,8366,0.9,13.3,6.6,NA,NA
+10,116,2022-03-18T10:45:31Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,549,0,2.7,Yes,NA,NA,NA,NA,NA,NA
+10,115,2022-03-18T11:00:43Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,1436,NA,1.2,1.9,Yes,8433,0.9,13.9,6.8,NA,NA
+10,118,2022-03-19T10:00:21Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,2117,0,1.7,Yes,NA,NA,NA,NA,NA,NA
+10,117,2022-03-19T10:45:28Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2159,NA,1.2,1.1,Yes,8316,0.9,13.2,6.85,NA,NA
+10,120,2022-03-20T10:15:01Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,239,0,2.8,Yes,NA,NA,NA,NA,NA,NA
+10,119,2022-03-20T10:30:31Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2304,NA,2.1,2,Yes,8116,0.8,11.9,9.16,NA,NA
+10,122,2022-03-21T10:30:26Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3962,NA,2.7,2.6,Yes,NA,NA,NA,NA,NA,NA
+10,121,2022-03-21T11:00:29Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2394,NA,1.5,1.7,Yes,8149,0.9,13.1,11.6,NA,NA
+10,124,2022-03-22T10:30:44Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4034,NA,3,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,123,2022-03-22T11:45:30Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2595,NA,1.5,1.7,Yes,8133,0.8,14.7,6,NA,NA
+10,125,2022-03-23T11:00:27Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,1883,NA,0.9,0.9,Yes,7836,0.9,16.4,5.6,NA,NA
+10,126,2022-03-23T11:30:38Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3763,NA,2,2.2,Yes,NA,NA,NA,NA,NA,NA
+10,128,2022-03-24T10:30:04Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,907,0,2.6,Yes,NA,NA,NA,NA,NA,NA
+10,127,2022-03-24T11:15:09Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,1683,NA,1.2,1.2,Yes,7640,0.6,17.6,9.1,NA,NA
+10,129,2022-03-25T10:15:26Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,1562,NA,0.8,2.1,Yes,7705,0.7,16.3,6.5,NA,NA
+10,130,2022-03-25T10:30:46Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1431,0,1.6,Yes,NA,NA,NA,NA,NA,NA
+10,132,2022-03-26T10:45:35Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2607,NA,2.4,2.2,Yes,NA,NA,NA,NA,NA,NA
+10,131,2022-03-26T11:45:05Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3212,NA,2.2,2.2,Yes,7640,0.8,16.3,8.5,NA,NA
+10,134,2022-03-27T10:45:18Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1392,0,1.5,Yes,NA,NA,NA,NA,NA,NA
+10,133,2022-03-27T11:30:25Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3005,NA,2.2,2,Yes,8216,1,16.6,6.2,NA,NA
+10,135,2022-03-28T11:30:25Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3126,NA,2.5,2.6,Yes,8889,0.6,15.4,5.5,NA,NA
+10,136,2022-03-28T11:45:10Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,514,0,2.2,Yes,NA,NA,NA,NA,NA,NA
+10,137,2022-03-29T10:30:54Z,Lower Sacramento River RST,RR,Unplanned restart,No fish were caught,Trap stopped functioning,NA,263,0,2.7,Yes,9231,0.6,13.9,6.6,NA,NA
+10,138,2022-03-29T10:45:47Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1895,0,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,140,2022-03-30T11:30:03Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,831,0,1.2,Yes,NA,NA,NA,NA,NA,NA
+10,139,2022-03-30T11:45:11Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3394,NA,1.7,2,Yes,9128,0.7,14.8,3.8,NA,NA
+10,142,2022-03-31T10:45:18Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,749,0,2.6,Yes,NA,NA,NA,NA,NA,NA
+10,141,2022-03-31T11:15:05Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3118,NA,2.3,2.8,Yes,9076,0.6,14.9,NA,NA,NA
+10,143,2022-04-01T10:15:55Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3716,NA,2.7,2.6,Yes,9111,0.9,15.2,NA,NA,NA
+10,144,2022-04-01T10:45:43Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3468,NA,1.9,2.5,Yes,NA,NA,NA,NA,NA,NA
+10,146,2022-04-02T09:45:37Z,Lower Sacramento River RST,RL,Unplanned restart,No fish were caught,Trap stopped functioning,NA,938,0,2.6,Yes,NA,NA,NA,NA,NA,NA
+10,145,2022-04-02T10:00:24Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3662,NA,2.7,2.7,Yes,9231,0.6,15.8,5.7,NA,NA
+10,148,2022-04-03T10:15:06Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1887,0,2.3,Yes,NA,NA,NA,NA,NA,NA
+10,147,2022-04-03T10:30:11Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3622,NA,2.5,2.4,Yes,9128,0.7,14.7,NA,NA,NA
+10,150,2022-04-04T10:45:14Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1207,0,1.7,Yes,NA,NA,NA,NA,NA,NA
+10,149,2022-04-04T10:45:29Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,1495,0,2.6,Yes,8787,0.8,14.2,5.5,NA,NA
+10,151,2022-04-05T10:30:55Z,Lower Sacramento River RST,RR,Continue trapping,No fish were caught,Trap functioning normally,3678,NA,2.7,2.7,Yes,8266,NA,15.3,7.6,NA,NA
+10,152,2022-04-05T10:45:34Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3135,NA,2.4,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,153,2022-04-06T09:45:57Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3795,NA,2.6,2.8,Yes,7885,0.8,15.5,5.1,NA,NA
+10,154,2022-04-06T10:00:21Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3519,NA,2.5,2.5,Yes,NA,NA,NA,NA,NA,NA
+10,155,2022-04-07T10:45:30Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3868,NA,2.5,2.6,Yes,7656,0.8,17.9,7.6,NA,NA
+10,156,2022-04-07T11:00:20Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3689,NA,2.5,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,158,2022-04-08T09:45:41Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3262,NA,2.4,2.3,Yes,NA,NA,NA,NA,NA,NA
+10,157,2022-04-08T10:45:06Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3655,NA,2.5,2.6,Yes,7284,0.8,17.8,6.1,NA,NA
+10,160,2022-04-09T09:45:42Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3331,NA,2.3,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,159,2022-04-09T11:15:08Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3661,NA,2.5,2.8,Yes,6950,0.8,17.6,9.2,NA,NA
+10,162,2022-04-10T10:00:43Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3574,NA,2.4,2.3,Yes,NA,NA,NA,NA,NA,NA
+10,161,2022-04-10T13:00:21Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,4165,NA,2.8,2.4,Yes,6526,0.7,14.9,9.5,NA,NA
+10,163,2022-04-11T12:00:38Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2953,NA,1.9,2.6,Yes,6589,0.7,14.9,10.6,NA,NA
+10,164,2022-04-11T12:30:28Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3184,NA,1.6,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,166,2022-04-12T10:30:45Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2721,NA,2,2.2,Yes,NA,NA,NA,NA,NA,NA
+10,165,2022-04-12T11:30:38Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2992,NA,2.1,2.4,Yes,6464,0.7,14.1,6.5,NA,NA
+10,168,2022-04-13T10:15:11Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2784,NA,1.5,1.6,Yes,NA,NA,NA,NA,NA,NA
+10,167,2022-04-13T11:00:34Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2989,NA,1.9,2,Yes,6203,0.6,13.7,7.1,NA,NA
+10,170,2022-04-14T09:45:03Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2651,NA,2.6,1.7,Yes,NA,NA,NA,NA,NA,NA
+10,169,2022-04-14T10:00:14Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2730,NA,1.8,2,Yes,6035,0.6,13.8,8.4,NA,NA
+10,172,2022-04-15T10:45:48Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2504,NA,1.5,1.7,Yes,NA,NA,NA,NA,NA,NA
+10,171,2022-04-15T11:00:30Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2755,NA,1.7,1.7,Yes,5974,0.6,13.8,5.2,NA,NA
+10,173,2022-04-16T09:45:08Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2793,NA,1.9,2,Yes,6325,0.6,14.7,12.7,NA,NA
+10,174,2022-04-16T10:00:34Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2610,NA,1.7,1.7,Yes,NA,NA,NA,NA,NA,NA
+10,175,2022-04-17T10:45:07Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,1885,0,2.2,Yes,6965,0.5,14.4,12.5,NA,NA
+10,176,2022-04-17T11:00:09Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1624,0,1.8,Yes,NA,NA,NA,NA,NA,NA
+10,177,2022-04-18T10:00:21Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3190,NA,1.9,2.2,Yes,7252,0.5,15.1,12.6,NA,NA
+10,178,2022-04-18T10:30:31Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning: but not normally,2349,NA,1.1,1.7,Yes,NA,NA,NA,NA,NA,NA
+10,179,2022-04-19T10:30:47Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,3519,0,2.4,Yes,8133,0.7,15.5,12.5,NA,NA
+10,180,2022-04-19T10:45:42Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1933,0,1.5,Yes,NA,NA,NA,NA,NA,NA
+10,182,2022-04-20T12:30:28Z,Lower Sacramento River RST,RL,Unplanned restart,No fish were caught,Trap stopped functioning,NA,125,0,1.8,Yes,NA,NA,NA,NA,NA,NA
+10,181,2022-04-20T13:15:53Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3738,NA,2.2,2.3,Yes,7754,0.7,16.3,11,NA,NA
+10,184,2022-04-21T10:15:44Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2430,NA,1.7,1.4,Yes,NA,NA,NA,NA,NA,NA
+10,183,2022-04-21T11:30:06Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3210,NA,2.3,2,Yes,7542,0.7,15.6,9.6,NA,NA
+10,186,2022-04-22T10:30:00Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2985,NA,2.1,2.2,Yes,NA,NA,NA,NA,NA,NA
+10,185,2022-04-22T11:00:11Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3429,NA,2.5,2.5,Yes,8099,0.8,13.9,16.5,NA,NA
+10,187,2022-04-23T09:45:24Z,Lower Sacramento River RST,RR,Unplanned restart,No fish were caught,Trap stopped functioning,NA,531,0,3,Yes,8923,0.8,14.8,10.5,NA,NA
+10,188,2022-04-23T10:00:55Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,2641,0,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,189,2022-04-24T10:45:02Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,4377,NA,2.9,3,Yes,9283,0.8,17.5,9.5,NA,NA
+10,190,2022-04-24T11:00:10Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3707,NA,2.7,2.5,Yes,NA,NA,NA,NA,NA,NA
+10,192,2022-04-25T10:45:09Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,195,0,2.1,Yes,NA,NA,NA,NA,NA,NA
+10,191,2022-04-25T11:00:08Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3759,NA,2.4,2.7,Yes,8601,0.8,16.5,10.5,NA,NA
+10,194,2022-04-26T10:30:03Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2787,NA,2.1,2.5,Yes,NA,NA,NA,NA,NA,NA
+10,193,2022-04-26T10:45:51Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3896,NA,2.7,2.8,Yes,7672,0.8,17.5,11.5,NA,NA
+10,196,2022-04-27T10:00:02Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,986,0,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,195,2022-04-27T10:15:26Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3643,NA,2.5,2.6,Yes,7172,0.5,17.4,8.5,NA,NA
+10,198,2022-04-28T10:45:27Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3338,NA,2.2,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,197,2022-04-28T11:15:04Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3738,NA,2.2,2.7,Yes,6792,0.8,18.1,7.7,NA,NA
+10,199,2022-04-29T11:30:52Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,2558,0,2.4,Yes,6433,0.6,18.6,6.62,NA,NA
+10,200,2022-04-29T11:45:24Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3539,NA,2.3,2.2,Yes,NA,NA,NA,NA,NA,NA
+10,202,2022-04-30T09:45:45Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3118,NA,2,2,Yes,NA,NA,NA,NA,NA,NA
+10,201,2022-04-30T10:00:18Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3524,NA,2.3,2.3,Yes,6187,0.7,18.2,7.4,NA,NA
+10,203,2022-05-01T11:00:45Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3585,NA,2.3,2.4,Yes,6096,0.5,19.6,9.7,NA,NA
+10,204,2022-05-01T11:30:49Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1500,0,2.2,Yes,NA,NA,NA,NA,NA,NA
+10,205,2022-05-02T10:15:33Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3224,NA,1.9,2,Yes,6111,0.5,18.9,13.8,NA,NA
+10,206,2022-05-02T10:30:05Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3069,NA,1.8,1.8,Yes,NA,NA,NA,NA,NA,NA
+10,208,2022-05-03T10:15:20Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3115,NA,2.1,2,Yes,NA,NA,NA,NA,NA,NA
+10,207,2022-05-03T10:30:57Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3343,NA,2.2,2.3,Yes,5644,0.7,18.1,6.1,145.4,92.2
+10,210,2022-05-04T09:45:25Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3131,NA,1.7,1.6,Yes,NA,NA,NA,NA,NA,NA
+10,209,2022-05-04T10:15:29Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3132,NA,1.7,1.8,Yes,5526,0.6,18.7,5.46,145.7,93
+10,211,2022-05-05T10:15:40Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2897,NA,1.4,1.4,Yes,5378,0.6,19.3,5.22,NA,NA
+10,212,2022-05-05T10:45:34Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2796,NA,1.4,1.3,Yes,NA,NA,NA,NA,NA,NA
+10,214,2022-05-06T10:00:40Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2552,NA,1.7,1.5,Yes,NA,NA,NA,NA,NA,NA
+10,213,2022-05-06T10:30:49Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2681,NA,1.8,1.6,Yes,5030,0.6,18.3,7.5,NA,NA
+10,216,2022-05-07T10:00:13Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2643,NA,2,1.8,Yes,NA,NA,NA,NA,NA,NA
+10,215,2022-05-07T10:15:30Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2695,NA,1.8,1.7,Yes,4901,0.6,18,7.2,NA,NA
+10,218,2022-05-08T10:00:50Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2723,NA,2.1,1.9,Yes,NA,NA,NA,NA,NA,NA
+10,217,2022-05-08T10:15:26Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2634,NA,1.9,2.1,Yes,5276,0.5,18.2,0.5,NA,NA
+10,219,2022-05-09T11:30:39Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3100,NA,2,2.3,Yes,5466,0.5,17.7,5.89,NA,NA
+10,220,2022-05-09T12:00:18Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3109,NA,1.9,2,Yes,NA,NA,NA,NA,NA,NA
+10,221,2022-05-10T09:45:24Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2975,NA,2.2,2.3,Yes,5555,0.6,15.6,4.4,NA,NA
+10,222,2022-05-10T10:00:40Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2732,NA,1.6,1.7,Yes,NA,NA,NA,NA,NA,NA
+10,224,2022-05-11T10:45:14Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3326,NA,2.3,2.3,Yes,NA,NA,NA,NA,NA,NA
+10,223,2022-05-11T11:00:35Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,600,0,2.8,Yes,6464,0.8,15,6.9,NA,NA
+10,226,2022-05-12T10:15:01Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3100,NA,1.9,2.1,Yes,NA,NA,NA,NA,NA,NA
+10,225,2022-05-12T10:30:19Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3789,NA,2.4,2.7,Yes,6713,0.8,15.9,4.82,NA,NA
+10,228,2022-05-13T10:30:07Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3295,NA,2.3,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,227,2022-05-13T10:45:33Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3870,NA,2.6,2.7,Yes,6651,0.7,16.8,3.6,NA,NA
+10,230,2022-05-14T09:30:00Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3324,NA,2.1,2.3,Yes,NA,NA,NA,NA,NA,NA
+10,229,2022-05-14T09:45:43Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3613,NA,2.4,2.7,Yes,6573,0.8,18.6,0.72,NA,NA
+10,232,2022-05-15T09:45:26Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3552,NA,2.1,2.1,Yes,NA,NA,NA,NA,NA,NA
+10,231,2022-05-15T10:00:02Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,2494,0,2,Yes,6713,0.4,20.1,4.1,NA,NA
+10,233,2022-05-16T11:00:28Z,Lower Sacramento River RST,RR,End trapping,Processed fish,Trap functioning normally,3662,NA,2.4,0,Yes,7077,0.6,20,4.44,NA,NA
+10,234,2022-05-16T11:15:12Z,Lower Sacramento River RST,RL,End trapping,Processed fish,Trap stopped functioning,NA,912,0,0,Yes,NA,NA,NA,NA,NA,NA
+10,236,2022-05-17T10:00:06Z,Lower Sacramento River RST,RL,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,NA,NA,0,2,Yes,NA,NA,NA,NA,NA,NA
+10,235,2022-05-17T10:00:31Z,Lower Sacramento River RST,RR,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,NA,NA,0,2.2,Yes,6934,0.8,19.9,5.44,NA,NA
+10,238,2022-05-18T09:15:44Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3496,NA,2.1,2.1,Yes,NA,NA,NA,NA,NA,NA
+10,237,2022-05-18T09:30:28Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3812,NA,2.1,2.1,Yes,6760,0.6,20.8,4.9,NA,NA
+10,240,2022-05-19T10:45:13Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3753,NA,2.2,2.1,Yes,NA,NA,NA,NA,NA,NA
+10,239,2022-05-19T11:00:42Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3873,NA,2.3,2.4,Yes,6792,0.8,21.5,4.43,120.9,93.3
+10,242,2022-05-20T09:45:42Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,3662,NA,3.5,3.3,Yes,NA,NA,NA,NA,NA,NA
+10,241,2022-05-20T10:00:44Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3851,NA,2.2,2.1,Yes,6356,0.8,19.1,5.67,123.7,92.7
+10,244,2022-05-21T09:15:57Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4490,NA,3,3,Yes,NA,NA,NA,NA,NA,NA
+10,243,2022-05-21T09:30:33Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2704,NA,1.8,1.8,Yes,6372,0.7,18.7,5.01,123.7,91.7
+10,246,2022-05-22T08:30:48Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4146,NA,3,3.4,Yes,NA,NA,NA,NA,NA,NA
+10,245,2022-05-22T08:45:41Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2408,NA,1.6,1.7,Yes,6402,0.8,20.3,5.27,119.4,93
+10,248,2022-05-23T10:15:44Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4600,NA,2.9,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,247,2022-05-23T10:30:41Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2610,NA,1.8,1.5,Yes,6325,0.9,21.5,5.6,NA,NA
+10,250,2022-05-24T09:45:30Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4186,NA,2.5,2.7,Yes,NA,NA,NA,NA,NA,NA
+10,249,2022-05-24T10:00:42Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2306,NA,1.8,2.4,Yes,6233,0.8,21.4,3.74,117,92.5
+10,252,2022-05-25T09:45:58Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4089,NA,2.2,2.7,Yes,NA,NA,NA,NA,NA,NA
+10,251,2022-05-25T10:00:44Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2247,NA,1.6,1.5,Yes,6203,0.6,22.1,4.04,117.3,91.8
+10,254,2022-05-26T10:30:33Z,Lower Sacramento River RST,RL,End trapping,Processed fish,Trap functioning normally,3892,NA,2.3,0,Yes,NA,NA,NA,NA,NA,NA
+10,253,2022-05-26T10:45:19Z,Lower Sacramento River RST,RR,End trapping,Processed fish,Trap functioning normally,2299,NA,1.9,0,Yes,6418,0.5,22.7,3.91,117.5,91.3
+10,255,2022-05-29T09:15:18Z,Lower Sacramento River RST,RR,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,NA,NA,0,2.1,Yes,6792,0.7,20.2,3.8,114.5,92.7
+10,256,2022-05-29T09:15:51Z,Lower Sacramento River RST,RL,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,NA,NA,0,2.7,Yes,NA,NA,NA,NA,NA,NA
+10,258,2022-05-30T09:45:47Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4517,NA,2.8,2.9,Yes,NA,NA,NA,NA,NA,NA
+10,257,2022-05-30T10:00:12Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3019,NA,2,2.1,Yes,6839,0.8,20.2,3.56,112.7,93.6
+10,260,2022-05-31T12:00:05Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4846,NA,3,3.1,Yes,NA,NA,NA,NA,NA,NA
+10,259,2022-05-31T12:15:25Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3050,NA,1.8,2,Yes,6855,0.7,20.4,2.63,112.5,96.6
+10,262,2022-06-01T10:45:23Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4163,NA,2.3,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,261,2022-06-01T11:00:27Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2428,NA,1.7,1.7,Yes,6934,0.5,20.8,3.15,110.9,94.5
+10,263,2022-06-02T10:00:37Z,Lower Sacramento River RST,RR,End trapping,Processed fish,Trap functioning normally,2234,NA,1.3,0,Yes,6792,0.5,21.7,3.05,112.5,95.3
+10,264,2022-06-02T10:30:26Z,Lower Sacramento River RST,RL,End trapping,Processed fish,Trap functioning normally,3488,NA,2.1,0,Yes,NA,NA,NA,NA,NA,NA
+10,265,2022-06-04T10:00:11Z,Lower Sacramento River RST,RR,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,NA,NA,0,1.4,Yes,6341,0.8,21.3,3.38,114.2,93.5
+10,266,2022-06-04T10:00:13Z,Lower Sacramento River RST,RL,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,NA,NA,0,2.5,Yes,NA,NA,NA,NA,NA,NA
+10,268,2022-06-05T11:15:07Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4151,NA,2.4,2.4,Yes,NA,NA,NA,NA,NA,NA
+10,267,2022-06-05T11:15:56Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2261,NA,1.5,1.5,Yes,6698,0.7,20.3,3.43,111.6,94
+10,270,2022-06-06T10:30:05Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,1230,0,3.1,Yes,NA,NA,NA,NA,NA,NA
+10,269,2022-06-06T10:45:58Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2348,NA,2,1.8,Yes,6902,0.65,20.6,3.5,111.2,94.7
+10,272,2022-06-07T09:30:46Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,4868,NA,3.1,3.3,Yes,NA,NA,NA,NA,NA,NA
+10,271,2022-06-07T10:00:32Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2421,NA,1.9,1.6,Yes,7061,0.6,21.7,3.42,110.6,96.5
+10,274,2022-06-08T10:00:35Z,Lower Sacramento River RST,RL,End trapping,Processed fish,Trap functioning normally,4237,NA,2.5,3.5,Yes,NA,NA,NA,NA,NA,NA
+10,273,2022-06-08T10:15:26Z,Lower Sacramento River RST,RR,End trapping,Processed fish,Trap functioning normally,2548,NA,1.8,2.2,Yes,7349,0.8,22.2,3.4,111.1,94.2
+10,276,2022-10-10T12:30:31Z,Lower Sacramento River RST,RR,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,NA,NA,NA,2.2,Yes,6341,0.8,20,1.86,124.5,96.1
+10,277,2022-10-10T12:30:53Z,Lower Sacramento River RST,RL,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,NA,NA,NA,1.9,Yes,NA,NA,NA,NA,NA,NA
+10,279,2022-10-11T11:45:27Z,Lower Sacramento River RST,RL,Unplanned restart,No fish were caught,Trap stopped functioning,NA,NA,0,1.7,Yes,NA,NA,NA,NA,NA,NA
+10,278,2022-10-11T12:00:08Z,Lower Sacramento River RST,RR,Unplanned restart,Processed fish,Trap stopped functioning,NA,NA,0,2.2,Yes,6341,0.6,19.4,1.98,123.2,94.4
+10,282,2022-10-12T10:30:08Z,Lower Sacramento River RST,RR,Continue trapping,No fish were caught,Trap functioning normally,NA,NA,2,2.1,Yes,6325,0.8,19.2,2.4,121.4,94.3
+10,283,2022-10-12T10:45:25Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,NA,NA,1.4,1.2,Yes,NA,NA,NA,NA,NA,NA
+10,285,2022-10-13T11:00:43Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,NA,NA,1.6,1.5,Yes,NA,NA,NA,NA,NA,NA
+10,284,2022-10-13T11:15:25Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,NA,NA,2.1,2.1,Yes,6248,0.9,18.8,2.01,121.6,94.7
+10,287,2022-10-14T10:15:22Z,Lower Sacramento River RST,RL,Unplanned restart,Processed fish,Trap stopped functioning,NA,NA,0,1.8,Yes,NA,NA,NA,NA,NA,NA
+10,286,2022-10-14T10:30:11Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,NA,NA,2.3,2.3,Yes,6187,0.9,18.8,2.23,121.7,95.4
+10,289,2022-10-15T16:00:20Z,Lower Sacramento River RST,RL,Unplanned restart,No fish were caught,Trap stopped functioning,NA,NA,1,1.7,Yes,NA,NA,NA,NA,NA,NA
+10,288,2022-10-15T16:00:24Z,Lower Sacramento River RST,RR,Continue trapping,No fish were caught,Trap functioning normally,NA,NA,2,2.1,Yes,6187,0.67,19.5,1.54,123.4,101.1
+10,290,2022-10-16T10:15:46Z,Lower Sacramento River RST,RR,Continue trapping,No fish were caught,Trap functioning normally,NA,NA,1.9,2.2,Yes,6264,0.9,18.2,2.14,122,94.4
+10,291,2022-10-16T10:45:13Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,NA,NA,1.2,1.6,Yes,NA,NA,NA,NA,NA,NA
+10,292,2022-10-17T10:45:12Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,NA,NA,2.3,2.4,Yes,6233,0.9,17.8,2.12,123.5,94.8
+10,293,2022-10-17T11:15:54Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,NA,NA,1.6,1.8,Yes,NA,NA,NA,NA,NA,NA
+10,295,2022-10-18T09:45:41Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2261,NA,1.5,1.7,Yes,NA,NA,NA,NA,NA,NA
+10,294,2022-10-18T10:00:39Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2941,NA,2.2,2.3,Yes,5989,0.8,17.8,2.36,123.4,95.9
+10,297,2022-10-19T10:00:45Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,2438,NA,1.8,1.8,Yes,NA,NA,NA,NA,NA,NA
+10,296,2022-10-19T10:15:45Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3154,NA,2.2,2.2,Yes,6065,0.9,17.5,2.17,123.6,95.6
+10,299,2022-10-20T10:30:17Z,Lower Sacramento River RST,RL,Continue trapping,No fish were caught,Trap functioning normally,2695,NA,1.9,2.1,Yes,NA,NA,NA,NA,NA,NA
+10,298,2022-10-20T10:45:31Z,Lower Sacramento River RST,RR,Continue trapping,No fish were caught,Trap functioning normally,1111,NA,1.1,1.6,Yes,6065,0.9,1706,2.25,125.3,97.7
+10,300,2022-10-21T11:30:07Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2511,NA,1.7,1.7,Yes,6111,0.6,17.7,1.98,123.7,95.9
+10,301,2022-10-21T11:45:58Z,Lower Sacramento River RST,RL,Continue trapping,No fish were caught,Trap functioning normally,2670,NA,1.5,1.5,Yes,NA,NA,NA,NA,NA,NA
+10,302,2022-10-22T11:45:12Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2411,NA,1.8,2.1,Yes,6220,0.7,17.6,1.89,124.9,96.5
+10,303,2022-10-22T11:45:42Z,Lower Sacramento River RST,RL,Continue trapping,No fish were caught,Trap functioning normally,1611,NA,1.3,1.7,Yes,NA,NA,NA,NA,NA,NA
+10,304,2022-10-23T10:30:38Z,Lower Sacramento River RST,RR,Continue trapping,No fish were caught,Trap functioning normally,2650,NA,2,2.1,Yes,6005,0.8,16,2.35,123.8,94
+10,305,2022-10-23T10:30:57Z,Lower Sacramento River RST,RL,Continue trapping,No fish were caught,Trap functioning normally,1851,NA,1.4,1.4,Yes,NA,NA,NA,NA,NA,NA
+10,306,2022-10-24T11:45:48Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,3103,NA,1.9,1.9,Yes,6035,0.7,14.7,2,125.1,96.6
+10,307,2022-10-24T12:00:22Z,Lower Sacramento River RST,RL,Continue trapping,No fish were caught,Trap functioning normally,2045,NA,1.7,1.3,Yes,NA,NA,NA,NA,NA,NA
+10,309,2022-10-25T09:30:39Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,1651,NA,1.1,1.1,Yes,NA,NA,NA,NA,NA,NA
+10,308,2022-10-25T09:45:05Z,Lower Sacramento River RST,RR,Continue trapping,No fish were caught,Trap functioning normally,2589,NA,1.9,1.9,Yes,5929,0.7,15,2.41,123.9,97.4
+10,310,2022-10-26T11:00:04Z,Lower Sacramento River RST,RR,Continue trapping,No fish were caught,Trap functioning normally,2929,NA,1.9,1.8,Yes,5989,0.8,14.8,2.02,125.5,97.8
+10,311,2022-10-26T11:15:34Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,1880,NA,1.2,1.2,Yes,NA,NA,NA,NA,NA,NA
+10,313,2022-10-27T10:15:29Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,1717,NA,1.2,1.3,Yes,NA,NA,NA,NA,NA,NA
+10,312,2022-10-27T10:30:50Z,Lower Sacramento River RST,RR,Continue trapping,No fish were caught,Trap functioning normally,2689,NA,1.8,1.9,Yes,5929,0.7,14.2,2.42,124.6,98
+10,315,2022-10-28T09:30:44Z,Lower Sacramento River RST,RL,Continue trapping,No fish were caught,Trap functioning normally,1696,NA,1.3,1.6,Yes,NA,NA,NA,NA,NA,NA
+10,314,2022-10-28T09:45:02Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2634,NA,2,2,Yes,6035,0.9,14.2,2.43,123.9,100.1
+10,316,2022-10-29T10:45:44Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2768,NA,2,2,Yes,6035,0.5,14,2.15,124.6,97
+10,317,2022-10-29T11:00:23Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,1808,NA,1.3,1.2,Yes,NA,NA,NA,NA,NA,NA
+10,318,2022-10-30T11:15:44Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2732,NA,1.8,2,Yes,5989,0.7,13.9,2.17,124.6,98.6
+10,319,2022-10-30T11:30:29Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,1780,NA,1.2,1.4,Yes,NA,NA,NA,NA,NA,NA
+10,320,2022-10-31T10:30:43Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2532,NA,2,2,Yes,6187,0.8,14,2.08,124.2,98.4
+10,321,2022-10-31T10:45:40Z,Lower Sacramento River RST,RL,Continue trapping,No fish were caught,Trap functioning normally,1562,NA,1,1.2,Yes,NA,NA,NA,NA,NA,NA
+10,323,2022-11-01T10:30:41Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning: but not normally,1385,NA,0.3,1,Yes,NA,NA,NA,NA,NA,NA
+10,322,2022-11-01T10:45:50Z,Lower Sacramento River RST,RR,Continue trapping,Processed fish,Trap functioning normally,2529,NA,1.6,1.8,Yes,6295,0.9,13.9,2.05,123.9,96.8
+10,324,2022-11-02T12:00:54Z,Lower Sacramento River RST,RR,Continue trapping,No fish were caught,Trap functioning normally,2473,NA,1.6,2,Yes,6248,0.9,12.7,1.95,123.7,96.4
+10,325,2022-11-03T12:15:45Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning: but not normally,967,NA,0.6,1.1,Yes,NA,NA,NA,NA,NA,NA
+10,281,2023-02-02T10:30:15Z,Lower Sacramento River RST,RL,Continue trapping,Processed fish,Trap functioning normally,1737,NA,1.4,1.2,Yes,NA,NA,NA,NA,NA,NA

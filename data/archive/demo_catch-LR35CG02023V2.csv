@@ -1,0 +1,10 @@
+trap_visit_ID,common_name,release_ID,at_capture_run,fish_origin,life_stage,fork_length,total_length,n,visit_time,visit_type,site_name,subsite_name,final_run
+1,Chinook salmon,0,Not recorded,Natural,Not recorded,NA,NA,0,2022-01-19T12:30:11Z,Start trap & begin trapping,Lower Feather River RST,RL,Not recorded
+1,Steelhead / rainbow trout,0,Not recorded,Natural,Not recorded,NA,NA,0,2022-01-19T12:30:11Z,Start trap & begin trapping,Lower Feather River RST,RL,NA
+2,Chinook salmon,0,Not recorded,Natural,Not recorded,NA,NA,0,2022-01-19T12:30:56Z,Start trap & begin trapping,Lower Feather River RST,RR,Not recorded
+2,Steelhead / rainbow trout,0,Not recorded,Natural,Not recorded,NA,NA,0,2022-01-19T12:30:56Z,Start trap & begin trapping,Lower Feather River RST,RR,NA
+3,Chinook salmon,0,Spring,Natural,Parr,58,NA,1,2022-01-20T10:45:43Z,Continue trapping,Lower Feather River RST,RL,Spring
+3,Chinook salmon,0,Fall,Natural,Fry,37,NA,1,2022-01-20T10:45:43Z,Continue trapping,Lower Feather River RST,RL,Fall
+3,Chinook salmon,0,Fall,Natural,Fry,38,NA,1,2022-01-20T10:45:43Z,Continue trapping,Lower Feather River RST,RL,Fall
+3,Chinook salmon,0,Fall,Natural,Fry,38,NA,1,2022-01-20T10:45:43Z,Continue trapping,Lower Feather River RST,RL,Fall
+3,Wakasagi / Japanese smelt,0,Not recorded,Natural,Not recorded,NA,55,1,2022-01-20T10:45:43Z,Continue trapping,Lower Feather River RST,RL,NA

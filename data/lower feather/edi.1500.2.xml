@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="edi.1500.2" system="https://pasta.edirepository.org"
+  xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access
+    authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst" scope="document"
+      system="https://pasta.edirepository.org">
+    <allow><principal>uid=EDI,o=EDI,dc=edirepository,dc=org</principal><permission>all</permission></allow><allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+    <allow>
+      <principal>cvpia</principal>
+      <permission>write</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier
+      system="https://doi.org">doi:10.6073/pasta/897645f45909d9af239f9ec3e8e7d6e9</alternateIdentifier><shortName>Lower Feather River RST</shortName>
+    <title>Monitoring juvenile Chinook salmon outmigration using rotary screw traps on the Lower Feather River</title>
+    <creator>
+      <individualName>
+        <givenName>Claire</givenName>
+        <surName>Bryant</surName>
+      </individualName>
+      <organizationName>California Department of Fish and Wildlife</organizationName>
+      <electronicMailAddress>Claire.Bryant@Wildlife.ca.gov</electronicMailAddress>
+    </creator>
+    <associatedParty>
+      <individualName>
+        <givenName>Anna</givenName>
+        <surName>Allison</surName>
+      </individualName>
+      <organizationName>California Department of Fish and Wildlife</organizationName>
+      <electronicMailAddress>anna.allison@wildlife.ca.gov</electronicMailAddress>
+      <role>principal investigator</role>
+    </associatedParty>
+    <pubDate>2023-12-01</pubDate>
+    <abstract>
+      <para>
+    CDFW issued Incidental Take Permit No. 2081-2019-006-00 (ITP) to the
+    California Department of Water Resources (DWR) on March 31, 2020,
+    for the long-term operation of the State Water Project (SWP) in the
+    Sacramento San Joaquin Delta (Delta). Condition 7.5.2 of the ITP
+    requires the development and establishment of a spring-run Chinook
+    salmon (Oncorhynchus tshawytscha) juvenile production estimate (JPE)
+    to increase understanding of the impacts that water operations have
+    on the spring-run Chinook salmon population in the Sacramento River
+    watershed and to inform the development of minimization measures to
+    reduce take of spring-run Chinook salmon at Delta fish salvage
+    facilities.  
+  </para>
+      <para>
+    As a part of the JPE effort, CDFW began operating a new rotary screw
+    trap (RST) monitoring station on the lower Feather River near River
+    Mile 17, approximately 1 mile downstream of Star Bend Park and Boat
+    Ramp near Olivehurst, in January 2022. This RST location represents
+    the lowest point in the Feather River Watershed where juvenile
+    salmon are sampled with an RST prior to entering the Sacramento
+    River and includes salmon emigrating from the Yuba River. The
+    expanded juvenile monitoring effort will help resource agencies and
+    water managers identify numbers of salmon emigrating from the
+    Feather River Watershed and contributing to the spring-run Chinook
+    salmon population entering the Delta.
+  </para>
+      <para>
+    Monitoring is conducted annually from October through June utilizing
+    a pair of eight-foot rotary screw traps (RST). Data collected at the
+    Lower Feather River RST site provides information on the temporal
+    distribution, relative abundance, and race composition of juvenile
+    Chinook salmon; and temporal distribution and relative abundance of
+    steelhead trout (O. mykiss) emigrating from the Feather River and
+    tributaries, including the Yuba River, to the Delta. Salmonid data
+    collected from the Lower Feather River RST, among other datasets, is
+    also used by the Salmon Monitoring Team (SaMT) to understand the
+    movement of juvenile salmon in the Sacramento River Watershed to
+    estimate the number of winter-run and spring-run Chinook salmon that
+    have entered the Delta. SaMT is a real-time operations monitoring
+    team required by Condition of Approval 8.1.2 of the ITP which meets
+    weekly from October through June, to provide advice for real-time
+    management of SWP operations to DWR, CDFW, and the Water Operation
+    Management Team (WOMT) to minimize take of winter-run and spring-run
+    Chinook salmon in the Delta.
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword>spring run</keyword>
+      <keyword>fall run</keyword>
+      <keyword>trap</keyword>
+      <keyword>catch</keyword>
+      <keyword>juvenile production estimate</keyword>
+      <keyword>Oncorhynchus tshawytscha</keyword>
+      <keyword>RST</keyword>
+      <keyword>California</keyword>
+      <keyword>Central Valley</keyword>
+      <keyword>SRJPE</keyword>
+      <keyword>Chinook salmon</keyword>
+    </keywordSet>
+    <intellectualRights>
+      <para>This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.</para>
+    </intellectualRights>
+    <licensed>
+      <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+      <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+      <identifier>CC-BY-4.0</identifier>
+    </licensed>
+    <distribution
+      id="10.6073/pasta/897645f45909d9af239f9ec3e8e7d6e9" scope="system"
+          system="https://pasta.edirepository.org"><online><url
+        function="information">https://doi.org/10.6073/pasta/897645f45909d9af239f9ec3e8e7d6e9</url></online></distribution><coverage>
+      <geographicCoverage>
+        <geographicDescription>Lower Feather River Rotary Screw Trap</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-121.6197</westBoundingCoordinate>
+          <eastBoundingCoordinate>-121.5545</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.0555</northBoundingCoordinate>
+          <southBoundingCoordinate>38.9658</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2022-01-19</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2023-03-06</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>ongoing</description>
+      <maintenanceUpdateFrequency>monthly</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <individualName>
+        <givenName>Claire</givenName>
+        <surName>Bryant</surName>
+      </individualName>
+      <organizationName>California Department of Fish and Wildlife</organizationName>
+      <electronicMailAddress>Claire.Bryant@Wildlife.ca.gov</electronicMailAddress>
+    </contact>
+    <publisher><organizationName>Environmental Data Initiative</organizationName><electronicMailAddress>info@edirepository.org</electronicMailAddress><onlineUrl>https://edirepository.org</onlineUrl><userId
+      directory="https://ror.org">0330j0z60</userId></publisher><pubPlace>Environmental Data Initiative</pubPlace><methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Trap Equipment</title>
+            <para>
+      Two in-line 8-foot diameter rotary screw traps (RST).
+    </para>
+          </section>
+          <section>
+            <title>Current Trap Location</title>
+            <para>
+      Traps are currently located at Lower Feather River (RM 17) near
+      Star Bend Park and Boat Ramp near Olivehurst, California.
+    </para>
+          </section>
+          <section>
+            <title>Monitoring Schedule</title>
+            <para>
+      Traps are monitored October through June. Traps are continuously
+      trapping except under high flows and unsafe working conditions.
+      They are serviced daily within a 24-hour period, more if needed
+      due to high debris amounts or fish catch.
+    </para>
+          </section>
+          <section>
+            <title>Daily Environmental Data</title>
+            <para>
+      Daily environmental data collected are flow in cubic feet per
+      second, recorded from the CDEC Gauging station: Feather River at
+      Boyd’s Landing Above Star Bend (FSB); water temperature
+      (Fahrenheit/Celsius); river Depth (inches/feet); turbidity
+      (nephelometric turbidity units); dissolved Oxygen (milligrams per
+      liter); conductivity (microSiemens per centimeter); and velocity
+      (meters per second).
+    </para>
+          </section>
+          <section>
+            <title>Fish Measurements</title>
+            <para>
+      Fork length measurements are taken to the nearest mm for Chinook
+      salmon, Steelhead, and non-salmonid fish. For chinook salmon, fork
+      length measurements are taken for 50 randomly selected individuals
+      per category: marked (with an adipose fin clip) spring-, fall-,
+      winter- or late fall-runs; unmarked spring-, fall-, winter- or
+      late fall-runs. Run designated by Length at Date criteria (Fisher
+      1992). For steelhead, measurements are taken for 50 randomly
+      selected per marked or unmarked. For non-salmonoid fish,
+      measurements are taken for the first 10 indiviuals (total length
+      measurements to the nearest mm).
+    </para>
+          </section>
+          <section>
+            <title>Fish Counts</title>
+            <para>
+      All fish not measured are plus counted by hand.
+    </para>
+          </section>
+          <section>
+            <title>Trap Efficiency Trials</title>
+            <para>
+      Fall-run Chinook salmon captured in the RSTs or juvenile Chinook
+      salmon produced by the Feather River Fish Hatchery are the source
+      of released fish. Frequency of once per week from December to May
+      across variable flow and environmental conditions as catch totals
+      and/or hatchery availability allows. A minimum of three
+      consecutive days of fishing after the release date is required for
+      a release to be included in analyses. Mortality between the
+      release point and the trap is assumed to be negligible. Release
+      site approximately 1 mile upstream of the trapping site.
+    </para>
+          </section>
+          <section>
+            <title>Trap Efficiency Marks</title>
+            <para>
+      Fish are marked with Bismarck Brown Y (BBY) whole body stain. Fish
+      are alternatively marked with a Visible Implant Elastomer (VIE)
+      Tag.
+    </para>
+          </section>
+          <section>
+            <title>References</title>
+            <para>
+      Fisher, F.W. (1992). Chinook salmon, Oncorhynchus tshawytscha,
+      growth and occurrence in the Sacramento-San Joaquin River system.
+      Draft copy. California Department of Fish and Game, Inland
+      Fisheries Division Office Report, Sacramento, CA. June 1992.
+    </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Monitoring juvenile Chinook salmon outmigration using rotary screw traps on the Lower Feather River</title>
+      <personnel>
+        <individualName>
+          <givenName>Claire</givenName>
+          <surName>Bryant</surName>
+        </individualName>
+        <organizationName>California Department of Fish and Wildlife</organizationName>
+        <electronicMailAddress>Claire.Bryant@Wildlife.ca.gov</electronicMailAddress>
+        <role>Project Lead</role>
+      </personnel>
+      <award>
+        <funderName>California Department of Water Resources</funderName>
+        <funderIdentifier>Q5020440</funderIdentifier>
+        <title>California Department of Water Resources Division of Integrated Science and Engineering</title>
+      </award>
+    </project>
+    <dataTable
+      id="858c5187113f3a519f3ff91dbdf3abec" scope="document"
+          system="https://pasta.edirepository.org">
+      <entityName>lower_feather_catch.csv</entityName>
+      <entityDescription>Daily catch</entityDescription>
+      <physical>
+        <objectName>lower_feather_catch.csv</objectName>
+        <size
+          unit="bytes">1141123</size>
+        <authentication
+              method="MD5">cb83e0c325073e8fa639b17ef8d469a2</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url
+                    function="download">https://pasta.lternet.edu/package/data/eml/edi/1500/2/858c5187113f3a519f3ff91dbdf3abec</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>ProjectDescriptionID</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table.  All data associated with this package will have a ProjectDescriptionID = 12.</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>12</code>
+                    <definition>Lower Feather RST</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>catchRawID</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Primary key in the CAMP CatchRaw table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Primary key in the CAMP CatchRaw table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trapVisitID</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP TrapVisit table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign key to the CAMP TrapVisit table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>commonName</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Common name of species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Wakasagi / Japanese smelt",  "Inland silverside", "Brown bullhead", "Pacific lamprey", "Sacramento pikeminnow",  "Riffle sculpin", "Channel catfish", "Mosquitofish", "Prickly sculpin",  "Hardhead", "Spotted bass", "Unknown lamprey (Entosphenus or Lampetra)",  "River lamprey", "Common carp", "Tule perch", "Bluegill", "Unknown Centrarchid",  "White crappie", "Black bullhead", "California roach", "Golden shiner",  "Hitch", "Unknown catfish or bullhead", "White catfish", "Smallmouth bass",  "Unknown minnow", "Sacramento sucker", "Warmouth", "Threadfin shad",  "Unknown bass (Micropterus)", "Other", "Largemouth bass", "American shad",  "Goldfish", "Striped bass", "Not yet assigned", "Redear sunfish",  "Green sunfish", "Western brook lamprey", "Red shiner", "Pumpkinseed",  "Black crappie", "Not applicable (n/a)")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Common name of species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Wakasagi / Japanese smelt",  "Inland silverside", "Brown bullhead", "Pacific lamprey", "Sacramento pikeminnow",  "Riffle sculpin", "Channel catfish", "Mosquitofish", "Prickly sculpin",  "Hardhead", "Spotted bass", "Unknown lamprey (Entosphenus or Lampetra)",  "River lamprey", "Common carp", "Tule perch", "Bluegill", "Unknown Centrarchid",  "White crappie", "Black bullhead", "California roach", "Golden shiner",  "Hitch", "Unknown catfish or bullhead", "White catfish", "Smallmouth bass",  "Unknown minnow", "Sacramento sucker", "Warmouth", "Threadfin shad",  "Unknown bass (Micropterus)", "Other", "Largemouth bass", "American shad",  "Goldfish", "Striped bass", "Not yet assigned", "Redear sunfish",  "Green sunfish", "Western brook lamprey", "Red shiner", "Pumpkinseed",  "Black crappie", "Not applicable (n/a)")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseID</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Foreign Key to the CAMP Release table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign Key to the CAMP Release table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>atCaptureRun</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Run designation as determined in the field or as assigned at a later date. Levels = c("Not recorded", "Spring", "Fall", "Late fall", "Winter")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run designation as determined in the field or as assigned at a later date. Levels = c("Not recorded", "Spring", "Fall", "Late fall", "Winter")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fishOrigin</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Origin/production type of the fish. Levels =c("Natural", "Hatchery")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Origin/production type of the fish. Levels =c("Natural", "Hatchery")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lifeStage</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Life stage of the fish. Levels = c("Not recorded", "Parr", "Fry", "Juvenile", "Ammocoete", "Yearling",  "Silvery parr", "Adult", "YOY (young of the year)", "Yolk sac fry (alevin)" )</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Life stage of the fish. Levels = c("Not recorded", "Parr", "Fry", "Juvenile", "Ammocoete", "Yearling",  "Silvery parr", "Adult", "YOY (young of the year)", "Yolk sac fry (alevin)" )</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>forkLength</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Fork length of the fish measured in millimeters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">0</minimum>
+                  <maximum
+                    exclusive="false">337</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>totalLength</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Total length of the fish measured in millimeters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">0</minimum>
+                  <maximum
+                    exclusive="false">9069</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>n</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Number of fish actually handled/counted</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">0</minimum>
+                  <maximum
+                    exclusive="false">142</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitTime</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Date and time of day associated with the trap visit.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum
+                    exclusive="false">44580.521</minimum>
+                  <maximum
+      exclusive="false">44991.4173</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitType</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Work that was done during visit to trap. Levels = c("Start trap &amp; begin trapping", "Continue trapping", "Unplanned restart", &#xd;
+"End trapping", "Drive-by only")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Work that was done during visit to trap. Levels = c("Start trap &amp; begin trapping", "Continue trapping", "Unplanned restart", &#xd;
+"End trapping", "Drive-by only")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>siteName</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Name of the sampling site. Levels = "Lower Feather River RST"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of the sampling site. Levels = "Lower Feather River RST"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>subSiteName</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Name of the trap or trap location. Levels = c("RL", "RR")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of the trap or trap location. Levels = c("RL", "RR")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>finalRun</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Run designation revised after field visit. This is the field used in analysis. Levels = c("Not recorded", NA, "Spring", "Fall", "Late fall")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run designation revised after field visit. This is the field used in analysis. Levels = c("Not recorded", NA, "Spring", "Fall", "Late fall")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>8332</numberOfRecords>
+    </dataTable>
+    <dataTable
+      id="ebadf058d762d200dba48d0463c99337" scope="document"
+          system="https://pasta.edirepository.org">
+      <entityName>lower_feather_trap.csv</entityName>
+      <entityDescription>Daily trap operations</entityDescription>
+      <physical>
+        <objectName>lower_feather_trap.csv</objectName>
+        <size
+          unit="bytes">134175</size>
+        <authentication
+              method="MD5">8a8131a6e8832229de0f7285bcaad331</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url
+                    function="download">https://pasta.lternet.edu/package/data/eml/edi/1500/2/ebadf058d762d200dba48d0463c99337</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>projectDescriptionID</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table.  All data associated with this package will have a ProjectDescriptionID = 12.</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>12</code>
+                    <definition>Lower Feather RST</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trapVisitID</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Primary key that defines record in table.</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Primary key that defines record in table.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>siteName</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Name of the sampling site. Level = "Lower Feather River RST"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of the sampling site. Level = "Lower Feather River RST"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>subSiteName</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Position of trap within the site. Levels =c("RL", "RR")</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Position of trap within the site. Levels =c("RL", "RR")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitTime</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Date and time of day associated with the trap visit. Definition varies based on visitType (For visitTypeID=1, 5, or 6 this is the date and the time of day of arrival at the trap. For visitTypeID=2, 3, or 4 this is the date and the time of day the trap was emptied.)</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum
+                    exclusive="false">2022-01-19 12:30:11</minimum>
+                  <maximum
+                    exclusive="false">2023-03-06 10:00:57</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitType</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Work that was done during visit to trap. Levels = c("Start trap &amp; begin trapping", "Continue trapping", "Unplanned restart", "End trapping", "Drive-by only")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Work that was done during visit to trap. Levels = c("Start trap &amp; begin trapping", "Continue trapping", "Unplanned restart", "End trapping", "Drive-by only")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fishProcessed</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Describing if fish processed during trap visit. Levels = c("N/A; not a sampling visit", "Processed fish", "No fish were caught", "No catch data; fish released")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Describing if fish processed during trap visit. Levels = c("N/A; not a sampling visit", "Processed fish", "No fish were caught", "No catch data; fish released")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trapFunctioning</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Code for description of how well trap is functioning when visit to trap began. Levels = c("Not recorded", "Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", "Trap not in service")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code for description of how well trap is functioning when visit to trap began. Levels = c("Not recorded", "Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", "Trap not in service")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>counterAtEnd</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Reading on the rotation counter at the end of the trap visit but before resetting</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of rotations</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">0</minimum>
+                  <maximum
+                    exclusive="false">7608</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>rpmRevolutionsAtStart</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Number of revolutions per minute before cleaning the trap</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>revolutions per minute</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">0</minimum>
+                  <maximum
+                    exclusive="false">20</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>rpmRevolutionsAtEnd</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Number of revolutions per minute before cleaning the trap</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>revolutions per minute</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">0</minimum>
+                  <maximum
+                    exclusive="false">3.65</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>includeCatch</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Code for whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Code for whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>discharge</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Discharge measured at trap</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>cubicFeetPerSecond</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">1072</minimum>
+                  <maximum
+                    exclusive="false">28445</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>waterVel</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Water velocity measured at trap</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>metersPerSecond</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">0</minimum>
+                  <maximum
+                    exclusive="false">0.9</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>waterTemp</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Water temperature measured at trap</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>see waterTempUnit</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">8.4</minimum>
+                  <maximum
+                    exclusive="false">63.4</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>turbidity</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Turbidity measured at trap</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>NTU</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">0.73</minimum>
+                  <maximum
+                    exclusive="false">59.6</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>dissolvedOxygen</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Level of dissolved oxygen measured</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>milligramPerLiter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">1.25</minimum>
+                  <maximum
+                    exclusive="false">830</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>conductivity</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Electrical conductivity of water measured</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>microSiemenPerCentimeter</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">1.1999999999999999E-3</minimum>
+                  <maximum
+      exclusive="false">2.52</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>waterTempUnit</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Unit of water temperature recorded. Levels = c(NA, "Celsius", "Fahrenheit").</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unit of water temperature recorded. Levels = c(NA, "Celsius", "Fahrenheit").</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>558</numberOfRecords>
+    </dataTable>
+    <dataTable
+      id="ac71fb71f591bc41d0cf3c7128341483" scope="document"
+          system="https://pasta.edirepository.org">
+      <entityName>lower_feather_recapture.csv</entityName>
+      <entityDescription>Recaptured fish</entityDescription>
+      <physical>
+        <objectName>lower_feather_recapture.csv</objectName>
+        <size
+          unit="bytes">1259</size>
+        <authentication
+              method="MD5">a4c4f3cc9a82dd70951cb9f3cfc386f3</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url
+                    function="download">https://pasta.lternet.edu/package/data/eml/edi/1500/2/ac71fb71f591bc41d0cf3c7128341483</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>ProjectDescriptionID</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 12.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>12</code>
+                    <definition>Lower Feather River RST</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>catchRawID</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Primary key in the CAMP CatchRaw table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Primary key in the CAMP CatchRaw table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trapVisitID</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP TrapVisit table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign key to the CAMP TrapVisit table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>commonName</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Common name of species. Level = "Chinook salmon"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Common name of species. Level = "Chinook salmon"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseID</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Foreign Key to the CAMP Release table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Foreign Key to the CAMP Release table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>atCaptureRun</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Run as assigned at the time of the capture. Levels = c("Not recorded", "Fall")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run as assigned at the time of the capture. Levels = c("Not recorded", "Fall")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>finalRun</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Run revised after field visit. This is the field used in analysis. Levels = c("Not recorded", "Fall")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run revised after field visit. This is the field used in analysis. Levels = c("Not recorded", "Fall")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fishOrigin</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Origin/production type of the fish. Levels = c("Natural", "Hatchery")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Origin/production type of the fish. Levels = c("Natural", "Hatchery")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>actualCount</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>n</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Number of fish actually handled/counted</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">1</minimum>
+                  <maximum
+                    exclusive="false">10</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitTime</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Date and time of day associated with the trap visit.</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum
+                    exclusive="false">44594.4168</minimum>
+                  <maximum
+      exclusive="false">44679.4796</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>visitType</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Work that was done during visit to trap. Levels =c("Continue trapping", "Unplanned restart")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Work that was done during visit to trap. Levels =c("Continue trapping", "Unplanned restart")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>siteName</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Name of the sampling site. Level  = "Lower Feather River RST"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of the sampling site. Level  = "Lower Feather River RST"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>subSiteName</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>Name of the trap or trap location. Levels = c("RL", "RR")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of the trap or trap location. Levels = c("RL", "RR")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markType</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>type of mark on fish. Level = "Pigment / dye"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>type of mark on fish. Level = "Pigment / dye"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markColor</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>color of mark on fish. Levels = "Brown"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>color of mark on fish. Levels = "Brown"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markPosition</attributeName>
+          <attributeLabel>recapture</attributeLabel>
+          <attributeDefinition>position of mark on body of fish. Level = "Whole body"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>position of mark on body of fish. Level = "Whole body"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>7</numberOfRecords>
+    </dataTable>
+    <dataTable
+      id="17d67e102aa915d75627a6ac4f743f81" scope="document"
+          system="https://pasta.edirepository.org">
+      <entityName>lower_feather_release.csv</entityName>
+      <entityDescription>Released fish</entityDescription>
+      <physical>
+        <objectName>lower_feather_release.csv</objectName>
+        <size
+          unit="bytes">1498</size>
+        <authentication
+              method="MD5">413ea71101665f78caf98f38c721acfc</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url
+                    function="download">https://pasta.lternet.edu/package/data/eml/edi/1500/2/17d67e102aa915d75627a6ac4f743f81</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>projectDescriptionID</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 12.</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>12</code>
+                    <definition>Lower Feather River RST</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseID</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>commonName</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Common name of marked species. Level = "Chinook salmon"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Common name of marked species. Level = "Chinook salmon"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markedRun</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Run of fish marked. Level = "Fall"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run of fish marked. Level = "Fall"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>markedFishOrigin</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Origin or production type of fish marked. Levels = c("Natural", "Hatchery")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Origin or production type of fish marked. Levels = c("Natural", "Hatchery")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseSite</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Site where fish were released. Level = "Lower Feather River Release Site"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Site where fish were released. Level = "Lower Feather River Release Site"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseSubSite</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Subsite (within site) where fish were released. Corresponds to a trap location. Level = "1 RM Upstream"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Subsite (within site) where fish were released. Corresponds to a trap location. Level = "1 RM Upstream"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>nReleased</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Number of fish released that were alive with mark intact</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">500</minimum>
+                  <maximum
+                    exclusive="false">1302</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>releaseTime</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Date and time of release</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum
+                    exclusive="false">44593.5001</minimum>
+                  <maximum
+                    exclusive="false">44968.4168</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>testDays</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Number of days this trap test is considered valid</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>days</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum
+                    exclusive="false">7</minimum>
+                  <maximum
+          exclusive="false">7</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>appliedMarkType</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Mark type that was applied to the release group. Level = "Pigment / dye"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Mark type that was applied to the release group. Level = "Pigment / dye"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>appliedMarkColor</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Color of mark that was applied to the release group. Levels = c("Brown", "Blue")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Color of mark that was applied to the release group. Levels = c("Brown", "Blue")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>appliedMarkPosition</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Position of the mark that was applied to the mark group. Level = "Whole body"</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Position of the mark that was applied to the mark group. Level = "Whole body"</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>includeAnalysis</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Whether or not to include data in analysis. Levels = c("Yes", "No")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Whether or not to include data in analysis. Levels = c("Yes", "No")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>9</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit
+          id="number of rotations" name="number of rotations"
+          unitType="dimensionless">
+          <description>number of rotations</description>
+        </unit>
+        <unit
+          id="NTU" name="NTU"
+          unitType="dimensionless">
+          <description>nephelometric turbidity units, common unit for measuring turbidity</description>
+        </unit>
+        <unit
+          id="revolutions per minute" name="revolutions per minute"
+          unitType="dimensionless">
+          <description>number of revolutions per minute</description>
+        </unit>
+        <unit
+          id="number of fish" name="number of fish"
+          unitType="dimensionless">
+          <description>number of fish counted</description>
+        </unit>
+        <unit
+          id="days" name="days"
+          unitType="dimensionless">
+          <description>number of days</description>
+        </unit>
+        <unit
+          id="see waterTempUnit" name="see waterTempUnit"
+          unitType="dimensionless">
+          <description>see designated column for units of water temperature collected</description>
+        </unit>
+        <unit
+          id="microSiemenPerCentimeter" name="microSiemenPerCentimeter" unitType="dimensionless">
+          <description>units for measuring conductivity</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

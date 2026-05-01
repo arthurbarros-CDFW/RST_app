@@ -1,0 +1,26 @@
+{
+    "id": "3D1C0836",
+    "path": "C:/Users/ABarros/OneDrive - California Department of Fish and Wildlife/Analysis/CMP/Juvenile monitoring/RST_app/scripts/functions/est_passage.R",
+    "project_path": "scripts/functions/est_passage.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1777654114898.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "175,0",
+        "scrollLine": "160"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1777655413,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1777655413981,
+    "read_only": false,
+    "read_only_alternatives": []
+}

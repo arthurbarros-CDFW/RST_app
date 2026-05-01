@@ -1,0 +1,8 @@
+Manifest file for edi.1501.9.zip created on Mon Aug 25 16:47:57 UTC 2025
+current_year_knights_landing_catch.csv (732722 bytes)
+current_year_knights_landing_release.csv (382 bytes)
+current_year_knights_landing_trap.csv (55846 bytes)
+knights_landing.zip (1662200 bytes)
+edi.1501.9.xml (67604 bytes)
+edi.1501.9.txt (41136 bytes)
+edi.1501.9.report.xml (87549 bytes)

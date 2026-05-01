@@ -1,0 +1,7 @@
+Manifest file for edi.1503.1.zip created on Mon Aug 25 17:02:19 UTC 2025
+delta_entry_catch_edi.csv (596979 bytes)
+delta_entry_trap_edi.csv (50978 bytes)
+delta_entry_release_edi.csv (769 bytes)
+edi.1503.1.xml (54739 bytes)
+edi.1503.1.txt (31088 bytes)
+edi.1503.1.report.xml (71190 bytes)

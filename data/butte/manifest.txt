@@ -1,0 +1,8 @@
+Manifest file for edi.1497.22.zip created on Mon Aug 25 15:29:45 UTC 2025
+current_year_butte_catch.csv (435456 bytes)
+current_year_butte_release.csv (839 bytes)
+current_year_butte_trap.csv (37487 bytes)
+butte.zip (685755 bytes)
+edi.1497.22.xml (59062 bytes)
+edi.1497.22.txt (35856 bytes)
+edi.1497.22.report.xml (83469 bytes)

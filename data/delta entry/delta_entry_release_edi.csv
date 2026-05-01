@@ -1,0 +1,5 @@
+projectDescriptionID,releaseID,commonName,markedRun,markedLifeStage,markedFishOrigin,releaseSite,releaseSubSite,nReleased,releaseTime,testDays,appliedMarkType,appliedMarkColor,appliedMarkPosition,includeAnalysis
+10,256,Chinook salmon,Fall,NA,Hatchery,Lower Sacramento River Release Site,NA,487,2022-04-07T13:15:15Z,7,Pigment / dye,Blue,Whole body,Yes
+10,257,Chinook salmon,Fall,NA,Hatchery,Lower Sacramento River Release Site,NA,499,2022-04-13T13:15:15Z,7,Pigment / dye,Blue,Whole body,Yes
+10,258,Chinook salmon,Fall,NA,Hatchery,Lower Sacramento River Release Site,NA,498,2022-04-20T14:05:15Z,7,Pigment / dye,Blue,Whole body,Yes
+10,259,Chinook salmon,Fall,NA,Hatchery,Lower Sacramento River Release Site,NA,496,2022-04-27T14:00:15Z,34,Pigment / dye,Blue,Whole body,Yes

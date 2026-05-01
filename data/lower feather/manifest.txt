@@ -1,0 +1,8 @@
+Manifest file for edi.1500.2.zip created on Mon Aug 25 16:29:50 UTC 2025
+lower_feather_catch.csv (1141123 bytes)
+lower_feather_trap.csv (134175 bytes)
+lower_feather_recapture.csv (1259 bytes)
+lower_feather_release.csv (1498 bytes)
+edi.1500.2.xml (65623 bytes)
+edi.1500.2.txt (37160 bytes)
+edi.1500.2.report.xml (92586 bytes)

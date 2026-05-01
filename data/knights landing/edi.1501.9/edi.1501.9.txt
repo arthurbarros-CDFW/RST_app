@@ -1,0 +1,1263 @@
+
+   
+      
+         uid=EDI,o=EDI,dc=edirepository,dc=org
+         all
+      
+      
+         public
+         read
+      
+      
+         cvpia
+         write
+      
+   
+   
+      doi:10.6073/pasta/df1d45e31bd74ad4c94050f6014141ecKnights Landing RST
+      Monitoring juvenile Chinook salmon outmigration using rotary screw traps on the Sacramento River at Knights Landing
+      
+         Nick Bauer
+         California Department of Fish and Wildlife
+         nick.bauer@wildlife.ca.gov
+      
+      2025-04-23
+      
+         
+    Since 1995, the rotary screw traps (RSTs) at Knights Landing have
+    provided water management agencies an early warning of emigrating
+    juvenile Chinook salmon (Oncorhynchus tshawytscha) and steelhead
+    trout (O. mykiss) making their way to the Sacramento-San Joaquin
+    Delta (Delta). Due to the proximity of the site to other major
+    tributaries of the Sacramento River, such as the Feather and
+    American Rivers, it is assumed that salmonids captured at the
+    Knights Landing RSTs originate from the upper Sacramento River and
+    its tributaries, a stretch of river that provides spawning and
+    rearing habitat for all four runs of natural origin Chinook salmon:
+    winter-run (State and federally listed as endangered), spring-run
+    (State and federally listed as threatened), late fall-run and
+    fall-run, as well as steelhead trout (federally listed as
+    threatened).  
+  
+         
+    The near real-time information RST monitoring data provides on
+    emigration timing and relative abundance for protected runs of
+    juvenile Chinook salmon and steelhead improves the ability for
+    resource agencies and water managers to implement protective
+    measures that help them navigate through the maze of waterways in
+    the Delta. By utilizing emigration data in adaptive management,
+    reservoir releases, export rates, water transfers, and Delta Cross
+    Channel Gate operations can be modified to minimize the risk of
+    predation, entrainment, and take, thereby maximizing juvenile
+    salmonid survival through the Delta.   
+  
+         
+    The primary goals of the Knights Landing Monitoring Program are to
+    (1) Provide early warning of listed salmonids emigrating toward the
+    Delta, (2) Document passage of emigrating salmonids including
+    timing, relative abundance, and environmental conditions, (3)
+    Develop passage estimates of salmonids emigrating through the lower
+    Sacramento River above the Delta, and (4) Develop a long-term
+    dataset on juvenile salmonid emigration to compare changes over
+    time.
+  
+         
+    The California Department of Fish and Wildlife (CDFW) issued ITP
+    2081-2019-066-00 to DWR on March 31, 2020, for the long-term
+    operation of the State Water Project (SWP) in the Delta. Condition
+    7.5.2 of the ITP requires the development and establishment of a
+    spring-run Chinook salmon juvenile production estimate (JPE) to
+    increase understanding of the impacts water operations have on the
+    spring-run Chinook salmon population in the Sacramento River
+    watershed and inform the development of minimization measures to
+    reduce take of spring-run Chinook salmon at Delta fish salvage
+    facilities. Data from the Knights Landing RST will be used along
+    with other datasets from juvenile salmonid monitoring programs in
+    the Sacramento River Watershed to inform the development of JPE
+    modeling approaches.
+  
+         
+    Salmonid data collected from the Knights Landing RST, among other
+    datasets, is also used by the Salmon Monitoring Team (SaMT) to
+    understand the movement of juvenile salmon in the Sacramento River
+    Watershed to estimate the number of winter-run and spring-run
+    Chinook salmon that have entered the Delta. SaMT is a real-time
+    operations monitoring team required by Condition of Approval 8.1.2
+    of the ITP which meets weekly from October through June, to provide
+    advice for real-time management of SWP operations to DWR, CDFW, and
+    the Water Operation Management Team (WOMT) to minimize take of
+    winter-run and spring-run Chinook salmon in the Delta.
+  
+         
+    Note: data within the current year’s monitoring season are
+    considered provisional.
+  
+      
+      
+         spring run
+         fall run
+         trap
+         catch
+         juvenile production estimate
+         Oncorhynchus tshawytscha
+         RST
+         California
+         Central Valley
+         SRJPE
+         Chinook salmon
+      
+      
+         This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.
+      
+      
+         Creative Commons Attribution 4.0 International
+         https://spdx.org/licenses/CC-BY-4.0.html
+         CC-BY-4.0
+      
+      https://doi.org/10.6073/pasta/df1d45e31bd74ad4c94050f6014141ec
+         
+            Knights Landing Rotary Screw Trap
+            
+               -121.712
+               -121.6802
+               38.8065
+               38.7687
+            
+         
+         
+            
+               
+                  2006-10-02
+               
+               
+                  2025-04-17
+               
+            
+         
+      
+      
+         ongoing
+         annually
+      
+      
+         Nick Bauer
+         California Department of Fish and Wildlife
+         nick.bauer@wildlife.ca.gov
+      
+      
+         Environmental Data Initiative
+         info@edirepository.org
+         https://edirepository.org
+         0330j0z60
+      
+      Environmental Data Initiative
+      
+         
+            
+               
+    Trap Equipment
+  
+               
+    Current Trap Location
+  
+               
+    Monitoring Schedule
+  
+               
+    Daily Environmental Data
+  
+               
+    Fish Measurements
+  
+               
+    Fish Counts
+  
+               
+    Trap Efficiency Trials
+  
+               
+    Trap Efficiency Marks
+  
+               
+    References
+  
+               
+    Fisher, F. W. 1992. Chinook salmon, 
+               
+                  Oncorhynchus
+    tshawytscha
+               
+               , growth and occurrence in the Sacramento-San
+    Joaquin River system. Draft report dated June 1992. Sacramento, CA:
+    Inland Fisheries Division, California Department Fish and Game. 42
+    p.
+  
+               
+    Note: data within the current year’s monitoring season are
+    considered provisional.
+  
+            
+         
+      
+      
+         Monitoring juvenile Chinook salmon outmigration using rotary screw traps on the Sacramento River at Knights Landing
+         
+            Nick Bauer
+            California Department of Fish and Wildlife
+            nick.bauer@wildlife.ca.gov
+            Project Lead
+         
+         
+            California Department of Water Resources; U.S. Bureau of Reclamation
+            Interagency Ecological Program currently funded through California Department of Water Resources and the U.S. Bureau of Reclamation; Past Funding: Interagency Ecological Program funded through California Department of Water Resources
+         
+      
+      
+         current_year_knights_landing_catch.csv
+         Daily catch
+         
+            current_year_knights_landing_catch.csv
+            732722
+            5062003bc1fb0d3f6f3cb2b942fcdbd0
+            
+               
+                  1
+                  \n
+                  column
+                  
+                     ,
+                  
+               
+            
+            
+               
+                  https://pasta.lternet.edu/package/data/eml/edi/1501/9/98cc4ae4d068f0f1bd17560b65d83b44
+               
+            
+         
+         
+            
+               ProjectDescriptionID
+               catch
+               Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.
+               
+                  
+                     
+                        
+                           Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.
+                        
+                     
+                  
+               
+            
+            
+               trapVisitID
+               catch
+               Foreign key to the CAMP TrapVisit table
+               
+                  
+                     
+                        
+                           Foreign key to the CAMP TrapVisit table
+                        
+                     
+                  
+               
+            
+            
+               visitTime
+               catch
+               Date and time of day associated with the trap visit. Definition varies based on visitType.
+               
+                  
+                     YYYY-MM-DD hh:mm:ss
+                     
+                        
+                           2006-10-02 09:30:00
+                           2024-06-04 11:00:51
+                        
+                     
+                  
+               
+            
+            
+               visitTime2
+               catch
+               Date and time of day associated with the end of trap visit. Definition varies based on visitType.
+               
+                  
+                     YYYY-MM-DD hh:mm:ss
+                     
+                        
+                           2006-10-02 09:30:00
+                           2024-06-04 11:00:51
+                        
+                     
+                  
+               
+            
+            
+               siteName
+               catch
+               Name of the sampling site. Levels = "Knights Landing RST"
+               
+                  
+                     
+                        
+                           Name of the sampling site. Levels = "Knights Landing RST"
+                        
+                     
+                  
+               
+            
+            
+               subSiteName
+               catch
+               Name of the trap or trap location. Levels = c("8.4", "8.3")
+               
+                  
+                     
+                        
+                           Name of the trap or trap location. Levels = c("8.4", "8.3")
+                        
+                     
+                  
+               
+            
+            
+               visitType
+               catch
+               Code for work that was done during visit to trap. Levels = c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", "End trapping", "Service/adjust/clean trap", "Drive-by only")
+               
+                  
+                     
+                        
+                           Code for work that was done during visit to trap. Levels = c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", "End trapping", "Service/adjust/clean trap", "Drive-by only")
+                        
+                     
+                  
+               
+            
+            
+               catchRawID
+               catch
+               Primary key in the CAMP CatchRaw table
+               
+                  
+                     
+                        
+                           Primary key in the CAMP CatchRaw table
+                        
+                     
+                  
+               
+            
+            
+               commonName
+               catch
+               Common name of marked species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Unknown lamprey", "River lamprey", "Pacific lamprey", "Black bullhead", "Bluegill", "Threadfin shad", "Spotted bass", "Prickly sculpin", "Golden shiner", "Sacramento sucker", "Inland silverside", "Mosquitofish", "Fathead minnow", "Brown bullhead", "Threespine stickleback", "Unknown sunfish (Lepomis)", "Largemouth bass", "Common carp", "Channel catfish", "Wakasagi / Japanese smelt", "Goldfish", "Black crappie", "White crappie", "Tule perch", "Hardhead", "Hitch", "Splittail", "Warmouth", "Sacramento pikeminnow", "White catfish", "Striped bass", "Green sunfish", "Red shiner", "Redear sunfish", "Unknown minnow", "Riffle sculpin", "Smallmouth bass", "Unknown", "Yellowfin goby", "American shad", "Unknown Centrarchid", "Unknown catfish/bullhead", "Unknown bass (Micropterus)", "California roach", "Sacramento perch", "Unknown sculpin (Cottus)", "Other", "Unknown crappie (Pomoxis)", "Speckled dace", "Logperch", "Sacramento blackfish")
+               
+                  
+                     
+                        
+                           Common name of marked species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Unknown lamprey", "River lamprey", "Pacific lamprey", "Black bullhead", "Bluegill", "Threadfin shad", "Spotted bass", "Prickly sculpin", "Golden shiner", "Sacramento sucker", "Inland silverside", "Mosquitofish", "Fathead minnow", "Brown bullhead", "Threespine stickleback", "Unknown sunfish (Lepomis)", "Largemouth bass", "Common carp", "Channel catfish", "Wakasagi / Japanese smelt", "Goldfish", "Black crappie", "White crappie", "Tule perch", "Hardhead", "Hitch", "Splittail", "Warmouth", "Sacramento pikeminnow", "White catfish", "Striped bass", "Green sunfish", "Red shiner", "Redear sunfish", "Unknown minnow", "Riffle sculpin", "Smallmouth bass", "Unknown", "Yellowfin goby", "American shad", "Unknown Centrarchid", "Unknown catfish/bullhead", "Unknown bass (Micropterus)", "California roach", "Sacramento perch", "Unknown sculpin (Cottus)", "Other", "Unknown crappie (Pomoxis)", "Speckled dace", "Logperch", "Sacramento blackfish")
+                        
+                     
+                  
+               
+            
+            
+               releaseID
+               catch
+               Foreign Key to the CAMP Release table
+               
+                  
+                     
+                        
+                           Foreign Key to the CAMP Release table
+                        
+                     
+                  
+               
+            
+            
+               run
+               catch
+               Run designation assigned at a later date. Levels = c(NA, "Winter", "Late fall", "Spring", "Fall")
+               
+                  
+                     
+                        
+                           Run designation assigned at a later date. Levels = c(NA, "Winter", "Late fall", "Spring", "Fall")
+                        
+                     
+                  
+               
+            
+            
+               fishOrigin
+               catch
+               Origin/production type of the fish. Levels = c("Natural", "Hatchery", "Not recorded", "Unknown")
+               
+                  
+                     
+                        
+                           Origin/production type of the fish. Levels = c("Natural", "Hatchery", "Not recorded", "Unknown")
+                        
+                     
+                  
+               
+            
+            
+               lifeStage
+               catch
+               Life stage of the fish. c("Not recorded", "Parr", "Ammocoete", "Button-up fry", "Juvenile", "Silvery parr", "Smolt", "Fry", "Yolk sac fry (alevin)", "Yearling", "Adult", "YOY (young of the year)")
+               
+                  
+                     
+                        
+                           Life stage of the fish. c("Not recorded", "Parr", "Ammocoete", "Button-up fry", "Juvenile", "Silvery parr", "Smolt", "Fry", "Yolk sac fry (alevin)", "Yearling", "Adult", "YOY (young of the year)")
+                        
+                     
+                  
+               
+            
+            
+               forkLength
+               catch
+               Fork length of the fish measured in millimeters
+               
+                  
+                     
+                        millimeter
+                     
+                     
+                        real
+                        
+                           1
+                           991
+                        
+                     
+                  
+               
+            
+            
+               totalLength
+               catch
+               Total length of the fish measured in millimeters
+               
+                  
+                     
+                        millimeter
+                     
+                     
+                        real
+                        
+                           0
+                           1
+                        
+                     
+                  
+               
+            
+            
+               weight
+               catch
+               Weight of the fish measured in grams
+               
+                  
+                     
+                        gram
+                     
+                     
+                        real
+                        
+                           0
+                           1004
+                        
+                     
+                  
+               
+            
+            
+               n
+               catch
+               Number of fish actually handled/counted
+               
+                  
+                     
+                        count of fish
+                     
+                     
+                        whole
+                        
+                           0
+                           15105
+                        
+                     
+                  
+               
+            
+            
+               trap_start_date
+               catch
+               Start date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field
+               
+                  
+                     YYYY-MM-DD hh:mm:ss
+                     
+                        
+                           2006-10-02 09:30:00
+                           2024-06-04 11:00:51
+                        
+                     
+                  
+               
+            
+            
+               trap_end_date
+               catch
+               End date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field
+               
+                  
+                     YYYY-MM-DD hh:mm:ss
+                     
+                        
+                           2006-10-02 09:30:00
+                           2024-06-04 11:00:51
+                        
+                     
+                  
+               
+            
+         
+         3789
+      
+      
+         current_year_knights_landing_release.csv
+         Release trial summary
+         
+            current_year_knights_landing_release.csv
+            382
+            4ac55bac54b979261fa60033cf425fb3
+            
+               
+                  1
+                  \n
+                  column
+                  
+                     ,
+                  
+               
+            
+            
+               
+                  https://pasta.lternet.edu/package/data/eml/edi/1501/9/bed15fe599f379266fe4ca74ebba0b6a
+               
+            
+         
+         
+            
+               projectDescriptionID
+               release
+               Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.
+               
+                  
+                     
+                        
+                           Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.
+                        
+                     
+                  
+               
+            
+            
+               releaseID
+               release
+               Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)
+               
+                  
+                     
+                        
+                           Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)
+                        
+                     
+                  
+               
+            
+            
+               releaseTime
+               release
+               Date and time of release
+               
+                  
+                     YYYY-MM-DD hh:mm:ss
+                     
+                        
+                           2006-12-18 13:15:50
+                           2024-03-26 10:15:50
+                        
+                     
+                  
+               
+            
+            
+               commonName
+               release
+               Common name of marked species. Levels = c("Chinook salmon", "Not applicable (n/a)")
+               
+                  
+                     
+                        
+                           Common name of marked species. Levels = c("Chinook salmon", "Not applicable (n/a)")
+                        
+                     
+                  
+               
+            
+            
+               markedRun
+               release
+               Run of fish marked. Levels = c("Not recorded", "Other", "Fall", "Late fall")
+               
+                  
+                     
+                        
+                           Run of fish marked. Levels = c("Not recorded", "Other", "Fall", "Late fall")
+                        
+                     
+                  
+               
+            
+            
+               markedLifeStage
+               release
+               Lifestage of fish marked. Levels =c(NA, "Juvenile", "Smolt")
+               
+                  
+                     
+                        
+                           Lifestage of fish marked. Levels =c(NA, "Juvenile", "Smolt")
+                        
+                     
+                  
+               
+            
+            
+               markedFishOrigin
+               release
+               Origin or production type of fish marked. Levels =c("Unknown", "Natural", "Not recorded", "Hatchery")
+               
+                  
+                     
+                        
+                           Origin or production type of fish marked. Levels =c("Unknown", "Natural", "Not recorded", "Hatchery")
+                        
+                     
+                  
+               
+            
+            
+               sourceOfFishSite
+               release
+               Site where fish used for release were from. Levels = c("Knights Landing RST", "Not applicable", "Not yet assigned" )
+               
+                  
+                     
+                        
+                           Site where fish used for release were from. Levels = c("Knights Landing RST", "Not applicable", "Not yet assigned" )
+                        
+                     
+                  
+               
+            
+            
+               releaseSite
+               release
+               Site where fish were released. Levels = c("Knights Landing release site", "Not applicable")
+               
+                  
+                     
+                        
+                           Site where fish were released. Levels = c("Knights Landing release site", "Not applicable")
+                        
+                     
+                  
+               
+            
+            
+               releaseSubSite
+               release
+               Subsite (within site) where fish were released. Corresponds to a trap location.
+               
+                  
+                     
+                        
+                           Subsite (within site) where fish were released. Corresponds to a trap location.
+                        
+                     
+                  
+               
+            
+            
+               nReleased
+               release
+               Number of fish released that were alive with mark intact
+               
+                  
+                     
+                        count of fish
+                     
+                     
+                        whole
+                        
+                           81
+                           7180
+                        
+                     
+                  
+               
+            
+            
+               testDays
+               release
+               Number of days this trap test is considered valid
+               
+                  
+                     
+                        day
+                     
+                     
+                        whole
+                        
+                           0
+                           136
+                        
+                     
+                  
+               
+            
+            
+               appliedMarkType
+               release
+               Mark type that was applied to the release group. Levels = c("Pigment / dye", "Fin clip", "Elastomer", NA)
+               
+                  
+                     
+                        
+                           Mark type that was applied to the release group. Levels = c("Pigment / dye", "Fin clip", "Elastomer", NA)
+                        
+                     
+                  
+               
+            
+            
+               appliedMarkColor
+               release
+               Color of mark that was applied to the release group. Levels = c("Brown", "Orange", "Pink", NA, "Green", "Red", "Blue", "Purple / Violet")
+               
+                  
+                     
+                        
+                           Color of mark that was applied to the release group. Levels = c("Brown", "Orange", "Pink", NA, "Green", "Red", "Blue", "Purple / Violet")
+                        
+                     
+                  
+               
+            
+            
+               appliedMarkPosition
+               release
+               Position of the mark that was applied to the mark group. Levels = c("Whole body", "Nose", "Pelvic fin, left", NA)
+               
+                  
+                     
+                        
+                           Position of the mark that was applied to the mark group. Levels = c("Whole body", "Nose", "Pelvic fin, left", NA)
+                        
+                     
+                  
+               
+            
+            
+               IncludeInAnalysis
+               release
+               Code for whether release trial should be included. Levels = c("Yes", "No")
+               
+                  
+                     
+                        
+                           Code for whether release trial should be included. Levels = c("Yes", "No")
+                        
+                     
+                  
+               
+            
+         
+         1
+      
+      
+         current_year_knights_landing_trap.csv
+         Daily trap operations
+         
+            current_year_knights_landing_trap.csv
+            55846
+            92843aae20349680ab855ce774e46a7e
+            
+               
+                  1
+                  \n
+                  column
+                  
+                     ,
+                  
+               
+            
+            
+               
+                  https://pasta.lternet.edu/package/data/eml/edi/1501/9/104b1e3f236b495564ee77efda3392af
+               
+            
+         
+         
+            
+               projectDescriptionID
+               trap
+               Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.
+               
+                  
+                     
+                        
+                           Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 9.
+                        
+                     
+                  
+               
+            
+            
+               trapVisitID
+               trap
+               Primary key that defines record in table.
+               
+                  
+                     
+                        
+                           Primary key that defines record in table.
+                        
+                     
+                  
+               
+            
+            
+               visitTime
+               trap
+               Date and time of day associated with the trap visit. Definition varies based on visitType.
+               
+                  
+                     YYYY-MM-DD hh:mm:ss
+                     
+                        
+                           2006-10-02 09:30:00
+                           2024-06-04 11:000:51
+                        
+                     
+                  
+               
+            
+            
+               visitTime2
+               trap
+               Date and time of day associated with the end of trap visit. Definition varies based on visitType.
+               
+                  
+                     YYYY-MM-DD hh:mm:ss
+                     
+                        
+                           2006-10-02 09:30:00
+                           2024-06-04 11:00:51
+                        
+                     
+                  
+               
+            
+            
+               siteName
+               trap
+               Name of the sampling site. Levels = "Knights Landing RST"
+               
+                  
+                     
+                        
+                           Name of the sampling site. Levels = "Knights Landing RST"
+                        
+                     
+                  
+               
+            
+            
+               subSiteName
+               trap
+               Name of the trap or trap location. Levels = c("8.4", "8.3")
+               
+                  
+                     
+                        
+                           Name of the trap or trap location. Levels = c("8.4", "8.3")
+                        
+                     
+                  
+               
+            
+            
+               visitType
+               trap
+               Code for work that was done during visit to trap. Levels = c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", "End trapping", "Service/adjust/clean trap", "Drive-by only")
+               
+                  
+                     
+                        
+                           Code for work that was done during visit to trap. Levels = c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", "End trapping", "Service/adjust/clean trap", "Drive-by only")
+                        
+                     
+                  
+               
+            
+            
+               fishProcessed
+               trap
+               If fish processed during trap visit. Levels = c("N/A; not a sampling visit", "Processed fish", "No fish were caught", "No catch data; fish released")
+               
+                  
+                     
+                        
+                           If fish processed during trap visit. Levels = c("N/A; not a sampling visit", "Processed fish", "No fish were caught", "No catch data; fish released")
+                        
+                     
+                  
+               
+            
+            
+               trapFunctioning
+               trap
+               Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", "Trap not in service")
+               
+                  
+                     
+                        
+                           Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap stopped functioning", "Trap functioning, but not normally", "Trap not in service")
+                        
+                     
+                  
+               
+            
+            
+               counterAtStart
+               trap
+               Reading on the digital rotation counter at the start of a sampling period
+               
+                  
+                     
+                        number of rotations
+                     
+                     
+                        real
+                        
+                           0
+                           18326
+                        
+                     
+                  
+               
+            
+            
+               counterAtEnd
+               trap
+               Reading on the digital rotation counter at the end of a sampling period to represent the total revolutions the trap has completed during the sampling period
+               
+                  
+                     
+                        number of rotations
+                     
+                     
+                        real
+                        
+                           0
+                           32404
+                        
+                     
+                  
+               
+            
+            
+               rpmRevolutionsAtStart
+               trap
+               Number of revolutions per minute before cleaning the trap
+               
+                  
+                     
+                        revolutions per minute
+                     
+                     
+                        real
+                        
+                           0
+                           5.7
+                        
+                     
+                  
+               
+            
+            
+               rpmRevolutionsAtEnd
+               trap
+               Number of revolutions per minute before cleaning the trap
+               
+                  
+                     
+                        revolutions per minute
+                     
+                     
+                        real
+                        
+                           0
+                           6
+                        
+                     
+                  
+               
+            
+            
+               includeCatch
+               trap
+               Whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")
+               
+                  
+                     
+                        
+                           Whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")
+                        
+                     
+                  
+               
+            
+            
+               discharge
+               trap
+               Instantaneous stream discharge measurement
+               
+                  
+                     
+                        cubicFeetPerSecond
+                     
+                     
+                        real
+                        
+                           32.9
+                           28700
+                        
+                     
+                  
+               
+            
+            
+               waterVel
+               trap
+               Instantaneous water velocity measured
+               
+                  
+                     
+                        metersPerSecond
+                     
+                     
+                        real
+                        
+                           0
+                           5431
+                        
+                     
+                  
+               
+            
+            
+               waterTemp
+               trap
+               Instantaneous water temperature measured
+               
+                  
+                     
+                        celsius
+                     
+                     
+                        real
+                        
+                           6.9
+                           78
+                        
+                     
+                  
+               
+            
+            
+               lightPenetration
+               trap
+               Instantaneous light penetration measured
+               
+                  
+                     
+                        centimeter
+                     
+                     
+                        real
+                        
+                           0.2
+                           434.3
+                        
+                     
+                  
+               
+            
+            
+               turbidity
+               trap
+               Instantaneous turbidity measurement
+               
+                  
+                     
+                        Nephelometric Turbidity Units (NTU)
+                     
+                     
+                        real
+                        
+                           0.42
+                           1513
+                        
+                     
+                  
+               
+            
+            
+               dissolvedOxygen
+               trap
+               Instantaneous dissolved oxygen measurement
+               
+                  
+                     
+                        percent
+                     
+                     
+                        real
+                        
+                           1
+                           1
+                        
+                     
+                  
+               
+            
+            
+               conductivity
+               trap
+               Instantaneous conductivity measurement
+               
+                  
+                     
+                        microSiemens per centimeter
+                     
+                     
+                        real
+                        
+                           0
+                           1
+                        
+                     
+                  
+               
+            
+            
+               trap_start_date
+               trap
+               Start date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field
+               
+                  
+                     YYYY-MM-DD hh:mm:ss
+                     
+                        
+                           2006-10-02 09:30:00
+                           2024-06-04 11:00:51
+                        
+                     
+                  
+               
+            
+            
+               trap_end_date
+               trap
+               End date and time of a trapping period. Derived from visitTime and visitTime2 fields, adjusted based on the visitType field
+               
+                  
+                     YYYY-MM-DD hh:mm:ss
+                     
+                        
+                           2006-10-02 09:30:00
+                           2024-06-04 11:00:51
+                        
+                     
+                  
+               
+            
+         
+         212
+      
+      
+         knights_landing.zip
+         Zipped folder
+         
+            knights_landing.zip
+            1662200
+            f4713137d9820e7561014e50767f43b2
+            
+               
+                  1
+                  \n
+                  column
+                  
+                     ,
+                  
+               
+            
+            
+               
+                  https://pasta.lternet.edu/package/data/eml/edi/1501/9/83d2eef74fd5872dcc9459888b176cdb
+               
+            
+         
+         zip
+      
+   
+   
+      
+         
+            
+               Count of fish
+            
+            
+               Unit of measurement for turbidity
+            
+            
+               Number of days
+            
+            
+               Total rotations
+            
+            
+               Number of revolutions per minute
+            
+            
+               Unit of measurement for conductivity
+            
+            
+               Unit of measurement for temperature
+            
+         
+      
+   

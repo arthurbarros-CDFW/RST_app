@@ -1,0 +1,22 @@
+trap_visit_ID,common_name,release_ID,at_capture_run,final_run,fish_origin,actual_count,n,visit_time,visit_type,site_name,subsite_name,mark_type,mark_color,mark_position
+29,Chinook salmon,256,Not recorded,Not recorded,Natural,Yes,10,2022-02-02T10:00:43Z,Continue trapping,Lower Feather River RST,RL,Pigment / dye,Brown,Whole body
+30,Chinook salmon,256,Fall,Fall,Natural,Yes,8,2022-02-02T10:00:10Z,Continue trapping,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+71,Chinook salmon,257,Fall,Fall,Natural,Yes,5,2022-02-25T09:45:50Z,Continue trapping,Lower Feather River RST,RL,Pigment / dye,Brown,Whole body
+71,Chinook salmon,257,Fall,Fall,Natural,Yes,4,2022-02-25T09:45:50Z,Continue trapping,Lower Feather River RST,RL,Pigment / dye,Brown,Whole body
+72,Chinook salmon,257,Fall,Fall,Natural,Yes,2,2022-02-25T09:45:23Z,Unplanned restart,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+72,Chinook salmon,257,Fall,Fall,Natural,Yes,6,2022-02-25T09:45:23Z,Unplanned restart,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+153,Chinook salmon,258,Fall,Fall,Natural,Yes,2,2022-04-07T11:00:38Z,Continue trapping,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+166,Chinook salmon,259,Fall,Fall,Natural,Yes,1,2022-04-13T11:00:35Z,Continue trapping,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+197,Chinook salmon,261,Fall,Fall,Hatchery,Yes,1,2022-04-28T11:30:35Z,Continue trapping,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+565,Chinook salmon,262,Fall,Fall,Hatchery,Yes,6,2022-05-03T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+566,Chinook salmon,262,Fall,Fall,Hatchery,Yes,3,2022-05-03T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+567,Chinook salmon,263,Fall,Fall,Hatchery,Yes,0,2022-05-11T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+568,Chinook salmon,263,Fall,Fall,Hatchery,Yes,2,2022-05-11T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+569,Chinook salmon,264,Fall,Fall,Hatchery,Yes,7,2022-05-21T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+570,Chinook salmon,264,Fall,Fall,Hatchery,Yes,8,2022-05-21T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+571,Chinook salmon,265,Fall,Fall,Hatchery,Yes,3,2022-05-31T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+572,Chinook salmon,265,Fall,Fall,Hatchery,Yes,3,2022-05-31T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+573,Chinook salmon,266,Fall,Fall,Hatchery,Yes,4,2022-06-06T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+574,Chinook salmon,266,Fall,Fall,Hatchery,Yes,9,2022-06-06T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+575,Chinook salmon,267,Fall,Fall,Hatchery,Yes,6,2022-06-13T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+576,Chinook salmon,267,Fall,Fall,Hatchery,Yes,1,2022-06-13T12:05:11Z,,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body

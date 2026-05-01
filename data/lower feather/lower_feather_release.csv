@@ -1,0 +1,10 @@
+projectDescriptionID,releaseID,commonName,markedRun,markedFishOrigin,releaseSite,releaseSubSite,nReleased,releaseTime,testDays,appliedMarkType,appliedMarkColor,appliedMarkPosition,includeAnalysis
+12,256,Chinook salmon,Fall,Natural,Lower Feather River Release Site,1 RM Upstream,1302,2022-02-01T12:00:11Z,7,Pigment / dye,Brown,Whole body,Yes
+12,257,Chinook salmon,Fall,Natural,Lower Feather River Release Site,1 RM Upstream,539,2022-02-24T13:15:11Z,7,Pigment / dye,Brown,Whole body,Yes
+12,258,Chinook salmon,Fall,Hatchery,Lower Feather River Release Site,1 RM Upstream,530,2022-04-06T12:05:11Z,7,Pigment / dye,Brown,Whole body,Yes
+12,259,Chinook salmon,Fall,Hatchery,Lower Feather River Release Site,1 RM Upstream,527,2022-04-13T12:15:11Z,7,Pigment / dye,Brown,Whole body,Yes
+12,260,Chinook salmon,Fall,Hatchery,Lower Feather River Release Site,1 RM Upstream,500,2022-04-20T12:05:11Z,7,Pigment / dye,Brown,Whole body,Yes
+12,261,Chinook salmon,Fall,Hatchery,Lower Feather River Release Site,1 RM Upstream,500,2022-04-27T12:05:11Z,7,Pigment / dye,Brown,Whole body,Yes
+12,262,Chinook salmon,Fall,Hatchery,Lower Feather River Release Site,1 RM Upstream,970,2023-01-20T13:53:11Z,7,Pigment / dye,Brown,Whole body,Yes
+12,263,Chinook salmon,Fall,Hatchery,Lower Feather River Release Site,1 RM Upstream,986,2023-01-27T13:53:11Z,7,Pigment / dye,Blue,Whole body,No
+12,264,Chinook salmon,Fall,Hatchery,Lower Feather River Release Site,1 RM Upstream,936,2023-02-11T10:00:11Z,7,Pigment / dye,Brown,Whole body,Yes

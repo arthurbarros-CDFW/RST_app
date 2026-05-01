@@ -1,0 +1,571 @@
+trap_visit_ID,site_name,subsite_name,visit_time,visit_type,fish_processed,trap_functioning,include_catch,discharge,water_vel,water_temp,turbidity,dissolved_O,conductivity,temp_unit
+1,Lower Feather River RST,RL,2022-01-19T12:30:11Z,Start trap & begin trapping,N/A; not a sampling visit,Not recorded,Yes,NA,NA,NA,NA,NA,NA,NA
+2,Lower Feather River RST,RR,2022-01-19T12:30:56Z,Start trap & begin trapping,N/A; not a sampling visit,Not recorded,Yes,NA,NA,NA,NA,NA,NA,NA
+4,Lower Feather River RST,RR,2022-01-20T10:45:07Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1702,NA,9.600000381,3.029999971,11.85000038,NA,Celsius
+3,Lower Feather River RST,RL,2022-01-20T10:45:43Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1072,NA,9.600000381,3.029999971,11.85000038,NA,Celsius
+6,Lower Feather River RST,RL,2022-01-21T10:45:19Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1654,0.400000006,9.600000381,4.400000095,11.63000011,NA,Celsius
+5,Lower Feather River RST,RR,2022-01-21T10:45:31Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1654,0.400000006,9.600000381,4.400000095,11.63000011,NA,Celsius
+7,Lower Feather River RST,RL,2022-01-22T10:15:11Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1653,0.5,9.300000191,4.389999866,11.5,NA,Celsius
+8,Lower Feather River RST,RR,2022-01-22T10:15:14Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1653,0.5,9.300000191,4.389999866,11.5,NA,Celsius
+9,Lower Feather River RST,RL,2022-01-23T13:15:07Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1648,0.400000006,9.600000381,4.010000229,90.09999847,0.0792,Celsius
+10,Lower Feather River RST,RR,2022-01-23T13:15:46Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1648,0.400000006,9.600000381,4.010000229,90.09999847,0.0792,Celsius
+11,Lower Feather River RST,RR,2022-01-24T10:30:11Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1640,0.449999988,9.600000381,3.25999999,11.92000008,NA,Celsius
+12,Lower Feather River RST,RL,2022-01-24T10:30:59Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1640,0.449999988,9.600000381,3.25999999,11.92000008,NA,Celsius
+14,Lower Feather River RST,RR,2022-01-25T09:45:11Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1654,NA,9.600000381,3.019999981,11.39999962,2.519999981,Celsius
+13,Lower Feather River RST,RL,2022-01-25T09:45:18Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,1654,NA,9.600000381,3.019999981,11.39999962,2.519999981,Celsius
+15,Lower Feather River RST,RR,2022-01-26T10:00:15Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,1644,0.449999988,9.600000381,2.839999914,11.52000046,NA,Celsius
+16,Lower Feather River RST,RL,2022-01-26T10:00:57Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1644,0.449999988,9.600000381,2.839999914,11.5,NA,Celsius
+17,Lower Feather River RST,RL,2022-01-27T10:00:25Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1654,0.400000006,9.399999619,2.369999886,11.82999992,0.076499999,Celsius
+18,Lower Feather River RST,RR,2022-01-27T10:00:41Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1654,0.400000006,9.399999619,2.369999886,11.82999992,0.076499999,Celsius
+20,Lower Feather River RST,RL,2022-01-28T10:15:14Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1663,0.400000006,9.399999619,2.470000029,11.69999981,NA,Celsius
+19,Lower Feather River RST,RR,2022-01-28T10:15:16Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1663,0.400000006,9.399999619,2.470000029,11.69999981,NA,Celsius
+21,Lower Feather River RST,RL,2022-01-29T10:30:26Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1820,NA,14.30000019,1.960000038,12.18999958,0.075999998,Celsius
+22,Lower Feather River RST,RR,2022-01-29T10:30:36Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1820,NA,14.30000019,1.960000038,12.18999958,0.075999998,Celsius
+23,Lower Feather River RST,RL,2022-01-30T10:30:47Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2867,0.400000006,10.10000038,4.519999981,7.269999981,0.073899999,Celsius
+24,Lower Feather River RST,RR,2022-01-30T10:30:55Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2867,0.400000006,10.10000038,4.519999981,7.269999981,0.073899999,Celsius
+26,Lower Feather River RST,RR,2022-01-31T10:15:43Z,Unplanned restart,No fish were caught,Trap stopped functioning,No,3199,0.600000024,9.600000381,NA,12,NA,Celsius
+25,Lower Feather River RST,RL,2022-01-31T10:15:57Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3199,0.600000024,9.600000381,NA,12,NA,Celsius
+28,Lower Feather River RST,RR,2022-02-01T11:00:16Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3260,0.699999988,8.800000191,6.059999943,104.5999985,NA,Celsius
+27,Lower Feather River RST,RL,2022-02-01T11:00:35Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3260,0.699999988,8.800000191,6.059999943,104.5999985,NA,Celsius
+30,Lower Feather River RST,RR,2022-02-02T10:00:10Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3309,0.699999988,8.399999619,6.599999905,12.60999966,0.068999998,Celsius
+29,Lower Feather River RST,RL,2022-02-02T10:00:43Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3309,0.699999988,8.399999619,6.599999905,12.60999966,0.068999998,Celsius
+31,Lower Feather River RST,RR,2022-02-03T11:15:10Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3333,0.550000012,8.699999809,6.340000153,12.38000011,0.07,Celsius
+32,Lower Feather River RST,RL,2022-02-03T11:15:22Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3333,0.550000012,8.699999809,6.340000153,12.38000011,0.07,Celsius
+34,Lower Feather River RST,RR,2022-02-04T10:30:03Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3333,0.5,8.800000191,5.269999981,108.0999985,NA,Celsius
+33,Lower Feather River RST,RL,2022-02-04T10:30:43Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3333,0.5,8.800000191,5.269999981,108.0999985,NA,Celsius
+35,Lower Feather River RST,RL,2022-02-05T10:30:20Z,End trapping,Processed fish,Trap functioning normally,Yes,3494,0.449999988,10.89999962,2.839999914,11.30000019,0.070500001,Celsius
+36,Lower Feather River RST,RR,2022-02-05T10:30:23Z,End trapping,Processed fish,Trap stopped functioning,Yes,3494,0.449999988,10.89999962,2.839999914,11.30000019,0.070500001,Celsius
+38,Lower Feather River RST,RR,2022-02-08T11:00:21Z,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,Yes,3532,0.5,10.10000038,4.760000229,13,0.072099999,Celsius
+37,Lower Feather River RST,RL,2022-02-08T11:00:46Z,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,Yes,3532,0.5,10.10000038,4.760000229,13,0.072099999,Celsius
+40,Lower Feather River RST,RR,2022-02-09T11:00:56Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3632,0.550000012,10.19999981,9.600000381,12.42000008,0.073100001,Celsius
+39,Lower Feather River RST,RL,2022-02-09T11:00:59Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3632,0.550000012,10.19999981,9.600000381,12.42000008,0.073100001,Celsius
+42,Lower Feather River RST,RL,2022-02-10T10:00:00Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3747,0.75,10.69999981,6.46999979,12.14999962,0.103,Celsius
+41,Lower Feather River RST,RR,2022-02-10T10:00:42Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3747,0.75,10.69999981,6.46999979,12.14999962,0.103,Celsius
+44,Lower Feather River RST,RR,2022-02-11T10:30:04Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3914,0.449999988,11.39999962,6.510000229,107.9000015,NA,Celsius
+43,Lower Feather River RST,RL,2022-02-11T10:30:57Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3914,0.449999988,11.39999962,6.510000229,107.9000015,NA,Celsius
+46,Lower Feather River RST,RL,2022-02-12T10:00:15Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3927,0.600000024,11.39999962,4.78000021,11.77999973,0.076399997,Celsius
+45,Lower Feather River RST,RR,2022-02-12T10:00:44Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3927,0.600000024,11.39999962,4.78000021,11.77999973,0.076399997,Celsius
+47,Lower Feather River RST,RL,2022-02-13T10:30:05Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3927,0.600000024,12.39999962,5.159999847,10.5,0.077500001,Celsius
+48,Lower Feather River RST,RR,2022-02-13T10:30:40Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3927,0.600000024,12.39999962,5.159999847,10.5,0.077500001,Celsius
+49,Lower Feather River RST,RL,2022-02-14T10:00:09Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3901,0.5,14,4.269999981,10.44999981,0.077699997,Celsius
+50,Lower Feather River RST,RR,2022-02-14T10:00:48Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3901,0.5,14,4.269999981,10.44999981,0.077699997,Celsius
+52,Lower Feather River RST,RR,2022-02-15T10:30:32Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3862,0.850000024,11.39999962,3.480000019,12.84000015,0.077100001,Celsius
+51,Lower Feather River RST,RL,2022-02-15T10:30:43Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3862,0.850000024,11.39999962,3.480000019,12.84000015,0.077100001,Celsius
+54,Lower Feather River RST,RL,2022-02-16T10:45:15Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3875,0.449999988,11,3.470000029,11.81000042,0.076700002,Celsius
+53,Lower Feather River RST,RR,2022-02-16T10:45:38Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3875,0.449999988,11,3.470000029,11.81000042,0.076700002,Celsius
+56,Lower Feather River RST,RR,2022-02-17T10:00:42Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3875,0.800000012,11,4.28000021,11.92000008,0.0766,Celsius
+55,Lower Feather River RST,RL,2022-02-17T10:00:53Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3875,0.699999988,11,4.28000021,11.92000008,0.0766,Celsius
+57,Lower Feather River RST,RL,2022-02-18T10:30:11Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3850,0.800000012,11.10000038,2.789999962,11.94999981,0.0766,Celsius
+58,Lower Feather River RST,RR,2022-02-18T10:30:27Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3850,0.800000012,11.10000038,2.789999962,11.94999981,0.0766,Celsius
+60,Lower Feather River RST,RR,2022-02-19T10:00:05Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3837,0.5,11.10000038,3.130000114,11.81999969,NA,Celsius
+59,Lower Feather River RST,RL,2022-02-19T10:00:15Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3837,0.5,11.10000038,3.130000114,11.81999969,NA,Celsius
+61,Lower Feather River RST,RL,2022-02-20T10:30:19Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3837,0.600000024,11.5,2.400000095,11.97000027,0.103799999,Celsius
+62,Lower Feather River RST,RR,2022-02-20T10:30:22Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3837,0.600000024,11.5,2.400000095,11.97000027,0.103799999,Celsius
+63,Lower Feather River RST,RL,2022-02-21T10:15:06Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3850,0.75,16.29999924,2.559999943,12,0.076300003,Celsius
+64,Lower Feather River RST,RR,2022-02-21T10:15:08Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3850,0.75,16.29999924,2.559999943,12,0.076300003,Celsius
+65,Lower Feather River RST,RR,2022-02-22T10:00:30Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3979,0.600000024,10.80000019,3.420000076,11.57999992,0.075300001,Celsius
+66,Lower Feather River RST,RL,2022-02-22T10:00:38Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3979,0.600000024,10.80000019,3.420000076,11.57999992,0.075300001,Celsius
+67,Lower Feather River RST,RL,2022-02-23T09:45:33Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4217,0.850000024,10,3.779999971,12.15999985,0.073600002,Celsius
+68,Lower Feather River RST,RR,2022-02-23T09:45:49Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4217,0.850000024,10,3.779999971,12.15999985,0.073600002,Celsius
+69,Lower Feather River RST,RL,2022-02-24T10:30:18Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4665,0.649999976,10,2.880000114,12.51000023,0.0284,Celsius
+70,Lower Feather River RST,RR,2022-02-24T10:30:54Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,4665,0.649999976,10,2.880000114,12.51000023,0.0284,Celsius
+72,Lower Feather River RST,RR,2022-02-25T09:45:23Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,4790,0.5,9.699999809,3.849999905,12.69999981,NA,Celsius
+71,Lower Feather River RST,RL,2022-02-25T09:45:50Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4790,0.5,9.699999809,3.849999905,12.69999981,NA,Celsius
+73,Lower Feather River RST,RR,2022-02-26T10:00:24Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5243,0.550000012,10.19999981,2.630000114,13.10000038,0.0726,Celsius
+74,Lower Feather River RST,RL,2022-02-26T10:00:59Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,5243,0.5,10.19999981,2.630000114,13.10000038,0.0726,Celsius
+76,Lower Feather River RST,RR,2022-02-27T10:00:10Z,Unplanned restart,Processed fish,Trap stopped functioning,No,5431,0.75,10.5,3.720000029,12.92000008,0.0012,Celsius
+75,Lower Feather River RST,RL,2022-02-27T10:00:36Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,5431,0.75,10.5,3.720000029,12.92000008,0.0012,Celsius
+77,Lower Feather River RST,RR,2022-02-28T09:45:16Z,Unplanned restart,Processed fish,Trap stopped functioning,No,5446,0.600000024,11,2.960000038,12.57999992,NA,Celsius
+78,Lower Feather River RST,RL,2022-02-28T09:45:20Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5446,0.600000024,11,2.960000038,12.57999992,NA,Celsius
+80,Lower Feather River RST,RL,2022-03-01T10:30:09Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,5446,0.400000006,11.80000019,NA,12.30000019,0.075099997,Celsius
+79,Lower Feather River RST,RR,2022-03-01T10:30:37Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,5446,0.400000006,11.80000019,NA,12.30000019,0.075099997,Celsius
+82,Lower Feather River RST,RR,2022-03-02T10:15:12Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5475,0.649999976,16.5,2.640000105,9.329999924,0.0757,Celsius
+81,Lower Feather River RST,RL,2022-03-02T10:15:45Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5475,0.699999988,16.5,2.640000105,9.329999924,0.0757,Celsius
+83,Lower Feather River RST,RL,2022-03-03T10:45:32Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5446,0.800000012,11.89999962,2.559999943,12.19999981,0.0014,Celsius
+84,Lower Feather River RST,RR,2022-03-03T10:45:33Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,5446,0.800000012,11.89999962,2.559999943,12.19999981,0.0014,Celsius
+86,Lower Feather River RST,RR,2022-03-04T09:30:38Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5446,0.550000012,11.89999962,3.150000095,11.72999954,NA,Celsius
+85,Lower Feather River RST,RL,2022-03-04T09:30:54Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,5446,0.5,11.89999962,3.150000095,11.72999954,NA,Celsius
+88,Lower Feather River RST,RR,2022-03-05T09:45:11Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5651,0.699999988,11.89999962,3.5,11.81000042,0.075400002,Celsius
+87,Lower Feather River RST,RL,2022-03-05T09:45:27Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5651,0.699999988,11.89999962,3.5,11.81000042,0.075400002,Celsius
+90,Lower Feather River RST,RL,2022-03-06T09:45:01Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5711,0.699999988,11.19999981,3.890000105,12.10999966,0.022299999,Celsius
+89,Lower Feather River RST,RR,2022-03-06T09:45:34Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5711,0.699999988,11.19999981,3.890000105,12.10999966,0.022299999,Celsius
+92,Lower Feather River RST,RR,2022-03-07T10:00:17Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,5695,0.5,12.19999981,3.390000105,10.86999989,0.074299999,Celsius
+91,Lower Feather River RST,RL,2022-03-07T10:00:42Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,5695,0.5,12.19999981,3.390000105,10.86999989,0.074299999,Celsius
+94,Lower Feather River RST,RR,2022-03-08T10:00:35Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5725,0.649999976,11.60000038,3.619999886,12.17000008,0.075099997,Celsius
+93,Lower Feather River RST,RL,2022-03-08T10:00:58Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5725,0.649999976,11.60000038,3.619999886,12.17000008,0.075099997,Celsius
+95,Lower Feather River RST,RL,2022-03-09T10:15:19Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5740,0.699999988,11.89999962,4.5,11.61999989,0.0757,Celsius
+96,Lower Feather River RST,RR,2022-03-09T10:15:43Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5740,0.699999988,11.89999962,4.5,11.61999989,0.0757,Celsius
+98,Lower Feather River RST,RL,2022-03-10T10:00:08Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,5905,0.899999976,11.80000019,3.470000029,11.81999969,0.075300001,Celsius
+97,Lower Feather River RST,RR,2022-03-10T10:00:14Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5905,0.850000024,11.80000019,3.470000029,11.81999969,0.075300001,Celsius
+99,Lower Feather River RST,RR,2022-03-11T09:45:54Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5980,0.649999976,11.39999962,3.710000038,12.10999966,0.074299999,Celsius
+100,Lower Feather River RST,RL,2022-03-11T09:45:57Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5980,0.600000024,11.39999962,3.710000038,12.10999966,0.074299999,Celsius
+102,Lower Feather River RST,RR,2022-03-12T10:00:05Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5995,0.75,11.69999981,2.680000067,11.89999962,0.0744,Celsius
+101,Lower Feather River RST,RL,2022-03-12T10:00:07Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5995,0.800000012,11.69999981,2.680000067,11.89999962,0.0744,Celsius
+103,Lower Feather River RST,RL,2022-03-13T10:30:00Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5143,0.699999988,11.80000019,2.890000105,11.40999985,0.075800002,Celsius
+104,Lower Feather River RST,RR,2022-03-13T10:30:05Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5143,0.699999988,11.80000019,2.890000105,11.40999985,0.075800002,Celsius
+106,Lower Feather River RST,RR,2022-03-14T10:00:29Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,4164,0.699999988,12.89999962,2.930000067,9.579999924,0.076800004,Celsius
+105,Lower Feather River RST,RL,2022-03-14T10:00:37Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4164,0.699999988,12.89999962,2.930000067,9.579999924,0.076800004,Celsius
+108,Lower Feather River RST,RL,2022-03-15T10:30:08Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3407,0.550000012,12.80000019,1.519999981,10.93000031,0.079300001,Celsius
+107,Lower Feather River RST,RR,2022-03-15T10:30:23Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3407,0.550000012,12.80000019,1.519999981,10.93000031,0.079300001,Celsius
+110,Lower Feather River RST,RR,2022-03-16T10:00:05Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3187,0.400000006,13,2.349999905,10.40999985,0.079800002,Celsius
+109,Lower Feather River RST,RL,2022-03-16T10:00:48Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3187,0.400000006,13,2.349999905,10.40999985,0.079800002,Celsius
+111,Lower Feather River RST,RR,2022-03-17T10:30:41Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3163,0.5,13.10000038,2.200000048,10.59000015,0.082099997,Celsius
+112,Lower Feather River RST,RL,2022-03-17T10:30:49Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3163,0.5,13.10000038,2.200000048,10.59000015,0.082099997,Celsius
+113,Lower Feather River RST,RL,2022-03-18T09:45:22Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3151,0.600000024,13.5,2.140000105,10.39000034,0.0814,Celsius
+114,Lower Feather River RST,RR,2022-03-18T09:45:45Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3151,0.600000024,13.5,2.140000105,10.39000034,0.0814,Celsius
+115,Lower Feather River RST,RL,2022-03-19T09:45:06Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3115,0.449999988,13.5,4.010000229,10.44999981,0.079400003,Celsius
+116,Lower Feather River RST,RR,2022-03-19T09:45:33Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3115,0.5,13.5,4.010000229,10.44999981,0.079400003,Celsius
+117,Lower Feather River RST,RL,2022-03-20T09:45:03Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3091,0.600000024,12.60000038,2.789999962,10.73999977,0.078699999,Celsius
+118,Lower Feather River RST,RR,2022-03-20T09:45:55Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3091,0.600000024,12.60000038,2.789999962,10.73999977,0.078699999,Celsius
+119,Lower Feather River RST,RR,2022-03-21T09:45:23Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3079,0.600000024,12.80000019,1.850000024,11,0.078699999,Celsius
+120,Lower Feather River RST,RL,2022-03-21T09:45:33Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3079,0.600000024,12.80000019,1.850000024,11,0.078699999,Celsius
+122,Lower Feather River RST,RR,2022-03-22T10:30:03Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3020,0.5,14.30000019,2.039999962,7.150000095,0.081799999,Celsius
+121,Lower Feather River RST,RL,2022-03-22T10:30:29Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3020,0.449999988,14.30000019,2.039999962,7.150000095,0.081799999,Celsius
+124,Lower Feather River RST,RR,2022-03-23T10:30:19Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3020,0.400000006,15.5,2.339999914,9.800000191,0.0836,Celsius
+123,Lower Feather River RST,RL,2022-03-23T10:30:23Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3020,0.400000006,15.5,2.339999914,9.800000191,0.0836,Celsius
+126,Lower Feather River RST,RL,2022-03-24T10:30:41Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3008,0.550000012,16,2.380000114,9.760000229,0.085500002,Celsius
+125,Lower Feather River RST,RR,2022-03-24T10:30:51Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3008,0.5,16,2.380000114,9.760000229,0.085500002,Celsius
+128,Lower Feather River RST,RR,2022-03-25T10:00:10Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3008,0.400000006,15.60000038,1.269999981,9.56000042,0.083899997,Celsius
+127,Lower Feather River RST,RL,2022-03-25T10:00:57Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3008,0.449999988,15.60000038,1.269999981,9.56000042,0.083899997,Celsius
+129,Lower Feather River RST,RL,2022-03-26T09:45:22Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3223,0.449999988,15.5,2.029999971,9.869999886,0.082900003,Celsius
+130,Lower Feather River RST,RR,2022-03-26T09:45:22Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3223,0.5,15.5,2.029999971,9.869999886,0.082900003,Celsius
+132,Lower Feather River RST,RL,2022-03-27T09:45:20Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3772,0.400000006,15.5,3.049999952,9.949999809,0.082800001,Celsius
+131,Lower Feather River RST,RR,2022-03-27T09:45:58Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3772,0.400000006,15.5,3.049999952,9.949999809,0.082800001,Celsius
+134,Lower Feather River RST,RR,2022-03-28T09:45:01Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3862,0.400000006,15.5,2.119999886,8.409999847,0.096699998,Celsius
+133,Lower Feather River RST,RL,2022-03-28T09:45:26Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3862,0.400000006,15.5,2.119999886,8.409999847,0.096699998,Celsius
+136,Lower Feather River RST,RL,2022-03-29T11:00:40Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3862,0.5,14.80000019,1.470000029,9.840000153,0.0814,Celsius
+135,Lower Feather River RST,RR,2022-03-29T11:00:56Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3862,0.5,14.80000019,1.470000029,9.840000153,0.0814,Celsius
+138,Lower Feather River RST,RR,2022-03-30T10:00:03Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3875,0.600000024,15.5,1.980000019,9.659999847,0.0823,Celsius
+137,Lower Feather River RST,RL,2022-03-30T10:00:09Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,3875,0.600000024,15.5,1.980000019,9.659999847,0.0823,Celsius
+140,Lower Feather River RST,RL,2022-03-31T10:00:05Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3826,0.5,14.5,2.210000038,10.10000038,0.080499999,Celsius
+139,Lower Feather River RST,RR,2022-03-31T10:00:50Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3862,0.400000006,14.5,2.210000038,10.10000038,0.080499999,Celsius
+142,Lower Feather River RST,RR,2022-04-01T10:00:26Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3824,0.600000024,16,1.590000033,7.679999828,0.095600002,Celsius
+141,Lower Feather River RST,RL,2022-04-01T10:00:33Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3824,0.5,16,1.590000033,7.679999828,0.095600002,Celsius
+144,Lower Feather River RST,RL,2022-04-02T10:15:05Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3862,0.5,15.89999962,2.150000095,9.409999847,0.082699999,Celsius
+143,Lower Feather River RST,RR,2022-04-02T10:15:32Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3862,0.5,15.89999962,2.150000095,9.409999847,0.082699999,Celsius
+146,Lower Feather River RST,RR,2022-04-03T10:00:09Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3494,0.400000006,15.5,1.860000014,9.779999733,0.082500003,Celsius
+145,Lower Feather River RST,RL,2022-04-03T10:00:21Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3494,0.5,15.5,1.860000014,9.779999733,0.082500003,Celsius
+147,Lower Feather River RST,RR,2022-04-04T10:00:23Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3103,0.400000006,15.5,1.570000052,9.399999619,0.101000004,Celsius
+148,Lower Feather River RST,RL,2022-04-04T10:00:42Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3103,0.400000006,15.5,1.570000052,9.399999619,0.101000004,Celsius
+149,Lower Feather River RST,RL,2022-04-05T12:30:00Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2902,0.600000024,15.19999981,1.200000048,9.75,0.102200001,Celsius
+150,Lower Feather River RST,RR,2022-04-05T12:30:52Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2902,0.5,15.19999981,1.200000048,9.75,0.102200001,Celsius
+152,Lower Feather River RST,RL,2022-04-06T11:00:14Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2774,0.5,15.5,1.639999986,9.739999771,0.083700001,Celsius
+151,Lower Feather River RST,RR,2022-04-06T11:00:48Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2774,0.600000024,15.5,1.639999986,9.739999771,0.083700001,Celsius
+154,Lower Feather River RST,RL,2022-04-07T11:00:05Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2626,0.600000024,16.29999924,2.609999895,10.38000011,0.0854,Celsius
+153,Lower Feather River RST,RR,2022-04-07T11:00:38Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2626,0.600000024,16.29999924,2.609999895,10.38000011,0.0854,Celsius
+156,Lower Feather River RST,RR,2022-04-08T10:00:28Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2492,0.400000006,17.20000076,2.529999971,8.840000153,0.0876,Celsius
+155,Lower Feather River RST,RL,2022-04-08T10:00:41Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2492,0.400000006,17.20000076,2.529999971,8.840000153,0.0876,Celsius
+158,Lower Feather River RST,RR,2022-04-09T10:30:11Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2306,0.400000006,16.5,1.419999957,9.319999695,0.086999997,Celsius
+157,Lower Feather River RST,RL,2022-04-09T10:30:46Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2306,0.400000006,16.5,1.419999957,9.319999695,0.086999997,Celsius
+159,Lower Feather River RST,RR,2022-04-10T10:15:17Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2126,0.5,14,1.730000019,10.01000023,0.081600003,Celsius
+160,Lower Feather River RST,RL,2022-04-10T10:15:24Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2126,0.449999988,14,1.730000019,10.01000023,0.081600003,Celsius
+162,Lower Feather River RST,RR,2022-04-11T11:00:39Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,2001,0.300000012,14.89999962,1.25,9.449999809,0.085000001,Celsius
+161,Lower Feather River RST,RL,2022-04-11T11:00:54Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,2001,0.400000006,14.89999962,1.25,9.449999809,0.085000001,Celsius
+163,Lower Feather River RST,RR,2022-04-12T11:30:16Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1849,0.400000006,13.89999962,1.840000033,10.19999981,0.085000001,Celsius
+164,Lower Feather River RST,RL,2022-04-12T11:30:30Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1849,0.400000006,13.89999962,1.840000033,10.19999981,0.085000001,Celsius
+165,Lower Feather River RST,RL,2022-04-13T11:00:19Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1839,0.400000006,14.19999981,1.639999986,10.02000046,0.0854,Celsius
+166,Lower Feather River RST,RR,2022-04-13T11:00:35Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1839,0.5,14.19999981,1.639999986,10.02000046,0.0854,Celsius
+169,Lower Feather River RST,RL,2022-04-14T11:00:22Z,Continue trapping,No fish were caught,"Trap functioning, but not normally",Yes,1800,0.300000012,13.60000038,1.210000038,9.819999695,0.084100001,Celsius
+168,Lower Feather River RST,RR,2022-04-14T11:00:34Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,1800,0.400000006,13.60000038,1.210000038,9.819999695,0.084100001,Celsius
+170,Lower Feather River RST,RL,2022-04-15T10:30:23Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1731,0.5,13.30000019,1.139999986,9.930000305,0.0832,Celsius
+171,Lower Feather River RST,RR,2022-04-15T10:30:56Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1731,0.400000006,13.30000019,1.139999986,9.930000305,0.032000002,Celsius
+172,Lower Feather River RST,RR,2022-04-16T10:00:51Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1692,0.300000012,14.60000038,1.529999971,9.449999809,0.086099997,Celsius
+173,Lower Feather River RST,RL,2022-04-16T10:00:58Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1629,0.400000006,14.60000038,1.529999971,9.449999809,0.086099997,Celsius
+174,Lower Feather River RST,RR,2022-04-17T10:30:48Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1692,0.300000012,14.69999981,1.220000029,9.600000381,0.086599998,Celsius
+175,Lower Feather River RST,RL,2022-04-17T10:30:54Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,1692,0.200000003,14.69999981,1.220000029,9.600000381,0.086599998,Celsius
+176,Lower Feather River RST,RL,2022-04-18T10:30:32Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,1616,0.400000006,15.10000038,1.860000014,NA,0.093000002,Celsius
+177,Lower Feather River RST,RR,2022-04-18T10:30:49Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1616,0.400000006,15.10000038,1.860000014,NA,0.093000002,Celsius
+178,Lower Feather River RST,RR,2022-04-19T10:30:13Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1587,0.400000006,15.80000019,0.959999979,9.06000042,0.096799999,Celsius
+179,Lower Feather River RST,RL,2022-04-19T10:30:39Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,1587,0.300000012,15.80000019,0.959999979,9.06000042,0.096799999,Celsius
+181,Lower Feather River RST,RL,2022-04-20T10:30:18Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1625,0.300000012,16,1.409999967,9.43999958,0.090400003,Celsius
+180,Lower Feather River RST,RR,2022-04-20T10:30:57Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,1625,0.300000012,16,1.409999967,9.43999958,0.090400003,Celsius
+182,Lower Feather River RST,RR,2022-04-21T10:45:32Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1587,0.400000006,16,0.730000019,9.229999542,0.091399997,Celsius
+183,Lower Feather River RST,RL,2022-04-21T10:45:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1587,0.400000006,16,0.730000019,9.229999542,0.091399997,Celsius
+185,Lower Feather River RST,RR,2022-04-22T11:00:22Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,1810,0.400000006,15.60000038,1.25999999,9.350000381,0.087700002,Celsius
+184,Lower Feather River RST,RL,2022-04-22T11:00:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1810,0.400000006,15.60000038,1.25999999,9.350000381,0.087700002,Celsius
+186,Lower Feather River RST,RL,2022-04-23T10:15:07Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2189,0.400000006,15.39999962,4.230000019,9.180000305,0.0814,Celsius
+187,Lower Feather River RST,RR,2022-04-23T10:15:57Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2189,0.400000006,15.39999962,4.230000019,9.180000305,0.0814,Celsius
+188,Lower Feather River RST,RL,2022-04-24T10:45:36Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,1960,0.5,16.60000038,2.480000019,9.06000042,0.087399997,Celsius
+189,Lower Feather River RST,RR,2022-04-24T10:45:58Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,1960,0.5,16.60000038,2.480000019,9.06000042,0.087399997,Celsius
+191,Lower Feather River RST,RL,2022-04-25T10:45:01Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,1741,0.400000006,17.5,1.980000019,8.779999733,0.089199997,Celsius
+190,Lower Feather River RST,RR,2022-04-25T10:45:47Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1741,0.400000006,17.5,1.980000019,8.779999733,0.089199997,Celsius
+193,Lower Feather River RST,RR,2022-04-26T11:15:21Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1712,0.400000006,18,1.409999967,8.479999542,0.088399999,Celsius
+192,Lower Feather River RST,RL,2022-04-26T11:15:56Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1712,0.5,18,1.409999967,8.479999542,0.088399999,Celsius
+194,Lower Feather River RST,RR,2022-04-27T11:30:05Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1606,0.400000006,18.39999962,2.680000067,8.300000191,0.0889,Celsius
+195,Lower Feather River RST,RL,2022-04-27T11:30:13Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1606,0.5,18.39999962,2.680000067,8.300000191,0.0889,Celsius
+196,Lower Feather River RST,RL,2022-04-28T10:15:14Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1635,0.400000006,16.89999962,1.779999971,8.770000458,0.103399999,Celsius
+197,Lower Feather River RST,RR,2022-04-28T11:30:35Z,Continue trapping,No catch data; fish released,Trap functioning normally,Yes,1635,0.400000006,16.89999962,1.779999971,8.770000458,0.103399999,Celsius
+199,Lower Feather River RST,RL,2022-04-29T11:00:22Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1587,0.400000006,17.79999924,1.299999952,8.600000381,0.088399999,Celsius
+198,Lower Feather River RST,RR,2022-04-29T11:00:44Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1587,0.300000012,17.79999924,1.299999952,8.600000381,0.088399999,Celsius
+201,Lower Feather River RST,RR,2022-04-30T10:30:09Z,Continue trapping,Processed fish,Trap stopped functioning,Yes,1606,0.400000006,18.10000038,1.679999948,8.25,0.087899998,Celsius
+200,Lower Feather River RST,RL,2022-04-30T10:30:10Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1606,0.400000006,18.10000038,1.679999948,8.25,0.087899998,Celsius
+203,Lower Feather River RST,RL,2022-05-01T10:30:20Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1578,0.449999988,18.39999962,1.50999999,8.300000191,0.086099997,Celsius
+202,Lower Feather River RST,RR,2022-05-01T10:30:33Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1578,0.400000006,18.39999962,1.50999999,830,0.086099997,Celsius
+204,Lower Feather River RST,RL,2022-05-02T10:30:34Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1597,0.400000006,17.70000076,2.130000114,8.510000229,0.085500002,Celsius
+205,Lower Feather River RST,RR,2022-05-02T10:30:44Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1597,0.400000006,17.70000076,2.130000114,8.510000229,0.085500002,Celsius
+565,Lower Feather River RST,RR,2022-05-02T12:05:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,,,,,
+566,Lower Feather River RST,RL,2022-05-02T12:05:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,,,,,
+207,Lower Feather River RST,RL,2022-05-03T10:00:05Z,End trapping,Processed fish,Trap functioning normally,Yes,1568,0.400000006,16.20000076,1.110000014,9.050000191,0.083499998,Celsius
+206,Lower Feather River RST,RR,2022-05-03T10:00:25Z,End trapping,Processed fish,Trap functioning normally,Yes,1568,0.400000006,16.20000076,1.110000014,9.050000191,0.083499998,Celsius
+209,Lower Feather River RST,RL,2022-05-04T12:00:42Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,1597,0.400000006,19.60000038,1.210000038,8.449999809,0.088,Celsius
+208,Lower Feather River RST,RR,2022-05-04T12:00:46Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,1597,0.400000006,19.60000038,1.210000038,8.449999809,0.088,Celsius
+211,Lower Feather River RST,RR,2022-05-05T10:30:45Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1606,0.400000006,18.70000076,0.980000019,8.430000305,0.097499996,Celsius
+210,Lower Feather River RST,RL,2022-05-05T10:30:54Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1606,0.5,18.70000076,0.980000019,8.430000305,0.097499996,Celsius
+213,Lower Feather River RST,RL,2022-05-06T10:30:05Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1578,0.400000006,17,1.179999948,8.579999924,0.081799999,Celsius
+212,Lower Feather River RST,RR,2022-05-06T10:30:13Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,1578,0.400000006,17,1.179999948,8.579999924,0.081799999,Celsius
+214,Lower Feather River RST,RL,2022-05-07T10:00:13Z,Continue trapping,Processed fish,Trap functioning normally,Yes,NA,NA,NA,NA,NA,NA,NA
+215,Lower Feather River RST,RR,2022-05-07T10:00:37Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1692,0.400000006,17.60000038,1.830000043,8.449999809,0.0823,Celsius
+217,Lower Feather River RST,RL,2022-05-08T10:30:38Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1859,0.5,17.60000038,1.659999967,8.270000458,0.0823,Celsius
+216,Lower Feather River RST,RR,2022-05-08T10:30:46Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1859,0.5,17.60000038,1.659999967,8.270000458,0.0823,Celsius
+218,Lower Feather River RST,RL,2022-05-09T09:45:07Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,1899,0.400000006,15.30000019,3.079999924,8.800000191,0.076899998,Celsius
+219,Lower Feather River RST,RR,2022-05-09T09:45:56Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1899,0.400000006,15.30000019,3.079999924,8.800000191,0.076899998,Celsius
+220,Lower Feather River RST,RL,2022-05-10T10:30:06Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2503,0.400000006,15.39999962,1.720000029,8.819999695,0.095899999,Celsius
+221,Lower Feather River RST,RR,2022-05-10T10:30:17Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2503,0.400000006,15.69999981,1.720000029,8.819999695,0.095899999,Celsius
+567,Lower Feather River RST,RR,2022-05-10T12:05:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,,,,,
+568,Lower Feather River RST,RL,2022-05-10T12:05:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,,,,,
+222,Lower Feather River RST,RR,2022-05-11T10:15:04Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2673,0.5,15.69999981,1.909999967,8.909999847,0.077500001,Celsius
+223,Lower Feather River RST,RL,2022-05-11T10:15:17Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2763,0.800000012,15.69999981,1.909999967,8.909999847,0.077500001,Celsius
+224,Lower Feather River RST,RR,2022-05-12T11:00:06Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2774,0.5,16.29999924,2.329999924,9.180000305,0.093599997,Celsius
+226,Lower Feather River RST,RL,2022-05-12T11:00:35Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2774,0.5,16.29999924,2.329999924,9.180000305,0.093599997,Celsius
+227,Lower Feather River RST,RR,2022-05-13T10:30:08Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2763,0.5,16.70000076,1.710000038,9,0.077600002,Celsius
+280,Lower Feather River RST,RL,2022-05-13T10:30:25Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2763,0.5,16.70000076,1.710000038,9,0.077600002,Celsius
+281,Lower Feather River RST,RL,2022-05-14T10:30:37Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2774,0.600000024,18,2.640000105,8.659999847,0.092299998,Celsius
+228,Lower Feather River RST,RR,2022-05-14T10:30:49Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2774,0.5,18,2.640000105,8.659999847,0.092299998,Celsius
+230,Lower Feather River RST,RL,2022-05-15T10:15:14Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2797,0.600000024,18.79999924,2.940000057,8.329999924,0.081200004,NA
+229,Lower Feather River RST,RR,2022-05-15T10:15:26Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2797,0.699999988,18.79999924,2.940000057,8.329999924,0.081200004,Celsius
+232,Lower Feather River RST,RR,2022-05-16T09:45:02Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2809,0.5,18.60000038,2.690000057,8.340000153,0.081,Celsius
+231,Lower Feather River RST,RL,2022-05-16T09:45:26Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2809,0.5,18.60000038,2.690000057,8.340000153,0.081,Celsius
+233,Lower Feather River RST,RR,2022-05-17T10:00:25Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2809,0.600000024,19,1.389999986,8.109999657,0.081799999,Celsius
+234,Lower Feather River RST,RL,2022-05-17T10:00:55Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2809,0.699999988,19,1.389999986,8.109999657,0.081799999,Celsius
+236,Lower Feather River RST,RR,2022-05-18T09:45:22Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2786,0.5,19.20000076,2.670000076,8.079999924,0.080499999,Celsius
+235,Lower Feather River RST,RL,2022-05-18T09:45:24Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2786,0.600000024,19.20000076,2.670000076,8.079999924,0.080499999,Celsius
+237,Lower Feather River RST,RR,2022-05-19T10:30:02Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2832,0.600000024,19.5,2.039999962,8.029999733,0.091799997,Celsius
+238,Lower Feather River RST,RL,2022-05-19T10:30:11Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2832,0.600000024,19.5,2.039999962,8.029999733,0.091799997,Celsius
+239,Lower Feather River RST,RR,2022-05-20T10:30:15Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2740,0.600000024,17.5,2.339999914,8.359999657,0.092200004,Celsius
+240,Lower Feather River RST,RL,2022-05-20T10:30:15Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2740,0.600000024,17.5,2.339999914,8.359999657,0.092200004,Celsius
+569,Lower Feather River RST,RR,2022-05-20T12:05:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,,,,,
+570,Lower Feather River RST,RL,2022-05-20T12:05:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,,,,,
+242,Lower Feather River RST,RR,2022-05-21T10:30:50Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2786,0.5,18.39999962,2.269999981,8.020000458,0.092699997,Celsius
+241,Lower Feather River RST,RL,2022-05-21T10:30:54Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2786,0.5,18.39999962,2.269999981,8.020000458,0.092699997,Celsius
+244,Lower Feather River RST,RL,2022-05-22T10:30:06Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2797,0.600000024,19.5,1.889999986,7.840000153,0.092,Celsius
+243,Lower Feather River RST,RR,2022-05-22T10:30:25Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2797,0.5,19.5,1.889999986,7.840000153,0.092,Celsius
+246,Lower Feather River RST,RR,2022-05-23T10:00:06Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2786,0.600000024,19.60000038,2.430000067,7.679999828,0.082400002,Celsius
+245,Lower Feather River RST,RL,2022-05-23T10:00:57Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2786,0.5,19.60000038,2.430000067,7.679999828,0.082400002,Celsius
+247,Lower Feather River RST,RL,2022-05-24T10:30:13Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2786,0.5,20.10000038,2.24000001,7.570000172,0.091799997,Celsius
+248,Lower Feather River RST,RR,2022-05-24T10:30:45Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2786,0.5,20.10000038,2.24000001,7.570000172,0.091799997,Celsius
+249,Lower Feather River RST,RL,2022-05-25T10:45:22Z,End trapping,Processed fish,Trap functioning normally,Yes,2797,0.600000024,21.39999962,2.640000105,7.409999847,0.084700003,Celsius
+250,Lower Feather River RST,RR,2022-05-25T10:45:29Z,End trapping,Processed fish,Trap functioning normally,Yes,2797,0.600000024,21.39999962,2.640000105,7.409999847,0.084700003,Celsius
+251,Lower Feather River RST,RL,2022-05-27T10:30:16Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,2832,NA,19.60000038,1.620000005,7.860000134,0.079999998,Celsius
+252,Lower Feather River RST,RR,2022-05-27T10:30:53Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,2832,NA,19.60000038,1.620000005,7.889999866,0.079999998,Celsius
+282,Lower Feather River RST,RL,2022-05-28T09:45:15Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3127,0.5,19.29999924,1.74000001,7.880000114,0.089400001,Celsius
+253,Lower Feather River RST,RR,2022-05-28T09:45:41Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3127,0.600000024,19.29999924,1.74000001,7.880000114,0.089400001,Celsius
+256,Lower Feather River RST,RR,2022-05-29T11:00:11Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3175,0.600000024,19.20000076,1.850000024,8.079999924,0.088399999,Celsius
+255,Lower Feather River RST,RL,2022-05-29T11:00:40Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3175,0.400000006,19.20000076,1.850000024,8.079999924,0.088399999,Celsius
+258,Lower Feather River RST,RL,2022-05-30T10:00:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3199,0.5,18.89999962,2.349999905,7.820000172,0.088100001,Celsius
+257,Lower Feather River RST,RR,2022-05-30T10:00:50Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3199,0.5,18.89999962,2.349999905,7.820000172,0.088100001,Celsius
+571,Lower Feather River RST,RR,2022-05-30T12:05:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,,,,,
+572,Lower Feather River RST,RL,2022-05-30T12:05:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,,,,,
+259,Lower Feather River RST,RL,2022-05-31T10:45:01Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3223,0.600000024,19.29999924,2.190000057,7.639999866,0.089500003,Celsius
+261,Lower Feather River RST,RR,2022-05-31T10:45:46Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3223,0.5,19.29999924,2.190000057,7.639999866,0.089500003,Celsius
+262,Lower Feather River RST,RL,2022-06-01T10:30:19Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3151,0.600000024,19.89999962,2.549999952,7.630000114,0.081600003,Celsius
+263,Lower Feather River RST,RR,2022-06-01T10:30:30Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3151,0.600000024,19.89999962,2.549999952,7.630000114,0.081600003,Celsius
+264,Lower Feather River RST,RR,2022-06-02T09:45:20Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3079,0.200000003,20.60000038,3.25,7.440000057,0.083499998,Celsius
+265,Lower Feather River RST,RL,2022-06-02T09:45:37Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3079,0.400000006,20.60000038,3.25,7.440000057,0.083499998,Celsius
+266,Lower Feather River RST,RL,2022-06-03T10:30:15Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3079,0.699999988,20.60000038,1.940000057,7.179999828,0.082400002,Celsius
+267,Lower Feather River RST,RR,2022-06-03T10:30:51Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3079,0.600000024,20.60000038,1.940000057,7.179999828,0.082400002,Celsius
+268,Lower Feather River RST,RR,2022-06-04T11:00:15Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3272,0.5,20.10000038,1.940000057,7.610000134,0.081900001,Celsius
+269,Lower Feather River RST,RL,2022-06-04T11:00:56Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3272,0.600000024,20.10000038,1.940000057,7.610000134,0.081900001,Celsius
+270,Lower Feather River RST,RL,2022-06-05T10:30:06Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3370,0.600000024,18.70000076,1.879999995,7.360000134,0.079000004,Celsius
+271,Lower Feather River RST,RR,2022-06-05T10:30:57Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,3370,0.600000024,18.70000076,1.879999995,7.360000134,0.079000004,Celsius
+573,Lower Feather River RST,RR,2022-06-05T12:05:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,,,,,
+574,Lower Feather River RST,RL,2022-06-05T12:05:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,,,,,
+273,Lower Feather River RST,RR,2022-06-06T10:00:19Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3395,0.5,19.60000038,1.950000048,7.300000191,0.081,Celsius
+272,Lower Feather River RST,RL,2022-06-06T10:00:47Z,Unplanned restart,No fish were caught,Trap stopped functioning,Yes,3395,0.5,19.60000038,1.950000048,7.300000191,0.081,Celsius
+275,Lower Feather River RST,RR,2022-06-07T09:45:35Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3370,0.600000024,20.70000076,3.029999971,6.869999886,0.083899997,Celsius
+274,Lower Feather River RST,RL,2022-06-07T09:45:54Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3370,0.5,20.70000076,3.029999971,6.869999886,0.083899997,Celsius
+276,Lower Feather River RST,RL,2022-06-08T10:30:11Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3370,0.600000024,21.10000038,2.00999999,7.059999943,0.084799998,Celsius
+277,Lower Feather River RST,RR,2022-06-08T10:30:41Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3370,0.5,21.10000038,2.00999999,7.059999943,0.084799998,Celsius
+279,Lower Feather River RST,RR,2022-06-09T09:45:04Z,End trapping,Processed fish,Trap functioning normally,Yes,3407,0.5,21.60000038,5.340000153,6.920000076,0.085900001,Celsius
+278,Lower Feather River RST,RL,2022-06-09T09:45:28Z,End trapping,Processed fish,Trap functioning normally,Yes,3407,0.5,21.60000038,5.340000153,6.920000076,0.085900001,Celsius
+575,Lower Feather River RST,RR,2022-06-12T12:05:11Z,End trapping,Processed fish,Trap functioning normally,,,,,,,,
+576,Lower Feather River RST,RL,2022-06-12T12:05:11Z,End trapping,Processed fish,Trap functioning normally,,,,,,,,
+284,Lower Feather River RST,RR,2022-06-13T11:00:06Z,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,Yes,3875,NA,20.10000038,2.079999924,7.110000134,0.082599998,Celsius
+283,Lower Feather River RST,RL,2022-06-13T11:00:54Z,Start trap & begin trapping,N/A; not a sampling visit,Trap functioning normally,Yes,3875,NA,20.10000038,2.079999924,7.110000134,0.082599998,Celsius
+286,Lower Feather River RST,RR,2022-06-14T10:30:21Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3862,0.5,20.10000038,2.619999886,7.170000076,0.082900003,Celsius
+285,Lower Feather River RST,RL,2022-06-14T10:30:47Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3862,0.800000012,20.79999924,2.619999886,7.170000076,0.082900003,Celsius
+287,Lower Feather River RST,RL,2022-06-15T11:00:12Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3850,0.600000024,20.79999924,NA,7.369999886,0.083700001,Celsius
+288,Lower Feather River RST,RR,2022-06-15T11:00:28Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3850,0.600000024,20.79999924,NA,7.369999886,0.083700001,Celsius
+289,Lower Feather River RST,RR,2022-06-16T11:45:06Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,3837,0.400000006,21.5,2.019999981,7.139999866,0.085299999,Celsius
+290,Lower Feather River RST,RL,2022-06-16T11:45:41Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3837,0.400000006,21.5,2.019999981,7.139999866,0.085299999,Celsius
+291,Lower Feather River RST,RL,2022-06-17T10:30:49Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3862,0.600000024,19.89999962,1.669999957,7.210000038,0.081799999,Celsius
+292,Lower Feather River RST,RR,2022-06-17T10:30:51Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3862,0.5,19.89999962,1.669999957,7.210000038,0.081799999,Celsius
+294,Lower Feather River RST,RL,2022-06-18T10:45:38Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,3772,0.699999988,19.39999962,2.200000048,7.579999924,0.081200004,Celsius
+293,Lower Feather River RST,RR,2022-06-18T10:45:49Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3772,0.699999988,19.39999962,2.200000048,7.579999924,0.081200004,Celsius
+296,Lower Feather River RST,RR,2022-06-19T11:30:28Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3824,0.5,20.10000038,2.869999886,7.989999771,0.082699999,Celsius
+295,Lower Feather River RST,RL,2022-06-19T11:30:38Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3824,0.600000024,20.10000038,2.869999886,7.989999771,0.082699999,Celsius
+297,Lower Feather River RST,RL,2022-06-20T10:15:53Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3785,0.600000024,20.20000076,1.690000057,7.300000191,0.083400004,Celsius
+298,Lower Feather River RST,RR,2022-06-20T22:15:45Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3785,0.600000024,20.20000076,1.690000057,7.300000191,0.083400004,Celsius
+300,Lower Feather River RST,RL,2022-06-21T11:00:40Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3772,0.800000012,21,1.169999957,6.989999771,0.084899999,Celsius
+299,Lower Feather River RST,RR,2022-06-21T11:00:57Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3772,0.699999988,21,1.169999957,6.989999771,0.084899999,Celsius
+302,Lower Feather River RST,RR,2022-06-22T10:30:31Z,End trapping,Processed fish,Trap functioning normally,Yes,3772,0.400000006,22,2.180000067,7.320000172,0.086499996,Celsius
+301,Lower Feather River RST,RL,2022-06-22T10:30:58Z,End trapping,Processed fish,Trap stopped functioning,Yes,3772,0.5,22,2.180000067,7.320000172,0.086499996,Celsius
+304,Lower Feather River RST,RR,2022-10-17T12:15:49Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,2694,0.600000024,63.40000153,7.070000172,3.880000114,0.089699998,Fahrenheit
+303,Lower Feather River RST,RL,2022-10-17T12:15:51Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,2694,0.600000024,63.40000153,7.070000172,3.880000114,0.089699998,Fahrenheit
+306,Lower Feather River RST,RL,2022-10-18T12:45:12Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2706,0.5,63.40000153,1.610000014,1.570000052,0.104900002,Fahrenheit
+305,Lower Feather River RST,RR,2022-10-18T12:45:21Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2706,0.400000006,63.40000153,1.610000014,1.570000052,0.104900002,Fahrenheit
+308,Lower Feather River RST,RR,2022-10-19T10:00:33Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2694,0.5,61.59999847,1.590000033,2.5,0.088,Fahrenheit
+307,Lower Feather River RST,RL,2022-10-19T10:00:51Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2694,0.5,61.59999847,1.590000033,2.5,0.088,Fahrenheit
+309,Lower Feather River RST,RL,2022-10-20T11:15:43Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2717,0.5,62.5,1.639999986,1.929999948,0.104199998,Fahrenheit
+310,Lower Feather River RST,RR,2022-10-20T11:15:52Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,2717,0.400000006,62.5,1.639999986,1.929999948,0.104199998,Fahrenheit
+311,Lower Feather River RST,RL,2022-10-21T10:15:50Z,End trapping,Processed fish,Trap functioning normally,Yes,2694,0.400000006,62.09999847,1.049999952,1.25,0.105300002,Fahrenheit
+312,Lower Feather River RST,RR,2022-10-21T10:15:59Z,End trapping,Processed fish,Trap functioning normally,Yes,2694,0.400000006,62.09999847,1.049999952,1.25,0.105300002,Fahrenheit
+314,Lower Feather River RST,RR,2022-10-24T10:30:01Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,2694,0.600000024,57.90000153,1.309999943,1.820000052,0.0832,Fahrenheit
+313,Lower Feather River RST,RL,2022-10-24T10:30:13Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,2694,0.400000006,57.90000153,1.309999943,1.820000052,0.832000017,Fahrenheit
+316,Lower Feather River RST,RR,2022-10-25T12:00:14Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2694,0.400000006,58.70000076,2.460000038,2.059999943,0.084600002,Fahrenheit
+315,Lower Feather River RST,RL,2022-10-25T12:00:29Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,2694,0.600000024,58.70000076,2.460000038,2.059999943,0.084600002,Fahrenheit
+317,Lower Feather River RST,RL,2022-10-26T10:15:05Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,2694,0.400000006,57.70000076,1.610000014,2.170000076,0.083700001,Fahrenheit
+318,Lower Feather River RST,RR,2022-10-26T10:15:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2694,0.5,57.70000076,1.610000014,2.170000076,0.083700001,Fahrenheit
+319,Lower Feather River RST,RR,2022-10-27T10:00:36Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2706,NA,57.09999847,1.799999952,3.160000086,0.082999997,Fahrenheit
+320,Lower Feather River RST,RL,2022-10-27T10:00:59Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,2706,NA,57.09999847,1.799999952,3.160000086,0.082999997,Fahrenheit
+322,Lower Feather River RST,RR,2022-10-28T10:15:16Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2728,0.699999988,57,1,2.599999905,0.082900003,Fahrenheit
+321,Lower Feather River RST,RL,2022-10-28T10:15:24Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2728,0.699999988,57,1,2.599999905,0.082900003,Fahrenheit
+324,Lower Feather River RST,RR,2022-10-29T09:45:19Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,2717,0.5,56.29999924,2.680000067,3.430000067,0.081299998,Fahrenheit
+323,Lower Feather River RST,RL,2022-10-29T09:45:59Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2717,0.600000024,56.29999924,2.680000067,3.430000067,0.081299998,Fahrenheit
+326,Lower Feather River RST,RR,2022-10-30T09:45:08Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2717,0.5,56,1.679999948,1.820000052,0.081299998,Fahrenheit
+325,Lower Feather River RST,RL,2022-10-30T09:45:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2717,0.300000012,56,1.679999948,1.820000052,0.081299998,Fahrenheit
+329,Lower Feather River RST,RL,2022-10-31T09:50:19Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2706,0.5,56.59999847,1.679999948,4.260000229,0.082199998,Fahrenheit
+327,Lower Feather River RST,RR,2022-10-31T09:50:32Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2706,0.400000006,56.59999847,1.679999948,4.260000229,0.082199998,Fahrenheit
+328,Lower Feather River RST,RR,2022-11-01T10:15:47Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,2751,0.5,56.20000076,0.959999979,1.75,0.081699997,Fahrenheit
+330,Lower Feather River RST,RL,2022-11-01T10:15:58Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2751,0.400000006,56.20000076,0.959999979,1.75,0.081699997,Fahrenheit
+332,Lower Feather River RST,RR,2022-11-02T10:00:21Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2717,0.400000006,54.29999924,1.549999952,1.820000052,0.079499997,Fahrenheit
+331,Lower Feather River RST,RL,2022-11-02T10:00:28Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2717,0.400000006,54.29999924,1.549999952,1.820000052,0.079499997,Fahrenheit
+334,Lower Feather River RST,RL,2022-11-03T10:00:01Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2786,0.200000003,53.90000153,1.070000052,1.929999948,0.104800001,Fahrenheit
+333,Lower Feather River RST,RR,2022-11-03T10:00:35Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2786,0.300000012,53.90000153,1.070000052,1.929999948,0.104800001,Fahrenheit
+335,Lower Feather River RST,RL,2022-11-04T10:45:50Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2751,0.300000012,53.59999847,1.639999986,3.319999933,0.079300001,Fahrenheit
+336,Lower Feather River RST,RR,2022-11-04T10:45:59Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,2751,0.300000012,53.59999847,1.639999986,3.319999933,0.079300001,Fahrenheit
+338,Lower Feather River RST,RR,2022-11-05T10:00:04Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2751,0.5,54,2.470000029,3.420000076,0.079700001,Fahrenheit
+337,Lower Feather River RST,RL,2022-11-05T10:00:35Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2751,0.400000006,54,2.470000029,3.420000076,0.079700001,Fahrenheit
+339,Lower Feather River RST,RL,2022-11-06T10:15:30Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2740,0.5,55.29999924,1.289999962,1.549999952,0.081200004,Fahrenheit
+340,Lower Feather River RST,RR,2022-11-06T10:15:52Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2740,0.400000006,55.29999924,1.289999962,1.549999952,0.081200004,Fahrenheit
+342,Lower Feather River RST,RR,2022-11-07T10:15:27Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,2763,0.400000006,54.59999847,3.039999962,2.519999981,0.080200002,Fahrenheit
+341,Lower Feather River RST,RL,2022-11-07T10:15:29Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2763,0.400000006,54.59999847,3.039999962,2.519999981,0.080200002,Fahrenheit
+343,Lower Feather River RST,RR,2022-11-08T10:30:31Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2902,0.400000006,53.29999924,3.279999971,2.190000057,NA,Fahrenheit
+344,Lower Feather River RST,RL,2022-11-08T10:30:49Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2902,0.400000006,53.29999924,3.279999971,2.190000057,NA,Fahrenheit
+345,Lower Feather River RST,RR,2022-11-09T10:15:22Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2832,0.5,52.09999847,2.079999924,13.76000023,0.077100001,Fahrenheit
+346,Lower Feather River RST,RL,2022-11-09T10:15:25Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2832,0.400000006,52.09999847,2.079999924,13.76000023,0.077100001,Fahrenheit
+348,Lower Feather River RST,RL,2022-11-10T10:00:17Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2728,0.400000006,52,2.940000057,14.17000008,0.079800002,Fahrenheit
+347,Lower Feather River RST,RR,2022-11-10T10:00:46Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2728,0.400000006,52,2.940000057,14.17000008,0.079800002,Fahrenheit
+350,Lower Feather River RST,RR,2022-11-11T13:15:46Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2671,0.5,53.29999924,2.400000095,14.36999989,0.080700003,Fahrenheit
+349,Lower Feather River RST,RL,2022-11-11T13:15:57Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2671,0.400000006,53.29999924,2.400000095,14.36999989,0.080700003,Fahrenheit
+351,Lower Feather River RST,RR,2022-11-12T08:45:14Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2514,0.400000006,51.79999924,4.110000134,14.89000034,0.079000004,Fahrenheit
+352,Lower Feather River RST,RL,2022-11-12T08:45:36Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2514,0.400000006,51.79999924,4.110000134,14.89000034,0.079000004,Fahrenheit
+354,Lower Feather River RST,RR,2022-11-13T10:30:02Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2481,0.600000024,51.90000153,2.480000019,14.02000046,0.079099998,Fahrenheit
+353,Lower Feather River RST,RL,2022-11-13T10:30:58Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2481,0.5,51.90000153,2.480000019,14.02000046,0.079099998,Fahrenheit
+356,Lower Feather River RST,RR,2022-11-14T10:45:19Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2481,0.400000006,51.20000076,1.669999957,14.47999954,0.078100003,Fahrenheit
+355,Lower Feather River RST,RL,2022-11-14T10:45:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2481,0.400000006,51.20000076,1.669999957,14.47999954,0.078100003,Fahrenheit
+358,Lower Feather River RST,RR,2022-11-15T10:00:16Z,Unplanned restart,No fish were caught,Trap stopped functioning,Yes,2437,0.5,50.59999847,2.230000019,14.47999954,0.077699997,Fahrenheit
+357,Lower Feather River RST,RL,2022-11-15T10:00:57Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2437,0.5,50.59999847,2.230000019,14.47999954,0.077699997,Fahrenheit
+360,Lower Feather River RST,RR,2022-11-16T10:45:32Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2328,0.5,50.79999924,2.75999999,14.97999954,0.776000023,Fahrenheit
+359,Lower Feather River RST,RL,2022-11-16T10:45:48Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2328,0.300000012,50.79999924,2.75999999,14.97999954,0.077600002,Fahrenheit
+361,Lower Feather River RST,RL,2022-11-17T10:15:27Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2274,0.400000006,50.90000153,4.429999828,15.02000046,0.077699997,Fahrenheit
+362,Lower Feather River RST,RR,2022-11-17T10:15:43Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2274,0.400000006,50.90000153,4.429999828,15.02000046,0.077699997,Fahrenheit
+363,Lower Feather River RST,RL,2022-11-18T10:30:30Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2274,0.400000006,51,2.99000001,14.25,0.078100003,Fahrenheit
+364,Lower Feather River RST,RR,2022-11-18T10:30:43Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2274,0.400000006,51,2.99000001,14.25,0.078100003,Fahrenheit
+365,Lower Feather River RST,RL,2022-11-19T10:00:00Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2168,0.300000012,49.70000076,3.430000067,14.97999954,0.076200001,Fahrenheit
+366,Lower Feather River RST,RR,2022-11-19T10:00:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2168,0.300000012,49.70000076,3.430000067,14.97999954,0.076200001,Fahrenheit
+367,Lower Feather River RST,RR,2022-11-20T11:00:04Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2136,0.400000006,49.90000153,4.360000134,14.71000004,0.107100002,Fahrenheit
+368,Lower Feather River RST,RL,2022-11-20T11:00:47Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2136,0.400000006,49.90000153,4.360000134,14.71000004,0.107100002,Fahrenheit
+369,Lower Feather River RST,RL,2022-11-21T10:45:34Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2126,0.400000006,49.40000153,4.21999979,15.35000038,0.075400002,Fahrenheit
+370,Lower Feather River RST,RR,2022-11-21T10:45:54Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2126,0.5,49.40000153,4.21999979,15.35000038,0.075400002,Fahrenheit
+372,Lower Feather River RST,RR,2022-11-22T10:30:01Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2105,0.400000006,49.20000076,4.210000038,15.63000011,0.075599998,Fahrenheit
+371,Lower Feather River RST,RL,2022-11-22T10:30:20Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2105,0.5,49.20000076,4.210000038,15.63000011,0.075599998,Fahrenheit
+373,Lower Feather River RST,RR,2022-11-23T10:30:03Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2105,0.400000006,49.5,4.460000038,14.53999996,0.0757,Fahrenheit
+374,Lower Feather River RST,RL,2022-11-23T10:30:53Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2105,0.400000006,49.5,4.460000038,14.53999996,0.0757,Fahrenheit
+375,Lower Feather River RST,RL,2022-11-24T10:30:13Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2001,0.200000003,49.79999924,5.639999866,14.67000008,0.076099999,Fahrenheit
+376,Lower Feather River RST,RR,2022-11-24T10:30:14Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2001,0.300000012,49.79999924,5.639999866,14.67000008,0.076099999,Fahrenheit
+377,Lower Feather River RST,RR,2022-11-25T10:30:02Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1940,0.400000006,50.29999924,6.510000229,14.85000038,0.077,Fahrenheit
+378,Lower Feather River RST,RL,2022-11-25T10:30:04Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,1940,0.300000012,50.29999924,6.510000229,14.85000038,0.077,Fahrenheit
+380,Lower Feather River RST,RR,2022-11-26T10:00:18Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1940,0.300000012,50.59999847,4.590000153,14.72999954,0.0757,Fahrenheit
+379,Lower Feather River RST,RL,2022-11-26T10:00:30Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1940,0.300000012,50.59999847,4.590000153,14.72999954,0.0757,Fahrenheit
+382,Lower Feather River RST,RL,2022-11-27T10:30:34Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1930,0.300000012,50.70000076,6.03000021,14.77999973,0.077399999,Fahrenheit
+381,Lower Feather River RST,RR,2022-11-27T10:30:55Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1930,0.300000012,50.70000076,6.03000021,14.77999973,0.077399999,Fahrenheit
+384,Lower Feather River RST,RR,2022-11-28T11:00:03Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,1930,0.200000003,50.59999847,4.239999771,16.11000061,0.077399999,Fahrenheit
+383,Lower Feather River RST,RL,2022-11-28T11:00:58Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1930,0.200000003,50.59999847,4.239999771,16.11000061,0.077399999,Fahrenheit
+386,Lower Feather River RST,RR,2022-11-29T10:30:24Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1981,0.200000003,49.5,5.480000019,14.36999989,0.075499997,Fahrenheit
+385,Lower Feather River RST,RL,2022-11-29T10:30:31Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,1981,0.200000003,49.5,5.480000019,14.36999989,0.075499997,Fahrenheit
+388,Lower Feather River RST,RR,2022-11-30T10:15:09Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,1960,0.400000006,48.59999847,3.910000086,14.82999992,0.1065,Fahrenheit
+387,Lower Feather River RST,RL,2022-11-30T10:15:50Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1960,0.400000006,48.59999847,3.910000086,14.82999992,0.1065,Fahrenheit
+389,Lower Feather River RST,RL,2022-12-01T10:20:04Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2022,0.300000012,49.09999847,3.890000105,14.93000031,0.073600002,Fahrenheit
+390,Lower Feather River RST,RR,2022-12-01T10:20:20Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2022,0.400000006,49.09999847,3.890000105,14.93000031,0.073600002,Fahrenheit
+391,Lower Feather River RST,RL,2022-12-02T10:30:22Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2136,0.400000006,47.79999924,5.130000114,15.68000031,0.072899997,Fahrenheit
+392,Lower Feather River RST,RR,2022-12-02T10:30:57Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2136,0.400000006,47.79999924,5.130000114,15.68000031,0.072899997,Fahrenheit
+393,Lower Feather River RST,RL,2022-12-03T10:45:17Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,1960,0.400000006,48,5.75,14.52000046,0.075400002,Fahrenheit
+394,Lower Feather River RST,RR,2022-12-03T10:45:46Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1960,0.400000006,48,5.75,14.52000046,0.075400002,Fahrenheit
+395,Lower Feather River RST,RR,2022-12-04T10:00:26Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2470,0.400000006,48.40000153,7.730000019,15.01000023,0.073299997,Fahrenheit
+396,Lower Feather River RST,RL,2022-12-04T10:00:29Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,2470,0.5,48.40000153,7.730000019,15.01000023,0.073299997,Fahrenheit
+397,Lower Feather River RST,RR,2022-12-05T10:00:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2649,0.400000006,49.29999924,10.09000015,15.30000019,0.0766,Fahrenheit
+398,Lower Feather River RST,RL,2022-12-05T10:00:40Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2649,0.300000012,49.29999924,10.09000015,15.30000019,0.0766,Fahrenheit
+400,Lower Feather River RST,RR,2022-12-06T09:45:15Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2548,0.5,49.70000076,16,14.13000011,0.0823,Fahrenheit
+399,Lower Feather River RST,RL,2022-12-06T09:45:58Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2548,0.400000006,49.70000076,16,14.13000011,0.0823,Fahrenheit
+401,Lower Feather River RST,RL,2022-12-07T10:15:30Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2371,0.400000006,49.09999847,15.10000038,14.31000042,0.081799999,Fahrenheit
+402,Lower Feather River RST,RR,2022-12-07T10:15:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2371,0.5,49.09999847,15.10000038,14.31000042,0.081799999,Fahrenheit
+404,Lower Feather River RST,RL,2022-12-08T10:15:33Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2263,0.600000024,48.5,14.10999966,14.5,0.114,Fahrenheit
+403,Lower Feather River RST,RR,2022-12-08T10:15:51Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2263,0.5,48.5,14.10999966,14.5,0.114,Fahrenheit
+405,Lower Feather River RST,RL,2022-12-09T08:15:10Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2168,0.400000006,49.09999847,12.19999981,14.36999989,0.111100003,Fahrenheit
+406,Lower Feather River RST,RR,2022-12-09T08:15:44Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2168,0.5,49.09999847,12.19999981,14.36999989,0.111100003,Fahrenheit
+407,Lower Feather River RST,RL,2022-12-10T10:30:19Z,End trapping,No catch data; fish released,"Trap functioning, but not normally",Yes,2126,0.5,49.79999924,NA,14.35000038,0.078100003,Fahrenheit
+408,Lower Feather River RST,RR,2022-12-10T10:30:56Z,End trapping,No catch data; fish released,"Trap functioning, but not normally",Yes,2126,0.400000006,49.79999924,NA,14.35000038,0.078100003,Fahrenheit
+410,Lower Feather River RST,RR,2022-12-12T11:45:32Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,2996,0.5,49.29999924,23.10000038,14.75,0.0766,Fahrenheit
+409,Lower Feather River RST,RL,2022-12-12T11:45:39Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,2996,0.400000006,49.29999924,23.10000038,14.75,0.0766,Fahrenheit
+412,Lower Feather River RST,RR,2022-12-13T10:30:08Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2448,NA,47.90000153,18.20000076,13.80000019,0.079000004,Fahrenheit
+411,Lower Feather River RST,RL,2022-12-13T10:30:11Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2448,NA,47.90000153,18.20000076,13.80000019,0.079000004,Fahrenheit
+413,Lower Feather River RST,RL,2022-12-14T10:15:26Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2199,NA,47,14.30000019,14.75,0.079400003,Fahrenheit
+414,Lower Feather River RST,RR,2022-12-14T10:15:27Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2199,NA,47,14.30000019,14.75,0.079400003,Fahrenheit
+420,Lower Feather River RST,RR,2022-12-15T09:30:21Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2042,0.200000003,46.5,13,15.17000008,0.077799998,Fahrenheit
+419,Lower Feather River RST,RL,2022-12-15T09:30:45Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2042,0.300000012,46.5,13,15.17000008,0.077799998,Fahrenheit
+421,Lower Feather River RST,RL,2022-12-16T10:45:18Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1930,0.200000003,46.40000153,11.5,15.19999981,0.077299997,Fahrenheit
+422,Lower Feather River RST,RR,2022-12-16T10:45:36Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1930,0.5,46.40000153,11.5,15.19999981,0.077299997,Fahrenheit
+415,Lower Feather River RST,RL,2022-12-17T10:30:21Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1869,NA,46,11.64999962,15.09000015,0.076200001,Fahrenheit
+416,Lower Feather River RST,RR,2022-12-17T10:30:51Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1869,NA,46,11.64999962,15.09000015,0.076200001,Fahrenheit
+418,Lower Feather River RST,RR,2022-12-18T10:00:03Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1820,NA,45.70000076,9.869999886,15.01000023,0.074900001,Fahrenheit
+417,Lower Feather River RST,RL,2022-12-18T10:00:27Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1820,NA,45.70000076,9.869999886,15.01000023,0.074900001,Fahrenheit
+423,Lower Feather River RST,RL,2022-12-19T10:30:04Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1780,0.400000006,46.5,8.949999809,16.06999969,0.075300001,Fahrenheit
+424,Lower Feather River RST,RR,2022-12-19T10:30:29Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1780,0.5,46.5,8.949999809,16.06999969,0.075300001,Fahrenheit
+426,Lower Feather River RST,RR,2022-12-20T11:15:06Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1741,0.300000012,46.40000153,9.359999657,15.48999977,0.075099997,Fahrenheit
+425,Lower Feather River RST,RL,2022-12-20T11:30:18Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1741,0.300000012,46.40000153,9.359999657,15.48999977,0.075099997,Fahrenheit
+427,Lower Feather River RST,RL,2022-12-21T10:30:14Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,1702,0.5,47.5,11.69999981,15.01000023,0.0757,Fahrenheit
+428,Lower Feather River RST,RR,2022-12-21T10:30:29Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1702,0.5,47.5,11.69999981,15.01000023,0.0757,Fahrenheit
+430,Lower Feather River RST,RR,2022-12-22T11:30:35Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1683,0.400000006,48,11.47000027,14.93999958,0.0757,Fahrenheit
+429,Lower Feather River RST,RL,2022-12-22T11:30:38Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,1683,0.300000012,48,11.47000027,14.93999958,0.0757,Fahrenheit
+431,Lower Feather River RST,RL,2022-12-23T10:15:36Z,End trapping,Processed fish,"Trap functioning, but not normally",Yes,1673,0.400000006,47.90000153,8.81000042,15.32999992,0.075199999,Fahrenheit
+432,Lower Feather River RST,RR,2022-12-23T10:15:49Z,End trapping,Processed fish,Trap functioning normally,Yes,1673,0.400000006,47.90000153,8.81000042,15.32999992,0.075199999,Fahrenheit
+434,Lower Feather River RST,RR,2022-12-26T10:00:26Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,1654,0.5,48.5,8.930000305,14.97000027,0.075499997,Fahrenheit
+433,Lower Feather River RST,RL,2022-12-26T10:00:42Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,1654,0.300000012,48.5,8.930000305,14.97000027,0.075499997,Fahrenheit
+436,Lower Feather River RST,RR,2022-12-27T11:15:03Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1930,0.5,50,9.840000153,14.93999958,0.074600004,Fahrenheit
+435,Lower Feather River RST,RL,2022-12-27T11:30:16Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1930,0.5,50,9.840000153,14.93999958,0.074600004,Fahrenheit
+438,Lower Feather River RST,RR,2022-12-28T10:30:47Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3382,0.600000024,48.79999924,16.70000076,14.22999954,0.072499998,Fahrenheit
+437,Lower Feather River RST,RL,2022-12-28T10:30:49Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3382,0.5,48.79999924,16.70000076,14.22999954,0.072499998,Fahrenheit
+440,Lower Feather River RST,RR,2022-12-29T10:45:22Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3346,0.600000024,48.29999924,12,14.71000004,0.070299998,Fahrenheit
+439,Lower Feather River RST,RL,2022-12-29T10:45:57Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3346,0.600000024,48.29999924,12,14.71000004,0.070299998,Fahrenheit
+441,Lower Feather River RST,RL,2022-12-30T10:30:10Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3811,0.600000024,49.09999847,14.69999981,14.61999989,0.068800002,Fahrenheit
+442,Lower Feather River RST,RR,2022-12-30T10:30:19Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3811,0.699999988,49.09999847,14.69999981,14.61999989,0.068800002,Fahrenheit
+445,Lower Feather River RST,RL,2022-12-31T09:00:03Z,End trapping,Processed fish,Trap stopped functioning,Yes,18733,NA,48.5,59.59999847,20.37000084,0.084700003,Fahrenheit
+446,Lower Feather River RST,RR,2022-12-31T09:00:57Z,End trapping,Processed fish,Trap stopped functioning,Yes,18733,NA,48.5,59.59999847,20.37000084,0.084700003,Fahrenheit
+520,Lower Feather River RST,RL,2023-01-02T11:00:35Z,Drive-by only,N/A; not a sampling visit,Trap not in service,Yes,13893,NA,48,37.5,16.45000076,0.049699999,Fahrenheit
+519,Lower Feather River RST,RR,2023-01-02T11:00:55Z,Drive-by only,N/A; not a sampling visit,Trap not in service,Yes,13893,NA,48,37.5,16.45000076,0.049699999,Fahrenheit
+448,Lower Feather River RST,RR,2023-01-03T13:45:10Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,13893,0.5,47.70000076,30.70000076,15.51000023,0.075099997,Fahrenheit
+447,Lower Feather River RST,RL,2023-01-03T13:45:19Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,13893,0.200000003,47.70000076,30.70000076,15.51000023,0.075099997,Fahrenheit
+443,Lower Feather River RST,RL,2023-01-04T11:15:34Z,End trapping,Processed fish,Trap functioning normally,Yes,8883,0.600000024,47.5,38.59999847,15.28999996,0.078100003,Fahrenheit
+444,Lower Feather River RST,RR,2023-01-04T11:30:18Z,End trapping,Processed fish,Trap stopped functioning,Yes,8883,0.5,47.5,38.59999847,15.28999996,0.078100003,Fahrenheit
+453,Lower Feather River RST,RL,2023-01-10T15:00:18Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,19481,NA,49.90000153,25.10000038,15,0.0526,Fahrenheit
+451,Lower Feather River RST,RR,2023-01-10T15:00:53Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,19481,NA,49.90000153,25.10000038,15,0.0526,Fahrenheit
+450,Lower Feather River RST,RR,2023-01-11T09:00:00Z,Continue trapping,Processed fish,Trap functioning normally,Yes,20938,0.600000024,49,23.60000038,15.02999973,0.072999999,Fahrenheit
+449,Lower Feather River RST,RL,2023-01-11T09:00:02Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,20938,0.300000012,49,23.60000038,15.02999973,0.072999999,Fahrenheit
+454,Lower Feather River RST,RL,2023-01-12T10:15:11Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,18351,0,49.40000153,22,15.40999985,0.072999999,Fahrenheit
+452,Lower Feather River RST,RR,2023-01-12T10:15:59Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,18351,0.200000003,49.40000153,22,15.40999985,0.072999999,Fahrenheit
+455,Lower Feather River RST,RL,2023-01-13T10:30:17Z,Continue trapping,Processed fish,Trap functioning normally,Yes,17005,0.200000003,49.59999847,16.39999962,15.77000046,0.051100001,Fahrenheit
+456,Lower Feather River RST,RR,2023-01-13T10:30:35Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,17005,0.400000006,49.59999847,16.39999962,15.77000046,0.051100001,Fahrenheit
+457,Lower Feather River RST,RL,2023-01-14T10:00:16Z,End trapping,Processed fish,Trap stopped functioning,Yes,19276,0.5,50,20.10000038,13.40999985,0.052000001,Fahrenheit
+458,Lower Feather River RST,RR,2023-01-14T10:00:28Z,End trapping,Processed fish,Trap functioning normally,Yes,19276,0.5,50,20.10000038,13.40999985,0.052000001,Fahrenheit
+460,Lower Feather River RST,RR,2023-01-15T12:00:16Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,28445,NA,49.20000076,26.89999962,15.85000038,0.047699999,Fahrenheit
+459,Lower Feather River RST,RL,2023-01-15T12:00:28Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,Yes,28445,NA,49.20000076,26.89999962,15.85000038,0.047699999,Fahrenheit
+461,Lower Feather River RST,RL,2023-01-16T10:00:37Z,Continue trapping,Processed fish,Trap functioning normally,Yes,22240,0.5,48.79999924,24.10000038,15.05000019,0.068999998,Fahrenheit
+462,Lower Feather River RST,RR,2023-01-16T10:00:46Z,Continue trapping,Processed fish,Trap functioning normally,Yes,22240,0.200000003,48.79999924,24.10000038,15.05000019,0.068999998,Fahrenheit
+463,Lower Feather River RST,RR,2023-01-17T11:00:01Z,Continue trapping,Processed fish,Trap functioning normally,Yes,18106,0.200000003,48,18.10000038,15.25,0.048999999,Fahrenheit
+464,Lower Feather River RST,RL,2023-01-17T11:00:10Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,18106,0,48,18.10000038,15.25,0.048999999,Fahrenheit
+465,Lower Feather River RST,RR,2023-01-18T11:00:27Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,15023,0.600000024,47.40000153,20.5,15.10000038,0.050700001,Fahrenheit
+466,Lower Feather River RST,RL,2023-01-18T11:00:56Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,15023,0.5,47.40000153,20.5,15.10000038,0.050700001,Fahrenheit
+468,Lower Feather River RST,RR,2023-01-19T10:00:00Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,13570,0.400000006,47.70000076,18.5,15.02000046,0.076099999,Fahrenheit
+467,Lower Feather River RST,RL,2023-01-19T10:00:52Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,13570,0.400000006,47.70000076,18.5,15.02000046,0.076099999,Fahrenheit
+469,Lower Feather River RST,RL,2023-01-20T11:45:34Z,Continue trapping,Processed fish,Trap functioning normally,Yes,12304,0.800000012,46.70000076,13.5,15.92000008,0.0537,Fahrenheit
+471,Lower Feather River RST,RR,2023-01-20T11:45:54Z,Continue trapping,Processed fish,Trap functioning normally,Yes,12304,0.800000012,46.70000076,13.5,15.92000008,0.0537,Fahrenheit
+473,Lower Feather River RST,RR,2023-01-21T10:00:20Z,Continue trapping,Processed fish,Trap functioning normally,Yes,10252,0.5,46.40000153,19.10000038,15.28999996,0.080300003,Fahrenheit
+472,Lower Feather River RST,RL,2023-01-21T10:00:49Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,10252,0.300000012,46.40000153,19.10000038,15.28999996,0.080300003,Fahrenheit
+477,Lower Feather River RST,RL,2023-01-22T10:00:26Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,8032,0.5,46.40000153,19.20000076,15.39999962,0.0823,Fahrenheit
+478,Lower Feather River RST,RR,2023-01-22T10:00:53Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,8032,0.600000024,46.40000153,19.20000076,15.39999962,0.0823,Fahrenheit
+476,Lower Feather River RST,RR,2023-01-23T11:15:04Z,Continue trapping,Processed fish,Trap functioning normally,Yes,6010,0.699999988,45.79999924,15,15.92000008,0.055300001,Fahrenheit
+475,Lower Feather River RST,RL,2023-01-23T11:15:38Z,Continue trapping,Processed fish,Trap functioning normally,Yes,6010,0.699999988,45.79999924,15,15.92000008,0.055300001,Fahrenheit
+480,Lower Feather River RST,RR,2023-01-24T10:00:24Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,5301,0.5,45.90000153,14.30000019,15.68999958,0.055399999,Fahrenheit
+479,Lower Feather River RST,RL,2023-01-24T10:00:50Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5301,0.5,45.90000153,14.30000019,15.68999958,0.055399999,Fahrenheit
+482,Lower Feather River RST,RR,2023-01-25T10:15:48Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,4958,0.5,46.09999847,11.80000019,15.51000023,0.055500001,Fahrenheit
+481,Lower Feather River RST,RL,2023-01-25T10:15:56Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4958,0.699999988,46.09999847,11.80000019,15.51000023,0.055500001,Fahrenheit
+484,Lower Feather River RST,RL,2023-01-26T10:15:12Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4804,NA,47.20000076,14.80000019,15.47000027,0.0561,Fahrenheit
+483,Lower Feather River RST,RR,2023-01-26T10:15:36Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4804,NA,47.20000076,14.80000019,15.47000027,0.0561,Fahrenheit
+485,Lower Feather River RST,RR,2023-01-27T10:00:16Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4734,0.600000024,46.90000153,11.55000019,15.63000011,0.0557,Fahrenheit
+486,Lower Feather River RST,RL,2023-01-27T10:00:56Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4734,0.5,46.90000153,11.55000019,15.63000011,0.0557,Fahrenheit
+488,Lower Feather River RST,RR,2023-01-28T10:15:34Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4111,0.5,46.90000153,11.77000046,15.25,0.057999998,Fahrenheit
+487,Lower Feather River RST,RL,2023-01-28T10:15:42Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,4111,0.5,46.90000153,11.77000046,15.25,0.057999998,Fahrenheit
+489,Lower Feather River RST,RL,2023-01-29T10:00:07Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3444,0.400000006,47.40000153,12.42000008,14.81000042,0.061099999,Fahrenheit
+490,Lower Feather River RST,RR,2023-01-29T10:00:10Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3444,0.400000006,47.40000153,12.42000008,14.81000042,0.061099999,Fahrenheit
+498,Lower Feather River RST,RR,2023-01-30T10:45:03Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3395,0.5,44.59999847,8.260000229,15.71000004,0.059500001,Fahrenheit
+497,Lower Feather River RST,RL,2023-01-30T10:45:04Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3395,0.400000006,44.59999847,8.260000229,15.71000004,0.059500001,Fahrenheit
+491,Lower Feather River RST,RL,2023-01-31T11:00:02Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3358,0.400000006,44.59999847,NA,15.77999973,0.0579,Fahrenheit
+492,Lower Feather River RST,RR,2023-01-31T11:00:55Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3358,0.5,44.59999847,NA,15.77999973,0.059700001,Fahrenheit
+493,Lower Feather River RST,RR,2023-02-01T10:30:23Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3272,0.400000006,45.20000076,12.19999981,16.31999969,0.090599999,Fahrenheit
+494,Lower Feather River RST,RL,2023-02-01T10:30:50Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3272,0.300000012,45.20000076,12.19999981,16.31999969,0.090599999,Fahrenheit
+496,Lower Feather River RST,RR,2023-02-02T11:30:10Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3248,0.400000006,45.90000153,11.30000019,16.82999992,0.091399997,Fahrenheit
+495,Lower Feather River RST,RL,2023-02-02T11:30:15Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3248,0.400000006,45.90000153,11.30000019,16.82999992,0.091399997,Fahrenheit
+500,Lower Feather River RST,RL,2023-02-03T10:00:04Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3248,0.400000006,46.20000076,12.60000038,16.11000061,0.061299998,Fahrenheit
+499,Lower Feather River RST,RR,2023-02-03T10:00:15Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3248,0.5,46.20000076,12.60000038,16.11000061,0.061299998,Fahrenheit
+502,Lower Feather River RST,RL,2023-02-04T10:45:34Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3211,0.400000006,47.09999847,11.30000019,16.27000046,0.091700003,Fahrenheit
+501,Lower Feather River RST,RR,2023-02-04T10:45:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3211,0.400000006,47.09999847,11.30000019,16.27000046,0.091700003,Fahrenheit
+503,Lower Feather River RST,RL,2023-02-05T09:45:02Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3309,0.899999976,48,10.34000015,15.38000011,0.063199997,Fahrenheit
+504,Lower Feather River RST,RR,2023-02-05T09:45:59Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3309,0.5,48,10.34000015,15.38000011,0.063199997,Fahrenheit
+505,Lower Feather River RST,RL,2023-02-06T09:45:48Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3670,0.5,46.79999924,9.720000267,15.35000038,0.062100001,Fahrenheit
+506,Lower Feather River RST,RR,2023-02-06T09:45:49Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3670,0.5,46.79999924,9.720000267,15.35000038,0.062100001,Fahrenheit
+507,Lower Feather River RST,RL,2023-02-07T10:15:02Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3912,0.400000006,46.79999924,8.789999962,15.69999981,0.060600001,Fahrenheit
+508,Lower Feather River RST,RR,2023-02-07T10:15:46Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3912,0.400000006,46.79999924,8.789999962,15.69999981,0.060600001,Fahrenheit
+509,Lower Feather River RST,RL,2023-02-08T09:45:25Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,3091,0.5,46.79999924,14.60000038,16.17000008,0.089199997,Fahrenheit
+510,Lower Feather River RST,RR,2023-02-08T09:45:31Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3901,0.600000024,46.79999924,14.60000038,16.17000008,0.089199997,Fahrenheit
+512,Lower Feather River RST,RR,2023-02-09T10:15:46Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3607,0.5,47.40000153,14.39999962,15.81999969,0.062199999,Fahrenheit
+511,Lower Feather River RST,RL,2023-02-09T10:15:58Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3607,0.400000006,47.40000153,14.39999962,15.81999969,0.062199999,Fahrenheit
+517,Lower Feather River RST,RL,2023-02-10T10:00:18Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3482,0.400000006,48.09999847,13.69999981,15.5,0.062799998,Fahrenheit
+518,Lower Feather River RST,RR,2023-02-10T11:00:28Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3482,0.400000006,48.09999847,13.69999981,15.5,0.062799998,Fahrenheit
+513,Lower Feather River RST,RL,2023-02-11T09:00:05Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3407,0.600000024,48.29999924,12.28999996,15.10999966,0.064099997,Fahrenheit
+514,Lower Feather River RST,RR,2023-02-11T09:00:28Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3407,0.600000024,48.29999924,12.28999996,15.10999966,0.064099997,Fahrenheit
+515,Lower Feather River RST,RL,2023-02-12T09:45:39Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3333,0.550000012,47.70000076,10.07999992,15.35999966,0.062899999,Fahrenheit
+516,Lower Feather River RST,RR,2023-02-12T09:45:42Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3333,0.550000012,47.70000076,10.07999992,15.35999966,0.062899999,Fahrenheit
+521,Lower Feather River RST,RR,2023-02-13T11:00:11Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3272,0.400000006,48.70000076,8.079999924,15.27999973,0.0634,Fahrenheit
+522,Lower Feather River RST,RL,2023-02-13T11:00:29Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3272,0.300000012,48.70000076,8.079999924,15.27999973,0.0634,Fahrenheit
+523,Lower Feather River RST,RR,2023-02-14T10:30:48Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,3223,0.400000006,47.09999847,7.789999962,15.42000008,0.062100001,Fahrenheit
+524,Lower Feather River RST,RL,2023-02-14T10:30:50Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3223,0.400000006,47.09999847,7.789999962,15.42000008,0.062100001,Fahrenheit
+525,Lower Feather River RST,RL,2023-02-15T09:45:18Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3211,0.400000006,45.90000153,6.579999924,15.76000023,0.060699999,Fahrenheit
+526,Lower Feather River RST,RR,2023-02-15T09:45:36Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3211,0.400000006,45.90000153,6.579999924,15.76000023,0.060699999,Fahrenheit
+527,Lower Feather River RST,RL,2023-02-16T11:00:28Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3223,0.5,46.59999847,5.590000153,15.76000023,0.0612,Fahrenheit
+528,Lower Feather River RST,RR,2023-02-16T11:00:49Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3223,0.5,46.5,5.590000153,15.76000023,0.0612,Fahrenheit
+529,Lower Feather River RST,RR,2023-02-17T10:45:40Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3199,0.400000006,46.70000076,5.550000191,16.37000084,0.090300001,Fahrenheit
+530,Lower Feather River RST,RL,2023-02-17T10:45:41Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3199,0.400000006,46.70000076,5.550000191,16.37000084,0.090300001,Fahrenheit
+532,Lower Feather River RST,RR,2023-02-18T09:30:06Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3175,0.5,46.59999847,5.090000153,17.20000076,0.090400003,Fahrenheit
+531,Lower Feather River RST,RL,2023-02-18T09:30:10Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3175,0.400000006,46.59999847,5.090000153,17.20000076,0.090400003,Fahrenheit
+534,Lower Feather River RST,RL,2023-02-19T09:45:12Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3163,0.400000006,46.79999924,6.300000191,16.26000023,0.0902,Fahrenheit
+533,Lower Feather River RST,RR,2023-02-19T09:45:36Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3163,0.400000006,46.79999924,6.300000191,16.26000023,0.0902,Fahrenheit
+536,Lower Feather River RST,RL,2023-02-20T11:00:12Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2996,0.400000006,48.20000076,4.28000021,15.26000023,0.063000001,Fahrenheit
+535,Lower Feather River RST,RR,2023-02-20T11:00:55Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2996,0.400000006,48.20000076,4.28000021,15.26000023,0.0063,Fahrenheit
+537,Lower Feather River RST,RR,2023-02-21T09:45:26Z,Continue trapping,No fish were caught,Trap functioning normally,Yes,2820,0.400000006,49.29999924,4.190000057,15.27000046,0.064999998,Fahrenheit
+538,Lower Feather River RST,RL,2023-02-21T09:45:50Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2820,0.300000012,49.29999924,4.190000057,15.27000046,0.064999998,Fahrenheit
+540,Lower Feather River RST,RL,2023-02-22T10:00:07Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2660,0.300000012,47.29999924,4.5,15.59000015,0.0942,Fahrenheit
+539,Lower Feather River RST,RR,2023-02-22T10:00:45Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2660,0.300000012,47.29999924,4.5,15.59000015,0.0942,Fahrenheit
+542,Lower Feather River RST,RL,2023-02-23T10:45:35Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,2626,0.400000006,46.59999847,4.179999828,157.6999969,0.095299996,Fahrenheit
+541,Lower Feather River RST,RR,2023-02-23T10:45:58Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2626,0.400000006,46.59999847,4.179999828,15.77000046,0.095299996,Fahrenheit
+543,Lower Feather River RST,RR,2023-02-24T10:30:16Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2820,0.5,45.79999924,5.289999962,15.92000008,0.0625,Fahrenheit
+544,Lower Feather River RST,RL,2023-02-24T10:30:29Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2820,0.5,45.79999924,5.289999962,15.92000008,0.0625,Fahrenheit
+545,Lower Feather River RST,RL,2023-02-25T10:00:41Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2961,0.5,45.79999924,6.760000229,15.48999977,0.0647,Fahrenheit
+546,Lower Feather River RST,RR,2023-02-25T10:00:43Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2961,0.5,45.79999924,6.760000229,15.48999977,0.0647,Fahrenheit
+547,Lower Feather River RST,RL,2023-02-26T09:45:05Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2961,0.300000012,46.09999847,12.56999969,15.28999996,0.1008,Fahrenheit
+548,Lower Feather River RST,RR,2023-02-26T09:45:05Z,Continue trapping,Processed fish,Trap functioning normally,Yes,2961,0.400000006,46.09999847,12.56999969,15.28999996,0.1008,Fahrenheit
+550,Lower Feather River RST,RL,2023-02-27T10:15:24Z,Continue trapping,Processed fish,Trap functioning normally,Yes,3734,0.5,45.09999847,9.229999542,16.03000069,0.638999999,Fahrenheit
+549,Lower Feather River RST,RR,2023-02-27T10:15:29Z,Continue trapping,Processed fish,"Trap functioning, but not normally",Yes,3734,0.5,45.09999847,9.229999542,16.03000069,0.638999999,Fahrenheit
+551,Lower Feather River RST,RL,2023-02-28T10:15:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4555,0.400000006,44.40000153,12.69999981,15.63000011,0.062600002,Fahrenheit
+552,Lower Feather River RST,RR,2023-02-28T10:15:58Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4555,0.400000006,44.40000153,12.69999981,15.63000011,0.062600002,Fahrenheit
+557,Lower Feather River RST,RL,2023-03-01T11:00:39Z,Continue trapping,Processed fish,Trap functioning normally,Yes,6453,0.600000024,44.09999847,21,16.26000023,0.056000002,Fahrenheit
+558,Lower Feather River RST,RR,2023-03-01T11:00:45Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,6453,0.600000024,44.09999847,21,16.26000023,0.056000002,Fahrenheit
+554,Lower Feather River RST,RL,2023-03-02T11:15:06Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5475,0.600000024,45.09999847,10.52999973,15.93999958,0.057500001,Fahrenheit
+553,Lower Feather River RST,RR,2023-03-02T11:15:58Z,Continue trapping,Processed fish,Trap functioning normally,Yes,5475,0.600000024,45.09999847,10.52999973,15.93999958,0.057500001,Fahrenheit
+555,Lower Feather River RST,RL,2023-03-03T09:45:29Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4888,0.600000024,46.29999924,7.489999771,16.37000084,0.089000002,Fahrenheit
+556,Lower Feather River RST,RR,2023-03-03T09:45:30Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4888,0.699999988,46.29999924,7.489999771,16.37000084,0.089000002,Fahrenheit
+559,Lower Feather River RST,RR,2023-03-04T09:30:26Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,4610,0.600000024,47,6.480000019,15.85999966,0.089699998,Fahrenheit
+560,Lower Feather River RST,RL,2023-03-04T09:30:31Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4610,0.600000024,47,6.480000019,15.85999966,0.089699998,Fahrenheit
+562,Lower Feather River RST,RR,2023-03-05T10:00:08Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4623,0.5,46.09999847,5.539999962,15.94999981,0.059999999,Fahrenheit
+561,Lower Feather River RST,RL,2023-03-05T10:00:35Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4623,0.5,46.09999847,5.539999962,15.94999981,0.059999999,Fahrenheit
+563,Lower Feather River RST,RR,2023-03-06T10:00:37Z,Unplanned restart,Processed fish,Trap stopped functioning,Yes,4748,0.5,45.90000153,6.429999828,15.68000031,0.605000019,Fahrenheit
+564,Lower Feather River RST,RL,2023-03-06T10:00:57Z,Continue trapping,Processed fish,Trap functioning normally,Yes,4748,0.5,45.90000153,6.429999828,15.68000031,0.605000019,Fahrenheit

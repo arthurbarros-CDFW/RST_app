@@ -1,0 +1,10 @@
+trap_visit_ID,site_name,subsite_name,visit_time,visit_type,fish_processed,trap_functioning,include_catch,discharge,water_vel,water_temp,turbidity,dissolved_O,conductivity,temp_unit
+1,Lower Feather River RST,RL,2022-01-19T12:30:11Z,Start trap & begin trapping,N/A; not a sampling visit,Not recorded,Yes,NA,NA,NA,NA,NA,NA,NA
+2,Lower Feather River RST,RR,2022-01-19T12:30:56Z,Start trap & begin trapping,N/A; not a sampling visit,Not recorded,Yes,NA,NA,NA,NA,NA,NA,NA
+4,Lower Feather River RST,RR,2022-01-20T10:45:07Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1702,NA,9.600000381,3.029999971,11.85000038,NA,Celsius
+3,Lower Feather River RST,RL,2022-01-20T10:45:43Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1072,NA,9.600000381,3.029999971,11.85000038,NA,Celsius
+6,Lower Feather River RST,RL,2022-01-21T10:45:19Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1654,0.400000006,9.600000381,4.400000095,11.63000011,NA,Celsius
+5,Lower Feather River RST,RR,2022-01-21T10:45:31Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1654,0.400000006,9.600000381,4.400000095,11.63000011,NA,Celsius
+7,Lower Feather River RST,RL,2022-01-22T10:15:11Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1653,0.5,9.300000191,4.389999866,11.5,NA,Celsius
+8,Lower Feather River RST,RR,2022-01-22T10:15:14Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1653,0.5,9.300000191,4.389999866,11.5,NA,Celsius
+9,Lower Feather River RST,RL,2022-01-23T13:15:07Z,Continue trapping,Processed fish,Trap functioning normally,Yes,1648,0.400000006,9.600000381,4.010000229,90.09999847,0.0792,Celsius

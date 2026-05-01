@@ -1,0 +1,8 @@
+ProjectDescriptionID,catchRawID,trapVisitID,commonName,releaseID,atCaptureRun,finalRun,fishOrigin,actualCount,n,visitTime,visitType,siteName,subSiteName,markType,markColor,markPosition
+12,284,29,Chinook salmon,256,Not recorded,Not recorded,Natural,Yes,10,2022-02-02T10:00:43Z,Continue trapping,Lower Feather River RST,RL,Pigment / dye,Brown,Whole body
+12,331,30,Chinook salmon,256,Fall,Fall,Natural,Yes,8,2022-02-02T10:00:10Z,Continue trapping,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+12,1964,71,Chinook salmon,257,Fall,Fall,Natural,Yes,5,2022-02-25T09:45:50Z,Continue trapping,Lower Feather River RST,RL,Pigment / dye,Brown,Whole body
+12,1965,71,Chinook salmon,257,Fall,Fall,Natural,Yes,4,2022-02-25T09:45:50Z,Continue trapping,Lower Feather River RST,RL,Pigment / dye,Brown,Whole body
+12,2018,72,Chinook salmon,257,Fall,Fall,Natural,Yes,2,2022-02-25T09:45:23Z,Unplanned restart,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+12,2019,72,Chinook salmon,257,Fall,Fall,Natural,Yes,6,2022-02-25T09:45:23Z,Unplanned restart,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body
+12,5672,197,Chinook salmon,261,Fall,Fall,Hatchery,Yes,1,2022-04-28T11:30:35Z,Continue trapping,Lower Feather River RST,RR,Pigment / dye,Brown,Whole body

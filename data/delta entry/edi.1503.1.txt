@@ -1,0 +1,1168 @@
+
+  
+    uid=EDI,o=EDI,dc=edirepository,dc=orgall
+      public
+      read
+    
+    
+      cvpia
+      write
+    
+  
+  
+    doi:10.6073/pasta/597ee2442f898a836ba577f1ab80aaf2Delta Entry RST
+    Monitoring juvenile Chinook salmon outmigration using rotary screw traps on the Sacramento River near Delta Entry
+    
+      Rebecca Stark
+      California Department of Fish and Wildlife
+      Rebecca.Stark@wildlife.ca.gov
+    
+    
+      Nick Bauer
+      California Department of Fish and Wildlife
+      nick.bauer@wildlife.ca.gov
+      principal investigator
+    
+    2023-09-20
+    
+      
+    The California Department of Fish and Wildlife (CDFW) issued
+    Incidental Take Permit No. 2081-2019-006-00 (ITP) to the California
+    Department of Water Resources (DWR) on March 31, 2020, for the
+    long-term operation of the State Water Project (SWP) in the
+    Sacramento San Joaquin Delta (Delta). Condition 7.5.2 of the ITP
+    requires the development and establishment of a spring-run Chinook
+    salmon (Oncorhynchus tshawytscha) juvenile production estimate (JPE)
+    to increase understanding of the impacts that water operations have
+    on the spring-run Chinook salmon population in the Sacramento River
+    watershed and to inform the development of minimization measures to
+    reduce take of spring-run Chinook salmon at Delta fish salvage
+    facilities.  
+  
+      
+    As a part of the JPE effort, CDFW began operating a new rotary screw
+    trap (RST) monitoring station on the lower Sacramento River near
+    River Mile (RM) 75, approximately 5 miles below the confluence of
+    the Feather and Sacramento Rivers, in January 2022. This RST
+    location represents the lowest point in the Sacramento River
+    Watershed where juvenile salmon are trapped prior to entering the
+    Delta and thus is also referred to as the “Delta Entry” site. The
+    expanded juvenile monitoring effort will help resource agencies and
+    water managers identify numbers of salmon emigrating from the
+    Sacramento and Feather River watersheds and contributing to the
+    spring-run Chinook salmon population entering the Delta. 
+  
+      
+    Data collected by the RST site at the Lower Sacramento River
+    provides information on the temporal distribution, relative
+    abundance, and race composition of juvenile Chinook salmon; and
+    temporal distribution and relative abundance of steelhead trout (O.
+    mykiss) emigrating from the upper Sacramento River and Feather River
+    to the Delta. Salmonid data collected from the Lower Sacramento
+    River RST, among other datasets, is also used by the Salmon
+    Monitoring Team (SaMT) to understand the movement of juvenile salmon
+    in the Sacramento River Watershed to estimate the number of
+    winter-run and spring-run Chinook salmon that have entered the
+    Delta. SaMT is a real-time operations monitoring team required by
+    Condition of Approval 8.1.2 of the ITP which meets weekly from
+    October through June, to provide advice for real-time management of
+    SWP operations to DWR, CDFW, and the Water Operation Management Team
+    (WOMT) to minimize take of winter-run and spring-run Chinook salmon
+    in the Delta.
+  
+    
+    
+      spring run
+      fall run
+      trap
+      catch
+      juvenile production estimate
+      Oncorhynchus tshawytscha
+      RST
+      California
+      Central Valley
+      SRJPE
+      Chinook salmon
+    
+    
+      This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.
+    
+    
+      Creative Commons Attribution 4.0 International
+      https://spdx.org/licenses/CC-BY-4.0.html
+      CC-BY-4.0
+    
+    https://doi.org/10.6073/pasta/597ee2442f898a836ba577f1ab80aaf2
+      
+        Delta Entry Rotary Screw Trap
+        
+          -121.6478
+          -121.5908
+          38.7629
+          38.689
+        
+      
+      
+        
+          
+            2022-01-21
+          
+          
+            2023-02-02
+          
+        
+      
+    
+    
+      ongoing
+      monthly
+    
+    
+      Rebecca Stark
+      California Department of Fish and Wildlife
+      Rebecca.Stark@wildlife.ca.gov
+    
+    Environmental Data Initiativeinfo@edirepository.orghttps://edirepository.org0330j0z60Environmental Data Initiative
+      
+        
+          
+            Trap Equipment
+            
+      Three in-line 8-foot diameter rotary screw traps (RST).
+    
+          
+          
+            Current Trap Location
+            
+      Traps are currently located in the Lower Sacramento River at RM
+      75, approximately 5 miles below the confluence of the Feather and
+      Sacramento Rivers.
+    
+          
+          
+            Monitoring Schedule
+            
+      Traps are monitored October through June. Traps are continuously
+      trapping except under high flows and unsafe working conditions.
+      They are serviced daily within a 24-hour period, more if needed
+      due to high debris amounts or fish catch.
+    
+          
+          
+            Daily Environmental Data
+            
+      Daily environmental data collected are flow in cubic feet per
+      second, recorded from the CDEC Gauging station: Sacramento River
+      at Verona (VON); water temperature (Celsius); river Depth
+      (centimeters); turbidity (nephelometric turbidity units);
+      dissolved Oxygen (percentage); conductivity (microSiemens per
+      centimeter); and velocity (meters per second).
+    
+          
+          
+            Fish Measurements
+            
+      Fork length measurements are taken to the nearest mm for Chinook
+      salmon, steelhead, and non-salmonoid fish. For chinook salmon,
+      fork length measurements are taken for 75 randomly selected
+      individuals per category: marked (with an adipose fin clip) fall-,
+      winter-, or late fall-runs; unmarked spring-, fall-, winter- or
+      late fall-runs. Run designated by Length at Date criteria (Fisher
+      1992). For steelhead, measurements are taken for 75 randomly
+      selected per marked or unmarked. For non-salmonoid fish,
+      measurements are taken for the first 10 individuals (total length
+      measurements to the nearest mm).
+    
+          
+          
+            Fish Counts
+            
+      All fish not measured are plus counted by hand.
+    
+          
+          
+            Trap Efficiency Trials
+            
+      Fall-run Chinook salmon captured in the RSTs or juvenile Chinook
+      salmon produced by the Feather River Fish Hatchery are the source
+      of released fish. Frequency of once per week from December to May
+      across variable flow and environmental conditions as catch totals
+      and/or hatchery availability allows. A minimum of three
+      consecutive days of fishing after the release date is required for
+      a release to be included in analyses. Mortality between the
+      release point and the trap is assumed to be negligible. Release
+      site approximately 1 mile upstream of the trapping site, but other
+      sites may be added to aid in developing a trap efficiency.
+    
+          
+          
+            Trap Efficiency Marks
+            
+      Fish are marked with Methylene Blue or Bismarck Brown Y (BBY)
+      whole body stain. Fish are alternatively marked with a Visible
+      Implant Elastomer (VIE) Tag.
+    
+          
+          
+            References
+            
+      Fisher, F.W. (1992). Chinook salmon, Oncorhynchus tshawytscha,
+      growth and occurrence in the Sacramento-San Joaquin River system.
+      Draft copy. California Department of Fish and Game, Inland
+      Fisheries Division Office Report, Sacramento, CA. June 1992.
+    
+          
+        
+      
+    
+    
+      Monitoring juvenile Chinook salmon outmigration using rotary screw traps on the Sacramento River near Delta Entry
+      
+        Rebecca Stark
+        California Department of Fish and Wildlife
+        Rebecca.Stark@wildlife.ca.gov
+        Project Lead
+      
+      
+        California Department of Water Resources
+        Department of Water Resources Division of Integrated Science and Engineering
+      
+    
+    
+      delta_entry_catch_edi.csv
+      Daily catch
+      
+        delta_entry_catch_edi.csv
+        596979
+        fc034829d01f1fd94b952d5587042e7b
+        
+          
+            1
+            \n
+            column
+            
+              ,
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/1503/1/9fe58157307b129acd6f3ff055ceee8d
+          
+        
+      
+      
+        
+          ProjectDescriptionID
+          catch
+          Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 10.
+          
+            
+              
+                
+                  
+                    10
+                    Delta Entry RST
+                  
+                
+              
+            
+          
+        
+        
+          catchRawID
+          catch
+          Primary key in the CAMP CatchRaw table
+          
+            
+              
+                
+                  Primary key in the CAMP CatchRaw table
+                
+              
+            
+          
+        
+        
+          trapVisitID
+          catch
+          Foreign key to the CAMP TrapVisit table
+          
+            
+              
+                
+                  Foreign key to the CAMP TrapVisit table
+                
+              
+            
+          
+        
+        
+          commonName
+          catch
+          Common name of species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Spotted bass", 
+"Bluegill", "Inland silverside", "Mosquitofish", "Sacramento pikeminnow", 
+"Redear sunfish", "Unknown sunfish (Lepomis)", "Golden shiner", 
+"Goldfish", "Warmouth", "Smallmouth bass", "Channel catfish", 
+"Hardhead", "Threadfin shad", "Brown bullhead", "Hitch", "Black bullhead", 
+"Black crappie", "Sacramento sucker", "Pacific lamprey", "White crappie", 
+"Wakasagi / Japanese smelt", "Fathead minnow", "Unknown lamprey", 
+"Unknown minnow", "White catfish", "River lamprey", "Sacramento blackfish", 
+"Largemouth bass", "Tule perch", "Unknown catfish/bullhead", 
+"Striped bass", "Red shiner", "Unknown bass (Micropterus)", "Unknown sculpin (Cottus)", 
+"American shad", "Prickly sculpin")
+          
+            
+              
+                
+                  Common name of species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Spotted bass", 
+"Bluegill", "Inland silverside", "Mosquitofish", "Sacramento pikeminnow", 
+"Redear sunfish", "Unknown sunfish (Lepomis)", "Golden shiner", 
+"Goldfish", "Warmouth", "Smallmouth bass", "Channel catfish", 
+"Hardhead", "Threadfin shad", "Brown bullhead", "Hitch", "Black bullhead", 
+"Black crappie", "Sacramento sucker", "Pacific lamprey", "White crappie", 
+"Wakasagi / Japanese smelt", "Fathead minnow", "Unknown lamprey", 
+"Unknown minnow", "White catfish", "River lamprey", "Sacramento blackfish", 
+"Largemouth bass", "Tule perch", "Unknown catfish/bullhead", 
+"Striped bass", "Red shiner", "Unknown bass (Micropterus)", "Unknown sculpin (Cottus)", 
+"American shad", "Prickly sculpin")
+                
+              
+            
+          
+        
+        
+          releaseID
+          catch
+          Foreign Key to the CAMP Release table
+          
+            
+              
+                
+                  Foreign Key to the CAMP Release table
+                
+              
+            
+          
+        
+        
+          atCaptureRun
+          catch
+          Run designation as determined in the field or as assigned at a later date. Levels =c("Not recorded", "Fall", "Spring", "Winter", NA)
+          
+            
+              
+                
+                  Run designation as determined in the field or as assigned at a later date. Levels =c("Not recorded", "Fall", "Spring", "Winter", NA)
+                
+              
+            
+          
+        
+        
+          fishOrigin
+          catch
+          Origin/production type of the fish. Levels =c("Natural", "Hatchery")
+          
+            
+              
+                
+                  Origin/production type of the fish. Levels =c("Natural", "Hatchery")
+                
+              
+            
+          
+        
+        
+          lifeStage
+          catch
+          Life stage of the fish. Levels = c("Not recorded", "Button-up fry", "Parr", "Smolt", "Ammocoete", 
+"Silvery parr", "Yolk sac fry (alevin)", "Juvenile")
+          
+            
+              
+                
+                  Life stage of the fish. Levels = c("Not recorded", "Button-up fry", "Parr", "Smolt", "Ammocoete", 
+"Silvery parr", "Yolk sac fry (alevin)", "Juvenile")
+                
+              
+            
+          
+        
+        
+          forkLength
+          catch
+          Fork length of the fish measured in millimeters
+          
+            
+              
+                millimeter
+              
+              
+                real
+                
+                  31
+                  275
+                
+              
+            
+          
+        
+        
+          totalLength
+          catch
+          Total length of the fish measured in millimeters
+          
+            
+              
+                millimeter
+              
+              
+                real
+                
+                  13
+                  850
+                
+              
+            
+          
+        
+        
+          n
+          catch
+          Number of fish actually handled/counted
+          
+            
+              
+                number of fish
+              
+              
+                whole
+                
+                  0
+                  116
+                
+              
+            
+          
+        
+        
+          visitTime
+          catch
+          Date and time of day associated with the trap visit.
+          
+            
+              YYYY-MM-DD hh:mm:ss
+              
+                
+                  44582.5313
+                  44959.4377
+                
+              
+            
+          
+        
+        
+          visitType
+          catch
+          Work that was done during visit to trap. Levels =c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", "End trapping")
+          
+            
+              
+                
+                  Work that was done during visit to trap. Levels =c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", "End trapping")
+                
+              
+            
+          
+        
+        
+          siteName
+          catch
+          Name of the sampling site. Levels = "Lower Sacramento River RST"
+          
+            
+              
+                
+                  Name of the sampling site. Levels = "Lower Sacramento River RST"
+                
+              
+            
+          
+        
+        
+          subSiteName
+          catch
+          Name of the trap or trap location. Levels = c("RR", "RL")
+          
+            
+              
+                
+                  Name of the trap or trap location. Levels = c("RR", "RL")
+                
+              
+            
+          
+        
+        
+          finalRun
+          catch
+          Run designation revised after field visit. Levels = c(NA, "Fall", "Spring", "Winter")
+          
+            
+              
+                
+                  Run designation revised after field visit. Levels = c(NA, "Fall", "Spring", "Winter")
+                
+              
+            
+          
+        
+        
+          actualCount
+          catch
+          Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")
+          
+            
+              
+                
+                  Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")
+                
+              
+            
+          
+        
+      
+      4038
+    
+    
+      delta_entry_trap_edi.csv
+      Daily trap operations
+      
+        delta_entry_trap_edi.csv
+        50978
+        4d7c2e7fc9409f9dde05c9233d2ca61b
+        
+          
+            1
+            \n
+            column
+            
+              ,
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/1503/1/91e12fb0cb0b07d064104ff6672de189
+          
+        
+      
+      
+        
+          projectDescriptionID
+          trap
+          Foreign key to the CAMP ProjectDescription table.  All data associated with this package will have a ProjectDescriptionID = 10.
+          
+            
+              
+                
+                  
+                    10
+                    Delta Entry RST
+                  
+                
+              
+            
+          
+        
+        
+          trapVisitID
+          trap
+          Primary key that defines record in table.
+          
+            
+              
+                
+                  Primary key that defines record in table.
+                
+              
+            
+          
+        
+        
+          visitTime
+          trap
+          Date and time of day associated with the trap visit. Definition varies based on visitType (For visitTypeID=1, 5, or 6 this is the date and the time of day of arrival at the trap. For visitTypeID=2, 3, or 4 this is the date and the time of day the trap was emptied.)
+          
+            
+              YYYY-MM-DD hh:mm:ss
+              
+                
+                  2022-01-21 12:45:07
+                  2023-02-02 10:30:15
+                
+              
+            
+          
+        
+        
+          siteName
+          trap
+          Name of the sampling site. Level ="Lower Sacramento River RST"
+          
+            
+              
+                
+                  Name of the sampling site. Level ="Lower Sacramento River RST"
+                
+              
+            
+          
+        
+        
+          subSiteName
+          trap
+          Position of trap within the site. Levels =c("RR", "RL")
+          
+            
+              
+                
+                  Position of trap within the site. Levels =c("RR", "RL")
+                
+              
+            
+          
+        
+        
+          visitType
+          trap
+          Work that was done during visit to trap. Levels = c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", "End trapping")
+          
+            
+              
+                
+                  Work that was done during visit to trap. Levels = c("Start trap & begin trapping", "Continue trapping", "Unplanned restart", "End trapping")
+                
+              
+            
+          
+        
+        
+          fishProcessed
+          trap
+          Describing if fish processed during trap visit. Levels = c("N/A; not a sampling visit", "Processed fish", "No fish were caught")
+          
+            
+              
+                
+                  Describing if fish processed during trap visit. Levels = c("N/A; not a sampling visit", "Processed fish", "No fish were caught")
+                
+              
+            
+          
+        
+        
+          trapFunctioning
+          trap
+          Code for description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap functioning, but not normally", "Trap stopped functioning")
+          
+            
+              
+                
+                  Code for description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap functioning, but not normally", "Trap stopped functioning")
+                
+              
+            
+          
+        
+        
+          counterAtEnd
+          trap
+          Reading on the rotation counter at the end of the trap visit but before resetting
+          
+            
+              
+                number of rotations
+              
+              
+                real
+                
+                  0
+                  5563
+                
+              
+            
+          
+        
+        
+          counterAtStart
+          trap
+          Reading on the rotation counter at the beginning of the trap visit
+          
+            
+              
+                number of rotations
+              
+              
+                real
+                
+                  0
+                  3811
+                
+              
+            
+          
+        
+        
+          rpmRevolutionsAtStart
+          trap
+          Number of revolutions per minute before cleaning the trap
+          
+            
+              
+                revolutions per minute
+              
+              
+                real
+                
+                  0
+                  3.8
+                
+              
+            
+          
+        
+        
+          rpmRevolutionsAtEnd
+          trap
+          Number of revolutions per minute before cleaning the trap
+          
+            
+              
+                revolutions per minute
+              
+              
+                real
+                
+                  0
+                  3.9
+                
+              
+            
+          
+        
+        
+          includeCatch
+          trap
+          Code for whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")
+          
+            
+              
+                
+                  Code for whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")
+                
+              
+            
+          
+        
+        
+          discharge
+          trap
+          Discharge measured at trap
+          
+            
+              
+                cubicFeetPerSecond
+              
+              
+                real
+                
+                  4901
+                  11345
+                
+              
+            
+          
+        
+        
+          waterVel
+          trap
+          Water velocity measured at trap
+          
+            
+              
+                metersPerSecond
+              
+              
+                real
+                
+                  0.3
+                  1.9
+                
+              
+            
+          
+        
+        
+          waterTemp
+          trap
+          Water temperature measured at trap
+          
+            
+              
+                see waterTempUnit
+              
+              
+                real
+                
+                  7.6
+                  1706
+                
+              
+            
+          
+        
+        
+          turbidity
+          trap
+          Turbidity measured at trap
+          
+            
+              
+                NTU
+              
+              
+                real
+                
+                  0.5
+                  26.2
+                
+              
+            
+          
+        
+        
+          conductivity
+          trap
+          Conductivity measured at trap
+          
+            
+              
+                microSiemensPerCentimeter
+              
+              
+                real
+                
+                  110.6
+                  172.7
+                
+              
+            
+          
+        
+        
+          dissolvedOxygen
+          trap
+          Dissolved oxygen measured at trap
+          
+            
+              
+                percentage
+              
+              
+                real
+                
+                  93.1
+                  101.1
+                
+              
+            
+          
+        
+      
+      321
+    
+    
+      delta_entry_release_edi.csv
+      Released fish
+      
+        delta_entry_release_edi.csv
+        769
+        209833f36ef358eacc4cdae2a44ea851
+        
+          
+            1
+            \n
+            column
+            
+              ,
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/1503/1/70993de288004f8f6d595556d29ea554
+          
+        
+      
+      
+        
+          projectDescriptionID
+          release
+          Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 10.
+          
+            
+              
+                
+                  
+                    10
+                    Delta Entry RST
+                  
+                
+              
+            
+          
+        
+        
+          releaseID
+          release
+          Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)
+          
+            
+              
+                
+                  Primary key that in combination with projectDescriptionID is unique (across other programs using CAMP)
+                
+              
+            
+          
+        
+        
+          commonName
+          release
+          Common name of marked species. Level = "Chinook salmon"
+          
+            
+              
+                
+                  Common name of marked species. Level = "Chinook salmon"
+                
+              
+            
+          
+        
+        
+          markedRun
+          release
+          Run of fish marked. Level = c("Fall"")
+          
+            
+              
+                
+                  Run of fish marked. Level = c("Fall"")
+                
+              
+            
+          
+        
+        
+          markedLifeStage
+          release
+          Lifestage of fish marked.
+          
+            
+              
+                
+                  Lifestage of fish marked.
+                
+              
+            
+          
+        
+        
+          markedFishOrigin
+          release
+          Origin or production type of fish marked. Level = "Hatchery"
+          
+            
+              
+                
+                  Origin or production type of fish marked. Level = "Hatchery"
+                
+              
+            
+          
+        
+        
+          releaseSite
+          release
+          Site where fish were released. Level = "Lower Sacramento River Release Site"
+          
+            
+              
+                
+                  Site where fish were released. Level = "Lower Sacramento River Release Site"
+                
+              
+            
+          
+        
+        
+          releaseSubSite
+          release
+          Subsite (within site) where fish were released. Corresponds to a trap location.
+          
+            
+              
+                
+                  Subsite (within site) where fish were released. Corresponds to a trap location.
+                
+              
+            
+          
+        
+        
+          nReleased
+          release
+          Number of fish released that were alive with mark intact
+          
+            
+              
+                number of fish
+              
+              
+                whole
+                
+                  487
+                  499
+                
+              
+            
+          
+        
+        
+          releaseTime
+          release
+          Date and time of release
+          
+            
+              YYYY-MM-DD hh:mm:ss
+              
+                
+                  44658.5523
+                  44678.5835
+                
+              
+            
+          
+        
+        
+          testDays
+          release
+          Number of days this trap test is considered valid
+          
+            
+              
+                days
+              
+              
+                whole
+                
+                  7
+                  34
+                
+              
+            
+          
+        
+        
+          appliedMarkType
+          release
+          Mark type that was applied to the release group. Levels = "Pigment / dye"
+          
+            
+              
+                
+                  Mark type that was applied to the release group. Levels = "Pigment / dye"
+                
+              
+            
+          
+        
+        
+          appliedMarkColor
+          release
+          Color of mark that was applied to the release group. Levels = "Blue"
+          
+            
+              
+                
+                  Color of mark that was applied to the release group. Levels = "Blue"
+                
+              
+            
+          
+        
+        
+          appliedMarkPosition
+          release
+          Position of the mark that was applied to the mark group. Levels = "Whole body"
+          
+            
+              
+                
+                  Position of the mark that was applied to the mark group. Levels = "Whole body"
+                
+              
+            
+          
+        
+        
+          includeAnalysis
+          release
+          Whether or not to include data in analysis. Level = "Yes"
+          
+            
+              
+                
+                  Whether or not to include data in analysis. Level = "Yes"
+                
+              
+            
+          
+        
+      
+      4
+    
+  
+  
+    
+      
+        
+          number of rotations
+        
+        
+          nephelometric turbidity units, common unit for measuring turbidity
+        
+        
+          number of revolutions per minute
+        
+        
+          number of fish counted
+        
+        
+          number of days
+        
+        
+          see designated column for units of water temperature collected
+        
+        
+          units for measuring conductivity
+        
+        
+          units for measuring dissolved oxygen content
+        
+      
+    
+  
