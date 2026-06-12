@@ -24,7 +24,7 @@ est_catch<-function(target_species,
   
   #let's add "trapID" value to catch
   c$trap_ID<-paste(c$site_name,
-                            catch$subsite_name)
+                            c$subsite_name)
   
   #filter and join catch to visit data
   
