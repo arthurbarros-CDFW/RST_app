@@ -1,7 +1,14 @@
-###############################
-#function assigns "batch" dates to date data
-#used to link sampling visits and catch data to efficiency trials
-###############################
+#' @title assign_batch_date
+#'
+#' @description For each catch and visit record assign a “batch date” based on whether the “visit_time” field falls before or after 0400. This is a hold over from the
+#' initial development because of needs to deal with late night trap visits that may have gone past midnight.
+#' 
+#' @param df Input data frame with date field that needs batch date assigned.
+#' 
+#' @param time_field Field with visit times used to assign batch date, needs to be titled "visit_time".
+#' 
+#' @return df Outputs data frame with assigned batch_date field.
+#' 
 assign_batch_date<-function(df,time_field){
   if(!time_field %in% names(df)){
     stop("The specified time_field '", time_field, "' does not exist in the dataframe")

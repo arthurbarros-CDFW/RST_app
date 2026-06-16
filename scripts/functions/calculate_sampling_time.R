@@ -1,7 +1,17 @@
-###############################
-#function formats visit data and clumps it into groups
-#also sets trap_ID_decimal
-###############################
+#' @title calculate_sampling_time
+#'
+#' @description Process raw trap visit data to derive continuous sampling periods.
+#' 1) Filters for valid visit types.
+#' 2) Calculate start/end times and duration between visits.
+#' 3) Classify periods as either "fishing" or "Not fishing".
+#' 4) Remove short non-fishing periods less than 30 minutes.
+#' 5) Split sampling into segments separated by large gaps greater than gap_threshold_days.
+#' 6) Create trap_ID_decimal field as a unique ID for trap sampling segments.
+#' 
+#' @param visit_data Input trap visit data frame.
+#' 
+#' @return data Outputs data frame with traps broken up by sampling segments.
+#' 
 calculate_sampling_time<-function(visit_data){
   #identify visits to include
   data=visit_data

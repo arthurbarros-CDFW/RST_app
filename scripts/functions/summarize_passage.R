@@ -1,6 +1,16 @@
-###############################
-#function to summarize passage estimates by sum.by time period
-###############################
+#' @title summarize_passage
+#'
+#' @description Aggregate passage estimates by sum.by time period. Takes the following steps:
+#' 1) Averages trap passage estimates over batch_date.
+#' 2) Creates date index using summarize_index().
+#' 3) Summarize passage by sum.by time period.
+#' 
+#' @param passage_data  Date value to be summarized to grouping unit.
+#' 
+#' @param sum.by Time grouping variable to summarize passage data by (default: "week").
+#' 
+#' @return n Data frame with sum.by value, passage estimates, dates, and estimate of the percent of imputed catch for the grouping unit.
+#' 
 summarize_passage<-function(passage_data,sum.by){
   
   index <- list(batch_date=format( passage_data$batch_date, "%Y-%m-%d" ))

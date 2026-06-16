@@ -1,6 +1,35 @@
-###############################
-#function to estimate passage from catch and efficiency estimates
-###############################
+#' @title est_passage
+#'
+#' @description Coordinate all modules to produce final passage estimates. Takes the following steps:
+#' 1) Run est_catch() to calculate catch for available data and impute catch for missing periods.
+#' 2) Run est_efficiency() to calculate efficiency for available trials and impute for missing periods.
+#' 3) Estimate passage and related uncertainty.
+#' 
+#' @param catch Records of fish caught during each trap visit.
+#' 
+#' @param visits  Records of all trap operation and sampling events.
+#' 
+#' @param release Records of fish marked and released for efficiency trials.
+#' 
+#' @param recapture Records of marked fish recaptured for efficiency trials.
+#' 
+#' @param summarize.by Time grouping variable to summarize passage data by (default: "week").
+#' 
+#' @param impute_all Determine whether or not to impute all efficiency values, even those observed via efficiency trials (default: FALSE).
+#' 
+#' @param bootstrap Whether or not to conduct bootstrapping for uncertainty (default: TRUE).
+#' 
+#' @param survey_start Input survey season start date.
+#' 
+#' @param survey_end Input survey season end date.
+#' 
+#' @param target_species Species of interest, currently limited to Chinook Salmon.
+#' 
+#' @param target_run Run of interest, currently limited to Fall.
+#' 
+#' @param file.name File name for saved outputs, which are currently commented out (default: "test").
+#' 
+#' @return results List with estimates of passage, catch, and efficiency.
 
 est_passage<-function(catch,visits,
                       release,recapture,

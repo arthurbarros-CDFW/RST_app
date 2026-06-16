@@ -1,6 +1,14 @@
-###############################
-#function to get residuals of overdispersion
-###############################
+#' @title over_dispersion
+#'
+#' @description Calculate overdispersion for Poisson (catch) and Binomial (efficiency) models. Called by passage_boot().
+#' 
+#' @param model model fits developed from model_catch() and model_efficiency().
+#' 
+#' @param family Poisson for catch models, Binomial for efficiency models.
+#' 
+#' @param type Pearson residual type, measuring distance between predicted and actual values of model.
+#' 
+#' @return disp Returns dispersion metrics from models.
 
 over_dispersion<-function(model,family,type){
   resids <- residuals(model,type)

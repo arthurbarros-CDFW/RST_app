@@ -1,6 +1,25 @@
-###############################
-#function to model and impute efficiency
-###############################
+#' @title model_efficiency
+#'
+#' @description Fits Binomial GLM to efficiency trial data and imputes efficiency for missing periods. Called by est_efficiency().
+#' Takes the following steps:
+#' 1) Fits a null model to efficiency data for each trap sampling segment.
+#' 2) Calculates AIC for model fitting.
+#' 3) If enough real efficiency trial data available, increase GLM spline degrees of freedom until model fit is good enough
+#'  (ie model doesn’t converge or AIC increases etc.). If too few trials (<10) utilizes ration of means +1 assuming constant efficiency.
+#' 4) Once model is fit, impute efficiency by looping over batch date sampling gaps.
+#' 
+#' @param efficiency_data Input of efficiency data frame with periods of missing efficiency data.
+#' 
+#' @param max.df.spline Maximum number of splines to fit to binomial GLM.
+#' 
+#' @param impute_all User input of dictating if all efficiency estimates should be imputed. Defaults to FALSE. If TRUE, will replace estimates made with actual
+#' efficiency trial data with imputed values.
+#' 
+#' @param min_sample_size  Minimum number of efficiency trials required in order to fit binomial model to impute efficiency. Defaults to 10.
+#' 
+#' @return ans List containing efficiency model fit results and efficiency data with imputed efficiency values.
+#' Also contains X.miss, model matrix with intercept and predictor terms for generating efficiency predictions.
+
 min_sample_size=10 #default minimum sample size for efficiency trials in CAMPR
 #if we have 10 efficiency trials or more we will model efficiency for missing dates
 #otherwise use a constant efficiency

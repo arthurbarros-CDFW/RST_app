@@ -1,6 +1,26 @@
-###############################
-#function to calculate catch for each batch date
-###############################
+#' @title est_catch
+#'
+#' @description Estimate daily catch per trap and impute missing catch values. Called by est_passage function.
+#' Takes the following steps:
+#' 1) Join catch data to visit data.
+#' 2) Group and sum catch by trap_ID and batch_date.
+#' 3) Expand date range to include all days between first and last sampling.
+#' 4) Create “empty” records for not fishing periods.
+#' 5) Calls model_catch() for imputation of missing catch values.
+#' 
+#' @param target_species Input of target species, defaults to "Chinook Salmon".
+#' 
+#' @param target_run Input of target run.
+#' 
+#' @param catch_data Input catch data frame.
+#' 
+#' @param visit_data Input trap visit data frame.
+#' 
+#' @param survey_start Input survey season start date.
+#' 
+#' @param survey_end Input survey season end date.
+#' 
+#' @return final_catch List containing catch model fit results and catch data with imputed catch values.
 
 est_catch<-function(target_species,
                     target_run=NA,

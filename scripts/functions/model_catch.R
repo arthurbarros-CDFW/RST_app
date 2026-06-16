@@ -1,6 +1,18 @@
-###############################
-#function to model and impute catch
-###############################
+#' @title model_catch
+#'
+#' @description Fits Poisson GLM to catch data and imputes catch for missing periods. Called by est_catch().
+#' Takes the following steps:
+#' 1) Fits a null model to catch data for each trap sampling segment.
+#' 2) Calculates AIC for model fitting.
+#' 3) If enough real catch data available, increase GLM spline degrees of freedom until model fit is good enough
+#'  (ie model doesn’t converge or AIC increases etc.).
+#' 4) Once model is fit, impute catch by looping over batch date sampling gaps.
+#' 
+#' @param catch.df Input of catch data frame with periods of missing catch data.
+#' 
+#' @return ans List containing catch model fit results and catch data with imputed catch values.
+#' Also contains X.miss, model matrix with intercept and predictor terms for generating catch predictions.
+
 model_catch<-function(catch.df){
   
   traps<-unique(catch.df$trap_ID_decimal)

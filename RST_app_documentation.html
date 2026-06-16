@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Arthur Barros">
+<meta name="dcterms.date" content="2026-06-16">
+
+<title>RST_app Documentation</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="RST_app_documentation_files/libs/clipboard/clipboard.min.js"></script>
+<script src="RST_app_documentation_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="RST_app_documentation_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="RST_app_documentation_files/libs/quarto-html/popper.min.js"></script>
+<script src="RST_app_documentation_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="RST_app_documentation_files/libs/quarto-html/anchor.min.js"></script>
+<link href="RST_app_documentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="RST_app_documentation_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="RST_app_documentation_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="RST_app_documentation_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="RST_app_documentation_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#rst_app-user-guide" id="toc-rst_app-user-guide" class="nav-link" data-scroll-target="#rst_app-user-guide">RST_app User Guide</a>
+  <ul class="collapse">
+  <li><a href="#data-formatting" id="toc-data-formatting" class="nav-link" data-scroll-target="#data-formatting"><em>Data formatting</em></a></li>
+  </ul></li>
+  <li><a href="#functions-overview" id="toc-functions-overview" class="nav-link" data-scroll-target="#functions-overview">Functions Overview</a>
+  <ul class="collapse">
+  <li><a href="#global_vars.r" id="toc-global_vars.r" class="nav-link" data-scroll-target="#global_vars.r"><em>global_vars.R</em></a></li>
+  <li><a href="#fix_dates.r" id="toc-fix_dates.r" class="nav-link" data-scroll-target="#fix_dates.r"><em>fix_dates.R</em></a></li>
+  <li><a href="#assign_batch_date.r" id="toc-assign_batch_date.r" class="nav-link" data-scroll-target="#assign_batch_date.r"><em>assign_batch_date.R</em></a></li>
+  <li><a href="#calculate_sampling_time.r" id="toc-calculate_sampling_time.r" class="nav-link" data-scroll-target="#calculate_sampling_time.r"><em>calculate_sampling_time.R</em></a></li>
+  <li><a href="#est_catch.r" id="toc-est_catch.r" class="nav-link" data-scroll-target="#est_catch.r"><em>est_catch.R</em></a></li>
+  <li><a href="#model_catch.r" id="toc-model_catch.r" class="nav-link" data-scroll-target="#model_catch.r"><em>model_catch.R</em></a></li>
+  <li><a href="#est_efficiency.r" id="toc-est_efficiency.r" class="nav-link" data-scroll-target="#est_efficiency.r"><em>est_efficiency.R</em></a></li>
+  <li><a href="#model_efficiency.r" id="toc-model_efficiency.r" class="nav-link" data-scroll-target="#model_efficiency.r"><em>model_efficiency.R</em></a></li>
+  <li><a href="#over_dispersion.r" id="toc-over_dispersion.r" class="nav-link" data-scroll-target="#over_dispersion.r"><em>over_dispersion.R</em></a></li>
+  <li><a href="#find_visits_near_release.r" id="toc-find_visits_near_release.r" class="nav-link" data-scroll-target="#find_visits_near_release.r"><em>find_visits_near_release.R</em></a></li>
+  <li><a href="#summarize_index.r" id="toc-summarize_index.r" class="nav-link" data-scroll-target="#summarize_index.r"><em>summarize_index.R</em></a></li>
+  <li><a href="#summarize_passage.r" id="toc-summarize_passage.r" class="nav-link" data-scroll-target="#summarize_passage.r"><em>summarize_passage.R</em></a></li>
+  <li><a href="#passage_boot.r" id="toc-passage_boot.r" class="nav-link" data-scroll-target="#passage_boot.r"><em>passage_boot.R</em></a></li>
+  <li><a href="#est_passage.r" id="toc-est_passage.r" class="nav-link" data-scroll-target="#est_passage.r"><em>est_passage.R</em></a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">RST_app Documentation</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Arthur Barros <a href="mailto:Arthur.Barros@wildlife.ca.gov" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            California Department of Fish and Wildlife
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 16, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>The <code>RST_app.R</code> Shiny application estimates juvenile salmonid out-migration passage (abundance) using rotary screw trap data submitted by the user. This application aims to replicate passage calculation and imputation methods utilized in the CAMP Rotary Screw Trap (CAMPR) platform but in a standalone, user friendly , documented, and replicable online platform. The CAMPR platform was created by Trent McDonald to support CDFW salmonid monitoring efforts in the Central Valley and allows direct connection between the modeling software built in R and the monitoring Access database. While CAMPR provides a usable system to simplify complex model fitting and passage estimation, it is currently a “black-box” back end with undetailed documentation and is no longer maintained or updated.</p>
+<p>The <code>RST_app.R</code> is a standalone package and RShiny application that performs model fitting and passage estimation in a web-based platform that requires no Access database or R experience to operate. While it does not require database connectivity, users do need to ensure their data is pre-formatted for use with the application. This document also aims to be a detailed overview of use, methodology, and the relevant scripts and functions that are used by the application. This application is also owned and maintained by CDFW staff, which allows for future maintenance and updates as needed.</p>
+<p><a href="#fig-data_flow" class="quarto-xref">Figure&nbsp;1</a> shows an overview of how data and user inputs are utilized by the different functions in the <code>RST_app</code> to produce estimates of passage, efficiency, catch, and related summary plots. Users need to upload .csv files of <code>catch_data</code>, <code>visit_data</code>, <code>release_data</code>, and <code>recapture_data</code> to the application. Then users can either set or use default input values to determine how passage data is summarized, whether or not to impute all or efficiency values, and the start and end dates for the survey period. These inputs are passed to the <code>est_passage.R</code> function, which then utilizes several downstream functions to produce estimates of passage and related uncertainty. The data inputs and relevant functions are covered in more detail in the following sections of this methods documentation.</p>
+<div id="fig-data_flow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data_flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="methods_figures/data_flow.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data_flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application outputs for RST_app.
+</figcaption>
+</figure>
+</div>
+<p>Code, documentation, and example data for the <code>RST_app</code> can be found at: <a href="https://github.com/arthurbarros-CDFW/RST_app" class="uri">https://github.com/arthurbarros-CDFW/RST_app</a>.</p>
+</section>
+<section id="rst_app-user-guide" class="level2">
+<h2 class="anchored" data-anchor-id="rst_app-user-guide">RST_app User Guide</h2>
+<p>The <code>RST_app</code> is hosted and can be accessed by users at <a href="https://arthurbarros-cdfw.shinyapps.io/RST_app/" class="uri">https://arthurbarros-cdfw.shinyapps.io/RST_app/</a>. The application is currently hosted on a free account using the shinyapps.io platform which limits usage hours per month, but I aim to have it hosted on a paid account to alleviate that in the future. To use the <code>RST_app</code> users need to have four datasets in a specific .csv file format. Structuring the application to allow for data inputs in different formats would be inefficient and make it unwieldy. It is instead simpler to construct the application to intake data in a specific format to ensure compatibility, so the onus is on the user to ensure proper their data is in the proper structure.</p>
+<section id="data-formatting" class="level3">
+<h3 class="anchored" data-anchor-id="data-formatting"><em>Data formatting</em></h3>
+<p>The user is required to input data from four .csv tables:</p>
+<ul>
+<li><p>catch - records of fish caught during each trap visit.</p></li>
+<li><p>visit - records of all trap operation and sampling events.</p></li>
+<li><p>release - records of fish marked and released for efficiency trials.</p></li>
+<li><p>recapture - records of marked fish recaptured for efficiency trials.</p></li>
+</ul>
+<p>When uploading the four .csv files, the <code>app.R</code> script looks for the keywords “catch”, “visit”, “release”, and “recapture” in the file names, and assigns the files to relevant data set variable names, so if users ensure those keywords are in the appropriate file name, the application will assign the data properly for use in relevant functions.</p>
+<p>For examples of how to structure the input data, see <a href="https://github.com/arthurbarros-CDFW/RST_app/tree/main/data/test_data" class="uri">https://github.com/arthurbarros-CDFW/RST_app/tree/main/data/test_data</a>. Below I detail which fields are required within the tables for the application to function properly. Tables can include additional data, and additional fields may be useful in the future as the applications functionality is updated.</p>
+<p><strong><code>catch.csv</code></strong> needs to be set in the following structure:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 14%">
+<col style="width: 63%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required (Y/N)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>site_name</td>
+<td>text</td>
+<td>Name of river/study site</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>subsite_name</td>
+<td>text</td>
+<td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>visit_time</td>
+<td>datetime (ISO 8601)</td>
+<td><p>Date and time when trap was visited and catch recorded.</p>
+<p>YYYY-MM-DDThh:mm:ss</p></td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>common_name</td>
+<td>text</td>
+<td>Species common name, currently only used for “Chinook salmon”.</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>at_capture_run</td>
+<td>text</td>
+<td>Run timing, currently only used for “Fall”.</td>
+<td>N</td>
+</tr>
+<tr class="even">
+<td>n</td>
+<td>integer</td>
+<td>Number of fish captured by trap and recorded during visit.</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>visit.csv</code></strong> needs to be structured in the following format:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 14%">
+<col style="width: 63%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required (Y/N)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>site_name</td>
+<td>text</td>
+<td>Name of river/study site</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>subsite_name</td>
+<td>text</td>
+<td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>visit_time</td>
+<td>datetime (ISO 8601)</td>
+<td><p>Date and time when trap was visited and catch recorded.</p>
+<p>YYYY-MM-DDThh:mm:ss</p></td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>trap_visit_ID</td>
+<td>text/integer</td>
+<td>Unique identifier for each visit</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>visit_type</td>
+<td>text</td>
+<td>See valid values below</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>fish_processed</td>
+<td>text</td>
+<td>Processing status</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>include_catch</td>
+<td>text</td>
+<td>“Yes” or “No”</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+<p>Valid <code>visit_type</code> values are:</p>
+<ul>
+<li><p><code>"Start trap &amp; begin trapping"</code></p></li>
+<li><p><code>"Continue trapping"</code></p></li>
+<li><p><code>"End trapping"</code></p></li>
+<li><p><code>"Unplanned Restart"</code></p></li>
+</ul>
+<p>Valid <code>fish_processed</code> values are:</p>
+<ul>
+<li><p><code>"N/A; not a sampling visit"</code></p></li>
+<li><p><code>"Processed fish"</code></p></li>
+<li><p><code>"No fish were caught"</code></p></li>
+<li><p><code>"No catch data; fish released"</code></p></li>
+</ul>
+<p><strong><code>release.csv</code></strong> needs to be structured in the following format:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 13%">
+<col style="width: 62%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required (Y/N)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>site_name</td>
+<td>text</td>
+<td>Name of river/study site</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>subsite_name</td>
+<td>text</td>
+<td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>release_time</td>
+<td>datetime (ISO 8601)</td>
+<td><p>Date and time when release occurred</p>
+<p>YYYY-MM-DDThh:mm:ss</p></td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>release_ID</td>
+<td>text/integer</td>
+<td>Unique identifier for release event</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>include_analysis</td>
+<td>text</td>
+<td>“Yes” or “No” used to indicate if data should be used for efficiency estimation</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>n_released</td>
+<td>integer</td>
+<td>Number of fish released</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>recapture.csv</code></strong> needs to be structured in the following format:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 14%">
+<col style="width: 66%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>site_name</td>
+<td>text</td>
+<td>Name of river/study site</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>subsite_name</td>
+<td>text</td>
+<td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>visit_time</td>
+<td>datetime (ISO 8601)</td>
+<td><p>Date and time when recapture occurred</p>
+<p>YYYY-MM-DDThh:mm:ss</p></td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>trap_visit_ID</td>
+<td>text/integer</td>
+<td>Links recapture data to visit record</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>release_ID</td>
+<td>text/integer</td>
+<td>Links recapture data to release record</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>n</td>
+<td>integer</td>
+<td>Number of recaptured fish</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+<p>It is important the user ensures they have the four required data tables available and in the above format in order to properly use the <code>RST_app</code>.</p>
+<section id="inputs" class="level4">
+<h4 class="anchored" data-anchor-id="inputs"><em>Inputs</em></h4>
+<p>Once the four necessary data sets are properly formatted the user can utilize the load the RST_app found at <a href="https://arthurbarros-cdfw.shinyapps.io/RST_app/" class="uri">https://arthurbarros-cdfw.shinyapps.io/RST_app/</a>. The application main screen has all input fields on the left side (<a href="#fig-user_inputs" class="quarto-xref">Figure&nbsp;2</a>) that allows users to upload their data, set the survey period, target species, and other variables.</p>
+<div id="fig-user_inputs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-user_inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="methods_figures/user_inputs.png" id="fig-user_inputs" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-user_inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2
+</figcaption>
+</figure>
+</div>
+<p>Users should set the following when using the application:</p>
+<ul>
+<li><p><strong>Upload data files:</strong> Use this field to browse to the necessary RST data files (see Data formatting above) and load the files. Multiple files can be selected and uploaded at once. When the necessary data sets are properly loaded, and if they are properly named, they will be displayed at the bottom in the “Data List” (<a href="#fig-data_list" class="quarto-xref">Figure&nbsp;3</a>).</p></li>
+<li><p><strong>Survey Start and End Date:</strong> Date fields that set the start and end for the time period in which passage estimates are needed. This allows users to upload many years of data, but specifiy a certain time period for estimates.</p></li>
+<li><p><strong>Sum by:</strong> Time grouping variable to summarize passage data by. Defaults to week.</p></li>
+<li><p><strong>Target Species:</strong> Allows user to set species of interest, currently limited to Chinook Salmon, planned to be expanded upon in the future.</p></li>
+<li><p><strong>Target Run:</strong> Allows user to set run of interest, currently limited to Fall, planned to be expanded upon in the future.</p></li>
+<li><p><strong>Impute All Efficiency Values:</strong> Allows user to determine whether or not to impute all efficiency values, even those observed via efficiency trials.</p></li>
+</ul>
+<div id="fig-data_list" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data_list-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="methods_figures/data_list.png" id="fig-data_list" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-data_list-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3
+</figcaption>
+</figure>
+</div>
+<p>Once the data sets are uploaded and the inputs set, click the “Estimate Passage” button to run the models and produce the passage estimates and other outputs.</p>
+</section>
+<section id="outputs" class="level4">
+<h4 class="anchored" data-anchor-id="outputs"><em>Outputs</em></h4>
+<p>After the data is uploaded and the Estimate Passage models are run, the application produces the following outputs:</p>
+<ul>
+<li><strong>Passage plot:</strong> displays estimates of out-migrant passage and uncertainty summed by the time grouping variable (defaults to week).</li>
+</ul>
+<div id="fig-passage_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-passage_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="methods_figures/passage_plot.png" id="fig-passage_plot" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-passage_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Passage table:</strong> &nbsp;An output table that shows out-migrant passage estimate and uncertainty summed by the time grouping variable. Also includes the field “pct.imputed.catch” which tells what proportion of catch records for the time grouping time period was imputed using catch models.</li>
+</ul>
+<div id="fig-passage_table" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-passage_table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="methods_figures/passage_table.png" id="fig-passage_table" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-passage_table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Catch plot:</strong> plot showing records of catch for each rotary screw trap for period of record. Displays both recorded catch (in red) and imputed catch (in blue). Note: this should be updated to include shape as a signifier for accessibility.</li>
+</ul>
+<div id="fig-catch_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-catch_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="methods_figures/catch_plot.png" id="fig-catch_plot" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-catch_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Efficiency plot:</strong> displays plot of efficiency estimates for each rotary screw trap for period of survey. Displays estimates of efficiency derived from actual tests (in red) and imputed efficiency (in blue).</li>
+</ul>
+<div id="fig-efficiency_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-efficiency_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="methods_figures/efficiency_plot.png" id="fig-efficiency_plot" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-efficiency_plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7
+</figcaption>
+</figure>
+</div>
+<p>Each of the outputs above can be downloaded with the associated “Download” button.</p>
+</section>
+</section>
+</section>
+<section id="functions-overview" class="level2">
+<h2 class="anchored" data-anchor-id="functions-overview">Functions Overview</h2>
+<p>The following is an overview of all the functions utilized with in the RST_app application. The code for the functions themselves can be found on the GitHub, but below I provide brief descriptions of each function, what it is used for, as well as the inputs and outputs.</p>
+<section id="global_vars.r" class="level3">
+<h3 class="anchored" data-anchor-id="global_vars.r"><em>global_vars.R</em></h3>
+<p>Defines default variables used across all functions.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>gap_threshold_days: Sequential days of a sampling gap that define a new trapping segment (default: 7).</p></li>
+<li><p>time_zone: Timezone for date handling (default: America/Los_Angeles).</p></li>
+<li><p>unassd.sig.digit: Decimal handling for AIC correction in model selection (1 = use Nemes 2007 correction).</p></li>
+<li><p>knotMesh: Minimum data points per spline degree of freedom (default: 15).</p></li>
+<li><p>max.ok.gap: Maximum gap (hours) that can be ignored without imputation (default: 2).</p></li>
+<li><p>boostrap.CI.fx: Function for bootstrap confidence intervals (default: “f.ci”).</p></li>
+<li><p>sum.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
+</ul>
+</section>
+<section id="fix_dates.r" class="level3">
+<h3 class="anchored" data-anchor-id="fix_dates.r"><em>fix_dates.R</em></h3>
+<p>Converts date fields of input data frame to POSIXct with specified time zone and format (%Y-%m-%dT%H:%M:%SZ). Called for by the est_catch.R and est_efficiency functions.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>df: Input data frame with date field needed to be cleaned/formatted.</p></li>
+<li><p>time_field: Field with visit times to be formatted, needs to be titled “visit_time”.</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>df: Outputs data frame with formatted “visit_time” time field.</li>
+</ul>
+</section>
+<section id="assign_batch_date.r" class="level3">
+<h3 class="anchored" data-anchor-id="assign_batch_date.r"><em>assign_batch_date.R</em></h3>
+<p>For each catch and visit record assign a “batch date” based on whether the “visit_time” field falls before or after 0400. This is a hold over from the initial development because of needs to deal with late night trap visits that may have gone past midnight.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>df: Input data frame with date field that needs batch date assigned.</p></li>
+<li><p>time_field: Field with visit times used to assign batch date, needs to be titled “visit_time”.</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>df: Outputs data frame with assigned batch_date field.</li>
+</ul>
+</section>
+<section id="calculate_sampling_time.r" class="level3">
+<h3 class="anchored" data-anchor-id="calculate_sampling_time.r"><em>calculate_sampling_time.R</em></h3>
+<p>Process raw trap visit data to derive continuous sampling periods. Called by est_catch and est_efficiency functions. Takes the following steps:</p>
+<ol type="1">
+<li><p>Filters for valid visit types.</p></li>
+<li><p>Calculate start/end times and duration between visits.</p></li>
+<li><p>Classify periods as either “fishing” or “Not fishing”.</p></li>
+<li><p>Remove short non-fishing periods less than 30 minutes.</p></li>
+<li><p>Split sampling into segments separated by large gaps greater than gap_threshold_days.</p></li>
+<li><p>Create trap_ID_decimal field as a unique ID for trap sampling segments.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>visit_data: Input trap visit data frame.</li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>data: Outputs data frame with traps broken up by sampling segments.</li>
+</ul>
+</section>
+<section id="est_catch.r" class="level3">
+<h3 class="anchored" data-anchor-id="est_catch.r"><em>est_catch.R</em></h3>
+<p>Estimate daily catch per trap and impute missing catch values. Called by est_passage function. Takes the following steps:</p>
+<ol type="1">
+<li><p>Join catch data to visit data.</p></li>
+<li><p>Group and sum catch by trap_ID and batch_date.</p></li>
+<li><p>Expand date range to include all days between first and last sampling.</p></li>
+<li><p>Create “empty” records for not fishing periods.</p></li>
+<li><p>Calls model_catch() for imputation of missing catch values.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>target_species: Input of target species, defaults to “Chinook Salmon”.</p></li>
+<li><p>target_run: Input of target run.</p></li>
+<li><p>catch_data: Input catch data frame.</p></li>
+<li><p>visit_data: Input trap visit data frame.</p></li>
+<li><p>survey_start: Input survey season start date.</p></li>
+<li><p>survey_end: Input survey season end date.</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>final_catch: List containing catch model fit results and catch data with imputed catch values.</li>
+</ul>
+</section>
+<section id="model_catch.r" class="level3">
+<h3 class="anchored" data-anchor-id="model_catch.r"><em>model_catch.R</em></h3>
+<p>Fits Poisson GLM to catch data and imputes catch for missing periods. Called by est_catch(). #’ Takes the following steps:</p>
+<ol type="1">
+<li><p>Fits a null model to catch data for each trap sampling segment.</p></li>
+<li><p>Calculates AIC for model fitting.</p></li>
+<li><p>If enough real catch data available, increase GLM spline degrees of freedom until model fit is good enough (ie model doesn’t converge or AIC increases etc.).</p></li>
+<li><p>Once model is fit, impute catch by looping over batch date sampling gaps.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>catch.df: Input of catch data frame with periods of missing catch data.</li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>ans: List containing catch model fit results and catch data with imputed catch values. Also contains X.miss, model matrix with intercept and predictor terms for generating catch predictions.</li>
+</ul>
+</section>
+<section id="est_efficiency.r" class="level3">
+<h3 class="anchored" data-anchor-id="est_efficiency.r"><em>est_efficiency.R</em></h3>
+<p>Estimate efficiency for traps using mark-recapture efficiency trials. Called by est_passage function. Takes the following steps:</p>
+<ol type="1">
+<li><p>Align release events with trap visits within 36 hours post-release.</p></li>
+<li><p>Calculate efficiency as recaptures / releases per batch date.</p></li>
+<li><p>Expand to full survey period (all days between min/max trial dates).</p></li>
+<li><p>Calculate mean recapture time weighted by number of recaps.</p></li>
+<li><p>Pass trial efficiency data to model_efficiency().</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>release_data: Data set with records of fish marked and released for efficiency trials.</p></li>
+<li><p>recapture_data: Data set with records of marked fish recaptured for efficiency trials.</p></li>
+<li><p>impute_all: User input of dictating if all efficiency estimates should be imputed. Defaults to FALSE. If TRUE, will replace estimates made with actual efficiency trial data with imputed values.</p></li>
+<li><p>visit_data: Input trap visit data frame.</p></li>
+<li><p>survey_start: Input survey season start date.</p></li>
+<li><p>survey_end: Input survey season end date.</p></li>
+<li><p>min_sample_size: Minimum number of efficiency trials required in order to fit binomial model to impute efficiency. Defaults to 10.</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>eff_modeled: List containing efficiency model fit results and data with imputed efficiency values.</li>
+</ul>
+</section>
+<section id="model_efficiency.r" class="level3">
+<h3 class="anchored" data-anchor-id="model_efficiency.r"><em>model_efficiency.R</em></h3>
+<p>Fits Binomial GLM to efficiency trial data and imputes efficiency for missing periods. Called by est_efficiency(). Takes the following steps:</p>
+<ol type="1">
+<li><p>Fits a null model to efficiency data for each trap sampling segment.</p></li>
+<li><p>Calculates AIC for model fitting.</p></li>
+<li><p>If enough real efficiency trial data available, increase GLM spline degrees of freedom until model fit is good enough (ie model doesn’t converge or AIC increases etc.). If too few trials (&lt;10) utilizes ration of means +1 assuming constant efficiency.</p></li>
+<li><p>Once model is fit, impute efficiency by looping over batch date sampling gaps.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>efficiency_data: Input of efficiency data frame with periods of missing efficiency data.</p></li>
+<li><p>max.df.spline: Maximum number of splines to fit to binomial GLM.</p></li>
+<li><p>impute_all: User input of dictating if all efficiency estimates should be imputed. Defaults to FALSE. If TRUE, will replace estimates made with actual efficiency trial data with imputed values.</p></li>
+<li><p>min_sample_size: Minimum number of efficiency trials required in order to fit binomial model to impute efficiency. Defaults to 10.</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>ans: List containing efficiency model fit results and efficiency data with imputed efficiency values. Also contains X.miss, model matrix with intercept and predictor terms for generating efficiency predictions.</li>
+</ul>
+</section>
+<section id="over_dispersion.r" class="level3">
+<h3 class="anchored" data-anchor-id="over_dispersion.r"><em>over_dispersion.R</em></h3>
+<p>Calculate overdispersion for Poisson (catch) and Binomial (efficiency) models. Called by passage_boot().</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>model: model fits developed from model_catch() and model_efficiency().</p></li>
+<li><p>family: Poisson for catch models, Binomial for efficiency models.</p></li>
+<li><p>type: Pearson residual type, measuring distance between predicted and actual values of model.</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>disp: Returns dispersion metrics from models.</li>
+</ul>
+</section>
+<section id="find_visits_near_release.r" class="level3">
+<h3 class="anchored" data-anchor-id="find_visits_near_release.r"><em>find_visits_near_release.R</em></h3>
+<p>Finds trap visits within 36 hours of a release. Called by est_efficiency() to map to individual release records.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>release_time: Record of releases to be used for efficiency estimates.</p></li>
+<li><p>visit_df: For each release assigns visits from visit_df.</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>visit_df: Returns back visit_df filtered to visits within 36 hours of release times.</li>
+</ul>
+</section>
+<section id="summarize_index.r" class="level3">
+<h3 class="anchored" data-anchor-id="summarize_index.r"><em>summarize_index.R</em></h3>
+<p>Convert dates to grouping units (day, week, month, year). Called by summarize_passage().</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>date_index: Date value to be summarized to grouping unit.</p></li>
+<li><p>sum.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>index: Assigned date grouping value to date records.</li>
+</ul>
+</section>
+<section id="summarize_passage.r" class="level3">
+<h3 class="anchored" data-anchor-id="summarize_passage.r"><em>summarize_passage.R</em></h3>
+<p>Aggregate passage estimates by sum.by time period. Takes the following steps:</p>
+<ol type="1">
+<li><p>Averages trap passage estimates over batch_date.</p></li>
+<li><p>Creates date index using summarize_index().</p></li>
+<li><p>Summarize passage by sum.by time period.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>passage_data: Date value to be summarized to grouping unit.</p></li>
+<li><p>sum.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>n: Data frame with sum.by value, passage estimates, dates, and estimate of the percent of imputed catch for the grouping unit.</li>
+</ul>
+</section>
+<section id="passage_boot.r" class="level3">
+<h3 class="anchored" data-anchor-id="passage_boot.r"><em>passage_boot.R</em></h3>
+<p>Generate confidence intervals for passage estimates. Called by est_passage(). Takes the following steps:</p>
+<ol type="1">
+<li><p>Run summarize_passage() to average passage over traps and summarize by sum.by.</p></li>
+<li><p>Iterate over each available trap.</p></li>
+<li><p>Generate random imputations of catch and efficiency using overdispersion metrics of catch.fits and efficiency.fits.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>passage_data: Data frame of passage estimates created by est_passage().</p></li>
+<li><p>sum.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
+<li><p>catch.fits: List of fitted GLM catch models.</p></li>
+<li><p>catch.X.miss: Matrix of catch model intercept and predictor terms.</p></li>
+<li><p>catch.gapLens: Gap lengths (in hours) for each imputed period per trap.</p></li>
+<li><p>catch.bDates.miss: Batch dates for each imputed catch value and trap.</p></li>
+<li><p>eff.fits: List of fitted Binomial efficiency models.</p></li>
+<li><p>sum.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
+<li><p>eff.X Matrix: of efficiency model intercept and predictor terms.</p></li>
+<li><p>eff.ind.inside: Vector defining trap date range between first and last efficiency trials.</p></li>
+<li><p>eff.X.dates: Batch dates for each record in eff.X for each trap for merging with catch data.</p></li>
+<li><p>eff.X.obs.data: Observed efficiency data used to fit models.</p></li>
+<li><p>eff.type: Coded value indicating efficiency imputation method for each trap.</p></li>
+<li><p>survey_start: Input survey season start date.</p></li>
+<li><p>survey_end: Input survey season end date.</p></li>
+<li><p>R: Number of bootstrap iterations (Default = 100).</p></li>
+<li><p>conf: Confidence levels for bootstrapping intervals (Default = 0.95).</p></li>
+<li><p>ci: Whether or not to compute confidence intervals (Default = TRUE).</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>ans: Data frame with aggregated passage estimates, lower and upper confidence bounds, standard error, and the percent of catch imputed per time period.</li>
+</ul>
+</section>
+<section id="est_passage.r" class="level3">
+<h3 class="anchored" data-anchor-id="est_passage.r"><em>est_passage.R</em></h3>
+<p>Coordinate all modules to produce final passage estimates. Takes the following steps:</p>
+<ol type="1">
+<li><p>Run est_catch() to calculate catch for available data and impute catch for missing periods.</p></li>
+<li><p>Run est_efficiency() to calculate efficiency for available trials and impute for missing periods.</p></li>
+<li><p>Estimate passage and related uncertainty.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>catch: Records of fish caught during each trap visit.</p></li>
+<li><p>visits: Records of all trap operation and sampling events.</p></li>
+<li><p>release: Records of fish marked and released for efficiency trials.</p></li>
+<li><p>recapture: Records of marked fish recaptured for efficiency trials.</p></li>
+<li><p>summarize.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
+<li><p>impute_all: Determine whether or not to impute all efficiency values, even those observed via efficiency trials (default: FALSE).</p></li>
+<li><p>bootstrap: Whether or not to conduct bootstrapping for uncertainty (default: TRUE).</p></li>
+<li><p>survey_start: Input survey season start date.</p></li>
+<li><p>survey_end: Input survey season end date.</p></li>
+<li><p>target_species: Species of interest, currently limited to Chinook Salmon.</p></li>
+<li><p>target_run: Run of interest, currently limited to Fall.</p></li>
+<li><p>file.name: File name for saved outputs, which are currently commented out (default: “test”).</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>results: List with estimates of passage, catch, and efficiency.</li>
+</ul>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

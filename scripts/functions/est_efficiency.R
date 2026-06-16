@@ -1,6 +1,31 @@
-###############################
-#function to estimate efficiency
-###############################
+#' @title est_efficiency
+#'
+#' @description Estimate efficiency for traps using mark-recapture efficiency trials. 
+#' Called by est_passage function.
+#' Takes the following steps:
+#' 1) Align release events with trap visits within 36 hours post-release.
+#' 2) Calculate efficiency as recaptures / releases per batch date.
+#' 3) Expand to full survey period (all days between min/max trial dates).
+#' 4) Calculate mean recapture time weighted by number of recaps.
+#' 5) Pass trial efficiency data to model_efficiency().
+#' 
+#' @param release_data Data set with records of fish marked and released for efficiency trials.
+#' 
+#' @param recapture_data Data set with records of marked fish recaptured for efficiency trials.
+#' 
+#' @param impute_all User input of dictating if all efficiency estimates should be imputed. Defaults to FALSE. If TRUE, will replace estimates made with actual
+#' efficiency trial data with imputed values.
+#' 
+#' @param visit_data Input trap visit data frame.
+#' 
+#' @param survey_start Input survey season start date.
+#' 
+#' @param survey_end Input survey season end date.
+#' 
+#' @param min_sample_size Minimum number of efficiency trials required in order to fit binomial model to impute efficiency. Defaults to 10.
+#' 
+#' @return eff_modeled List containing efficiency model fit results and data with imputed efficiency values.
+
 est_efficiency<-function(release_data,
                          recapture_data,
                          visit_data,

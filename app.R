@@ -61,7 +61,8 @@ ui <- fluidPage(
         tabPanel("Catch plot", plotOutput("p_catch", height = "400px"),
                  downloadButton("download_catch_plot", "Download Plot")),
         tabPanel("Efficiency plot", plotOutput("p_eff", height = "400px"),
-                 downloadButton("download_eff_plot", "Download Plot"))
+                 downloadButton("download_eff_plot", "Download Plot")),
+        tabPanel("User Guide", htmlOutput("methodology"))
       )
     )
   )
@@ -232,6 +233,7 @@ server <- function(input, output, session) {
       req(plot_passage())
       print(plot_passage())
     })
+    
   
   #download handlers
   output$download_passage_table <- downloadHandler(
@@ -270,6 +272,11 @@ server <- function(input, output, session) {
       ggsave(file, plot = plot_eff(), device = "png", width = 10, height = 6, dpi = 300)
     }
   )
+  
+  #render methods
+  output$methodology <- renderUI({
+    includeHTML("www/RST_app_documentation.html")
+  })
   
 }
 

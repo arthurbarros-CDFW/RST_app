@@ -1,6 +1,48 @@
-###############################
-#function to bootstrap passage estimates for uncertainty
-###############################
+#' @title passage_boot
+#'
+#' @description Generate confidence intervals for passage estimates. Called by est_passage(). Takes the following steps:
+#' 1) Run summarize_passage() to average passage over traps and summarize by sum.by.
+#' 2) Iterate over each available trap
+#' 3) Generate random imputations of catch and efficiency using overdispersion metrics of catch.fits and efficiency.fits.
+#' 
+#' @param passage_data  Data frame of passage estimates created by est_passage().
+#' 
+#' @param sum.by  Time grouping variable to summarize passage data by (default: "week").
+#' 
+#' @param catch.fits  List of fitted GLM catch models.
+#' 
+#' @param catch.X.miss  Matrix of catch model intercept and predictor terms.
+#' 
+#' @param catch.gapLens  Gap lengths (in hours) for each imputed period per trap.
+#' 
+#' @param catch.bDates.miss  Batch dates for each imputed catch value and trap.
+#' 
+#' @param eff.fits List of fitted Binomial efficiency models.
+#' 
+#' @param sum.by Time grouping variable to summarize passage data by (default: "week").
+#' 
+#' @param eff.X  Matrix of efficiency model intercept and predictor terms.
+#' 
+#' @param eff.ind.inside  Vector defining trap date range between first and last efficiency trials.
+#' 
+#' @param eff.X.dates  Batch dates for each record in eff.X for each trap for merging with catch data.
+#' 
+#' @param eff.X.obs.data  Observed efficiency data used to fit models.
+#' 
+#' @param eff.type  Coded value indicating efficiency imputation method for each trap.
+#' 
+#' @param survey_start  Input survey season start date.
+#' 
+#' @param survey_end   Input survey season end date.
+#' 
+#' @param R  Number of bootstrap iterations (Default = 100).
+#' 
+#' @param conf  Confidence levels for bootstrapping intervals (Default = 0.95).
+#' 
+#' @param ci  Whether or not to compute confidence intervals (Default = TRUE).
+#' 
+#' @return ans Data frame with aggregated passage estimates, lower and upper confidence bounds, standard error, and the percent of catch imputed per time period.
+#' 
 
 #bootstrap variability comes from two sources:
 #imputed catch and imputed efficiency

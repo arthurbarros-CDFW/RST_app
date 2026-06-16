@@ -1,6 +1,13 @@
-###############################
-#function to summarize a date index
-###############################
+#' @title summarize_index
+#'
+#' @description Convert dates to grouping units (day, week, month, year). Called by summarize_passage().
+#' 
+#' @param date_index  Date value to be summarized to grouping unit.
+#' 
+#' @param sum.by Time grouping variable to summarize passage data by (default: "week").
+#' 
+#' @return index Assigned date grouping value to date records.
+#' 
 summarize_index<-function(date_index,sum.by){
 
   if (sum.by == "week") {
