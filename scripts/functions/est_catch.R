@@ -48,7 +48,7 @@ est_catch<-function(target_species,
   
   #filter and join catch to visit data
   
-  #if no target run just all species
+  #if no target run just all runs
   if(is.na(target_run)){
     target_catch<-c%>%filter(
       common_name==target_species

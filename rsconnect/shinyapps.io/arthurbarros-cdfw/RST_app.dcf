@@ -5,7 +5,7 @@ account: arthurbarros-cdfw
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17274734
-bundleId: 11947315
+bundleId: 12174993
 url: https://arthurbarros-cdfw.shinyapps.io/RST_app/
 version: 1
 asMultiple: FALSE

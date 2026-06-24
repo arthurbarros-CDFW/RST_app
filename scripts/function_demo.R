@@ -11,7 +11,7 @@ library(tidyverse)
 catch<-read.csv("data/test_data/demo_catch.csv")
 release<-read.csv("data/test_data/demo_release.csv")
 recapture<-read.csv("data/test_data/demo_recapture.csv")
-visits<-read.csv("data/test_data/demo_trap.csv")
+visits<-read.csv("data/test_data/demo_visit.csv")
 
 #Load functions
 sapply(list.files("scripts/functions", pattern = "\\.R$", full.names = TRUE), source)
@@ -20,6 +20,7 @@ sapply(list.files("scripts/functions", pattern = "\\.R$", full.names = TRUE), so
 survey_start<-"2022-01-19"
 survey_end<-"2022-06-22"
 target_species<-"Chinook salmon"
+target_run<-NA
 target_run<-"Fall"
 
 summarize.by="week"
@@ -36,5 +37,5 @@ test_pass<-est_passage(catch,visits,
                        target_species,
                        target_run,
                        file.name="test")
-
+plot(test_pass$p_passage)
 

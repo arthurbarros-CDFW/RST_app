@@ -43,8 +43,9 @@ ui <- fluidPage(
       
       selectInput("target_species", "Target Species",
                   choices = c("Chinook salmon","NA"),selected="Chinook salmon"),
-      selectInput("target_run", "Target Run",
-                  choices = c("Fall","NA"),selected="Fall"),
+      selectInput("target_run", "Target Run (optional)",
+                  choices = c("All runs" = "", "Fall", "Spring", "Winter", "Summer"),
+                  selected = ""),
       
       checkboxInput("impute_all", "Impute All Efficiency Values", value = FALSE),
       
@@ -62,7 +63,12 @@ ui <- fluidPage(
                  downloadButton("download_catch_plot", "Download Plot")),
         tabPanel("Efficiency plot", plotOutput("p_eff", height = "400px"),
                  downloadButton("download_eff_plot", "Download Plot")),
-        tabPanel("User Guide", htmlOutput("methodology"))
+        tabPanel("User Guide", 
+                 tags$iframe(src = "RST_app_documentation.html", 
+                             width = "100%", 
+                             height = "800px", 
+                             frameborder = "0",
+                             style = "border: none;"))
       )
     )
   )
@@ -164,13 +170,13 @@ server <- function(input, output, session) {
     survey_start <- input$survey_start
     survey_end <- input$survey_end
     target_species <- input$target_species
-    target_run <- ifelse(is.null(input$target_run) || input$target_run == "", NA, input$target_run)
+    target_run <- if(input$target_run == "") NA else input$target_run
     sum.by <- input$sum.by
     impute_all <- input$impute_all
     bootstrap <- input$bootstrap
     
     target_species<-"Chinook salmon"
-    target_run<-"Fall"
+    #target_run<-"Fall"
     
     sum.by=input$sum.by
     
@@ -272,11 +278,6 @@ server <- function(input, output, session) {
       ggsave(file, plot = plot_eff(), device = "png", width = 10, height = 6, dpi = 300)
     }
   )
-  
-  #render methods
-  output$methodology <- renderUI({
-    includeHTML("www/RST_app_documentation.html")
-  })
   
 }
 

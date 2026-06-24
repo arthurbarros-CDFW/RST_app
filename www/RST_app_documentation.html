@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Arthur Barros">
+<meta name="dcterms.date" content="2026-06-16">
 
 <title>RST_app Documentation</title>
 <style>
@@ -71,7 +72,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#summarize_passage.r" id="toc-summarize_passage.r" class="nav-link" data-scroll-target="#summarize_passage.r"><em>summarize_passage.R</em></a></li>
   <li><a href="#passage_boot.r" id="toc-passage_boot.r" class="nav-link" data-scroll-target="#passage_boot.r"><em>passage_boot.R</em></a></li>
   <li><a href="#est_passage.r" id="toc-est_passage.r" class="nav-link" data-scroll-target="#est_passage.r"><em>est_passage.R</em></a></li>
-  <li><a href="#app.r" id="toc-app.r" class="nav-link" data-scroll-target="#app.r"><em>app.R</em></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Invalid Date</p>
+      <p class="date">June 16, 2026</p>
     </div>
   </div>
   
@@ -120,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>The <code>RST_app.R</code> Shiny application estimates juvenile salmonid out-migration passage (abundance) using rotary screw trap data submitted by the user. This application aims to replicate passage calculation and imputation methods utilized in the CAMP Rotary Screw Trap (CAMPR) platform but in a standalone, user friendly , documented, and replicable online platform. The CAMPR platform was created by Trent McDonald to support CDFW salmonid monitoring efforts in the Central Valley and allows direct connection between the modeling software built in R and the monitoring Access database. While CAMPR provides a usable system to simplify complex model fitting and passage estimation, it is currently a “black-box” back end with undetailed documentation and is no longer maintained or updated.</p>
 <p>The <code>RST_app.R</code> is a standalone package and RShiny application that performs model fitting and passage estimation in a web-based platform that requires no Access database or R experience to operate. While it does not require database connectivity, users do need to ensure their data is pre-formatted for use with the application. This document also aims to be a detailed overview of use, methodology, and the relevant scripts and functions that are used by the application. This application is also owned and maintained by CDFW staff, which allows for future maintenance and updates as needed.</p>
-<p><a href="#fig-data_flow" class="quarto-xref">Figure&nbsp;1</a> shows an overview of how data and user inputs are utilized by the different functions in the <code>RST_app</code> to produce estimates of passage, efficiency, catch, and related summary plots. Users need to upload .csv files of <code>catch_data</code>, <code>visit_data</code>, <code>release_data</code>, and <code>recapture_data</code> to the application. Then users can either set or use default input values to determine how passage data is summarized, whether or not to impute all catch or efficiency values, and the start and end dates for the survey period. These inputs are passed to the <code>est_passage.R</code> function, which then utilizes several downstream functions to produce estimates of passage and related uncertainty. The data inputs and relevant functions are covered in more detail in the following sections of this methods documentation.</p>
+<p><a href="#fig-data_flow" class="quarto-xref">Figure&nbsp;1</a> shows an overview of how data and user inputs are utilized by the different functions in the <code>RST_app</code> to produce estimates of passage, efficiency, catch, and related summary plots. Users need to upload .csv files of <code>catch_data</code>, <code>visit_data</code>, <code>release_data</code>, and <code>recapture_data</code> to the application. Then users can either set or use default input values to determine how passage data is summarized, whether or not to impute all or efficiency values, and the start and end dates for the survey period. These inputs are passed to the <code>est_passage.R</code> function, which then utilizes several downstream functions to produce estimates of passage and related uncertainty. The data inputs and relevant functions are covered in more detail in the following sections of this methods documentation.</p>
 <div id="fig-data_flow" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-data_flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -412,6 +412,7 @@ Figure&nbsp;2
 <li><p><strong>Sum by:</strong> Time grouping variable to summarize passage data by. Defaults to week.</p></li>
 <li><p><strong>Target Species:</strong> Allows user to set species of interest, currently limited to Chinook Salmon, planned to be expanded upon in the future.</p></li>
 <li><p><strong>Target Run:</strong> Allows user to set run of interest, currently limited to Fall, planned to be expanded upon in the future.</p></li>
+<li><p><strong>Impute All Efficiency Values:</strong> Allows user to determine whether or not to impute all efficiency values, even those observed via efficiency trials.</p></li>
 </ul>
 <div id="fig-data_list" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -486,7 +487,7 @@ Figure&nbsp;7
 </section>
 <section id="functions-overview" class="level2">
 <h2 class="anchored" data-anchor-id="functions-overview">Functions Overview</h2>
-<p>fill</p>
+<p>The following is an overview of all the functions utilized with in the RST_app application. The code for the functions themselves can be found on the GitHub, but below I provide brief descriptions of each function, what it is used for, as well as the inputs and outputs.</p>
 <section id="global_vars.r" class="level3">
 <h3 class="anchored" data-anchor-id="global_vars.r"><em>global_vars.R</em></h3>
 <p>Defines default variables used across all functions.</p>
@@ -573,33 +574,187 @@ Figure&nbsp;7
 </section>
 <section id="model_catch.r" class="level3">
 <h3 class="anchored" data-anchor-id="model_catch.r"><em>model_catch.R</em></h3>
+<p>Fits Poisson GLM to catch data and imputes catch for missing periods. Called by est_catch(). #’ Takes the following steps:</p>
+<ol type="1">
+<li><p>Fits a null model to catch data for each trap sampling segment.</p></li>
+<li><p>Calculates AIC for model fitting.</p></li>
+<li><p>If enough real catch data available, increase GLM spline degrees of freedom until model fit is good enough (ie model doesn’t converge or AIC increases etc.).</p></li>
+<li><p>Once model is fit, impute catch by looping over batch date sampling gaps.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>catch.df: Input of catch data frame with periods of missing catch data.</li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>ans: List containing catch model fit results and catch data with imputed catch values. Also contains X.miss, model matrix with intercept and predictor terms for generating catch predictions.</li>
+</ul>
 </section>
 <section id="est_efficiency.r" class="level3">
 <h3 class="anchored" data-anchor-id="est_efficiency.r"><em>est_efficiency.R</em></h3>
+<p>Estimate efficiency for traps using mark-recapture efficiency trials. Called by est_passage function. Takes the following steps:</p>
+<ol type="1">
+<li><p>Align release events with trap visits within 36 hours post-release.</p></li>
+<li><p>Calculate efficiency as recaptures / releases per batch date.</p></li>
+<li><p>Expand to full survey period (all days between min/max trial dates).</p></li>
+<li><p>Calculate mean recapture time weighted by number of recaps.</p></li>
+<li><p>Pass trial efficiency data to model_efficiency().</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>release_data: Data set with records of fish marked and released for efficiency trials.</p></li>
+<li><p>recapture_data: Data set with records of marked fish recaptured for efficiency trials.</p></li>
+<li><p>impute_all: User input of dictating if all efficiency estimates should be imputed. Defaults to FALSE. If TRUE, will replace estimates made with actual efficiency trial data with imputed values.</p></li>
+<li><p>visit_data: Input trap visit data frame.</p></li>
+<li><p>survey_start: Input survey season start date.</p></li>
+<li><p>survey_end: Input survey season end date.</p></li>
+<li><p>min_sample_size: Minimum number of efficiency trials required in order to fit binomial model to impute efficiency. Defaults to 10.</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>eff_modeled: List containing efficiency model fit results and data with imputed efficiency values.</li>
+</ul>
 </section>
 <section id="model_efficiency.r" class="level3">
 <h3 class="anchored" data-anchor-id="model_efficiency.r"><em>model_efficiency.R</em></h3>
+<p>Fits Binomial GLM to efficiency trial data and imputes efficiency for missing periods. Called by est_efficiency(). Takes the following steps:</p>
+<ol type="1">
+<li><p>Fits a null model to efficiency data for each trap sampling segment.</p></li>
+<li><p>Calculates AIC for model fitting.</p></li>
+<li><p>If enough real efficiency trial data available, increase GLM spline degrees of freedom until model fit is good enough (ie model doesn’t converge or AIC increases etc.). If too few trials (&lt;10) utilizes ration of means +1 assuming constant efficiency.</p></li>
+<li><p>Once model is fit, impute efficiency by looping over batch date sampling gaps.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>efficiency_data: Input of efficiency data frame with periods of missing efficiency data.</p></li>
+<li><p>max.df.spline: Maximum number of splines to fit to binomial GLM.</p></li>
+<li><p>impute_all: User input of dictating if all efficiency estimates should be imputed. Defaults to FALSE. If TRUE, will replace estimates made with actual efficiency trial data with imputed values.</p></li>
+<li><p>min_sample_size: Minimum number of efficiency trials required in order to fit binomial model to impute efficiency. Defaults to 10.</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>ans: List containing efficiency model fit results and efficiency data with imputed efficiency values. Also contains X.miss, model matrix with intercept and predictor terms for generating efficiency predictions.</li>
+</ul>
 </section>
 <section id="over_dispersion.r" class="level3">
 <h3 class="anchored" data-anchor-id="over_dispersion.r"><em>over_dispersion.R</em></h3>
+<p>Calculate overdispersion for Poisson (catch) and Binomial (efficiency) models. Called by passage_boot().</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>model: model fits developed from model_catch() and model_efficiency().</p></li>
+<li><p>family: Poisson for catch models, Binomial for efficiency models.</p></li>
+<li><p>type: Pearson residual type, measuring distance between predicted and actual values of model.</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>disp: Returns dispersion metrics from models.</li>
+</ul>
 </section>
 <section id="find_visits_near_release.r" class="level3">
 <h3 class="anchored" data-anchor-id="find_visits_near_release.r"><em>find_visits_near_release.R</em></h3>
+<p>Finds trap visits within 36 hours of a release. Called by est_efficiency() to map to individual release records.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>release_time: Record of releases to be used for efficiency estimates.</p></li>
+<li><p>visit_df: For each release assigns visits from visit_df.</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>visit_df: Returns back visit_df filtered to visits within 36 hours of release times.</li>
+</ul>
 </section>
 <section id="summarize_index.r" class="level3">
 <h3 class="anchored" data-anchor-id="summarize_index.r"><em>summarize_index.R</em></h3>
+<p>Convert dates to grouping units (day, week, month, year). Called by summarize_passage().</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>date_index: Date value to be summarized to grouping unit.</p></li>
+<li><p>sum.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>index: Assigned date grouping value to date records.</li>
+</ul>
 </section>
 <section id="summarize_passage.r" class="level3">
 <h3 class="anchored" data-anchor-id="summarize_passage.r"><em>summarize_passage.R</em></h3>
+<p>Aggregate passage estimates by sum.by time period. Takes the following steps:</p>
+<ol type="1">
+<li><p>Averages trap passage estimates over batch_date.</p></li>
+<li><p>Creates date index using summarize_index().</p></li>
+<li><p>Summarize passage by sum.by time period.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>passage_data: Date value to be summarized to grouping unit.</p></li>
+<li><p>sum.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>n: Data frame with sum.by value, passage estimates, dates, and estimate of the percent of imputed catch for the grouping unit.</li>
+</ul>
 </section>
 <section id="passage_boot.r" class="level3">
 <h3 class="anchored" data-anchor-id="passage_boot.r"><em>passage_boot.R</em></h3>
+<p>Generate confidence intervals for passage estimates. Called by est_passage(). Takes the following steps:</p>
+<ol type="1">
+<li><p>Run summarize_passage() to average passage over traps and summarize by sum.by.</p></li>
+<li><p>Iterate over each available trap.</p></li>
+<li><p>Generate random imputations of catch and efficiency using overdispersion metrics of catch.fits and efficiency.fits.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>passage_data: Data frame of passage estimates created by est_passage().</p></li>
+<li><p>sum.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
+<li><p>catch.fits: List of fitted GLM catch models.</p></li>
+<li><p>catch.X.miss: Matrix of catch model intercept and predictor terms.</p></li>
+<li><p>catch.gapLens: Gap lengths (in hours) for each imputed period per trap.</p></li>
+<li><p>catch.bDates.miss: Batch dates for each imputed catch value and trap.</p></li>
+<li><p>eff.fits: List of fitted Binomial efficiency models.</p></li>
+<li><p>sum.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
+<li><p>eff.X Matrix: of efficiency model intercept and predictor terms.</p></li>
+<li><p>eff.ind.inside: Vector defining trap date range between first and last efficiency trials.</p></li>
+<li><p>eff.X.dates: Batch dates for each record in eff.X for each trap for merging with catch data.</p></li>
+<li><p>eff.X.obs.data: Observed efficiency data used to fit models.</p></li>
+<li><p>eff.type: Coded value indicating efficiency imputation method for each trap.</p></li>
+<li><p>survey_start: Input survey season start date.</p></li>
+<li><p>survey_end: Input survey season end date.</p></li>
+<li><p>R: Number of bootstrap iterations (Default = 100).</p></li>
+<li><p>conf: Confidence levels for bootstrapping intervals (Default = 0.95).</p></li>
+<li><p>ci: Whether or not to compute confidence intervals (Default = TRUE).</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>ans: Data frame with aggregated passage estimates, lower and upper confidence bounds, standard error, and the percent of catch imputed per time period.</li>
+</ul>
 </section>
 <section id="est_passage.r" class="level3">
 <h3 class="anchored" data-anchor-id="est_passage.r"><em>est_passage.R</em></h3>
-</section>
-<section id="app.r" class="level3">
-<h3 class="anchored" data-anchor-id="app.r"><em>app.R</em></h3>
+<p>Coordinate all modules to produce final passage estimates. Takes the following steps:</p>
+<ol type="1">
+<li><p>Run est_catch() to calculate catch for available data and impute catch for missing periods.</p></li>
+<li><p>Run est_efficiency() to calculate efficiency for available trials and impute for missing periods.</p></li>
+<li><p>Estimate passage and related uncertainty.</p></li>
+</ol>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p>catch: Records of fish caught during each trap visit.</p></li>
+<li><p>visits: Records of all trap operation and sampling events.</p></li>
+<li><p>release: Records of fish marked and released for efficiency trials.</p></li>
+<li><p>recapture: Records of marked fish recaptured for efficiency trials.</p></li>
+<li><p>summarize.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
+<li><p>impute_all: Determine whether or not to impute all efficiency values, even those observed via efficiency trials (default: FALSE).</p></li>
+<li><p>bootstrap: Whether or not to conduct bootstrapping for uncertainty (default: TRUE).</p></li>
+<li><p>survey_start: Input survey season start date.</p></li>
+<li><p>survey_end: Input survey season end date.</p></li>
+<li><p>target_species: Species of interest, currently limited to Chinook Salmon.</p></li>
+<li><p>target_run: Run of interest, currently limited to Fall.</p></li>
+<li><p>file.name: File name for saved outputs, which are currently commented out (default: “test”).</p></li>
+</ul>
+<p><strong>Return:</strong></p>
+<ul>
+<li>results: List with estimates of passage, catch, and efficiency.</li>
+</ul>
 </section>
 </section>
 
