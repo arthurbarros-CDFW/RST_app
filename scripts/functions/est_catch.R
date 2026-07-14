@@ -51,11 +51,11 @@ est_catch<-function(target_species,
   #if no target run just all runs
   if(is.na(target_run)){
     target_catch<-c%>%filter(
-      common_name==target_species
+      tolower(common_name)==tolower(target_species)
     )
   }else{
     target_catch<-c%>%filter(
-      common_name==target_species &
+      tolower(common_name)==tolower(target_species) &
         at_capture_run==target_run
     )
   }

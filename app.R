@@ -44,7 +44,7 @@ ui <- fluidPage(
       selectInput("target_species", "Target Species",
                   choices = c("Chinook salmon","NA"),selected="Chinook salmon"),
       selectInput("target_run", "Target Run (optional)",
-                  choices = c("All runs" = "", "Fall", "Spring", "Winter", "Summer"),
+                  choices = c("All runs" = "", "Fall", "Late Fall", "Spring", "Winter"),
                   selected = ""),
       
       checkboxInput("impute_all", "Impute All Efficiency Values", value = FALSE),
