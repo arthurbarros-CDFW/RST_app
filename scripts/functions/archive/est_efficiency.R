@@ -33,8 +33,7 @@ est_efficiency<-function(release_data,
                          survey_start,
                          survey_end,
                          min_sample_size=10,
-                         use_discharge=FALSE,
-                         force_discharge=FALSE){
+                         use_discharge=FALSE){
   
   #rename
   visits<-visit_data
@@ -60,7 +59,7 @@ est_efficiency<-function(release_data,
   #add the trap_ID value to have a unique ID for each subsite x river
   #this is in case we have data for multiple sites
   recaps$trap_ID<-paste(recaps$site_name,
-                        recaps$subsite_name)
+                                recaps$subsite_name)
   
   #filter by those records marked for analysis
   release_use <- releases %>%
@@ -122,7 +121,7 @@ est_efficiency<-function(release_data,
   #assign batch_date to trial_data
   #this will allow us to match catch data to trial batch_dates
   trial_data<-assign_batch_date(df=trial_data,
-                                time_field="meanRecapTime")
+                              time_field="meanRecapTime")
   
   #sometimes we have releases on same day but with different markers
   #so here we combine
@@ -163,33 +162,14 @@ est_efficiency<-function(release_data,
   eff$unimputed_efficiency<-eff$efficiency
   #next build eff_model and run here
   
-  if(use_discharge == TRUE){
-    visits <- assign_batch_date(df = visits,
-                                time_field = "visit_datetime")
-    
-    #aggregate discharge to daily values per trap
-    env_covars <- visits %>%
-      ungroup() %>%
-      group_by(trap_ID_decimal, batch_date) %>%
-      summarise(discharge = mean(discharge, na.rm = TRUE), .groups = "drop") %>%
-      select(trap_ID_decimal, batch_date, discharge)
-    
-    eff <- eff %>%
-      left_join(env_covars, by = c("trap_ID_decimal", "batch_date"))
-    
-    eff$discharge_scaled <- as.numeric(scale(eff$discharge))
-  }
-  
   eff_modeled<-model_efficiency(efficiency_data=eff,
-                                impute_all=impute_all,
-                                min_sample_size=min_sample_size,
-                                use_discharge = use_discharge,
-                                force_discharge = force_discharge)
+                        impute_all=impute_all,
+                        min_sample_size=min_sample_size)
   
   eff_modeled$results<-unique(eff_modeled$results)%>%
     left_join(dplyr::select(eff,
-                            batch_date,trap_ID_decimal,
-                            unimputed_efficiency))
+                     batch_date,trap_ID_decimal,
+                     unimputed_efficiency))
   
   return(eff_modeled)
 }

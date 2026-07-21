@@ -10,61 +10,62 @@ library(scales)
 sapply(list.files("scripts/functions", pattern = "\\.R$", full.names = TRUE), source)
 
 ###############################
-#BUTTE
+#Efficiency ~ discharge testing
 ###############################
 
-catch<-read_xlsx("data/butte/butte_catch.xlsx")
-release<-read_xlsx("data/butte/butte_release.xlsx")
-recapture<-read_xlsx("data/butte/butte_recapture.xlsx")
-visits<-read_xlsx("data/butte/butte_trap.xlsx")
+catch<-read.csv("data/test_data/demo_catch.csv")
+releases<-read.csv("data/test_data/demo_release.csv")
+recaps<-read.csv("data/test_data/demo_recapture.csv")
+visits<-read.csv("data/test_data/demo_visit.csv")
 
 #testing grounds
-survey_start<-"2021-01-19"
-survey_end<-"2021-06-22"
+survey_start<-"2022-01-19"
+survey_end<-"2022-06-22"
 target_species<-"Chinook salmon"
 #target_run<-"Fall" turn off because run not recorded properly
 
-butte_pass<-est_passage(catch,
-                        visits,
-                        release,
-                        recapture,
+impute_all=F
+min_sample_size=10
+
+test_results<-est_efficiency(release_data=releases,
+                                  recapture_data=recaps,
+                                  visit_data=visits,
+                                  impute_all=F,
+                                  survey_start,
+                                  survey_end,
+                                  min_sample_size=10,
+                                  use_discharge=TRUE)
+
+###############################
+#Passage ~ discharge testing
+###############################
+
+catch<-read.csv("data/test_data/demo_catch.csv")
+release<-read.csv("data/test_data/demo_release.csv")
+recapture<-read.csv("data/test_data/demo_recapture.csv")
+visits<-read.csv("data/test_data/demo_visit.csv")
+
+#testing grounds
+survey_start<-"2022-01-19"
+survey_end<-"2022-06-22"
+target_species<-"Chinook salmon"
+target_run<-"Fall"
+
+summarize.by="week"
+impute_all=F
+bootstrap=T
+file.name="test"
+use_discharge=TRUE
+
+test_pass<-est_passage(catch,visits,
+                       release,recapture,
                        summarize.by="week", 
                        impute_all=F,
                        bootstrap=T,
                        survey_start,survey_end,
                        target_species,
-                       file.name="butte")
-
-
-###############################
-#KNIGHTS LANDING
-###############################
-
-
-catch<-read.csv("data/knights landing/knights_landing_catch.csv")
-release<-read.csv("data/knights landing/knights_landing_release.csv")
-recapture<-read.csv("data/knights landing/knights_landing_recapture.csv")
-visits<-read.csv("data/knights landing/knights_landing_trap.csv")
-
-#testing grounds
-survey_start<-"2018-01-01"
-survey_end<-"2021-06-22"
-target_species<-"Chinook salmon"
-target_run<-"Fall" 
-summarize.by="week"
-impute_all=F
-bootstrap=T
-file.name="knights"
-
-knights_pass<-est_passage(catch,
-                        visits,
-                        release,
-                        recapture,
-                        summarize.by="week", 
-                        impute_all=F,
-                        bootstrap=T,
-                        survey_start,survey_end,
-                        target_species,
-                        file.name="knights")
-
+                       target_run,
+                       file.name="test",
+                       use_discharge = use_discharge)
+plot(test_pass$p_eff)
 

@@ -48,6 +48,16 @@ ui <- fluidPage(
                   selected = ""),
       
       checkboxInput("impute_all", "Impute All Efficiency Values", value = FALSE),
+      checkboxInput("use_discharge", "Use discharge as a covariate for efficiency?", value = FALSE),
+      
+      conditionalPanel(
+        condition = "input.use_discharge == true",
+        checkboxInput("force_discharge",
+                      "Force using discharge in efficiency models",
+                      value=FALSE),
+        helpText("When checked, the application will select the best model that includes discharge as a covariate,",
+                 "even if a model without discharge has a lower AICc value.")
+      ),
       
       uiOutput("fileList"),  # Output for the list of uploaded files
       h4("Data List:"),
@@ -173,10 +183,13 @@ server <- function(input, output, session) {
     target_run <- if(input$target_run == "") NA else input$target_run
     sum.by <- input$sum.by
     impute_all <- input$impute_all
+    use_discharge<-input$use_discharge
     bootstrap <- input$bootstrap
     
     target_species<-"Chinook salmon"
     #target_run<-"Fall"
+    
+    force_discharge =input$force_discharge
     
     sum.by=input$sum.by
     
@@ -191,6 +204,8 @@ server <- function(input, output, session) {
                   recapture=datasets$recapture,
                   summarize.by=sum.by, 
                   impute_all=impute_all,
+                  use_discharge=use_discharge,
+                  force_discharge=force_discharge,
                   bootstrap=T,
                   survey_start,survey_end,
                   target_species,target_run=target_run,

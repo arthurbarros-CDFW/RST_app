@@ -61,8 +61,7 @@ passage_boot<-function(passage_data,
                        survey_end,
                        R=100,
                        conf=0.95,
-                       ci=T,
-                       use_discharge=FALSE){
+                       ci=T){
   bootstrap.CI.fx <- get("bootstrap.CI.fx",envir=.GlobalEnv)
   
   #run summarize_passage() to averages over traps and sums by sum.by group
@@ -104,7 +103,7 @@ passage_boot<-function(passage_data,
         gaps <- catch.gapLens[[trapID]]
         bd.miss <- catch.bDates.miss[[trapID]]
         
-        cat("in bootstrap_passage.r ...")
+        cat("in bootstrap_passage.r (hit return)...")
         
         if( all(!is.na(bd.miss)) & all(!is.null(bd.miss)) ){
           
@@ -189,31 +188,19 @@ passage_boot<-function(passage_data,
           eff.obs.data <- eff.X.obs.data[[trapID]]
           e.type <- eff.type[[trapID]]
           
-          #check if model uses discharge by looking at coef names
-          uses_discharge<-FALSE
-          coef_names <- names(coef(e.fit))
-          uses_discharge <- any(grepl("discharge", coef_names))
-          
           #The e.X design matrix should have columns in order from model_eff.R
           #but here we can double check and reset order on e.X, which is easier 
           #to manipulate than order of e.fit
           #AB NOTE: this only seems to matter for the enhanced efficiency model with covariates
-          #this can probably be removed
           
           if( (length(e.X) > 1) & !is.na(e.type) ){  #exclude cases when e.X == NA.  
-            # Only reorder for enhanced efficiency model (type 5)
-            # For type 4 models, the columns are already in the correct order
             if(ncol(e.X) > 1 & e.type == 5){
               cat(paste0("Sorting variables ",colnames(e.X)," for e.X in bootstrap.\n"))
               timeVar <- sort(colnames(e.X)[grepl("time",colnames(e.X),fixed=TRUE)])  
               fit.Vars <- names(coef(e.fit))
               notTimeVar <- fit.Vars[!(grepl("tmp.bs",fit.Vars,fixed=TRUE))]
               notTimeVar <- notTimeVar[notTimeVar != "(Intercept)"]
-              notTimeVar <- notTimeVar[!grepl("discharge", notTimeVar)]
-              thisOrder <- c("Intercept", timeVar, notTimeVar)
-              if(uses_discharge) {
-                thisOrder <- c("Intercept", "discharge_scaled", timeVar, notTimeVar)
-              }
+              thisOrder <- c("Intercept",timeVar,notTimeVar)
               e.X <- e.X[,thisOrder]
             }
           }
@@ -285,43 +272,8 @@ passage_boot<-function(passage_data,
                 rbeta <- mvtnorm::rmvnorm(n=R, mean=log(p/(1-p)),sigma=sig,method="chol")
               }
               
-            } else if(uses_discharge && length(coef(e.fit)>1)){
-              #model includes discharge
-              rbeta <- mvtnorm::rmvnorm(n=R, mean=beta, sigma=sig, method="chol")
-              
-            }  else {#all other models non intercept only models way easier
+            } else {#all other models non intercept only models way easier
               rbeta <- mvtnorm::rmvnorm(n=R, mean=beta, sigma=sig, method="chol") 
-            }
-            
-            #impute efficiency using random coefficients
-            #if e.X is NULL or NA, we need to rebuild it
-            if(is.null(e.X) || all(is.na(e.X))) {
-              #rebuild design matrix for this trap
-              if(uses_discharge) {
-                #need discharge data for all dates
-                discharge_vals <- passage_data$discharge_scaled[trap.ind]
-                discharge_vals[is.na(discharge_vals)] <- 0
-                
-                batch_dates <- passage_data$batch_date[trap.ind]
-                #determine df from model - extract from coefficients
-                n_spline_cols <- length(coef(e.fit)) - 2  # subtract intercept and discharge
-                if(n_spline_cols > 0) {
-                  bspl_pred <- splines::bs(batch_dates, df = n_spline_cols + 1)  # +1 for boundary
-                  e.X <- cbind(1, discharge_vals, bspl_pred)
-                } else {
-                  e.X <- cbind(1, discharge_vals)
-                }
-              } else {
-                #temporal-only model
-                batch_dates <- passage_data$batch_date[trap.ind]
-                n_spline_cols <- length(coef(e.fit)) - 1
-                if(n_spline_cols > 0) {
-                  bspl_pred <- splines::bs(batch_dates, df = n_spline_cols + 1)
-                  e.X <- cbind(1, bspl_pred)
-                } else {
-                  e.X <- matrix(1, nrow = sum(trap.ind), ncol = 1)
-                }
-              }
             }
             
             #predict efficiency using random coefficients

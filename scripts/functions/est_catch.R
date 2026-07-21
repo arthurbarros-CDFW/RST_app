@@ -65,7 +65,7 @@ est_catch<-function(target_species,
                      include_catch,
                      batch_date,
                      start_time,
-                     end_time))
+                     end_time,date_time),by=c("trap_ID","date_time","batch_date"))
   
   #sum catch by batch date and trap
   est_catch<-target_catch%>%
