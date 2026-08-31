@@ -56,13 +56,14 @@ passage_boot<-function(passage_data,
                        eff.ind.inside,
                        eff.X.dates,
                        eff.X.obs.data,
-                       eff.type,
+                       eff.types,
                        survey_start,
                        survey_end,
                        R=100,
                        conf=0.95,
                        ci=T,
-                       use_discharge=FALSE){
+                       use_discharge=FALSE,
+                       min_sample_size=10){
   bootstrap.CI.fx <- get("bootstrap.CI.fx",envir=.GlobalEnv)
   
   #run summarize_passage() to averages over traps and sums by sum.by group
@@ -179,15 +180,15 @@ passage_boot<-function(passage_data,
         }
       }
         
-        ####################
-        #generate random imputations of efficiency
-        ####################
-        ind <- which( trapID == names(eff.fits) )
-        if( length(ind) > 0 ){
+      ####################
+      #generate random imputations of efficiency
+      ####################
+      ind <- which( trapID == names(eff.fits) )
+      if( length(ind) > 0 ){
           e.fit <- eff.fits[[trapID]]
           e.X <- eff.X[[trapID]]
           eff.obs.data <- eff.X.obs.data[[trapID]]
-          e.type <- eff.type[[trapID]]
+          e.type <- eff.types[[trapID]]
           
           #check if model uses discharge by looking at coef names
           uses_discharge<-FALSE
@@ -197,26 +198,25 @@ passage_boot<-function(passage_data,
           #The e.X design matrix should have columns in order from model_eff.R
           #but here we can double check and reset order on e.X, which is easier 
           #to manipulate than order of e.fit
-          #AB NOTE: this only seems to matter for the enhanced efficiency model with covariates
-          #this can probably be removed
+          #AB NOTE: I don't think this matters for discharge, it seems to be in 
+          #the right order, commenting out for now
           
-          if( (length(e.X) > 1) & !is.na(e.type) ){  #exclude cases when e.X == NA.  
-            # Only reorder for enhanced efficiency model (type 5)
-            # For type 4 models, the columns are already in the correct order
-            if(ncol(e.X) > 1 & e.type == 5){
-              cat(paste0("Sorting variables ",colnames(e.X)," for e.X in bootstrap.\n"))
-              timeVar <- sort(colnames(e.X)[grepl("time",colnames(e.X),fixed=TRUE)])  
-              fit.Vars <- names(coef(e.fit))
-              notTimeVar <- fit.Vars[!(grepl("tmp.bs",fit.Vars,fixed=TRUE))]
-              notTimeVar <- notTimeVar[notTimeVar != "(Intercept)"]
-              notTimeVar <- notTimeVar[!grepl("discharge", notTimeVar)]
-              thisOrder <- c("Intercept", timeVar, notTimeVar)
-              if(uses_discharge) {
-                thisOrder <- c("Intercept", "discharge_scaled", timeVar, notTimeVar)
-              }
-              e.X <- e.X[,thisOrder]
-            }
-          }
+          #if( (length(e.X) > 1) & !is.na(e.type) ){  #exclude cases when e.X == NA.  
+            #only reorder for enhanced efficiency model (type 5)
+            #for type 4 models, the columns are already in the correct order
+          #  if(ncol(e.X) > 1 & e.type == 5){
+          #    cat(paste0("Sorting variables ",colnames(e.X)," for e.X in bootstrap.\n"))
+          #    timeVar <- sort(colnames(e.X)[grepl("tmp.bs",colnames(e.X),fixed=TRUE)])  
+          #    fit.Vars <- names(coef(e.fit))
+          #    notTimeVar <- fit.Vars[!(grepl("tmp.bs",fit.Vars,fixed=TRUE))]
+          #    notTimeVar <- notTimeVar[notTimeVar != "(Intercept)"]
+          #    thisOrder <- c("Intercept", timeVar, notTimeVar)
+          #    if(uses_discharge) {
+          #      thisOrder <- c("Intercept", "discharge_scaled", timeVar, notTimeVar)
+          #    }
+          #    e.X <- e.X[,thisOrder]
+          #  }
+          #}
           
           #another 2-vector of the first and last efficiency trials.
           e.ind <- eff.ind.inside[[trapID]]  
@@ -250,41 +250,19 @@ passage_boot<-function(passage_data,
             
             #generate R random coefficients of the beta vector
             if( length(coef(e.fit)) == 1 ){ #interecept only model
-              
-              #if using enh efficiency model, not yet implemented
-              if(e.type == 5){
-                
-                #bias adjustment based on the data that went into the enh eff estimation.  
-                X <- rep(1,length(e.X))
-                p <- (sum(e.fit$data$n_recaps) + 1) / (sum(e.fit$data$n_released) + 1)
-                w <- e.fit$data$n_released*rep(p*(1 - p),length(X))
-                
-                diagonal <- matrix(rep(0,length(X)*length(X)),length(X),length(X))
-                for(i in 1:length(X)){
-                  diagonal[i,i] <- w[i]
+              X <- rep(1,length(eff.obs.data$n_recaps))
+              p <- (sum(eff.obs.data$n_recaps) + 1) / (sum(eff.obs.data$n_released) + 1) #ROM estimator for intercept only model
+              w <- eff.obs.data$n_released*rep(p*(1 - p),length(X))
+               
+              diagonal <- matrix(rep(0,length(X)*length(X)),length(X),length(X))
+              for(i in 1:length(X)){
+                diagonal[i,i] <- w[i]
                 }
                 
-                #"matrix" is 1x1 here by design...only doing this for intercept-only models.
-                sig <- as.matrix(disp*( solve(t(X) %*% diagonal %*% X) ))
-                rbeta <- mvtnorm::rmvnorm(n=R, mean=log(p/(1-p)),sigma=sig,method="chol")
-                
-              }
-              
-              else {
-                X <- rep(1,length(eff.obs.data$n_recaps))
-                p <- (sum(eff.obs.data$n_recaps) + 1) / (sum(eff.obs.data$n_released) + 1) #ROM estimator for intercept only model
-                w <- eff.obs.data$n_released*rep(p*(1 - p),length(X))
-                
-                diagonal <- matrix(rep(0,length(X)*length(X)),length(X),length(X))
-                for(i in 1:length(X)){
-                  diagonal[i,i] <- w[i]
-                }
-                
-                #"matrix" is 1x1 here by design...only doing this for intercept-only models.
-                sig <- as.matrix(disp*( solve(t(X) %*% diagonal %*% X) ))
-                rbeta <- mvtnorm::rmvnorm(n=R, mean=log(p/(1-p)),sigma=sig,method="chol")
-              }
-              
+              #"matrix" is 1x1 here by design...only doing this for intercept-only models.
+              sig <- as.matrix(disp*( solve(t(X) %*% diagonal %*% X) ))
+              rbeta <- mvtnorm::rmvnorm(n=R, mean=log(p/(1-p)),sigma=sig,method="chol")
+
             } else if(uses_discharge && length(coef(e.fit)>1)){
               #model includes discharge
               rbeta <- mvtnorm::rmvnorm(n=R, mean=beta, sigma=sig, method="chol")
@@ -404,6 +382,7 @@ passage_boot<-function(passage_data,
     
     #   ---- Internal function to summarize catch by s.by by applying
     #   ---- F.summarize to every column of pass.
+    # AB NOTE: above is carried over from CAMPR bootstrap_passage.R
     internal.sumize.pass <- function(p, s.by, bd){
       
       #   p <- c.pred

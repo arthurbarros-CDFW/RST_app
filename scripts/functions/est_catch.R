@@ -120,5 +120,23 @@ est_catch<-function(target_species,
   
   final_catch<-model_catch(final_catch)
   
+  #plot catch data
+  p_catch <- ggplot(data = final_catch$results, 
+                    aes(x = batch_date,
+                        y = total_catch,
+                        color = catch_imputed,
+                        shape = catch_imputed)) + 
+    geom_point() +
+    scale_color_manual(name = "Catch Imputed",
+                       values = c("TRUE" = "#00BFC4",
+                                  "FALSE" = "#F8766D")) +
+    scale_shape_manual(name = "Catch Imputed",
+                       values = c("TRUE" = 15,    
+                                  "FALSE" = 16)) +
+    theme_bw() +
+    facet_wrap(. ~ trap_ID_decimal)
+  
+  final_catch$p_catch<-p_catch
+  
   return(final_catch)
 }

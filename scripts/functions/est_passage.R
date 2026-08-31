@@ -31,136 +31,37 @@
 #' 
 #' @return results List with estimates of passage, catch, and efficiency.
 
-est_passage<-function(catch,visits,
-                      release,recapture,
-                      summarize.by="day", impute_all=F,
+est_passage<-function(catch.results,
+                      eff.results,
+                      summarize.by="day",
                       bootstrap=T,survey_start,survey_end,
+                      catch.fits,
+                      eff.fits,
+                      eff.types,
                       target_species,
                       target_run=NA,
-                      file.name="test",
-                      use_discharge=FALSE,
-                      force_discharge=FALSE){
+                      use_discharge=F,
+                      min_sample_size=10){
   
   #set sum.by ifelse to change day to jday
   #this is so user can just put day but code sees julian day for easier editing
   #this may be messy
   sum.by=ifelse(summarize.by=="day","jday",summarize.by)
   
+  #pull relvant objects from catch.results
+  catch.fits=catch.results$models
+  catch.X.miss=catch.results$X.miss
+  catch.gapLens=catch.results$gaps
+  catch.bDates.miss=catch.results$batchDate.for.missings
+  catch.results<-catch.results$results
   
-  #run est_catch and est_efficiency from here
-  catch.output<-est_catch(target_species,
-                          target_run=target_run,
-                        catch_data=catch,
-                        visit_data=visits,
-                        survey_start=survey_start,
-                        survey_end=survey_end)
-  
-  catch.fits<-catch.output$models
-  catch.results<-catch.output$results
-  catch.X.miss<-catch.output$X.miss
-  
-  #plot catch data
-  p_catch<-ggplot()+
-    geom_point(data=catch.output$results,aes(x=batch_date,
-                                             y=total_catch,
-                                             color=catch_imputed))+
-    scale_color_manual(values = c("TRUE" = "#00BFC4", "FALSE" = "#F8766D")) +
-    theme_bw()+
-    facet_wrap(.~trap_ID_decimal)
-  #ggsave(paste("outputs/catch_",Sys.Date(),"_",file.name,".png",sep=""),
-    #     p_catch,scale=2)
-  
-  eff.output<-est_efficiency(release_data=release,
-                             recapture_data=recapture,
-                             visit_data=visits,
-                      impute_all,
-                      survey_start,
-                      survey_end,
-                      use_discharge = use_discharge,
-                      force_discharge=force_discharge)
-
-  eff.fits<-eff.output$models
-  eff.results<-eff.output$results  
-  
-  #filter out NA dischrage
-  if(use_discharge){
-    discharge_data <- eff.output$results %>%
-      filter(!is.na(discharge) & !is.nan(discharge))
-    scale_factor <- max(eff.output$results$efficiency, na.rm = TRUE) / 
-      max(eff.output$results$discharge, na.rm = TRUE)
-  }
-  
-  p_eff <- ggplot()
-  
-  #add conditional layers
-  if (impute_all == FALSE) {
-    p_eff <- p_eff +
-      geom_point(data = eff.output$results, 
-                 aes(x = batch_date, y = efficiency_imputed, 
-                     color = "Imputed Efficiency",
-                     shape = "Imputed Efficiency")) +
-      geom_point(data = eff.output$results, 
-                 aes(x = batch_date, y = unimputed_efficiency, 
-                     color = "Unimputed Efficiency",
-                     shape = "Unimputed Efficiency"))
-  } else if (impute_all == TRUE) {
-    p_eff <- p_eff +
-      geom_point(data = eff.output$results, 
-                 aes(x = batch_date, y = efficiency_imputed, 
-                     color = "Imputed Efficiency",
-                     shape = "Imputed Efficiency"))
-  }
-  
-  #add discharge points
-  if (use_discharge == TRUE) {
-    p_eff <- p_eff +
-      geom_point(data = discharge_data, 
-                 aes(x = batch_date, y = discharge * scale_factor, 
-                     color = "Discharge",
-                     shape = "Discharge"), 
-                 alpha = 0.6, size = 1.5) +
-      scale_color_manual(
-        name="Values",
-        values = c("Imputed Efficiency" = "#00BFC4", 
-                   "Unimputed Efficiency" = "#F8766D",
-                   "Discharge" = "black")
-      ) +
-      scale_shape_manual(
-        name="Values",
-        values = c("Imputed Efficiency" = 15,    
-                   "Unimputed Efficiency" = 16,  
-                   "Discharge" = 21)
-      ) +
-      scale_y_continuous(
-        name = "Efficiency",
-        sec.axis = sec_axis(
-          ~ . / scale_factor,
-          name = "Discharge (cfs)"
-        )
-      )
-  } else{
-    p_eff <- p_eff +
-      scale_color_manual(
-        name="Values",
-        values = c("Imputed Efficiency" = "#00BFC4", 
-                   "Unimputed Efficiency" = "#F8766D")
-      ) +
-      scale_shape_manual(
-        name="Values",
-        values = c("Imputed Efficiency" = 15,    
-                   "Unimputed Efficiency" = 16)
-      ) +
-      scale_y_continuous(
-        name = "Efficiency"
-      )
-  }
-  
-  p_eff <- p_eff +
-    theme_bw() +
-    facet_wrap(. ~ trap_ID_decimal)
-
-  #ggsave(paste("outputs/eff_",Sys.Date(),"_",file.name,".png",sep=""),
-   #      p_eff,scale=2)
+  #pull relevant objects from eff.results
+  eff.fits=eff.results$models
+  eff.X=eff.results$all.X
+  eff.ind.inside=eff.results$all.ind.inside
+  eff.X.dates=eff.results$all.dts
+  eff.X.obs.data=eff.results$obs.data
+  eff.results=eff.results$results
   
   catch.results<-catch.results%>%
     select(trap_ID_decimal,batch_date,trap_status,
@@ -213,9 +114,7 @@ est_passage<-function(catch,visits,
   total_hours_sampled<-sum(pass_data$total_sample_minutes)/60
   
   fit_traps<-unique(pass_data$trap_ID_decimal)
-  catch.fits <- catch.fits[fit_traps]
-  eff.fits<-eff.fits[fit_traps]
-  
+
   #plot passage estimates
   p_passage<-ggplot()+
     geom_point(data=pass_data,aes(x=batch_date,
@@ -223,25 +122,23 @@ est_passage<-function(catch,visits,
                                   color=catch_imputed))+
     theme_bw()+
     facet_wrap(.~trap_ID_decimal)
-  #ggsave(paste("outputs/pass_",Sys.Date(),"_",file.name,".png",sep=""),
-    #     p_passage,scale=2)
-  
   
   #next we should be passing to bootstrapping passage_boot.R
   n<-passage_boot(passage_data=pass_data,
                  sum.by,catch.fits,
-                  catch.X.miss=catch.output$X.miss,
-                  catch.gapLens=catch.output$gaps,
-                  catch.bDates.miss=catch.output$batchDate.for.missings,
-                  eff.fits,
-                  eff.X=eff.output$all.X,
-                  eff.ind.inside=eff.output$all.ind.inside,
-                  eff.X.dates=eff.output$all.dts,
-                  eff.X.obs.data=eff.output$obs.data,
-                  eff.type=eff.output$eff.type,
+                  catch.X.miss=catch.X.miss,
+                  catch.gapLens=catch.gapLens,
+                  catch.bDates.miss=catch.bDates.miss,
+                  eff.fits=eff.fits,
+                  eff.X=eff.X,
+                  eff.ind.inside=eff.ind.inside,
+                  eff.X.dates=eff.X.dates,
+                  eff.X.obs.data=eff.X.obs.data,
+                 eff.types=eff.types,
                   survey_start,survey_end,
                   R=100,conf=0.95,ci=T,
-                 use_discharge=use_discharge)
+                 use_discharge=use_discharge,
+                 min_sample_size = min_sample_size)
   
   
   #plot breaking showing passage estimate and CI broken down by summarize.by val
@@ -263,8 +160,6 @@ est_passage<-function(catch,visits,
     #        row.names = F)
   
   results<-list("p_passage"=p_passage_boot,
-                "p_catch"=p_catch,
-                "p_eff"=p_eff,
                 "passage_output"=n)
   return(results)
 }

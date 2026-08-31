@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Arthur Barros">
-<meta name="dcterms.date" content="2026-06-25">
+<meta name="dcterms.date" content="2026-08-31">
 
 <title>RST_app Documentation</title>
 <style>
@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 25, 2026</p>
+      <p class="date">August 31, 2026</p>
     </div>
   </div>
   
@@ -119,12 +119,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>The <code>RST_app.R</code> Shiny application estimates juvenile salmonid out-migration passage (abundance) using rotary screw trap data submitted by the user. This application aims to replicate passage calculation and imputation methods utilized in the CAMP Rotary Screw Trap (CAMPR) platform but in a standalone, user friendly , documented, and replicable online platform. The CAMPR platform was created by Trent McDonald to support CDFW salmonid monitoring efforts in the Central Valley and allows direct connection between the modeling software built in R and the monitoring Access database. While CAMPR provides a usable system to simplify complex model fitting and passage estimation, it is currently a “black-box” back end with undetailed documentation and is no longer maintained or updated.</p>
-<p>The <code>RST_app.R</code> is a standalone package and RShiny application that performs model fitting and passage estimation in a web-based platform that requires no Access database or R experience to operate. While it does not require database connectivity, users do need to ensure their data is pre-formatted for use with the application. This document also aims to be a detailed overview of use, methodology, and the relevant scripts and functions that are used by the application. This application is also owned and maintained by CDFW staff, which allows for future maintenance and updates as needed.</p>
+<p>The <code>RST_app.R</code> is a standalone RShiny application that performs model fitting and passage estimation in a web-based platform that requires no Access database or R experience to operate. While it does not require or offer database connectivity, users do need to ensure their data is pre-formatted for use with the application. This document also aims to be a detailed overview of use, methodology, and the relevant scripts and functions that are used by the application. This application is also owned and maintained by CDFW staff, which allows for future maintenance and updates as needed.</p>
 <p><a href="#fig-data_flow" class="quarto-xref">Figure&nbsp;1</a> shows an overview of how data and user inputs are utilized by the different functions in the <code>RST_app</code> to produce estimates of passage, efficiency, catch, and related summary plots. Users need to upload .csv files of <code>catch_data</code>, <code>visit_data</code>, <code>release_data</code>, and <code>recapture_data</code> to the application. Then users can either set or use default input values to determine how passage data is summarized, whether or not to impute all or efficiency values, and the start and end dates for the survey period. These inputs are passed to the <code>est_passage.R</code> function, which then utilizes several downstream functions to produce estimates of passage and related uncertainty. The data inputs and relevant functions are covered in more detail in the following sections of this methods documentation.</p>
-<div id="fig-data_flow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-data_flow" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Flow chart showing data inputs, functions, and outputs of the RST_app.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-data_flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="methods_figures/data_flow.png" class="img-fluid figure-img">
+<img src="methods_figures/data_flow_v1_1.png" class="img-fluid figure-img" alt="Flow chart showing data inputs, functions, and outputs of the RST_app.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data_flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application outputs for RST_app.
@@ -150,17 +150,15 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <p><strong><code>catch.csv</code></strong> needs to be set in the following structure:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 10%">
-<col style="width: 14%">
-<col style="width: 63%">
-<col style="width: 10%">
+<col style="width: 12%">
+<col style="width: 15%">
+<col style="width: 71%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
 <th>Type</th>
 <th>Description</th>
-<th>Required (Y/N)</th>
 </tr>
 </thead>
 <tbody>
@@ -168,55 +166,47 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <td>site_name</td>
 <td>text</td>
 <td>Name of river/study site</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>subsite_name</td>
 <td>text</td>
 <td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>visit_time</td>
 <td>datetime (ISO 8601)</td>
 <td><p>Date and time when trap was visited and catch recorded.</p>
 <p>YYYY-MM-DDThh:mm:ss</p></td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>common_name</td>
 <td>text</td>
 <td>Species common name, currently only used for “Chinook salmon”.</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>at_capture_run</td>
 <td>text</td>
 <td>Run timing, values can be “Fall”, “Late Fall”, “Spring”, “Winter”.</td>
-<td>N</td>
 </tr>
 <tr class="even">
 <td>n</td>
 <td>integer</td>
 <td>Number of fish captured by trap and recorded during visit.</td>
-<td>Y</td>
 </tr>
 </tbody>
 </table>
 <p><strong><code>visit.csv</code></strong> needs to be structured in the following format:</p>
 <table class="caption-top table">
 <colgroup>
+<col style="width: 8%">
 <col style="width: 10%">
-<col style="width: 14%">
-<col style="width: 63%">
-<col style="width: 10%">
+<col style="width: 80%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
 <th>Type</th>
 <th>Description</th>
-<th>Required (Y/N)</th>
 </tr>
 </thead>
 <tbody>
@@ -224,44 +214,42 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <td>site_name</td>
 <td>text</td>
 <td>Name of river/study site</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>subsite_name</td>
 <td>text</td>
 <td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>visit_time</td>
 <td>datetime (ISO 8601)</td>
 <td><p>Date and time when trap was visited and catch recorded.</p>
 <p>YYYY-MM-DDThh:mm:ss</p></td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>trap_visit_ID</td>
 <td>text/integer</td>
 <td>Unique identifier for each visit</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>visit_type</td>
 <td>text</td>
 <td>See valid values below</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>fish_processed</td>
 <td>text</td>
 <td>Processing status</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>include_catch</td>
 <td>text</td>
 <td>“Yes” or “No”</td>
-<td>Y</td>
+</tr>
+<tr class="even">
+<td>discharge</td>
+<td>numeric</td>
+<td>Measurement of discharge recorded during visit. Optional field that can be used for efficiency modeling. Discharge is scaled by the application before modeling.</td>
 </tr>
 </tbody>
 </table>
@@ -282,17 +270,15 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <p><strong><code>release.csv</code></strong> needs to be structured in the following format:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 11%">
 <col style="width: 13%">
-<col style="width: 62%">
-<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 70%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
 <th>Type</th>
 <th>Description</th>
-<th>Required (Y/N)</th>
 </tr>
 </thead>
 <tbody>
@@ -300,55 +286,47 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <td>site_name</td>
 <td>text</td>
 <td>Name of river/study site</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>subsite_name</td>
 <td>text</td>
 <td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>release_time</td>
 <td>datetime (ISO 8601)</td>
 <td><p>Date and time when release occurred</p>
 <p>YYYY-MM-DDThh:mm:ss</p></td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>release_ID</td>
 <td>text/integer</td>
 <td>Unique identifier for release event</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>include_analysis</td>
 <td>text</td>
 <td>“Yes” or “No” used to indicate if data should be used for efficiency estimation</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>n_released</td>
 <td>integer</td>
 <td>Number of fish released</td>
-<td>Y</td>
 </tr>
 </tbody>
 </table>
 <p><strong><code>recapture.csv</code></strong> needs to be structured in the following format:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 10%">
-<col style="width: 14%">
-<col style="width: 66%">
-<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 15%">
+<col style="width: 71%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
 <th>Type</th>
 <th>Description</th>
-<th>Required</th>
 </tr>
 </thead>
 <tbody>
@@ -356,52 +334,46 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <td>site_name</td>
 <td>text</td>
 <td>Name of river/study site</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>subsite_name</td>
 <td>text</td>
 <td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>visit_time</td>
 <td>datetime (ISO 8601)</td>
 <td><p>Date and time when recapture occurred</p>
 <p>YYYY-MM-DDThh:mm:ss</p></td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>trap_visit_ID</td>
 <td>text/integer</td>
 <td>Links recapture data to visit record</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>release_ID</td>
 <td>text/integer</td>
 <td>Links recapture data to release record</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>n</td>
 <td>integer</td>
 <td>Number of recaptured fish</td>
-<td>Y</td>
 </tr>
 </tbody>
 </table>
 <p>It is important the user ensures they have the four required data tables available and in the above format in order to properly use the <code>RST_app</code>.</p>
 <section id="inputs" class="level4">
 <h4 class="anchored" data-anchor-id="inputs"><em>Inputs</em></h4>
-<p>Once the four necessary data sets are properly formatted the user can utilize the load the RST_app found at <a href="https://arthurbarros-cdfw.shinyapps.io/RST_app/" class="uri">https://arthurbarros-cdfw.shinyapps.io/RST_app/</a>. The application main screen has all input fields on the left side (<a href="#fig-user_inputs" class="quarto-xref">Figure&nbsp;2</a>) that allows users to upload their data, set the survey period, target species, and other variables.</p>
+<p>Once the four necessary data sets are properly formatted the user can utilize the RST_app found at <a href="https://arthurbarros-cdfw.shinyapps.io/RST_app/" class="uri">https://arthurbarros-cdfw.shinyapps.io/RST_app/</a>. The application main screen has all input fields on the left side (<a href="#fig-user_inputs" class="quarto-xref">Figure&nbsp;2</a>) that allows users to upload their data, set the survey period, target species, and other variables.</p>
 <div id="fig-user_inputs" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-user_inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="methods_figures/user_inputs.png" id="fig-user_inputs" class="img-fluid figure-img">
+<img src="methods_figures/user_inputs%201_2.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-user_inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-user_inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Default view of the RST_app before data uploading.
 </figcaption>
 </figure>
 </div>
@@ -424,7 +396,7 @@ Figure&nbsp;3
 </figcaption>
 </figure>
 </div>
-<p>Once the data sets are uploaded and the inputs set, click the “Estimate Passage” button to run the models and produce the passage estimates and other outputs.</p>
+<p>Once the data sets are uploaded and the inputs set, click the “<strong>Run Model Comparison</strong>” button to run the models and produce the passage estimates and other outputs.</p>
 </section>
 <section id="outputs" class="level4">
 <h4 class="anchored" data-anchor-id="outputs"><em>Outputs</em></h4>

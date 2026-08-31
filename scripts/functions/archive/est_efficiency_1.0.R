@@ -59,7 +59,7 @@ est_efficiency<-function(release_data,
   #add the trap_ID value to have a unique ID for each subsite x river
   #this is in case we have data for multiple sites
   recaps$trap_ID<-paste(recaps$site_name,
-                        recaps$subsite_name)
+                                recaps$subsite_name)
   
   #filter by those records marked for analysis
   release_use <- releases %>%
@@ -78,10 +78,6 @@ est_efficiency<-function(release_data,
     mutate(hours_after_release = as.numeric(difftime(visit_datetime,
                                                      release_datetime,
                                                      units = "hours")))
-  
-  if(nrow(visits_within_36_hours) == 0) {
-    stop("No visits found within 36 hours of releases")
-  }
   #determine number of hours between release and first and last visits within
   #36 hours of release (usually just one visit)
   visits_within_36_hours<-visits_within_36_hours%>%
@@ -111,10 +107,6 @@ est_efficiency<-function(release_data,
       .groups = 'drop'
     )
   
-  if(nrow(trial_data) == 0) {
-    stop("No efficiency trials could be constructed from the data")
-  }
-  
   #set meanRecapTime for trials with no recaptures
   trial_data<-trial_data%>%
     mutate(meanRecapTime=ifelse(n_recaps==0,
@@ -129,7 +121,7 @@ est_efficiency<-function(release_data,
   #assign batch_date to trial_data
   #this will allow us to match catch data to trial batch_dates
   trial_data<-assign_batch_date(df=trial_data,
-                                time_field="meanRecapTime")
+                              time_field="meanRecapTime")
   
   #sometimes we have releases on same day but with different markers
   #so here we combine
@@ -154,10 +146,6 @@ est_efficiency<-function(release_data,
   trial_data<-trial_data%>%
     filter(batch_date<=end_date & batch_date>=start_date)
   
-  if(nrow(trial_data) == 0) {
-    stop("No efficiency trials found within the specified survey dates")
-  }
-  
   season<-seq(start_date,end_date,by="days")
   
   #figure out which days have efficiency data
@@ -174,110 +162,14 @@ est_efficiency<-function(release_data,
   eff$unimputed_efficiency<-eff$efficiency
   #next build eff_model and run here
   
-  if(use_discharge == TRUE){
-    visits <- assign_batch_date(df = visits,
-                                time_field = "visit_datetime")
-    
-    #aggregate discharge to daily values per trap
-    env_covars <- visits %>%
-      ungroup() %>%
-      group_by(trap_ID_decimal, batch_date) %>%
-      summarise(discharge = mean(discharge, na.rm = TRUE), .groups = "drop") %>%
-      select(trap_ID_decimal, batch_date, discharge)
-    
-    eff <- eff %>%
-      left_join(env_covars, by = c("trap_ID_decimal", "batch_date"))
-    
-    eff$discharge_scaled <- as.numeric(scale(eff$discharge))
-  }
-  
   eff_modeled<-model_efficiency(efficiency_data=eff,
-                                impute_all=impute_all,
-                                min_sample_size=min_sample_size,
-                                use_discharge = use_discharge)
+                        impute_all=impute_all,
+                        min_sample_size=min_sample_size)
   
   eff_modeled$results<-unique(eff_modeled$results)%>%
     left_join(dplyr::select(eff,
-                            batch_date,trap_ID_decimal,
-                            unimputed_efficiency))
-
-  #filter out NA discharge
-  if(use_discharge){
-    discharge_data <- eff_modeled$results %>%
-      filter(!is.na(discharge) & !is.nan(discharge))
-    scale_factor <- max(eff_modeled$results$efficiency, na.rm = TRUE) / 
-      max(eff_modeled$results$discharge, na.rm = TRUE)
-  }
+                     batch_date,trap_ID_decimal,
+                     unimputed_efficiency))
   
-  p_eff <- ggplot()
-  
-  #add conditional layers
-  if (impute_all == FALSE) {
-    p_eff <- p_eff +
-      geom_point(data = eff_modeled$results, 
-                 aes(x = batch_date, y = efficiency_imputed, 
-                     color = "Imputed Efficiency",
-                     shape = "Imputed Efficiency")) +
-      geom_point(data = eff_modeled$results, 
-                 aes(x = batch_date, y = unimputed_efficiency, 
-                     color = "Unimputed Efficiency",
-                     shape = "Unimputed Efficiency"))
-  } else if (impute_all == TRUE) {
-    p_eff <- p_eff +
-      geom_point(data = eff_modeled$results, 
-                 aes(x = batch_date, y = efficiency_imputed, 
-                     color = "Imputed Efficiency",
-                     shape = "Imputed Efficiency"))
-  }
-  
-  #add discharge points
-  if (use_discharge == TRUE) {
-    p_eff <- p_eff +
-      geom_point(data = discharge_data, 
-                 aes(x = batch_date, y = discharge * scale_factor, 
-                     color = "Discharge",
-                     shape = "Discharge"), 
-                 alpha = 0.6, size = 1.5) +
-      scale_color_manual(
-        name="Values",
-        values = c("Imputed Efficiency" = "#00BFC4", 
-                   "Unimputed Efficiency" = "#F8766D",
-                   "Discharge" = "black")
-      ) +
-      scale_shape_manual(
-        name="Values",
-        values = c("Imputed Efficiency" = 15,    
-                   "Unimputed Efficiency" = 16,  
-                   "Discharge" = 21)
-      ) +
-      scale_y_continuous(
-        name = "Efficiency",
-        sec.axis = sec_axis(
-          ~ . / scale_factor,
-          name = "Discharge (cfs)"
-        )
-      )
-  } else{
-    p_eff <- p_eff +
-      scale_color_manual(
-        name="Values",
-        values = c("Imputed Efficiency" = "#00BFC4", 
-                   "Unimputed Efficiency" = "#F8766D")
-      ) +
-      scale_shape_manual(
-        name="Values",
-        values = c("Imputed Efficiency" = 15,    
-                   "Unimputed Efficiency" = 16)
-      ) +
-      scale_y_continuous(
-        name = "Efficiency"
-      )
-  }
-  
-  p_eff <- p_eff +
-    theme_bw() +
-    facet_wrap(. ~ trap_ID_decimal)
-  
-  eff_modeled$p_eff<-p_eff
   return(eff_modeled)
 }

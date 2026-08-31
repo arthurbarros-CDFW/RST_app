@@ -1,6 +1,6 @@
 # app.R
 # CDFW RST passage estimator
-# for rotary screw trap data analysis
+# for rotary screw trap data
 
 library(shiny)
 library(shinyWidgets)
@@ -25,6 +25,13 @@ if (!exists("bootstrap.CI.fx")) bootstrap.CI.fx <- "f.ci"
 ui <- fluidPage(
   theme = shinytheme("cosmo"),
   titlePanel("CDFW RST passage estimator"),
+  tags$head(
+    tags$style(HTML("
+    .shiny-notification {
+      opacity: 1; /* 0 is fully transparent, 1 is fully opaque */
+    }
+  "))
+  ),
   sidebarLayout(
     sidebarPanel(
       #file input for multiple files
@@ -32,7 +39,7 @@ ui <- fluidPage(
       h5(strong("Data that must be uploaded:")),
       h5("catch, recapture, release, visit"),
       
-      actionButton("run_estimate", "Estimate Passage"),
+      actionButton("run_models", "Run Model Comparison"),
       
       dateInput("survey_start","Survey Start Date:", value = "2022-01-19"),
       dateInput("survey_end","Survey End Date:", value = "2022-06-22"),
@@ -46,25 +53,23 @@ ui <- fluidPage(
       selectInput("target_run", "Target Run (optional)",
                   choices = c("All runs" = "", "Fall", "Late Fall", "Spring", "Winter"),
                   selected = ""),
+      numericInput("min_sample_size", "Minimum sample size for spline modeling",
+                   value=10, min=5,max=20),
       
       checkboxInput("impute_all", "Impute All Efficiency Values", value = FALSE),
-      checkboxInput("use_discharge", "Use discharge as a covariate for efficiency?", value = FALSE),
-      
-      conditionalPanel(
-        condition = "input.use_discharge == true",
-        checkboxInput("force_discharge",
-                      "Force using discharge in efficiency models",
-                      value=FALSE),
-        helpText("When checked, the application will select the best model that includes discharge as a covariate,",
-                 "even if a model without discharge has a lower AICc value.")
-      ),
-      
+      checkboxInput("use_discharge","Use discharge as a covariate of efficiency?", value=FALSE),
+  
       uiOutput("fileList"),  # Output for the list of uploaded files
       h4("Data List:"),
       verbatimTextOutput("dataListNames"),  #output to display the names in dataList
     ),
     mainPanel(
       tabsetPanel(
+        tabPanel("Model reports", 
+                 uiOutput("model_results"),
+                 actionButton("run_selected_models", "Estimate Passage with Selected Models
+                              ")
+                 ),
         tabPanel("Passage plot", plotOutput("p_passage",height = "400px"),
                  downloadButton("download_passage_plot", "Download Plot")),
         tabPanel("Passage table", DTOutput("passage_result"),
@@ -83,24 +88,39 @@ ui <- fluidPage(
     )
   )
 )
+
 server <- function(input, output, session) {
   options(shiny.maxRequestSize = 100*1024^2) # sets max file size 10 100MB
   
-  #reactive values to store uploaded files, assigned datasets, and estimates
+  ###########################
+  #reactive values to store uploaded files,
+  #assigned datasets, and estimates
+  ###########################
   uploadedFiles <- reactiveVal(list())
   datasets <- reactiveValues(catch = NULL, 
                              recapture = NULL, 
                              release = NULL,
                              visit = NULL)
   
+  model_results<-reactiveVal(NULL)
+  eff_data_unimputed <- reactiveVal(NULL)
+  selected_models <- reactiveVal(list())
+  eff_warnings <- reactiveVal(list())
+  model_objects<-reactiveVal(NULL)
+  model_types<-reactiveVal(NULL)
+  
+  catch_results<-reactiveVal(NULL)
   passage_result <- reactiveVal(NULL)
+  
   plot_catch<-reactiveVal(NULL)
   plot_eff<-reactiveVal(NULL)
   plot_passage<-reactiveVal(NULL)
 
   status_message <- reactiveVal("Waiting for data upload...")
   
+  ###########################
   #update list of uploaded files
+  ###########################
   observe({
     files <- input$files
     if (is.null(files)) {
@@ -159,8 +179,10 @@ server <- function(input, output, session) {
     
     })
   
-  #trigger passage estimation on button click
-  observeEvent(input$run_estimate, {
+  ###########################
+  #trigger eff model comparison on button click
+  ###########################
+  observeEvent(input$run_models, {
     
     #ensure all datasets are available
     missing_datasets <- c()
@@ -176,6 +198,23 @@ server <- function(input, output, session) {
       return()
     }
     
+    if(input$use_discharge==TRUE){
+      #fix discharge function
+      fix_discharge_field <- function(data) {
+        col_idx <- which(tolower(names(data)) == "discharge")
+        if (length(col_idx) > 0) {
+          #rename the first match to "discharge"
+          names(data)[col_idx[1]] <- "discharge"
+        } else {
+          warning("No 'discharge' field found in the dataset")
+        }
+        return(data)
+      }
+      
+      datasets$visit <- fix_discharge_field(datasets$visit)
+    }
+    
+    
     #set parameters
     survey_start <- input$survey_start
     survey_end <- input$survey_end
@@ -184,79 +223,433 @@ server <- function(input, output, session) {
     sum.by <- input$sum.by
     impute_all <- input$impute_all
     use_discharge<-input$use_discharge
-    bootstrap <- input$bootstrap
-    
-    target_species<-"Chinook salmon"
-    #target_run<-"Fall"
-    
-    force_discharge =input$force_discharge
-    
-    sum.by=input$sum.by
     
     #display a progress bar while running the sourced scripts
-    withProgress(message = "Running passage estimation...", value = 0, {
+    withProgress(message = "Developing models...", value = 0, {
       #increment progress for each script
       
-      incProgress(0.5, detail = "Running est_passage.R")
-      results<-est_passage(catch=datasets$catch,
-                  visits=datasets$visit,
-                  release=datasets$release,
-                  recapture=datasets$recapture,
-                  summarize.by=sum.by, 
-                  impute_all=impute_all,
-                  use_discharge=use_discharge,
-                  force_discharge=force_discharge,
-                  bootstrap=T,
-                  survey_start,survey_end,
-                  target_species,target_run=target_run,
-                  file.name="test")
+      ###############################################
+      #run catch model
+      ###############################################
+      incProgress(0.25, detail = "Modeling catch")
+      catch.output <- tryCatch({
+        est_catch(target_species = target_species,
+                  target_run = target_run,
+                  catch_data = datasets$catch,
+                  visit_data = datasets$visit,
+                  survey_start = survey_start,
+                  survey_end = survey_end)
+      }, error = function(e) {
+        showNotification(paste("Error in catch estimation:", e$message), type = "error", duration = 10)
+        return(NULL)
+      })
+      
+      catch_plot<-catch.output$p_catch
+      
+      if (!is.null(catch_plot)) {
+        plot_catch(catch_plot)
+      }
+      
+      if(is.null(catch.output)) return()
+      
+      catch.fits<-catch.output$models
+      catch.results<-catch.output$results
+      catch.X.miss<-catch.output$X.miss
+      
+      catch_results<-catch_results(catch.output)
+      
+      ###############################################
+      #run eff model comparison
+      ###############################################
+      incProgress(0.5, detail = "Comparing efficiency models")
+      eff.comparison <- tryCatch({
+        compare_efficiency_models(release_data = datasets$release,
+                       recapture_data = datasets$recapture,
+                       visit_data = datasets$visit,
+                       impute_all = impute_all,
+                       survey_start = survey_start,
+                       survey_end = survey_end,
+                       min_sample_size = input$min_sample_size,
+                       use_discharge = use_discharge)
+      }, error = function(e) {
+        showNotification(paste("Error in efficiency estimation:", e$message), type = "error", duration = 10)
+        return(NULL)
+      })
+      
+      if(is.null(eff.comparison)) return()
+
+      eff.model.comparisons<-eff.comparison$comparison.df
+      eff.candidate_models <- eff.comparison$candidate_models
+      eff.data.unimputed<-eff.comparison$eff
+      eff.model.types<-eff.comparison$eff.type
+      eff_data_unimputed(eff.data.unimputed)
+      
+      #get unique id for traps
+      traps <- unique(catch.results$trap_ID_decimal)
+      
+      all_model_results <- list()
+      all_model_objects <- list()
+      all_model_types <- list()
+      
+      #build results for each trap
+      for(trap in traps){
+        trap_label=as.character(trap)
+        if(!is.null(eff.model.comparisons[[trap_label]])){
+          comp_df<-eff.model.comparisons[[trap_label]]
+          
+          #add trap info to df
+          if(is.data.frame(comp_df) && nrow(comp_df)>0){
+            comp_df$Trap<-trap_label
+            comp_df<-comp_df[,c("Trap",setdiff(names(comp_df),"Trap"))]
+            all_model_results[[trap_label]]<-comp_df
+            
+            candidate_models <- eff.candidate_models[[trap_label]]
+            all_model_objects[[trap_label]] <- candidate_models
+            
+            candidate_types<-eff.model.types[[trap_label]]
+            all_model_types[[trap_label]]<-candidate_types
+          }
+        } else {
+          #create placeholder for traps without eff models
+          placeholder<-data.frame(
+            Trap=trap_label,
+            Model="No efficiency model",
+            AIC=NA,
+            AICc=NA,
+            AICc_diff=NA
+          )
+          all_model_results[[trap_label]]<-placeholder
+          all_model_objects[[trap_label]] <- NULL
+          all_model_types[[trap_label]] <- NULL
+        }
+      }
+      
+      #store model results
+      if (length(all_model_results)>0) {
+        model_results(all_model_results)
+        model_objects(all_model_objects)
+        model_types(all_model_types)
+        default_selected<-list()
+        for(trap_name in names(all_model_results)){
+          model_data<-all_model_results[[trap_name]]
+          if(!is.null(model_data) && nrow(model_data)>0){
+            #select first model as default
+            default_selected[[trap_name]]<-model_data[1, ,drop=FALSE]
+          }
+        }
+        
+        selected_models(default_selected) #
+      }
       
     })
-    rounded_results <-results$passage_output
-    numeric_cols <- names(rounded_results)[sapply(rounded_results, is.numeric)]
-    rounded_results[numeric_cols] <- lapply(rounded_results[numeric_cols], round, digits = 2)
+  })
+  
+  ###########################  
+  #display model comparisons
+  ###########################
+  output$model_results <- renderUI({
+    req(model_results())
     
-    passage_result(rounded_results)
+    model_list<-model_results()
     
-    
-    #store plots
-    if (!is.null(results$p_catch)) {
-      plot_catch(results$p_catch)
+    #if no models message
+    if(is.null(model_list) || length(model_list) == 0) {
+      return(h4("No model results available"))
     }
-    if (!is.null(results$p_eff)) {
-      plot_eff(results$p_eff)
+    
+    #create list of ui elements
+    output_list<-list()
+    
+    #add header
+    output_list[[length(output_list) + 1]] <- h3("Efficiency Model Results")
+    output_list[[length(output_list) + 1]] <- tags$hr()
+    
+    #for each trap display its table
+    for(trap_name in names(model_list)){
+      output_list[[length(output_list) + 1]] <- h4(paste("Trap:", trap_name))
+      
+      #create uid for traps table
+      table_id <- paste0("model_table_", gsub("[^A-Za-z0-9]", "_", trap_name))
+      
+      #use renderUI with dtoutput
+      output_list[[length(output_list) + 1]] <- DTOutput(table_id)
+      
+      #add some spacing
+      output_list[[length(output_list) + 1]] <- tags$br()
+      
+      #render the table for this trap
+      local({
+        trap<-trap_name
+        table_id_local<-table_id
+        model_data<-model_list[[trap]]
+        
+        #store model data in a separate reactive value to avoid re-rendering
+        #which caused screen flickering/flashing
+        output[[table_id_local]]<-renderDT({
+          if(is.null(model_data)||nrow(model_data)==0){
+            #if no data show message
+            datatable(
+              data.frame(Message="No model comparison data for this trap"),
+              options=list(dom='t'),
+              rownames = FALSE
+            )
+          } else {
+            #format columns
+            numeric_cols<-which(sapply(model_data,is.numeric))
+            
+            #determine which row is currently selected
+            selected_trap <- isolate(selected_models()[[trap]])
+            selected_row <- 1  #default to first row
+            
+            #try to find current selection
+            if(is.null(selected_trap) || nrow(selected_trap)==0){
+              selected_row<-1 #default to 1st row
+              } else {
+              for(i in 1:nrow(model_data)){
+                if(identical(model_data[i,],selected_trap[1,])){
+                  selected_row<-i
+                    break
+                }
+              }
+                if(is.null(selected_row)){
+                  selected_row<-1 #if selected model isn't found default to 1
+                }
+            }
+            
+            datatable(
+              model_data,
+              options=list(
+                pageLength=10,
+                dom="Bfrtip",
+                scrollX=TRUE,
+                columnDefs=list(
+                  list(className="dt-center",targets='_all')
+                )
+              ),
+              rownames = FALSE,
+              selection = list(mode = 'single', selected = selected_row),
+              class = 'display compact stripe hover'
+            ) %>%
+              formatRound(columns = numeric_cols, digits = 3)
+          }
+        })
+      })
     }
-    if (!is.null(results$p_passage)) {
-      plot_passage(results$p_passage)
+    return(output_list)
+  })
+  ###########################
+  #observe row selections from model tables
+  ###########################
+  observe({
+    #get all model results
+    model_list<-model_results()
+    if (is.null(model_list) || length(model_list)==0) return()
+      
+    #only update if there's a selection change
+    new_selected<-list()
+    selection_changed <- FALSE
+    
+    #check trap tables for selections
+    for(trap_name in names(model_list)){
+      table_id<-paste0("model_table_",gsub("[^A-Za-z0-9]", "_", trap_name))
+      selected_rows<-input[[paste0(table_id,"_rows_selected")]]
+      
+      if(!is.null(selected_rows) && length(selected_rows) > 0) {
+        #get selected model data
+        model_data<-model_list[[trap_name]]
+        if(!is.null(model_data) && nrow(model_data) >= selected_rows[1]) {
+          new_selected[[trap_name]] <- model_data[selected_rows[1], , drop=FALSE]
+        }
+      } else {
+        #if no selection, keep default
+        model_data<-model_list[[trap_name]]
+        if(!is.null(model_data) && nrow(model_data) > 0){
+          new_selected[[trap_name]] <- model_data[1, , drop=FALSE]
+        }
+      }
+    }
+    #only update if the selection actually changed
+    current_selected <- selected_models()
+    if(length(new_selected) != length(current_selected) || 
+       !identical(new_selected, current_selected)) {
+      selected_models(new_selected)
     }
   })
-    
-    #display passage results
-    output$passage_result <- renderDataTable({
-      req(passage_result())
-      passage_result()
-    })
-    
-    #renderp_catch
-    output$p_catch <- renderPlot({
-      req(plot_catch())
-      print(plot_catch())  # Make sure to print the ggplot object
-    })
-    
-    #render p_eff
-    output$p_eff <- renderPlot({
-      req(plot_eff())
-      print(plot_eff())
-    })
-    
-    #render p_passage
-    output$p_passage <- renderPlot({
-      req(plot_passage())
-      print(plot_passage())
-    })
-    
   
+  ###########################
+  #run eff imputation and passage estimation after model selection
+  ###########################
+  observeEvent(input$run_selected_models,{
+    
+    #get selected models
+    selected<-selected_models()
+    if (is.null(selected) || length(selected) == 0) {
+      cat("No models selected.\n")
+      cat("Click on a row in the model comparison tables above to select a model.")
+      return()
+    }
+    
+    #get model objects
+    model_objects <- model_objects() 
+    
+    #get model types
+    model_types <- model_types()
+    
+    selected_model_objects <- list()
+    selected_model_types <-list()
+    model_names=list()
+    
+    for(trap_name in names(selected)){
+      #get selected model name and candidate models for trap
+      selected_model_name<-selected[[trap_name]]$Model[1]
+      candidate_models<-model_objects[[trap_name]]
+      candidate_types<-model_types[[trap_name]]
+      
+      #find candidate model that matches selected
+      if(!is.null(candidate_models) && selected_model_name %in% names(candidate_models)){
+        selected_model_objects[[trap_name]]<-candidate_models[[selected_model_name]]
+        selected_model_types[[trap_name]]<-candidate_types[[selected_model_name]]
+        model_names[[trap_name]]<-selected_model_name
+      } else {
+        #if model not found get first available
+        if(!is.null(candidate_models) && length(candidate_models)>0){
+          first_name<-names(candidate_models)[1]
+          selected_model_objects[[trap_name]]<-candidate_models[[first_name]]
+          model_names[[trap_name]]<-first_name
+          showNotification(paste("Using fallback model for",trap_name,":", first_name),type="warning")
+        }else{
+          showNotification(paste("No model object found for", trap_name), type = "error")
+          return()
+        }
+      }
+    }
+    
+    
+    #debug output to verify
+    print("Selected models:")
+    print(model_names)
+    
+    #display a progress bar while running the sourced scripts
+    withProgress(message = "Running selected efficiency models...", value = 0, {
+      #increment progress for each script
+      
+      ################################################
+      #Impute efficiency
+      ################################################
+      incProgress(0.25, detail = "Imputing efficiency")
+      model_eff_output<-tryCatch({
+        impute_efficiency(
+          efficiency_data = eff_data_unimputed(),
+          selected_models = selected_model_objects,
+          model_names = model_names,
+          impute_all = input$impute_all
+        )
+      }, error = function(e) {
+        showNotification(paste("Error in efficiency imputation:", e$message), type = "error", duration = 10)
+        return(NULL)
+      })
+      
+      #display discharge warnings if exist
+      if (!is.null(model_eff_output) && !is.null(model_eff_output$warnings) && 
+          length(model_eff_output$warnings) > 0) {
+        #show as notification
+        for (warn in model_eff_output$warnings) {
+          if(length(warn)>0){
+            showNotification(
+              HTML(paste0("<b>Warning:</b><br>", gsub("\n", "<br>", warn))),
+              type = "warning",
+              duration = 100
+            )
+          }
+        }
+      }
+      
+      ################################################
+      #plot efficiency
+      ################################################
+      incProgress(0.5, detail = "Plotting efficiency")
+      eff_plot<-tryCatch({
+        plot_efficiency(
+          impute_eff_results=model_eff_output$results,
+          use_discharge=input$use_discharge,
+          impute_all = input$impute_all
+        )
+      }, error = function(e) {
+        showNotification(paste("Error in efficiency plotting:", e$message), type = "error", duration = 10)
+        return(NULL)
+      })
+      
+      if (!is.null(eff_plot)) {
+        plot_eff(eff_plot)
+      }
+      
+      ################################################
+      #Estimate and bootstrap passage
+      ################################################
+      incProgress(0.75, detail = "Estimating and bootstrapping passage")
+      tryCatch({
+        est_passage_output<-est_passage(
+          catch.results=catch_results(),
+          eff.results=model_eff_output,
+          summarize.by=input$sum.by,
+          survey_start=input$survey_start,
+          survey_end=input$survey_end,
+          catch.fits=catch_results()$models,
+          eff.fits=model_eff_output$models,
+          eff.types=selected_model_types,
+          target_species=input$target_species,
+          target_run=input$target_run,
+          use_discharge=input$use_discharge,
+          min_sample_size = input$min_sample_size
+          )
+        }, error = function(e) {
+          showNotification(paste("Error in passage estimation:", e$message), type = "error", duration = 10)
+          return(NULL)
+      })
+      
+      passage_plot<-est_passage_output$p_passage
+      if (!is.null(passage_plot)) {
+        plot_passage(passage_plot)
+      }
+      
+      passage_result(est_passage_output$passage_output)
+      
+    })
+
+  })
+  
+  ###########################
+  #output plots and tables
+  ###########################
+  
+  #render p_catch
+  output$p_catch <- renderPlot({
+    req(plot_catch())
+    print(plot_catch())
+  })
+  
+  #render p_eff
+  output$p_eff <- renderPlot({
+    req(plot_eff())
+    print(plot_eff())
+  })
+  
+  #render p_passage
+  output$p_passage <- renderPlot({
+    req(plot_passage())
+    print(plot_passage())
+  })
+  
+  #render passage table
+  #display passage results
+  output$passage_result <- renderDataTable({
+    req(passage_result())
+    passage_result()
+  })
+  
+  ###########################
   #download handlers
+  ###########################
   output$download_passage_table <- downloadHandler(
     filename = function() {
       paste("passage_estimates_", Sys.Date(), ".csv", sep = "")
