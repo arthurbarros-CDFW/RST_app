@@ -35,11 +35,14 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       #file input for multiple files
-      fileInput("files", "Upload Data Files", accept = c(".csv"), multiple = TRUE),
-      h5(strong("Data that must be uploaded:")),
-      h5("catch, recapture, release, visit"),
+      fileInput("files",label=NULL,
+                buttonLabel="Step 1: Upload Data",
+                accept = c(".csv"), multiple = TRUE),
+      uiOutput("fileList"),  #output for the list of uploaded files
+
+      verbatimTextOutput("dataListNames"),  #output to display the names in dataList
       
-      actionButton("run_models", "Run Model Comparison"),
+      actionButton("run_models", "Step 2: Run Model Comparison"),
       
       dateInput("survey_start","Survey Start Date:", value = "2022-01-19"),
       dateInput("survey_end","Survey End Date:", value = "2022-06-22"),
@@ -58,16 +61,12 @@ ui <- fluidPage(
       
       checkboxInput("impute_all", "Impute All Efficiency Values", value = FALSE),
       checkboxInput("use_discharge","Use discharge as a covariate of efficiency?", value=FALSE),
-  
-      uiOutput("fileList"),  # Output for the list of uploaded files
-      h4("Data List:"),
-      verbatimTextOutput("dataListNames"),  #output to display the names in dataList
     ),
     mainPanel(
       tabsetPanel(
         tabPanel("Model reports", 
                  uiOutput("model_results"),
-                 actionButton("run_selected_models", "Estimate Passage with Selected Models
+                 actionButton("run_selected_models", "Step 3: Estimate Passage with Selected Models
                               ")
                  ),
         tabPanel("Passage plot", plotOutput("p_passage",height = "400px"),
@@ -79,7 +78,7 @@ ui <- fluidPage(
         tabPanel("Efficiency plot", plotOutput("p_eff", height = "400px"),
                  downloadButton("download_eff_plot", "Download Plot")),
         tabPanel("User Guide", 
-                 tags$iframe(src = "RST_app_documentation.html", 
+                 tags$iframe(src = "./RST_app_documentation.html", 
                              width = "100%", 
                              height = "800px", 
                              frameborder = "0",
@@ -117,6 +116,17 @@ server <- function(input, output, session) {
   plot_passage<-reactiveVal(NULL)
 
   status_message <- reactiveVal("Waiting for data upload...")
+  
+  #initialize dataListNames before upload
+  output$dataListNames <- renderPrint({
+    cat("Uploaded files:\n")
+    cat("  (No files uploaded yet)\n")
+    cat("\nAssigned datasets:\n")
+    cat("  catch: ", ifelse(!is.null(datasets$catch), "✓ Loaded", "✗ Missing"), "\n")
+    cat("  recapture: ", ifelse(!is.null(datasets$recapture), "✓ Loaded", "✗ Missing"), "\n")
+    cat("  release: ", ifelse(!is.null(datasets$release), "✓ Loaded", "✗ Missing"), "\n")
+    cat("  visit: ", ifelse(!is.null(datasets$visit), "✓ Loaded", "✗ Missing"), "\n")
+  })
   
   ###########################
   #update list of uploaded files
@@ -196,6 +206,37 @@ server <- function(input, output, session) {
       showNotification(paste("Missing datasets:", paste(missing_datasets, collapse = ", ")), 
                        type = "error", duration = 5)
       return()
+    }
+    
+    if(input$use_discharge == TRUE){
+      #check if discharge exists
+      discharge_cols <- grep("discharge", names(datasets$visit), value = TRUE, ignore.case = TRUE)
+      
+      if(length(discharge_cols) == 0){
+        showNotification(
+          "Error: 'Include discharge' option is selected but no discharge data found in the visit data. Please either:\n
+        1. Upload a file with a 'discharge' column\n
+        2. Uncheck the 'Use discharge as a covariate' option",
+          type = "error", 
+          duration = 10
+        )
+        status_message("ERROR: Discharge data required but not found")
+        return()
+      }
+      
+      #check if discharge is all NA or empty
+      discharge_data <- datasets$visit[[discharge_cols[1]]]
+      if(all(is.na(discharge_data)) || length(discharge_data) == 0){
+        showNotification(
+          "Error: 'Include discharge' option is selected but the discharge data is empty or all NA. Please either:\n
+        1. Upload a file with valid discharge data\n
+        2. Uncheck the 'Use discharge as a covariate' option",
+          type = "error", 
+          duration = 10
+        )
+        status_message("ERROR: Discharge data is empty or all NA")
+        return()
+      }
     }
     
     if(input$use_discharge==TRUE){

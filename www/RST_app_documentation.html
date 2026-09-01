@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Arthur Barros">
-<meta name="dcterms.date" content="2026-06-16">
+<meta name="dcterms.date" content="2026-09-01">
 
 <title>RST_app Documentation</title>
 <style>
@@ -64,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#calculate_sampling_time.r" id="toc-calculate_sampling_time.r" class="nav-link" data-scroll-target="#calculate_sampling_time.r"><em>calculate_sampling_time.R</em></a></li>
   <li><a href="#est_catch.r" id="toc-est_catch.r" class="nav-link" data-scroll-target="#est_catch.r"><em>est_catch.R</em></a></li>
   <li><a href="#model_catch.r" id="toc-model_catch.r" class="nav-link" data-scroll-target="#model_catch.r"><em>model_catch.R</em></a></li>
-  <li><a href="#est_efficiency.r" id="toc-est_efficiency.r" class="nav-link" data-scroll-target="#est_efficiency.r"><em>est_efficiency.R</em></a></li>
-  <li><a href="#model_efficiency.r" id="toc-model_efficiency.r" class="nav-link" data-scroll-target="#model_efficiency.r"><em>model_efficiency.R</em></a></li>
+  <li><a href="#compare_efficiency_models.r" id="toc-compare_efficiency_models.r" class="nav-link" data-scroll-target="#compare_efficiency_models.r"><em>compare_efficiency_models.R</em></a></li>
+  <li><a href="#impute_efficiency.r" id="toc-impute_efficiency.r" class="nav-link" data-scroll-target="#impute_efficiency.r"><em>impute_efficiency.R</em></a></li>
   <li><a href="#over_dispersion.r" id="toc-over_dispersion.r" class="nav-link" data-scroll-target="#over_dispersion.r"><em>over_dispersion.R</em></a></li>
   <li><a href="#find_visits_near_release.r" id="toc-find_visits_near_release.r" class="nav-link" data-scroll-target="#find_visits_near_release.r"><em>find_visits_near_release.R</em></a></li>
   <li><a href="#summarize_index.r" id="toc-summarize_index.r" class="nav-link" data-scroll-target="#summarize_index.r"><em>summarize_index.R</em></a></li>
@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 16, 2026</p>
+      <p class="date">2026-09-01</p>
     </div>
   </div>
   
@@ -119,12 +119,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>The <code>RST_app.R</code> Shiny application estimates juvenile salmonid out-migration passage (abundance) using rotary screw trap data submitted by the user. This application aims to replicate passage calculation and imputation methods utilized in the CAMP Rotary Screw Trap (CAMPR) platform but in a standalone, user friendly , documented, and replicable online platform. The CAMPR platform was created by Trent McDonald to support CDFW salmonid monitoring efforts in the Central Valley and allows direct connection between the modeling software built in R and the monitoring Access database. While CAMPR provides a usable system to simplify complex model fitting and passage estimation, it is currently a “black-box” back end with undetailed documentation and is no longer maintained or updated.</p>
-<p>The <code>RST_app.R</code> is a standalone package and RShiny application that performs model fitting and passage estimation in a web-based platform that requires no Access database or R experience to operate. While it does not require database connectivity, users do need to ensure their data is pre-formatted for use with the application. This document also aims to be a detailed overview of use, methodology, and the relevant scripts and functions that are used by the application. This application is also owned and maintained by CDFW staff, which allows for future maintenance and updates as needed.</p>
+<p>The <code>RST_app.R</code> is a standalone RShiny application that performs model fitting and passage estimation in a web-based platform that requires no Access database or R experience to operate. While it does not require or offer database connectivity, users do need to ensure their data is pre-formatted for use with the application. This document also aims to be a detailed overview of use, methodology, and the relevant scripts and functions that are used by the application. This application is also owned and maintained by CDFW staff, which allows for future maintenance and updates as needed.</p>
 <p><a href="#fig-data_flow" class="quarto-xref">Figure&nbsp;1</a> shows an overview of how data and user inputs are utilized by the different functions in the <code>RST_app</code> to produce estimates of passage, efficiency, catch, and related summary plots. Users need to upload .csv files of <code>catch_data</code>, <code>visit_data</code>, <code>release_data</code>, and <code>recapture_data</code> to the application. Then users can either set or use default input values to determine how passage data is summarized, whether or not to impute all or efficiency values, and the start and end dates for the survey period. These inputs are passed to the <code>est_passage.R</code> function, which then utilizes several downstream functions to produce estimates of passage and related uncertainty. The data inputs and relevant functions are covered in more detail in the following sections of this methods documentation.</p>
-<div id="fig-data_flow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-data_flow" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Flow chart showing data inputs, functions, and outputs of the RST_app.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-data_flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="methods_figures/data_flow.png" class="img-fluid figure-img">
+<img src="./methods_figures/data_flow_v1_1.png" class="img-fluid figure-img" alt="Flow chart showing data inputs, functions, and outputs of the RST_app.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data_flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application outputs for RST_app.
@@ -141,7 +141,7 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <p>The user is required to input data from four .csv tables:</p>
 <ul>
 <li><p>catch - records of fish caught during each trap visit.</p></li>
-<li><p>visit - records of all trap operation and sampling events.</p></li>
+<li><p>visit - records of all trap operation and sampling events. Also contains discharge data when needed.</p></li>
 <li><p>release - records of fish marked and released for efficiency trials.</p></li>
 <li><p>recapture - records of marked fish recaptured for efficiency trials.</p></li>
 </ul>
@@ -150,17 +150,15 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <p><strong><code>catch.csv</code></strong> needs to be set in the following structure:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 10%">
-<col style="width: 14%">
-<col style="width: 63%">
-<col style="width: 10%">
+<col style="width: 12%">
+<col style="width: 15%">
+<col style="width: 71%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
 <th>Type</th>
 <th>Description</th>
-<th>Required (Y/N)</th>
 </tr>
 </thead>
 <tbody>
@@ -168,55 +166,47 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <td>site_name</td>
 <td>text</td>
 <td>Name of river/study site</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>subsite_name</td>
 <td>text</td>
 <td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>visit_time</td>
 <td>datetime (ISO 8601)</td>
 <td><p>Date and time when trap was visited and catch recorded.</p>
 <p>YYYY-MM-DDThh:mm:ss</p></td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>common_name</td>
 <td>text</td>
 <td>Species common name, currently only used for “Chinook salmon”.</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>at_capture_run</td>
 <td>text</td>
-<td>Run timing, currently only used for “Fall”.</td>
-<td>N</td>
+<td>Run timing, values can be “Fall”, “Late Fall”, “Spring”, “Winter”.</td>
 </tr>
 <tr class="even">
 <td>n</td>
 <td>integer</td>
 <td>Number of fish captured by trap and recorded during visit.</td>
-<td>Y</td>
 </tr>
 </tbody>
 </table>
 <p><strong><code>visit.csv</code></strong> needs to be structured in the following format:</p>
 <table class="caption-top table">
 <colgroup>
+<col style="width: 8%">
 <col style="width: 10%">
-<col style="width: 14%">
-<col style="width: 63%">
-<col style="width: 10%">
+<col style="width: 80%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
 <th>Type</th>
 <th>Description</th>
-<th>Required (Y/N)</th>
 </tr>
 </thead>
 <tbody>
@@ -224,44 +214,42 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <td>site_name</td>
 <td>text</td>
 <td>Name of river/study site</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>subsite_name</td>
 <td>text</td>
 <td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>visit_time</td>
 <td>datetime (ISO 8601)</td>
 <td><p>Date and time when trap was visited and catch recorded.</p>
 <p>YYYY-MM-DDThh:mm:ss</p></td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>trap_visit_ID</td>
 <td>text/integer</td>
 <td>Unique identifier for each visit</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>visit_type</td>
 <td>text</td>
 <td>See valid values below</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>fish_processed</td>
 <td>text</td>
 <td>Processing status</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>include_catch</td>
 <td>text</td>
 <td>“Yes” or “No”</td>
-<td>Y</td>
+</tr>
+<tr class="even">
+<td>discharge</td>
+<td>numeric</td>
+<td>Measurement of discharge recorded during visit. <strong>Optional field</strong> that can be used for efficiency modeling. Discharge is scaled by the application before modeling.</td>
 </tr>
 </tbody>
 </table>
@@ -282,17 +270,15 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <p><strong><code>release.csv</code></strong> needs to be structured in the following format:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 11%">
 <col style="width: 13%">
-<col style="width: 62%">
-<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 70%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
 <th>Type</th>
 <th>Description</th>
-<th>Required (Y/N)</th>
 </tr>
 </thead>
 <tbody>
@@ -300,55 +286,47 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <td>site_name</td>
 <td>text</td>
 <td>Name of river/study site</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>subsite_name</td>
 <td>text</td>
 <td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>release_time</td>
 <td>datetime (ISO 8601)</td>
 <td><p>Date and time when release occurred</p>
 <p>YYYY-MM-DDThh:mm:ss</p></td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>release_ID</td>
 <td>text/integer</td>
 <td>Unique identifier for release event</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>include_analysis</td>
 <td>text</td>
 <td>“Yes” or “No” used to indicate if data should be used for efficiency estimation</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>n_released</td>
 <td>integer</td>
 <td>Number of fish released</td>
-<td>Y</td>
 </tr>
 </tbody>
 </table>
 <p><strong><code>recapture.csv</code></strong> needs to be structured in the following format:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 10%">
-<col style="width: 14%">
-<col style="width: 66%">
-<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 15%">
+<col style="width: 71%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
 <th>Type</th>
 <th>Description</th>
-<th>Required</th>
 </tr>
 </thead>
 <tbody>
@@ -356,63 +334,59 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <td>site_name</td>
 <td>text</td>
 <td>Name of river/study site</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>subsite_name</td>
 <td>text</td>
 <td>Trap location identifier used when multiple traps at a site. Still use if only one trap at site.</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>visit_time</td>
 <td>datetime (ISO 8601)</td>
 <td><p>Date and time when recapture occurred</p>
 <p>YYYY-MM-DDThh:mm:ss</p></td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>trap_visit_ID</td>
 <td>text/integer</td>
 <td>Links recapture data to visit record</td>
-<td>Y</td>
 </tr>
 <tr class="odd">
 <td>release_ID</td>
 <td>text/integer</td>
 <td>Links recapture data to release record</td>
-<td>Y</td>
 </tr>
 <tr class="even">
 <td>n</td>
 <td>integer</td>
 <td>Number of recaptured fish</td>
-<td>Y</td>
 </tr>
 </tbody>
 </table>
 <p>It is important the user ensures they have the four required data tables available and in the above format in order to properly use the <code>RST_app</code>.</p>
 <section id="inputs" class="level4">
 <h4 class="anchored" data-anchor-id="inputs"><em>Inputs</em></h4>
-<p>Once the four necessary data sets are properly formatted the user can utilize the load the RST_app found at <a href="https://arthurbarros-cdfw.shinyapps.io/RST_app/" class="uri">https://arthurbarros-cdfw.shinyapps.io/RST_app/</a>. The application main screen has all input fields on the left side (<a href="#fig-user_inputs" class="quarto-xref">Figure&nbsp;2</a>) that allows users to upload their data, set the survey period, target species, and other variables.</p>
+<p>Once the four necessary data sets are properly formatted the user can utilize the RST_app found at <a href="https://arthurbarros-cdfw.shinyapps.io/RST_app/" class="uri">https://arthurbarros-cdfw.shinyapps.io/RST_app/</a>. The application main screen has all input fields on the left side (<a href="#fig-user_inputs" class="quarto-xref">Figure&nbsp;2</a>) that allows users to upload their data, set the survey period, target species, and other variables.</p>
 <div id="fig-user_inputs" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-user_inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="methods_figures/user_inputs.png" id="fig-user_inputs" class="img-fluid figure-img">
+<img src="www/methods_figures/user_inputs%201_2.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-user_inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-user_inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Default view of the RST_app before data uploading.
 </figcaption>
 </figure>
 </div>
 <p>Users should set the following when using the application:</p>
 <ul>
-<li><p><strong>Upload data files:</strong> Use this field to browse to the necessary RST data files (see Data formatting above) and load the files. Multiple files can be selected and uploaded at once. When the necessary data sets are properly loaded, and if they are properly named, they will be displayed at the bottom in the “Data List” (<a href="#fig-data_list" class="quarto-xref">Figure&nbsp;3</a>).</p></li>
+<li><p><strong>Upload data files:</strong> Use this field to browse to the necessary RST data files (see Data formatting above) and load the files. You must select all the files at once to upload. When the necessary data sets are properly loaded, and if they are properly named, they will be displayed in the data list box (<a href="#fig-data_list" class="quarto-xref">Figure&nbsp;3</a>).</p></li>
 <li><p><strong>Survey Start and End Date:</strong> Date fields that set the start and end for the time period in which passage estimates are needed. This allows users to upload many years of data, but specifiy a certain time period for estimates.</p></li>
 <li><p><strong>Sum by:</strong> Time grouping variable to summarize passage data by. Defaults to week.</p></li>
 <li><p><strong>Target Species:</strong> Allows user to set species of interest, currently limited to Chinook Salmon, planned to be expanded upon in the future.</p></li>
 <li><p><strong>Target Run:</strong> Allows user to set run of interest, currently limited to Fall, planned to be expanded upon in the future.</p></li>
+<li><p><strong>Minimum Sample Size:</strong> Allows the user to set the minimum number of efficiency trials needed before using a GLM to model and impute missing efficiency values. Defaults to 10 (suggested minimum), minimum allowed is 5. If the number of efficiency trials for a trap is below the minimum set, the application will use a ratio of means +1 assuming a constant efficiency value for that trap.</p></li>
 <li><p><strong>Impute All Efficiency Values:</strong> Allows user to determine whether or not to impute all efficiency values, even those observed via efficiency trials.</p></li>
+<li><p><strong>Use discharge:</strong> Tells application whether or not to use discharge as a covariate for modeling and imputing efficiency trials</p></li>
 </ul>
 <div id="fig-data_list" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -424,11 +398,23 @@ Figure&nbsp;3
 </figcaption>
 </figure>
 </div>
-<p>Once the data sets are uploaded and the inputs set, click the “Estimate Passage” button to run the models and produce the passage estimates and other outputs.</p>
+<p>Once the data sets are uploaded and the inputs set, click the “<strong>Run Model Comparison</strong>” button to run the models and produce comparisons.</p>
 </section>
-<section id="outputs" class="level4">
-<h4 class="anchored" data-anchor-id="outputs"><em>Outputs</em></h4>
-<p>After the data is uploaded and the Estimate Passage models are run, the application produces the following outputs:</p>
+<section id="run-model-comparison" class="level4">
+<h4 class="anchored" data-anchor-id="run-model-comparison"><em>Run Model Comparison</em></h4>
+<p>After the data is uploaded and the model comparison is run, the application produces a table that compares the models ran for each trap in the uploaded data sets:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="methods_figures/model_comparison.png" class="img-fluid figure-img" alt="Figure showing output of model comparisons table."></p>
+<figcaption>Output of model comparisons showing models tested and ranked for two traps used in the example data set.</figcaption>
+</figure>
+</div>
+<p>For each trap in the uploaded dataset the “Model Reports” tab will show the the efficiency models ran and display AIC and AICc values for comparison. The RST_app will automatically select the best fit model (based on AICc), but allows the user to select which efficiency trial model to utilize for each trap when estimating passage. A model marked as “temporal_df” notes a temporal spline followed by the number of degrees of freedom utilized. A model marked with “discharge” indicates discharge was used as a covariate of trap efficiency. So a model marked as “discharge_temporal_df4” includes discharge and a temporal spline with four degrees of freedom (a cubic spline with one internal knot).</p>
+<p>Using either the default selected models or selecting others, the user can then select the “Estimate Passage with Selected Models” button to impute trap efficiency and estimate passage for the survey period.</p>
+</section>
+<section id="estimate-passage-with-selected-models" class="level4">
+<h4 class="anchored" data-anchor-id="estimate-passage-with-selected-models"><em>Estimate Passage with Selected Models</em></h4>
+<p>Once the models are selected and passage can be estimated and the application produces the following outputs:</p>
 <ul>
 <li><strong>Passage plot:</strong> displays estimates of out-migrant passage and uncertainty summed by the time grouping variable (defaults to week).</li>
 </ul>
@@ -456,7 +442,7 @@ Figure&nbsp;5
 </figure>
 </div>
 <ul>
-<li><strong>Catch plot:</strong> plot showing records of catch for each rotary screw trap for period of record. Displays both recorded catch (in red) and imputed catch (in blue). Note: this should be updated to include shape as a signifier for accessibility.</li>
+<li><strong>Catch plot:</strong> plot showing records of catch for each rotary screw trap for period of record. Displays both recorded catch (in red) and imputed catch (in blue).</li>
 </ul>
 <div id="fig-catch_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -469,7 +455,7 @@ Figure&nbsp;6
 </figure>
 </div>
 <ul>
-<li><strong>Efficiency plot:</strong> displays plot of efficiency estimates for each rotary screw trap for period of survey. Displays estimates of efficiency derived from actual tests (in red) and imputed efficiency (in blue).</li>
+<li><strong>Efficiency plot:</strong> displays plot of efficiency estimates for each rotary screw trap for period of survey. Displays estimates of efficiency derived from actual tests (in red) and imputed efficiency (in blue) and discharge on the alternate axis.</li>
 </ul>
 <div id="fig-efficiency_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -550,7 +536,7 @@ Figure&nbsp;7
 </section>
 <section id="est_catch.r" class="level3">
 <h3 class="anchored" data-anchor-id="est_catch.r"><em>est_catch.R</em></h3>
-<p>Estimate daily catch per trap and impute missing catch values. Called by est_passage function. Takes the following steps:</p>
+<p>Estimate daily catch per trap and impute missing catch values. Takes the following steps:</p>
 <ol type="1">
 <li><p>Join catch data to visit data.</p></li>
 <li><p>Group and sum catch by trap_ID and batch_date.</p></li>
@@ -590,15 +576,18 @@ Figure&nbsp;7
 <li>ans: List containing catch model fit results and catch data with imputed catch values. Also contains X.miss, model matrix with intercept and predictor terms for generating catch predictions.</li>
 </ul>
 </section>
-<section id="est_efficiency.r" class="level3">
-<h3 class="anchored" data-anchor-id="est_efficiency.r"><em>est_efficiency.R</em></h3>
-<p>Estimate efficiency for traps using mark-recapture efficiency trials. Called by est_passage function. Takes the following steps:</p>
+<section id="compare_efficiency_models.r" class="level3">
+<h3 class="anchored" data-anchor-id="compare_efficiency_models.r"><em>compare_efficiency_models.R</em></h3>
+<p>Models efficiency for traps using provided mark-recapture efficiency trials. Takes the following steps:</p>
 <ol type="1">
 <li><p>Align release events with trap visits within 36 hours post-release.</p></li>
 <li><p>Calculate efficiency as recaptures / releases per batch date.</p></li>
 <li><p>Expand to full survey period (all days between min/max trial dates).</p></li>
 <li><p>Calculate mean recapture time weighted by number of recaps.</p></li>
-<li><p>Pass trial efficiency data to model_efficiency().</p></li>
+<li><p>Fits a null model to efficiency data for each trap sampling segment.</p></li>
+<li><p>Calculates AIC and AICc for model fitting.</p></li>
+<li><p>If enough real efficiency trial data available, increase GLM spline degrees of freedom until model fit is good enough (ie model doesn’t converge or AIC increases etc.). If too few trials (&lt;minimum sample size) utilizes ration of means +1 assuming constant efficiency.</p></li>
+<li><p>Stores outputs of all model fits for comparison.</p></li>
 </ol>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -609,31 +598,27 @@ Figure&nbsp;7
 <li><p>survey_start: Input survey season start date.</p></li>
 <li><p>survey_end: Input survey season end date.</p></li>
 <li><p>min_sample_size: Minimum number of efficiency trials required in order to fit binomial model to impute efficiency. Defaults to 10.</p></li>
+<li><p>max_df_spline: Maximum number of splines to fit to binomial GLM.</p></li>
+<li><p>use_discharge: User input determining if discharge should be used as a covariate for modeling efficiency.</p></li>
 </ul>
 <p><strong>Return:</strong></p>
 <ul>
-<li>eff_modeled: List containing efficiency model fit results and data with imputed efficiency values.</li>
+<li>ans: List containing efficiency model fit results for each trap.</li>
 </ul>
 </section>
-<section id="model_efficiency.r" class="level3">
-<h3 class="anchored" data-anchor-id="model_efficiency.r"><em>model_efficiency.R</em></h3>
-<p>Fits Binomial GLM to efficiency trial data and imputes efficiency for missing periods. Called by est_efficiency(). Takes the following steps:</p>
-<ol type="1">
-<li><p>Fits a null model to efficiency data for each trap sampling segment.</p></li>
-<li><p>Calculates AIC for model fitting.</p></li>
-<li><p>If enough real efficiency trial data available, increase GLM spline degrees of freedom until model fit is good enough (ie model doesn’t converge or AIC increases etc.). If too few trials (&lt;10) utilizes ration of means +1 assuming constant efficiency.</p></li>
-<li><p>Once model is fit, impute efficiency by looping over batch date sampling gaps.</p></li>
-</ol>
+<section id="impute_efficiency.r" class="level3">
+<h3 class="anchored" data-anchor-id="impute_efficiency.r"><em>impute_efficiency.R</em></h3>
+<p>Uses selected model fits to impute efficiency for missing periods.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><p>efficiency_data: Input of efficiency data frame with periods of missing efficiency data.</p></li>
-<li><p>max.df.spline: Maximum number of splines to fit to binomial GLM.</p></li>
+<li><p>selected_models: List of models selected by user for each trap.</p></li>
+<li><p>model_names: Names and identifiers for selected models for use in displaying results.</p></li>
 <li><p>impute_all: User input of dictating if all efficiency estimates should be imputed. Defaults to FALSE. If TRUE, will replace estimates made with actual efficiency trial data with imputed values.</p></li>
-<li><p>min_sample_size: Minimum number of efficiency trials required in order to fit binomial model to impute efficiency. Defaults to 10.</p></li>
 </ul>
 <p><strong>Return:</strong></p>
 <ul>
-<li>ans: List containing efficiency model fit results and efficiency data with imputed efficiency values. Also contains X.miss, model matrix with intercept and predictor terms for generating efficiency predictions.</li>
+<li>ans: List containing efficiency model fit results and efficiency data with imputed efficiency values. Also contains X.miss, model matrix with intercept and predictor terms for use in bootstrapping.</li>
 </ul>
 </section>
 <section id="over_dispersion.r" class="level3">
@@ -730,25 +715,17 @@ Figure&nbsp;7
 </section>
 <section id="est_passage.r" class="level3">
 <h3 class="anchored" data-anchor-id="est_passage.r"><em>est_passage.R</em></h3>
-<p>Coordinate all modules to produce final passage estimates. Takes the following steps:</p>
-<ol type="1">
-<li><p>Run est_catch() to calculate catch for available data and impute catch for missing periods.</p></li>
-<li><p>Run est_efficiency() to calculate efficiency for available trials and impute for missing periods.</p></li>
-<li><p>Estimate passage and related uncertainty.</p></li>
-</ol>
+<p>Utilizes observed and imputed catch and efficiency data to estimate passage for each survey period.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><p>catch: Records of fish caught during each trap visit.</p></li>
-<li><p>visits: Records of all trap operation and sampling events.</p></li>
-<li><p>release: Records of fish marked and released for efficiency trials.</p></li>
-<li><p>recapture: Records of marked fish recaptured for efficiency trials.</p></li>
 <li><p>summarize.by: Time grouping variable to summarize passage data by (default: “week”).</p></li>
-<li><p>impute_all: Determine whether or not to impute all efficiency values, even those observed via efficiency trials (default: FALSE).</p></li>
 <li><p>bootstrap: Whether or not to conduct bootstrapping for uncertainty (default: TRUE).</p></li>
 <li><p>survey_start: Input survey season start date.</p></li>
 <li><p>survey_end: Input survey season end date.</p></li>
 <li><p>target_species: Species of interest, currently limited to Chinook Salmon.</p></li>
 <li><p>target_run: Run of interest, currently limited to Fall.</p></li>
+<li><p>use_discharge: User input determining if discharge should be used as a covariate for modeling efficiency.</p></li>
 <li><p>file.name: File name for saved outputs, which are currently commented out (default: “test”).</p></li>
 </ul>
 <p><strong>Return:</strong></p>

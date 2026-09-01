@@ -26,7 +26,7 @@ The `RST_app.R` is a standalone RShiny application that performs model fitting a
 
 @fig-data_flow shows an overview of how data and user inputs are utilized by the different functions in the `RST_app` to produce estimates of passage, efficiency, catch, and related summary plots. Users need to upload .csv files of `catch_data`, `visit_data`, `release_data`, and `recapture_data` to the application. Then users can either set or use default input values to determine how passage data is summarized, whether or not to impute all or efficiency values, and the start and end dates for the survey period. These inputs are passed to the `est_passage.R` function, which then utilizes several downstream functions to produce estimates of passage and related uncertainty. The data inputs and relevant functions are covered in more detail in the following sections of this methods documentation.
 
-![Overview of data inputs, user inputs, functions, and application outputs for RST_app.](methods_figures/data_flow_v1_1.png){#fig-data_flow fig-alt="Flow chart showing data inputs, functions, and outputs of the RST_app."}
+![Overview of data inputs, user inputs, functions, and application outputs for RST_app.](www/methods_figures/data_flow_v1_1.png){#fig-data_flow fig-alt="Flow chart showing data inputs, functions, and outputs of the RST_app."}
 
 Code, documentation, and example data for the `RST_app` can be found at: <https://github.com/arthurbarros-CDFW/RST_app>.
 
@@ -160,11 +160,11 @@ It is important the user ensures they have the four required data tables availab
 
 Once the four necessary data sets are properly formatted the user can utilize the RST_app found at <https://arthurbarros-cdfw.shinyapps.io/RST_app/>. The application main screen has all input fields on the left side (@fig-user_inputs) that allows users to upload their data, set the survey period, target species, and other variables.
 
-![Default view of the RST_app before data uploading.](methods_figures/user_inputs%201_2.png){#fig-user_inputs}
+![Default view of the RST_app before data uploading.](www/methods_figures/user_inputs 1_2.png){#fig-user_inputs}
 
 Users should set the following when using the application:
 
-- **Upload data files:** Use this field to browse to the necessary RST data files (see Data formatting above) and load the files. Multiple files can be selected and uploaded at once. When the necessary data sets are properly loaded, and if they are properly named, they will be displayed at the bottom in the "Data List" (@fig-data_list).
+- **Upload data files:** Use this field to browse to the necessary RST data files (see Data formatting above) and load the files. You must select all the files at once to upload. When the necessary data sets are properly loaded, and if they are properly named, they will be displayed in the data list box (@fig-data_list).
 
 - **Survey Start and End Date:** Date fields that set the start and end for the time period in which passage estimates are needed. This allows users to upload many years of data, but specifiy a certain time period for estimates.
 
@@ -180,7 +180,7 @@ Users should set the following when using the application:
 
 - **Use discharge:** Tells application whether or not to use discharge as a covariate for modeling and imputing efficiency trials
 
-![](methods_figures/data_list.png){#fig-data_list}
+![](www/methods_figures/data_list.png){#fig-data_list}
 
 Once the data sets are uploaded and the inputs set, click the "**Run Model Comparison**" button to run the models and produce comparisons.
 
@@ -188,9 +188,9 @@ Once the data sets are uploaded and the inputs set, click the "**Run Model Compa
 
 After the data is uploaded and the model comparison is run, the application produces a table that compares the models ran for each trap in the uploaded data sets:
 
-![Output of model comparisons showing models tested and ranked for two traps used in the example data set.](methods_figures/model_comparison.png){fig-alt="Figure showing output of model comparisons table."}
+![Output of model comparisons showing models tested and ranked for two traps used in the example data set.](www/methods_figures/model_comparison.png){fig-alt="Figure showing output of model comparisons table."}
 
-For each trap in the uploaded dataset the "Model Reports" tab will show the the efficiency models ran and display AIC and AICc values for comparison. The RST_app will automatically select the best fit model (based on AICc), but allows the user to select which efficiency trial model to utilize for each trap when estimating passage. A model marked as "tempral_df" notes a temporal spline followed by the number of degrees of freedom utilized.
+For each trap in the uploaded dataset the "Model Reports" tab will show the the efficiency models ran and display AIC and AICc values for comparison. The RST_app will automatically select the best fit model (based on AICc), but allows the user to select which efficiency trial model to utilize for each trap when estimating passage. A model marked as "temporal_df" notes a temporal spline followed by the number of degrees of freedom utilized. A model marked with "discharge" indicates discharge was used as a covariate of trap efficiency. So a model marked as "discharge_temporal_df4" includes discharge and a temporal spline with four degrees of freedom (a cubic spline with one internal knot).
 
 Using either the default selected models or selecting others, the user can then select the "Estimate Passage with Selected Models" button to impute trap efficiency and estimate passage for the survey period.
 
@@ -200,19 +200,19 @@ Once the models are selected and passage can be estimated and the application pr
 
 - **Passage plot:** displays estimates of out-migrant passage and uncertainty summed by the time grouping variable (defaults to week).
 
-![](methods_figures/passage_plot.png){#fig-passage_plot}
+![](www/methods_figures/passage_plot.png){#fig-passage_plot}
 
 - **Passage table:**  An output table that shows out-migrant passage estimate and uncertainty summed by the time grouping variable. Also includes the field "pct.imputed.catch" which tells what proportion of catch records for the time grouping time period was imputed using catch models.
 
-![](methods_figures/passage_table.png){#fig-passage_table}
+![](www/methods_figures/passage_table.png){#fig-passage_table}
 
 - **Catch plot:** plot showing records of catch for each rotary screw trap for period of record. Displays both recorded catch (in red) and imputed catch (in blue).
 
-![](methods_figures/catch_plot.png){#fig-catch_plot}
+![](www/methods_figures/catch_plot.png){#fig-catch_plot}
 
-- **Efficiency plot:** displays plot of efficiency estimates for each rotary screw trap for period of survey. Displays estimates of efficiency derived from actual tests (in red) and imputed efficiency (in blue).
+- **Efficiency plot:** displays plot of efficiency estimates for each rotary screw trap for period of survey. Displays estimates of efficiency derived from actual tests (in red) and imputed efficiency (in blue) and discharge on the alternate axis.
 
-![](methods_figures/efficiency_plot.png){#fig-efficiency_plot}
+![](www/methods_figures/efficiency_plot.png){#fig-efficiency_plot}
 
 Each of the outputs above can be downloaded with the associated "Download" button.
 

@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-data_flow" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Flow chart showing data inputs, functions, and outputs of the RST_app.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-data_flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="methods_figures/data_flow_v1_1.png" class="img-fluid figure-img" alt="Flow chart showing data inputs, functions, and outputs of the RST_app.">
+<img src="www/methods_figures/data_flow_v1_1.png" class="img-fluid figure-img" alt="Flow chart showing data inputs, functions, and outputs of the RST_app.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data_flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application outputs for RST_app.
@@ -370,7 +370,7 @@ Figure&nbsp;1: Overview of data inputs, user inputs, functions, and application 
 <div id="fig-user_inputs" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-user_inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="methods_figures/user_inputs%201_2.png" class="img-fluid figure-img">
+<img src="www/methods_figures/user_inputs%201_2.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-user_inputs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Default view of the RST_app before data uploading.
@@ -379,7 +379,7 @@ Figure&nbsp;2: Default view of the RST_app before data uploading.
 </div>
 <p>Users should set the following when using the application:</p>
 <ul>
-<li><p><strong>Upload data files:</strong> Use this field to browse to the necessary RST data files (see Data formatting above) and load the files. Multiple files can be selected and uploaded at once. When the necessary data sets are properly loaded, and if they are properly named, they will be displayed at the bottom in the “Data List” (<a href="#fig-data_list" class="quarto-xref">Figure&nbsp;3</a>).</p></li>
+<li><p><strong>Upload data files:</strong> Use this field to browse to the necessary RST data files (see Data formatting above) and load the files. You must select all the files at once to upload. When the necessary data sets are properly loaded, and if they are properly named, they will be displayed in the data list box (<a href="#fig-data_list" class="quarto-xref">Figure&nbsp;3</a>).</p></li>
 <li><p><strong>Survey Start and End Date:</strong> Date fields that set the start and end for the time period in which passage estimates are needed. This allows users to upload many years of data, but specifiy a certain time period for estimates.</p></li>
 <li><p><strong>Sum by:</strong> Time grouping variable to summarize passage data by. Defaults to week.</p></li>
 <li><p><strong>Target Species:</strong> Allows user to set species of interest, currently limited to Chinook Salmon, planned to be expanded upon in the future.</p></li>
@@ -409,7 +409,7 @@ Figure&nbsp;3
 <figcaption>Output of model comparisons showing models tested and ranked for two traps used in the example data set.</figcaption>
 </figure>
 </div>
-<p>For each trap in the uploaded dataset the “Model Reports” tab will show the the efficiency models ran and display AIC and AICc values for comparison. The RST_app will automatically select the best fit model (based on AICc), but allows the user to select which efficiency trial model to utilize for each trap when estimating passage. A model marked as “tempral_df” notes a temporal spline followed by the number of degrees of freedom utilized.</p>
+<p>For each trap in the uploaded dataset the “Model Reports” tab will show the the efficiency models ran and display AIC and AICc values for comparison. The RST_app will automatically select the best fit model (based on AICc), but allows the user to select which efficiency trial model to utilize for each trap when estimating passage. A model marked as “temporal_df” notes a temporal spline followed by the number of degrees of freedom utilized. A model marked with “discharge” indicates discharge was used as a covariate of trap efficiency. So a model marked as “discharge_temporal_df4” includes discharge and a temporal spline with four degrees of freedom (a cubic spline with one internal knot).</p>
 <p>Using either the default selected models or selecting others, the user can then select the “Estimate Passage with Selected Models” button to impute trap efficiency and estimate passage for the survey period.</p>
 </section>
 <section id="estimate-passage-with-selected-models" class="level4">
@@ -455,7 +455,7 @@ Figure&nbsp;6
 </figure>
 </div>
 <ul>
-<li><strong>Efficiency plot:</strong> displays plot of efficiency estimates for each rotary screw trap for period of survey. Displays estimates of efficiency derived from actual tests (in red) and imputed efficiency (in blue).</li>
+<li><strong>Efficiency plot:</strong> displays plot of efficiency estimates for each rotary screw trap for period of survey. Displays estimates of efficiency derived from actual tests (in red) and imputed efficiency (in blue) and discharge on the alternate axis.</li>
 </ul>
 <div id="fig-efficiency_plot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
