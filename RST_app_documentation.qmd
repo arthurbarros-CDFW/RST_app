@@ -160,7 +160,7 @@ It is important the user ensures they have the four required data tables availab
 
 Once the four necessary data sets are properly formatted the user can utilize the RST_app found at <https://arthurbarros-cdfw.shinyapps.io/RST_app/>. The application main screen has all input fields on the left side (@fig-user_inputs) that allows users to upload their data, set the survey period, target species, and other variables.
 
-![Default view of the RST_app before data uploading.](methods_figures/user_inputs 1_2.png){#fig-user_inputs}
+![Default view of the RST_app before data uploading.](methods_figures/user_inputs%201_2.png){#fig-user_inputs}
 
 Users should set the following when using the application:
 
